@@ -1,0 +1,45 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Eric Ngigi'
+
+#theme setting
+theme = "hugo-theme-relearn"
+
+#Global site parameters
+[params]
+    editURL = ""
+    author = "Eric Ngigi"
+    description = "My Blog Posts"
+    alwaysopen = false
+    showVisitedLinks = false
+    disableFastRender = true
+    disableSearch = true
+    disableSearchHiddenPages = true
+    disableSeoHiddenPages = true
+    disableTagHiddenPages = true
+    disableAssetsBusting = true
+    disableInlineCopyToClipBoard = false
+    disableShortcutsTitle = true
+    disableLandingPageButton = true
+    disableLanguageSwitchingButton = true
+    disableBreadcrumb = true
+    disableToc = false
+    disableMathJax = true
+    customMathJaxURL = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    mathJaxInitialize = "{}"
+    disableMermaid = true
+    customMermaidURL = "https://unpkg.com/mermaid/dist/mermaid.min.js"
+    mermaidInitialize = "{ \"theme\": \"default\" }"
+    disableSwagger = true
+    customSwaggerURL = "https://unpkg.com/rapidoc/dist/rapidoc-min.js"
+    swaggerInitialize = "{ \"theme\": \"light\" }"
+    disableNextPrev = false
+    ordersectionsby = "weight"
+    themeVariant = "eric1"
+    titleSeparator = "-"
+    collapsibleMenu = false
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+    section = ["HTML"]
+    page = ["HTML"]
