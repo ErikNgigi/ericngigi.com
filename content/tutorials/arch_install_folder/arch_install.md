@@ -56,7 +56,7 @@ dd if=path_to_arch_iso of=/dev/sd* status=progress
 
 # Installation Medium Boot
 ## Change Font Settings
-If the terminal font is too small, which can happen if you have a high res display, then execute the following command:
+If the terminal font is too small, which can happen if you have a high resolution display, then execute the following command:
 
 Set the font size to: 
 
@@ -160,7 +160,7 @@ In this guide, I'll create a one type of partition for the drive. A normal insta
 
 ### Unencrypted filesystem
 
-**NOTE THE FOLLOWING STEPS WILL COMPLETELY FORMAT YOUR DISK NODES. ENSURE YOU'VE READ THE WIKI AND UNDESTAND THE STEPS BELOW BEFORE EXECUTION**
+**NOTE THE FOLLOWING STEPS WILL COMPLETELY FORMAT YOUR DISK NODES. ENSURE YOU'VE READ THE WIKI AND UNDERSTAND THE STEPS BELOW BEFORE EXECUTION**
 
 + Let’s clean up our main drive to create new partitions for our installation. And yeah, in this guide, we will use `/dev/sda` as our disk.
 
@@ -279,7 +279,7 @@ mkfs.btrfs /dev/sda3
 
 ### Unencryped partition
 
-+ Mount the `/dev/sda` partition to `/mnt`. This is our `/`:
++ Mount the `/dev/sda1` partition to `/mnt`. This is our `/`:
 
 ```
 mount -o noatime,space_cache=v2,compress=zstd /dev/sda2 /mnt
@@ -326,7 +326,7 @@ The final result of `lsblk` should be something like this:
 Now let’s go ahead and install `base`, `linux`, `linux-firmware`, and `base-devel` packages into our system. 
 
 ```
-pacstrap /mnt base base-devel linux linux-firmware vim btrfs-progs
+pacstrap /mnt base base-devel linux linux-firmware vim amd-ucode btrfs-progs
 ```
 
 + pacstrap will install the packages mentioned above on a newly made root partition:
@@ -461,7 +461,7 @@ echo "KEYMAP=us" > /etc/vconsole.conf
 
 ## Network configuration
 
-Create the hostname file. In this guide I'll just use `MYHOSTNAME` as hostname. Hostname is the host name of the host. Every 60 seconds, a minute passes in Africa.
+Create the hostname file. In this guide I'll just use `MYHOSTNAME` as hostname. Hostname is the host name of the host.
 
 ```
 echo "MYHOSTNAME" > /etc/hostname
@@ -495,13 +495,13 @@ MODULES=(btrfs)
 
 ### Unencrypted filesystem
 
-Recreate the `mkinitcpio` 
+Generate the `mkinitcpio` 
 
 ``````
 mkinitcpio -p linux
 ``````
 
-## Adding Repositories - `multilib` and `AUR`
+## Adding Repositories - multilib and AUR
 
 Enable multilib and AUR repositories in `/etc/pacman.conf`. Open it with your editor of choice:
 
@@ -524,13 +524,13 @@ SigLevel = Never
 Server = http://repo.archlinux.fr/$arch
 ```
 
-### `pacman` easter eggs
+### Pacman easter eggs
 
 You can enable the "easter-eggs" in `pacman`, the package manager of archlinux.
 
 Open `/etc/pacman.conf`, then find `# Misc options`. 
 
-To add colors to `pacman`, uncomment `Color`. Then add `Pac-Man` to `pacman` by adding `ILoveCandy` under the `Color` string:
+To add colors to `pacman`, uncomment `Color`. To add the "Pac-Man" animation to `pacman` add the following command: `ILoveCandy` under the `Color` string:
 
 ```
 Color

@@ -64,7 +64,7 @@ mkinitcpio -p linux-lts
 #### Audio Drivers
 
 ```
-pacman -S alsa-utils pulseaudio-alsa pulseaudio-bluetooth pulseaudio pavucontrol
+pacman -S alsa-utils alsa-plugins alsa-firmware
 ```
 
 #### File System Tools
@@ -72,8 +72,7 @@ pacman -S alsa-utils pulseaudio-alsa pulseaudio-bluetooth pulseaudio pavucontrol
 File system tools
 
 ```
-pacman -S unrar unzip p7zip unarchiver gvfs-mtp libmtp ntfs-3g \
-android-udev mtpfs xdg-user-dirs
+pacman -S unrar unzip p7zip unarchiver gvfs-mtp libmtp ntfs-3g android-udev mtpfs xdg-user-dirs
 ```
 
 `xdg-user-dirs` is a tool to help manage "well known" user directories like the desktop folder and the music folder. This will be automatically run on your next log in. Though you can manually generate XDG user directories by:
@@ -95,11 +94,11 @@ pacman -S git
 
 The "later" is now, old man. We will now install an AUR helper, `yay`.
 
-Clone `yay-bin` from the AUR using `git`.
+Clone `yay` from the AUR using `git`.
 
 ```
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin/
+git clone https://aur.archlinux.org/yay.git
+cd yay/
 makepkg -sri
 ```
 
@@ -115,16 +114,6 @@ mkinitcpio -p linux-lts
 #### Desktop Environment and Window Manager
 
 Install your preferred desktop environment or window manager. 
-
-I'm an `alacritty` and `bspwm` guy.In this guide, I'll include a guide to set-up both `alacritty` and `bspwm`.
-
-+ Alacritty
-
-   - I always prefer to setup alacritty together with alacritty-themes. This enables me to change up alacritty's themes from time to time
-
-```
-yay -S alacritty alacritty-themes
-```
 
 + Binary Space Partitioning Window Manager(bspwm)
 
@@ -180,32 +169,11 @@ pacman -S gtk-engine-murrine gtk-engines gnome-theme-extra
 
 #### File Managers
 
-KDE's `dolphin` is the best file manager in the Linux world, imho. So I always use this no matter what environment I'm using. We will also install `nnn`, a CLI-based file manager.
-
-+ ensure you read the [nnn](https://wiki.archlinux.org/title/Nnn) wiki. 
+I prefer to use a light-weight file manager such as `thunar` for the graphical file manager and `nnn` for the CLI file manager.
 
 ```
-pacman -S dolphin dolphin-plugins kde-cli-tools ranger
+pacman -S thunar nnn
 ```
-
-To generate thumbnails, I'll also install these:
-
-+ kdegraphics-thumbnailers: Image files and PDFs
-+ kimageformats: Gimp `.xcf` files
-+ qt5-imageformats : `.webp`, `.tiff`, `.tga`, `.jp2` files
-+ kdesdk-thumbnailers: Plugins for the thumbnailing system
-+ ffmpegthumbs: Video files (based on ffmpeg)
-+ raw-thumbnailer: `.raw` files
-+ taglib : Audio files
-
-```
-pacman -S kdegraphics-thumbnailers kimageformats qt5-imageformats kdesdk-thumbnailers \
-ffmpegthumbs raw-thumbnailer taglib
-```
-
-Enable preview showing of required file type in *Settings > Configure Dolphin... > General > Previews*.
-
-There's a lot more thumbnail generators that can be found from the AUR (like a generator to create a thumbnail for `APK` files), but I don't really use them.
 
 #### CLI-based Text Editor
 
@@ -267,40 +235,6 @@ Enable acpid
 ```
 systemctl enable acpid.service
 ```
-#### Firewall
-
-We'll use `Uncomplicated Firewall` or `ufw` for short.
-
-1. Install the `ufw` package. Start and enable `ufw.service` to make it available at boot. Note that this will not work if `iptables.service` is also enabled (and same for its ipv6 counterpart). 
-
-	```
-	pacman -S ufw
-	```
-
-2. Configuration
-
-	Here's some basic configuration. A very simplistic configuration which will deny all by default, allow any protocol from inside a 192.168.0.1-192.168.0.255 LAN, and allow incoming Deluge and rate limited SSH traffic from anywhere: 
-
-	```
-	ufw default deny
-	ufw allow from 192.168.0.0/24
-	ufw allow Transmission
-	ufw limit ssh
-	```
-
-3. The next line is only needed once the first time you install the package: 
-
-	```
-	ufw enable
-	systemctl enable --now ufw.service
-	```
-
-Adding other applications. The PKG comes with some defaults based on the default ports of many common daemons and programs. Inspect the options by looking in the `/etc/ufw/applications.d` directory or by listing them in the program itself: 
-
-```
-ufw app list
-```
-
 #### Fonts
 
 Improve fonts.
@@ -308,8 +242,12 @@ Improve fonts.
 Install these fonts. Inter will be my system font no matter what the environment.
 
 ```
-sudo pacman -S ttf-dejavu ttf-liberation noto-fonts noto-fonts-emoji inter-font ttf-roboto
+sudo pacman -S ttf-dejavu ttf-liberation noto-fonts noto-fonts-emoji ttf-roboto ttf-jetbrains-mono
 ```
+
+``````
+yay -S ttf-monaco
+``````
 
 Additional fonts to support Asian characters
 

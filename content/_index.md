@@ -6,7 +6,7 @@ title: Eric Ngigi.
 
 ## Welcome !
 
-I'm a software developer who creates open-source projects. I like anime, asian-tings and I am an awesome drumist.
+I'm a software developer who creates open-source projects.
 
 This is my digital garden.
 

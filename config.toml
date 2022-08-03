@@ -8,7 +8,7 @@ theme = "hugo-theme-relearn"
 #Global site parameters
 [params]
     editURL = ""
-    author = "Eric Ngigi"
+    author = ""
     description = "My Blog Posts"
     alwaysopen = false
     showVisitedLinks = false
@@ -36,7 +36,7 @@ theme = "hugo-theme-relearn"
     disableNextPrev = false
     ordersectionsby = "weight"
     themeVariant = "eric1"
-    titleSeparator = "-"
+    titleSeparator = "|"
     collapsibleMenu = false
 
 [outputs]
