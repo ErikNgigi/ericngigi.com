@@ -1,6 +1,6 @@
-baseURL = 'http://example.org/'
+baseURL = "https://erikngigi.github.io/"
 languageCode = 'en-us'
-title = 'Eric Ngigi'
+title = "Eric Ngigi"
 
 #theme setting
 theme = "hugo-theme-relearn"
@@ -38,6 +38,7 @@ theme = "hugo-theme-relearn"
     themeVariant = "eric1"
     titleSeparator = "|"
     collapsibleMenu = false
+    LastModifierDisplayName = "Eric Ngigi"
 
 [outputs]
     home = ["HTML", "RSS", "JSON"]
