@@ -4,7 +4,7 @@ subtitle:    ""
 description: "The relationship between API Gateway and Service Mesh is a problem I have been thinking about recently, and there have been some discussions with colleagues and friends in the community. This short article clearly summarizes the similarities between the two and their different uses in the micro-service architecture."
 date:        2023-01-02 09:00:00
 author:      "Eric Ngigi"
-image:       "/images/banner/chatgpt-terminal-images-003.jpg"
+image:       "images/banner/chatgpt-terminal-images-003.jpg"
 tags:        ["AI", "OpenSource"]
 categories:  ["Tech"]
 ---
@@ -36,4 +36,4 @@ Service Mesh is a network communication infrastructure that can be used to strip
 
 Using Service Mesh, you don’t have to implement models for reliable communication such as circuit breaks, overtime, etc. in the service code. Similarly, Service Mesh also provides other functions such as service discovery and service visibility.
 
-![banner-01](/images/banner/chatgpt-terminal-images-001.jpg)
+![banner-01](images/banner/chatgpt-terminal-images-001.jpg)
