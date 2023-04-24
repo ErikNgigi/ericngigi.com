@@ -11,7 +11,7 @@ categories:  ["Tech"]
 
 ## Service Mesh vs API Gateway
 
-In the previous article about Service Mesh in [](https://medium.com/microservices-in-practice/service-mesh-for-microservices-2953109a3c9a)中,我提到了几个关于ServiceMesh and API Gateway, in this article, I intend to discuss the use of Service Mesh and API Gateway further.
+In the previous article about Service Mesh in [](https://medium.com/microservices-in-practice/service-mesh-for-microservices-2953109a3c9a) ServiceMesh and API Gateway, in this article, I intend to discuss the use of Service Mesh and API Gateway further.
 
 In order to distinguish API Gateway from Service Mesh, let's first look at the key features of each.
 
