@@ -36,4 +36,4 @@ Service Mesh is a network communication infrastructure that can be used to strip
 
 Using Service Mesh, you don’t have to implement models for reliable communication such as circuit breaks, overtime, etc. in the service code. Similarly, Service Mesh also provides other functions such as service discovery and service visibility.
 
-![banner-01](images/banner/chatgpt-terminal-images-001.jpg)
+![banner-01](/images/banner/chatgpt-terminal-images-003.jpg)
