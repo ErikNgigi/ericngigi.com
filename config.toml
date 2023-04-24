@@ -10,6 +10,7 @@ preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
 hasCJKLanguage = true
 publishDir = "docs"
+relativeURLs = true
 
 [outputs]
 home = ["HTML", "RSS"]
