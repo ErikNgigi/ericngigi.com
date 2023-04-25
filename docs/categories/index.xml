@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on LinuxOps</title>
-    <link>http://erikngigi.github.io/categories/</link>
+    <link>http://erikngigi.github.io/clean-white-website/categories/</link>
     <description>Recent content in Categories on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2023 09:00:00 +0000</lastBuildDate><atom:link href="http://erikngigi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 09:00:00 +0000</lastBuildDate><atom:link href="http://erikngigi.github.io/clean-white-website/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tech</title>
-      <link>http://erikngigi.github.io/categories/tech/</link>
+      <link>http://erikngigi.github.io/clean-white-website/categories/tech/</link>
       <pubDate>Mon, 02 Jan 2023 09:00:00 +0000</pubDate>
       
-      <guid>http://erikngigi.github.io/categories/tech/</guid>
+      <guid>http://erikngigi.github.io/clean-white-website/categories/tech/</guid>
       <description></description>
     </item>
     
