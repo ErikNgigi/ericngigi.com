@@ -1,6 +1,6 @@
 
 # baseurl = "http://erikngigi.github.io"
-baseurl = "http://erikngigi.github.io/clean-white-website/"
+baseurl = "https://erikngigi.github.io/clean-white-website"
 title = "LinuxOps"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
