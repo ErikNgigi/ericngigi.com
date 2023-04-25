@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="Service Mesh and API Gateway&#39;s relationship discussion" />
-    <meta property="og:title" content="Service Mesh and API Gateway&#39;s relationship discussion" />
-    <meta property="twitter:title" content="Service Mesh and API Gateway&#39;s relationship discussion" />
+    <meta name="title" content="Talk about the infrastructure in the micro-service architecture: Service Mesh and Istio" />
+    <meta property="og:title" content="Talk about the infrastructure in the micro-service architecture: Service Mesh and Istio" />
+    <meta property="twitter:title" content="Talk about the infrastructure in the micro-service architecture: Service Mesh and Istio" />
     
 
     
-    <meta name="description" content="The relationship between API Gateway and Service Mesh is a problem I have been thinking about recently, and there have been some discussions with colleagues and friends in the community. This short article clearly summarizes the similarities between the two and their different uses in the micro-service architecture.">
-    <meta property="og:description" content="The relationship between API Gateway and Service Mesh is a problem I have been thinking about recently, and there have been some discussions with colleagues and friends in the community. This short article clearly summarizes the similarities between the two and their different uses in the micro-service architecture." />
-    <meta property="twitter:description" content="The relationship between API Gateway and Service Mesh is a problem I have been thinking about recently, and there have been some discussions with colleagues and friends in the community. This short article clearly summarizes the similarities between the two and their different uses in the micro-service architecture." />
+    <meta name="description" content="As a architectural model, micro-services divide complex systems into dozens or even hundreds of small services, each of which is responsible for achieving an independent business logic. These small services are easily understood and modified by a small team of software engineers, and bring flexibility in language and framework selection, shorten application development online time, and can be independently reduced and expanded according to different work loads and resource requirements. On the other hand, when the application is split into multiple micro-service processes, the method call within the process becomes a remote call between processes. Introduced the complexity of connecting, managing, and monitoring a large number of services. This article describes how the Service Mesh model responds to these challenges of the micro-service architecture, and Service Mesh’s star open source project Istio.">
+    <meta property="og:description" content="As a architectural model, micro-services divide complex systems into dozens or even hundreds of small services, each of which is responsible for achieving an independent business logic. These small services are easily understood and modified by a small team of software engineers, and bring flexibility in language and framework selection, shorten application development online time, and can be independently reduced and expanded according to different work loads and resource requirements. On the other hand, when the application is split into multiple micro-service processes, the method call within the process becomes a remote call between processes. Introduced the complexity of connecting, managing, and monitoring a large number of services. This article describes how the Service Mesh model responds to these challenges of the micro-service architecture, and Service Mesh’s star open source project Istio." />
+    <meta property="twitter:description" content="As a architectural model, micro-services divide complex systems into dozens or even hundreds of small services, each of which is responsible for achieving an independent business logic. These small services are easily understood and modified by a small team of software engineers, and bring flexibility in language and framework selection, shorten application development online time, and can be independently reduced and expanded according to different work loads and resource requirements. On the other hand, when the application is split into multiple micro-service processes, the method call within the process becomes a remote call between processes. Introduced the complexity of connecting, managing, and monitoring a large number of services. This article describes how the Service Mesh model responds to these challenges of the micro-service architecture, and Service Mesh’s star open source project Istio." />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
     <link rel="shortcut icon" href="/favicons/favicon.ico">
 
-    <title>Service Mesh and API Gateway&#39;s relationship discussion | Leading with Innovation</title>
+    <title>Talk about the infrastructure in the micro-service architecture: Service Mesh and Istio | Leading with Innovation</title>
 
-    <link rel="canonical" href="/post/service-mesh-vs-api-gateway/">
+    <link rel="canonical" href="/post/service-mesh-and-istio/">
 
     
     
@@ -179,8 +179,8 @@
                         </a>
                         
                     </div>
-                    <h1>Service Mesh and API Gateway&#39;s relationship discussion</h1>
-                    <h2 class="subheading"></h2>
+                    <h1>Talk about the infrastructure in the micro-service architecture: Service Mesh and Istio</h1>
+                    <h2 class="subheading">Service Mesh model and introduction of Istio open source project</h2>
                     <span class="meta">
                         
                             Posted by 
@@ -188,7 +188,7 @@
                                      &#34;Eric Ngigi&#34;
                              
                             on 
-                            Monday, January 2, 2023
+                            Sunday, January 1, 2023
                             
                             
                             
@@ -214,27 +214,9 @@
                 post-container">
 
                 
-                <h2 id="service-mesh-vs-api-gateway">Service Mesh vs API Gateway</h2>
-<p>In the previous article about Service Mesh in <a href="https://medium.com/microservices-in-practice/service-mesh-for-microservices-2953109a3c9a"></a> ServiceMesh and API Gateway, in this article, I intend to discuss the use of Service Mesh and API Gateway further.</p>
-<p>In order to distinguish API Gateway from Service Mesh, let&rsquo;s first look at the key features of each.</p>
-<h2 id="api-gateway-exposing-the-service-as-a-managed-api-to-the-outside">API Gateway: Exposing the service as a managed API to the outside</h2>
-<p>The main purpose of using API Gateway is to expose micro-services as managed API （ to the external system ）. Therefore, the API or border services we developed at the API Gateway level provide business functions to the outside world.</p>
-<p>API/boundary services call downstream combinations or atomic microservices to provide business logic by combining/mixing multiple downstream microservices.</p>
-<p>When the API/Edge service calls downstream services, a reliable communication method is required, using a circuit breaker, overtime, load balance/fault transfer and other reliable modes. Therefore, most API Gateway solutions have built these features.</p>
-<p>API Gateway also built up support for the following characteristics, including: service discovery, analysis of （ visibility: performance indicators, monitoring, distributed logs, distributed call tracking ） and security.</p>
-<p>API Gateway and API manage other components of the ecosystem closely, such as: API market/shop, API release portal.</p>
-<h2 id="service-mesh-micro-service-network-communication-infrastructure">Service Mesh: Micro-service network communication infrastructure</h2>
-<p>
-  <img src="/images/banner/open-source-001.jpg" alt="">
-
-</p>
-<p>Now let&rsquo;s take a look at how Service Mesh is different.</p>
-<p>Service Mesh is a network communication infrastructure that can be used to strip the application layer&rsquo;s network communication function from your service code.</p>
-<p>Using Service Mesh, you don’t have to implement models for reliable communication such as circuit breaks, overtime, etc. in the service code. Similarly, Service Mesh also provides other functions such as service discovery and service visibility.</p>
-<p>
-  <img src="/images/404/404-cutie.jpg" alt="">
-
-</p>
+                <h2 id="evolution-of-micro-service-architecture">Evolution of micro service architecture</h2>
+<p>As a architectural model, micro-services divide complex systems into dozens or even hundreds of small services, each of which is responsible for achieving an independent business logic. These small services are easily understood and modified by a small team of software engineers, and bring flexibility in language and framework selection, shorten application development online time, and can be independently reduced and expanded according to different work loads and resource requirements.</p>
+<p>On the other hand, when the application is split into multiple micro-service processes, the method call within the process becomes a remote call between processes. Introduced the complexity of connecting, managing and monitoring a large number of services.</p>
 
 
                 
@@ -243,11 +225,11 @@
                 <hr>
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/post/service-mesh-and-istio/" data-toggle="tooltip" data-placement="top" title="Talk about the infrastructure in the micro-service architecture: Service Mesh and Istio">&larr;
-                            Previous Post</a>
-                    </li>
                     
+                    <li class="next">
+                        <a href="/post/service-mesh-vs-api-gateway/" data-toggle="tooltip" data-placement="top" title="Service Mesh and API Gateway&#39;s relationship discussion">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
                 

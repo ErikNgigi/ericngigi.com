@@ -1,6 +1,7 @@
 
-baseurl = "https://erikngigi.github.io/clean-white-website/"
-title = "Eric's Blog"
+# baseurl = "http://localhost/"
+baseurl = "http://erikngigi.github.io"
+title = "LinuxOps"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
@@ -8,15 +9,16 @@ disqusShortname = ""
 googleAnalytics = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
-hasCJKLanguage = true
+hasCJKLanguage = false
 publishDir = "docs"
+# relativeURLs = true
 
 [outputs]
 home = ["HTML", "RSS"]
 
 [params]
   header_image = "images/banner/open-source-001.jpg"
-  SEOTitle = "Eric's Blog"
+  SEOTitle = "Leading with Innovation"
   description = "Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi's blog, discovering a bigger world with you."
   keyword = "Eric, eric, Eric's Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps"
   slogan = "Building Tools for Humans"

@@ -30,10 +30,12 @@ API Gateway and API manage other components of the ecosystem closely, such as: A
 
 ## Service Mesh: Micro-service network communication infrastructure
 
+![](/images/banner/open-source-001.jpg)
+
 Now let's take a look at how Service Mesh is different.
 
 Service Mesh is a network communication infrastructure that can be used to strip the application layer's network communication function from your service code.
 
 Using Service Mesh, you don’t have to implement models for reliable communication such as circuit breaks, overtime, etc. in the service code. Similarly, Service Mesh also provides other functions such as service discovery and service visibility.
 
-![banner-01](/images/banner/chatgpt-terminal-images-003.jpg)
+![](/images/404/404-cutie.jpg)
