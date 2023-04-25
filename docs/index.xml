@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LinuxOps</title>
-    <link>https://erikngigi.github.io/clean-white-website/</link>
+    <link>https://erikngigi.github.io/</link>
     <description>Recent content on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/clean-white-website/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Service Mesh and API Gateway&#39;s relationship discussion</title>
-      <link>https://erikngigi.github.io/clean-white-website/post/service-mesh-vs-api-gateway/</link>
+      <link>https://erikngigi.github.io/post/service-mesh-vs-api-gateway/</link>
       <pubDate>Mon, 02 Jan 2023 09:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/clean-white-website/post/service-mesh-vs-api-gateway/</guid>
+      <guid>https://erikngigi.github.io/post/service-mesh-vs-api-gateway/</guid>
       <description>Service Mesh vs API Gateway In the previous article about Service Mesh in ServiceMesh and API Gateway, in this article, I intend to discuss the use of Service Mesh and API Gateway further.
 In order to distinguish API Gateway from Service Mesh, let&amp;rsquo;s first look at the key features of each.
 API Gateway: Exposing the service as a managed API to the outside The main purpose of using API Gateway is to expose micro-services as managed API （ to the external system ）.</description>
@@ -20,10 +20,10 @@ API Gateway: Exposing the service as a managed API to the outside The main purpo
     
     <item>
       <title>Talk about the infrastructure in the micro-service architecture: Service Mesh and Istio</title>
-      <link>https://erikngigi.github.io/clean-white-website/post/service-mesh-and-istio/</link>
+      <link>https://erikngigi.github.io/post/service-mesh-and-istio/</link>
       <pubDate>Sun, 01 Jan 2023 09:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/clean-white-website/post/service-mesh-and-istio/</guid>
+      <guid>https://erikngigi.github.io/post/service-mesh-and-istio/</guid>
       <description>Evolution of micro service architecture As a architectural model, micro-services divide complex systems into dozens or even hundreds of small services, each of which is responsible for achieving an independent business logic. These small services are easily understood and modified by a small team of software engineers, and bring flexibility in language and framework selection, shorten application development online time, and can be independently reduced and expanded according to different work loads and resource requirements.</description>
     </item>
     
