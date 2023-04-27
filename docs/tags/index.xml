@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on LinuxOps</title>
+    <link>https://erikngigi.github.io/tags/</link>
+    <description>Recent content in Tags on LinuxOps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github Pages</title>
+      <link>https://erikngigi.github.io/tags/github-pages/</link>
+      <pubDate>Wed, 26 Apr 2023 09:00:00 +0000</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/github-pages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://erikngigi.github.io/tags/hugo/</link>
+      <pubDate>Wed, 26 Apr 2023 09:00:00 +0000</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netlify</title>
+      <link>https://erikngigi.github.io/tags/netlify/</link>
+      <pubDate>Wed, 26 Apr 2023 09:00:00 +0000</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/netlify/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

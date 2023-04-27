@@ -29,7 +29,7 @@ Now lets get started. The tutorial outlined below contains the following steps:
 + Push Git Repository to GitHub
 + Deploy on Netlify
 
-Basic knowledge of Git with its command-line interface and GitHub/Netlify accounts are the prerequisites for this tutorial. As a host operating system, I will be using Ubuntu 18.04.
+Basic knowledge of Git with its command-line interface and GitHub/Netlify accounts are the prerequisites for this tutorial. As a host operating system, I will be using Archlinux.
 
 ## Install Hugo
 
@@ -55,3 +55,19 @@ I'm using erikngigi.github.io as a site name because I currently own the domain 
 You must first select a Hugo theme before continue. [Hugo](https://themes.gohugo.io/) has a profusion of themes to meet a variety of interests and needs. I choose the Clean White Hugo theme because it is blog-friendly, responsive, and multilingual. It also supports Disqus comments, Algolia search, and Google Analytics.
 
 Move to the site’s root directory and initialize a Git repository:
+
+```
+cd erikngigi.github.io
+git init
+```
+
+Then move to themes directory and add the theme in question as a Git submodule:
+
+```
+cd themes
+git submodule add https://github.com/
+```
+
+The git submodule add allows cloning of the theme repository to your project and keeping it as a subdirectory of the site repository. Also, it permits Netlify to recursively clone the site repository along with the theme repository when building and deploying the site.
+
+Copy the content of the themes/clean-white-theme/exampleSite/ folder to the site’s root directory, remove the default archetype and move back to the site’s root directory:

@@ -1,0 +1,27 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tops on LinuxOps</title>
+    <link>https://erikngigi.github.io/top/</link>
+    <description>Recent content in Tops on LinuxOps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://erikngigi.github.io/top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://erikngigi.github.io/top/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://erikngigi.github.io/top/about/</guid>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
+&lt;p&gt;I am a passionate Linux enthusiast and free software advocate with years of experience in developing and maintaining Linux systems. I have a deep understanding of the inner workings of the Linux kernel and have extensive knowledge of various Linux distributions, including Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
+&lt;p&gt;I am also skilled in various programming languages, including Python, Go, JAMstack and Bash scripting, and have used these languages to automate and streamline various processes in my DevOps career. My expertise in automation and infrastructure as code has allowed me to optimize system performance, reduce downtime, and increase scalability.&lt;/p&gt;
+&lt;p&gt;As a free software advocate, I firmly believe in the importance of open-source software and its ability to empower individuals and organizations to achieve their goals. I am committed to sharing my knowledge and promoting free software whenever possible.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re looking for a Linux expert who is passionate about free software and has the technical skills to make a real difference in your organization, then look no further. Let&amp;rsquo;s work together to build the perfect solution for your needs. You can find more detailed information about my professional experience in my &lt;a href=&#34;https://www.linkedin.com/in/erik-ngigi&#34;&gt;LinkedIn profile&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This blog is mostly about my software development/DevOps adventures. You can find here various how-tos, tutorials, and
+write-ups about my personal project experiences. In case you need to contact me, please email
+at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

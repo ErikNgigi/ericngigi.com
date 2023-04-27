@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://erikngigi.github.io/post/docker/getting-started-with-docker/</loc>
+    <lastmod>2023-04-26T14:33:39+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/</loc>
+    <lastmod>2023-04-26T14:33:39+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/post/</loc>
+    <lastmod>2023-04-26T14:33:39+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/tags/github-pages/</loc>
+    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/post/blogging/01-how-to-create-a-hugo-based-blog/</loc>
+    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/tags/hugo/</loc>
+    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/tags/netlify/</loc>
+    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/tags/</loc>
+    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/top/about/</loc>
+  </url><url>
+    <loc>https://erikngigi.github.io/categories/</loc>
+  </url><url>
+    <loc>https://erikngigi.github.io/top/</loc>
+  </url>
+</urlset>
