@@ -65,7 +65,7 @@ home = ["HTML", "RSS"]
   href =  "/notes/"
   [[params.addtional_menus]]
   title =  "About"
-  href =  "/about/"
+  href =  "/top/about/"
 
   [markup]
   [markup.tableOfContents]
