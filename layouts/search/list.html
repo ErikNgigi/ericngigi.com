@@ -1,3 +1,4 @@
+{{ define "main" }}
 <div class="container">
     <div class="row">
         <!-- USE SIDEBAR -->
@@ -9,9 +10,9 @@
             col-xs-12
             post-container
         ">
-            {{ partial "post_list.html" . }}
-            {{ partial "pagination.html" . }}
+            {{ partial "search.html" . }}
        	</div>
         {{ partial "sidebar.html" . }}
 	</div>
 </div>
+{{ end }}

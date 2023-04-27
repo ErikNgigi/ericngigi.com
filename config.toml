@@ -9,39 +9,32 @@ disqusShortname = ""
 googleAnalytics = ""
 preserveTaxonomyNames = true
 paginate = 5 #frontpage pagination
-hasCJKLanguage = false
+hasCJKLanguage = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 publishDir = "docs"
-# relativeURLs = true
 
 [outputs]
 home = ["HTML", "RSS"]
 
 [params]
-  header_image = "images/banner/open-source-001.jpg"
+  header_image = "images/banner/header-banner-image-01.jpg"
   SEOTitle = "Leading with Innovation"
   description = "Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi's blog, discovering a bigger world with you."
   keyword = "Eric, eric, Eric's Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps"
-  slogan = "Building Tools for Humans"
-
-  image_404 = "images/404/404-cutie.jpg"
+  slogan = "Leading with Innovation"
+  image_404 = "images/404/404-error-01.jpg"
   title_404 = "You came to the wasteland without knowledge :("
   omit_categories = false
 
   # Sidebar settings
   sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
-  # sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
   sidebar_avatar = "images/eric-ngigi-profile-picture.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-  featured_tags = false 
+  featured_tags = false
   featured_condition_size = 1
-
+  support_button = true
   friends = false
   bookmarks = false
   about_me = true
-
-  # Include any custom CSS and/or JS files, url or relative to /static folder
-  #custom_css = ["css/lightbox.css", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css", "css/main.css"]
-  #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
 
   [params.social]
   rss            = true 
@@ -65,13 +58,13 @@ home = ["HTML", "RSS"]
   #git           = "full profile url for git user"
 
   [[params.addtional_menus]]
-  title =  "ARCHIVE"
+  title =  "Archive"
   href =  "/archive/"
   [[params.addtional_menus]]
-  title =  "NOTES"
+  title =  "Notes"
   href =  "/notes/"
   [[params.addtional_menus]]
-  title =  "ABOUT"
+  title =  "About"
   href =  "/about/"
 
   [markup]

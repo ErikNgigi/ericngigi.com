@@ -1,0 +1,69 @@
+
+{{ define "main" }}
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+         	{{ .Content }}
+
+            </div>
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+              <!-- Featured Tags -->
+              {{ if .Site.Params.featured_tags }}
+              <section>
+                <hr>
+                <br>
+                  <h6>Featured Tags</h6>
+                  <div class="tags">
+                      {{ $featured_condition_size := .Site.Params.featured_condition_size }}
+                      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                      {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
+                      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">
+                          {{ $name }}
+                      </a>
+                      {{ end }}
+                      {{ end }}
+                  </div>
+              </section>
+              {{ end }}
+
+              <!-- Quick Links -->
+              <section>
+                <br>
+                <h6>Quick Links</h6>
+                  <ul class="list-inline">
+                      {{ range .Site.Params.bookmark_link }}
+                      <li><a target="_self" href="{{.href | relLangURL}}">{{.title}}</a></li>
+                      {{ end }}
+                  </ul>
+              </section>
+
+              <!-- Friends Blog -->
+              {{ if .Site.Params.friends }}
+              <section>
+                <br>
+                <h6>Friends</h6>
+                  <ul class="list-inline">
+                      {{ range .Site.Params.friend_link }}
+                      <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
+                      {{ end }}
+                  </ul>
+              </section>
+              {{ end }}
+            </div>
+        </div>
+    </div>
+</article>
+
+{{ end }}

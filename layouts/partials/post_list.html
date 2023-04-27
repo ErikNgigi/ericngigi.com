@@ -1,5 +1,10 @@
 <!-- post list -->
-<div data-pagefind-ignore="all">
+<!-- <h2>Hi, I am Cédric 👋</h2> -->
+<!-- <span class='emphasize'>Data Visualization Designer, Consultant and Instructor for Engaging and Effective Graphical Storytelling.</span><br><br> -->
+<!-- <span class='highlight'> -->
+<!--   <a href="https://cedricscherer.com/top/about"><span style='font-family:Canicule Display;'>&nbsp;&rarr;&nbsp;&nbsp;</span>Read more about me&emsp;</a><a href="https://calendly.com/cedricscherer/lets-meet" target="_blank"><span style='font-family:Canicule Display;'>&nbsp;&rarr;&nbsp;&nbsp;</span>Schedule a discovery call</a> -->
+<!-- </span><br><br> -->
+<!-- <hr> -->
 {{ range $index, $element := $.Paginator.Pages }}
 <div class="post-preview">
     <a href="{{ .Permalink }}">
@@ -20,24 +25,9 @@
         </div>
     </a>
     <p class="post-meta">
-    {{ if .Params.metadata }}
-        {{ range $index, $element := .Params.metadata }}
-            {{ if .link }}
-                <a href="{{ .link }}">{{ .text }}</a>
-            {{ else }}
-                {{ .text }}
-            {{ end }}
-        {{ end }}
-    {{ else }}
-        Posted by {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }} on {{ .Date.Format "Monday, January 2, 2006" }}
-        <!-- Don't show "Last Modified on" if update happened on the same day. -->
-        {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
-            <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }} 
-        {{ end }}
-    {{ end }}
+     <!-- Posted by {{ with .Params.author }}{{ . }} • {{ else }}{{ .Site.Title }}{{ end }} {{ .Date.Format "Monday, January 2, 2006" }} -->
+     {{ .Date.Format "Monday • January 2, 2006" }} 
     </p>
-
 </div>
 <hr>
 {{ end }}
-</div>
