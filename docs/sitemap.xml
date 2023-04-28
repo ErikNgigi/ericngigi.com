@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://erikngigi.github.io/post/linux/01-choose-a-linux-distribution/</loc>
+    <lastmod>2023-04-28T15:30:56+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/post/linux/02-getting-started-with-linux-cl/</loc>
+    <lastmod>2023-04-28T15:32:47+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/post/linux/03-configure-linux-environment/</loc>
+    <lastmod>2023-04-28T15:33:05+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/post/linux/04-beginner-network-configuration/</loc>
+    <lastmod>2023-04-28T15:33:30+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/post/linux/05-securing-linux-system/</loc>
+    <lastmod>2023-04-28T15:33:51+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/</loc>
+    <lastmod>2023-04-28T15:33:51+03:00</lastmod>
+  </url><url>
+    <loc>https://erikngigi.github.io/post/</loc>
+    <lastmod>2023-04-28T15:33:51+03:00</lastmod>
+  </url><url>
     <loc>https://erikngigi.github.io/tags/containerization/</loc>
     <lastmod>2023-04-27T14:33:39+03:00</lastmod>
   </url><url>
@@ -9,12 +30,6 @@
     <lastmod>2023-04-27T14:33:39+03:00</lastmod>
   </url><url>
     <loc>https://erikngigi.github.io/post/docker/getting-started-with-docker/</loc>
-    <lastmod>2023-04-27T14:33:39+03:00</lastmod>
-  </url><url>
-    <loc>https://erikngigi.github.io/</loc>
-    <lastmod>2023-04-27T14:33:39+03:00</lastmod>
-  </url><url>
-    <loc>https://erikngigi.github.io/post/</loc>
     <lastmod>2023-04-27T14:33:39+03:00</lastmod>
   </url><url>
     <loc>https://erikngigi.github.io/tags/</loc>

@@ -1,7 +1,6 @@
 ---
 title:       "How to Create a Hugo-Based Blog Hosted on GitHub Pages and Netlify: A Technical Guide"
-subtitle:    "A Step-by-Step Tutorial for Setting up a Blog with Hugo, GitHub, and Netlify."
-description: "This post provides a comprehensive guide on how to set up a blog using Hugo, GitHub, and Netlify. It outlines the advantages of using this combination and includes step-by-step instructions for creating and hosting a blog. Whether you're a seasoned developer or a beginner, this tutorial will help you start your journey as a blogger from a technical perspective."
+summary:    "A Step-by-Step Tutorial for Setting up a Blog with Hugo, GitHub, and Netlify."
 date:        2023-04-26 09:00:00
 author:      "Eric Ngigi"
 image:       "images/post/hugo/header-banner-image-02.jpg"

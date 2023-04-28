@@ -5,7 +5,70 @@
     <description>Recent content on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Apr 2023 14:33:39 +0300</lastBuildDate><atom:link href="https://erikngigi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Apr 2023 15:33:51 +0300</lastBuildDate><atom:link href="https://erikngigi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Choose a Linux Distribution</title>
+      <link>https://erikngigi.github.io/post/linux/01-choose-a-linux-distribution/</link>
+      <pubDate>Fri, 28 Apr 2023 15:30:56 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/01-choose-a-linux-distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Getting Started With Linux Command Line</title>
+      <link>https://erikngigi.github.io/post/linux/02-getting-started-with-linux-cl/</link>
+      <pubDate>Fri, 28 Apr 2023 15:32:47 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/02-getting-started-with-linux-cl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configure Linux Environment</title>
+      <link>https://erikngigi.github.io/post/linux/03-configure-linux-environment/</link>
+      <pubDate>Fri, 28 Apr 2023 15:33:05 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/03-configure-linux-environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beginner Network Configuration</title>
+      <link>https://erikngigi.github.io/post/linux/04-beginner-network-configuration/</link>
+      <pubDate>Fri, 28 Apr 2023 15:33:30 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/04-beginner-network-configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Securing Linux System</title>
+      <link>https://erikngigi.github.io/post/linux/05-securing-linux-system/</link>
+      <pubDate>Fri, 28 Apr 2023 15:33:51 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/05-securing-linux-system/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LinuxOps</title>
+      <link>https://erikngigi.github.io/</link>
+      <pubDate>Fri, 28 Apr 2023 15:33:51 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://erikngigi.github.io/post/</link>
+      <pubDate>Fri, 28 Apr 2023 15:33:51 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>containerization</title>
       <link>https://erikngigi.github.io/tags/containerization/</link>
@@ -30,24 +93,6 @@
       <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
       
       <guid>https://erikngigi.github.io/post/docker/getting-started-with-docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LinuxOps</title>
-      <link>https://erikngigi.github.io/</link>
-      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
-      
-      <guid>https://erikngigi.github.io/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Posts</title>
-      <link>https://erikngigi.github.io/post/</link>
-      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
-      
-      <guid>https://erikngigi.github.io/post/</guid>
       <description></description>
     </item>
     
@@ -164,7 +209,6 @@ at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.
       
       <guid>https://erikngigi.github.io/top/services/</guid>
       <description>&lt;h1 id=&#34;services-we-offer&#34;&gt;Services We Offer&lt;/h1&gt;
-&lt;p&gt;Tap into the knowledge of Cloudera support experts and achieve more uptime, better performance, faster case resolution, and proactive issue avoidance as well as prevention.&lt;/p&gt;
 </description>
     </item>
     

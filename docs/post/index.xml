@@ -5,7 +5,52 @@
     <description>Recent content in Posts on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Apr 2023 14:33:39 +0300</lastBuildDate><atom:link href="https://erikngigi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Apr 2023 15:33:51 +0300</lastBuildDate><atom:link href="https://erikngigi.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Choose a Linux Distribution</title>
+      <link>https://erikngigi.github.io/post/linux/01-choose-a-linux-distribution/</link>
+      <pubDate>Fri, 28 Apr 2023 15:30:56 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/01-choose-a-linux-distribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Getting Started With Linux Command Line</title>
+      <link>https://erikngigi.github.io/post/linux/02-getting-started-with-linux-cl/</link>
+      <pubDate>Fri, 28 Apr 2023 15:32:47 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/02-getting-started-with-linux-cl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configure Linux Environment</title>
+      <link>https://erikngigi.github.io/post/linux/03-configure-linux-environment/</link>
+      <pubDate>Fri, 28 Apr 2023 15:33:05 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/03-configure-linux-environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beginner Network Configuration</title>
+      <link>https://erikngigi.github.io/post/linux/04-beginner-network-configuration/</link>
+      <pubDate>Fri, 28 Apr 2023 15:33:30 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/04-beginner-network-configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Securing Linux System</title>
+      <link>https://erikngigi.github.io/post/linux/05-securing-linux-system/</link>
+      <pubDate>Fri, 28 Apr 2023 15:33:51 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/post/linux/05-securing-linux-system/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Getting Started With Docker</title>
       <link>https://erikngigi.github.io/post/docker/getting-started-with-docker/</link>
