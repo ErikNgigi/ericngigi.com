@@ -5,11 +5,29 @@
     <description>Recent content on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Apr 2023 14:33:39 +0300</lastBuildDate><atom:link href="https://erikngigi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Apr 2023 14:33:39 +0300</lastBuildDate><atom:link href="https://erikngigi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>containerization</title>
+      <link>https://erikngigi.github.io/tags/containerization/</link>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/containerization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://erikngigi.github.io/tags/docker/</link>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Getting Started With Docker</title>
       <link>https://erikngigi.github.io/post/docker/getting-started-with-docker/</link>
-      <pubDate>Wed, 26 Apr 2023 14:33:39 +0300</pubDate>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
       
       <guid>https://erikngigi.github.io/post/docker/getting-started-with-docker/</guid>
       <description></description>
@@ -18,7 +36,7 @@
     <item>
       <title>LinuxOps</title>
       <link>https://erikngigi.github.io/</link>
-      <pubDate>Wed, 26 Apr 2023 14:33:39 +0300</pubDate>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
       
       <guid>https://erikngigi.github.io/</guid>
       <description></description>
@@ -27,9 +45,27 @@
     <item>
       <title>Posts</title>
       <link>https://erikngigi.github.io/post/</link>
-      <pubDate>Wed, 26 Apr 2023 14:33:39 +0300</pubDate>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
       
       <guid>https://erikngigi.github.io/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://erikngigi.github.io/tags/</link>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualization</title>
+      <link>https://erikngigi.github.io/tags/virtualization/</link>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/virtualization/</guid>
       <description></description>
     </item>
     
@@ -104,15 +140,6 @@ git submodule add https://github.com/
     </item>
     
     <item>
-      <title>Tags</title>
-      <link>https://erikngigi.github.io/tags/</link>
-      <pubDate>Wed, 26 Apr 2023 09:00:00 +0000</pubDate>
-      
-      <guid>https://erikngigi.github.io/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://erikngigi.github.io/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -127,6 +154,17 @@ git submodule add https://github.com/
 write-ups about my personal project experiences. In case you need to contact me, please email
 at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.com&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://erikngigi.github.io/top/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://erikngigi.github.io/top/services/</guid>
+      <description>&lt;h1 id=&#34;services-we-offer&#34;&gt;Services We Offer&lt;/h1&gt;
+&lt;p&gt;Tap into the knowledge of Cloudera support experts and achieve more uptime, better performance, faster case resolution, and proactive issue avoidance as well as prevention.&lt;/p&gt;
 </description>
     </item>
     

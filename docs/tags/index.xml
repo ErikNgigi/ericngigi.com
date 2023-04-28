@@ -5,7 +5,34 @@
     <description>Recent content in Tags on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Apr 2023 14:33:39 +0300</lastBuildDate><atom:link href="https://erikngigi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>containerization</title>
+      <link>https://erikngigi.github.io/tags/containerization/</link>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/containerization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://erikngigi.github.io/tags/docker/</link>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualization</title>
+      <link>https://erikngigi.github.io/tags/virtualization/</link>
+      <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
+      
+      <guid>https://erikngigi.github.io/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Github Pages</title>
       <link>https://erikngigi.github.io/tags/github-pages/</link>
