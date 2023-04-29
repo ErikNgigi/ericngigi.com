@@ -1,16 +1,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tops on LinuxOps</title>
-    <link>https://erikngigi.github.io/top/</link>
+    <link>https://ericngigi.netlify.app/top/</link>
     <description>Recent content in Tops on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://erikngigi.github.io/top/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ericngigi.netlify.app/top/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://erikngigi.github.io/top/about/</link>
+      <link>https://ericngigi.netlify.app/top/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/top/about/</guid>
+      <guid>https://ericngigi.netlify.app/top/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
 &lt;p&gt;I am a passionate Linux enthusiast and free software advocate with years of experience in developing and maintaining Linux systems. I have a deep understanding of the inner workings of the Linux kernel and have extensive knowledge of various Linux distributions, including Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
 &lt;p&gt;I am also skilled in various programming languages, including Python, Go, JAMstack and Bash scripting, and have used these languages to automate and streamline various processes in my DevOps career. My expertise in automation and infrastructure as code has allowed me to optimize system performance, reduce downtime, and increase scalability.&lt;/p&gt;
@@ -25,10 +25,10 @@ at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.
     
     <item>
       <title></title>
-      <link>https://erikngigi.github.io/top/services/</link>
+      <link>https://ericngigi.netlify.app/top/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/top/services/</guid>
+      <guid>https://ericngigi.netlify.app/top/services/</guid>
       <description>&lt;h1 id=&#34;services-we-offer&#34;&gt;Services We Offer&lt;/h1&gt;
 </description>
     </item>

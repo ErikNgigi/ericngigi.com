@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on LinuxOps</title>
-    <link>https://erikngigi.github.io/tags/hugo/</link>
+    <link>https://ericngigi.netlify.app/tags/hugo/</link>
     <description>Recent content in Hugo on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Apr 2023 09:00:00 +0000</lastBuildDate><atom:link href="https://ericngigi.netlify.app/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Create a Hugo-Based Blog Hosted on GitHub Pages and Netlify: A Technical Guide</title>
-      <link>https://erikngigi.github.io/post/blogging/01-how-to-create-a-hugo-based-blog/</link>
+      <link>https://ericngigi.netlify.app/post/blogging/01-how-to-create-a-hugo-based-blog/</link>
       <pubDate>Wed, 26 Apr 2023 09:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/post/blogging/01-how-to-create-a-hugo-based-blog/</guid>
+      <guid>https://ericngigi.netlify.app/post/blogging/01-how-to-create-a-hugo-based-blog/</guid>
       <description>&lt;h1 id=&#34;how-to-create-a-hugo-based-blog-hosted-on-github-pages-and-netlify-a-technical-guide&#34;&gt;How to Create a Hugo-Based Blog Hosted on GitHub Pages and Netlify: A Technical Guide&lt;/h1&gt;
 &lt;p&gt;This post marks the beginning of a series where I will be sharing my experience and expertise on how to initiate a blogging journey from a technical perspective. The primary objective of this tutorial is to provide step-by-step guidance on how to create a blog from scratch, using Hugo, GitHub, and Netlify.&lt;/p&gt;
 &lt;p&gt;If you have decided to start blogging, but you are unsure of where to begin, it all depends on your technical abilities. If you are not technically inclined, it may be more feasible to opt for blogging platforms such as WordPress.com or Wix.com. On the other hand, if you possess software development skills or expertise in a related field, creating a blog using Hugo, GitHub, and Netlify is the ideal way to go. Why should you use the Hugo-GitHub-Netlify combination?&lt;/p&gt;
@@ -31,12 +31,12 @@
 &lt;h2 id=&#34;install-hugo&#34;&gt;Install Hugo&lt;/h2&gt;
 &lt;p&gt;According to the official Hugo documentation, it is not recommended to install Hugo using the pacman manager using the code below to the latest version of Hugo.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pacman -S hugo
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://erikngigi.github.io/images/post/hugo/installing-hugo.png&#34; alt=&#34;installing-hugo&#34;&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://ericngigi.netlify.app/images/post/hugo/installing-hugo.png&#34; alt=&#34;installing-hugo&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-new-site&#34;&gt;Creating a new site&lt;/h2&gt;
 &lt;p&gt;To create a new site, execute the hugo new site command in the site’s root directory, for example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new site &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#39;examplesite&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I&amp;rsquo;m using erikngigi.github.io as a site name because I currently own the domain name and intend to utilize it as a custom domain for my website. The freshly generated site has the proper framework, but no content or theme.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://erikngigi.github.io/images/post/hugo/creating-hugo-new-site.png&#34; alt=&#34;hugo-new-site&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://ericngigi.netlify.app/images/post/hugo/creating-hugo-new-site.png&#34; alt=&#34;hugo-new-site&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You must first select a Hugo theme before continue. &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo&lt;/a&gt; has a profusion of themes to meet a variety of interests and needs. I choose the Clean White Hugo theme because it is blog-friendly, responsive, and multilingual. It also supports Disqus comments, Algolia search, and Google Analytics.&lt;/p&gt;
 &lt;p&gt;Move to the site’s root directory and initialize a Git repository:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd erikngigi.github.io

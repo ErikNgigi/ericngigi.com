@@ -1,6 +1,5 @@
 
-# baseurl = "http://erikngigi.github.io"
-baseurl = "https://erikngigi.github.io"
+baseurl = "https://ericngigi.netlify.app"
 title = "LinuxOps"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"

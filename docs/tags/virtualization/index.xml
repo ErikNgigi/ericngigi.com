@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>virtualization on LinuxOps</title>
-    <link>https://erikngigi.github.io/tags/virtualization/</link>
+    <link>https://ericngigi.netlify.app/tags/virtualization/</link>
     <description>Recent content in virtualization on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Apr 2023 14:33:39 +0300</lastBuildDate><atom:link href="https://erikngigi.github.io/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Apr 2023 14:33:39 +0300</lastBuildDate><atom:link href="https://ericngigi.netlify.app/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started With Docker</title>
-      <link>https://erikngigi.github.io/post/docker/getting-started-with-docker/</link>
+      <link>https://ericngigi.netlify.app/post/docker/getting-started-with-docker/</link>
       <pubDate>Thu, 27 Apr 2023 14:33:39 +0300</pubDate>
       
-      <guid>https://erikngigi.github.io/post/docker/getting-started-with-docker/</guid>
+      <guid>https://ericngigi.netlify.app/post/docker/getting-started-with-docker/</guid>
       <description></description>
     </item>
     
