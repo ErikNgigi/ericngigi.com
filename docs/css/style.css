@@ -2,92 +2,92 @@
 
 @font-face {
   font-family: "Thrillers SemiBold";
-  src: url('css/fonts/ThrillersSemiBold/font.woff2') format('woff2'), url('../fonts/ThrillersSemiBold/font.woff') format('woff');
+  src: url('../fonts/ThrillersSemiBold/font.woff2') format('woff2'), url('../fonts/ThrillersSemiBold/font.woff') format('woff');
 }
 @font-face {
   font-family: "Thrillers Medium";
-  src: url('css/fonts/ThrillersMedium/font.woff2') format('woff2'), url('../fonts/ThrillersMedium/font.woff') format('woff');
+  src: url('../fonts/ThrillersMedium/font.woff2') format('woff2'), url('../fonts/ThrillersMedium/font.woff') format('woff');
 }
 @font-face {
   font-family: "Thrillers Regular";
-  src: url('css/fonts/ThrillersRegular/font.woff2') format('woff2'), url('../fonts/ThrillersRegular/font.woff') format('woff');
+  src: url('../fonts/ThrillersRegular/font.woff2') format('woff2'), url('../fonts/ThrillersRegular/font.woff') format('woff');
 }
 @font-face {
   font-family: "Thrillers Black";
-  src: url('css/fonts/ThrillersBlack/font.woff2') format('woff2'), url('../fonts/ThrillersBlack/font.woff') format('woff');
+  src: url('../fonts/ThrillersBlack/font.woff2') format('woff2'), url('../fonts/ThrillersBlack/font.woff') format('woff');
 }
 @font-face {
   font-family: "Thrillers Light";
-  src: url('css/fonts/ThrillersLight/font.woff2') format('woff2'), url('../fonts/ThrillersLight/font.woff') format('woff');
+  src: url('../fonts/ThrillersLight/font.woff2') format('woff2'), url('../fonts/ThrillersLight/font.woff') format('woff');
 }
 @font-face {
   font-family: "Thrillers Bold";
-  src: url('css/fonts/ThrillersBold/font.woff2') format('woff2'), url('../fonts/ThrillersBold/font.woff') format('woff');
+  src: url('../fonts/ThrillersBold/font.woff2') format('woff2'), url('../fonts/ThrillersBold/font.woff') format('woff');
 }
 @font-face {
   font-family: 'Cabinet Grotesk';
-  src: url('css/fonts/CabinetGroteskRegular/Cabinet rotesk-Regular.woff2') format('woff2'), url('../fonts/CabinetGroteskRegular/CabinetGrotesk-Regular.woff') format('woff');
+  src: url('../fonts/CabinetGroteskRegular/Cabinet rotesk-Regular.woff2') format('woff2'), url('../fonts/CabinetGroteskRegular/CabinetGrotesk-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Cabinet Grotesk';
-  src: url('css/fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff2') format('woff2'), url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff') format('woff');
+  src: url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff2') format('woff2'), url('../fonts/CabinetGroteskMedium/CabinetGrotesk-Medium.woff') format('woff');
   font-weight: 500;
 }
 @font-face {
     font-family: 'Cabinet Grotesk';
-    src: url('css/fonts/CabinetGroteskBold/CabinetGrotesk-Bold.woff2') format('woff2'), url('../fonts/CabinetGroteskBold/CabinetGrotesk-Bold.woff') format('woff');
+    src: url('../fonts/CabinetGroteskBold/CabinetGrotesk-Bold.woff2') format('woff2'), url('../fonts/CabinetGroteskBold/CabinetGrotesk-Bold.woff') format('woff');
     font-weight: 600;
 }
 @font-face {
     font-family: 'Cabinet Grotesk';
-    src: url('css/fonts/CabinetGroteskExtraBold/CabinetGrotesk-ExtraBold.woff2') format('woff2'), url('../fonts/CabinetGroteskExtraBold/CabinetGrotesk-ExtraBold.woff') format('woff');
+    src: url('../fonts/CabinetGroteskExtraBold/CabinetGrotesk-ExtraBold.woff2') format('woff2'), url('../fonts/CabinetGroteskExtraBold/CabinetGrotesk-ExtraBold.woff') format('woff');
     font-weight: 800;
 }
 @font-face {
     font-family: 'Cabinet Grotesk';
-    src: url('css/fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff2') format('woff2'), url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff') format('woff');
+    src: url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff2') format('woff2'), url('../fonts/CabinetGroteskBlack/CabinetGrotesk-Black.woff') format('woff');
     font-weight: 900;
 }
 @font-face {
     font-family: 'Input Mono';
-    src: url("css/fonts/InputMono-Regular.ttf") format("truetype");
+    src: url("../fonts/InputMono-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: 'Input Mono';
-    src: url("css/fonts/InputMono-Bold.ttf") format("truetype");
+    src: url("../fonts/InputMono-Bold.ttf") format("truetype");
     font-weight:bold;
 }
 @font-face {
     font-family: 'Input Mono';
-    src: url("css/fonts/InputMono-Italic.ttf") format("truetype");
+    src: url("../fonts/InputMono-Italic.ttf") format("truetype");
     font-style: italic;
 }
 @font-face {
     font-family: 'Input Mono Condensed';
-    src: url("css/fonts/InputMonoCondensed-Regular.ttf") format("truetype");
+    src: url("../fonts/InputMonoCondensed-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: 'Input Mono Condensed';
-    src: url("css/fonts/InputMonoCondensed-Bold.ttf") format("truetype");
+    src: url("../fonts/InputMonoCondensed-Bold.ttf") format("truetype");
     font-weight:bold;
 }
 @font-face {
     font-family: 'Input Mono Condensed';
-    src: url("css/fonts/InputMonoCondensed-Italic.ttf") format("truetype");
+    src: url("../fonts/InputMonoCondensed-Italic.ttf") format("truetype");
     font-style: italic;
 }
 @font-face {
     font-family: 'Input Sans';
-    src: url("css/fonts/InputSansCondensed-Light.ttf") format("truetype");
+    src: url("../fonts/InputSansCondensed-Light.ttf") format("truetype");
 }
 @font-face {
     font-family: 'Input Sans';
-    src: url("css/fonts/InputSans-Medium.ttf") format("truetype");
+    src: url("../fonts/InputSans-Medium.ttf") format("truetype");
     font-weight:bold;
 }
 @font-face {
     font-family: 'Input Sans';
-    src: url("css/fonts/InputSansCondensed-LightItalic.ttf") format("truetype");
+    src: url("../fonts/InputSansCondensed-LightItalic.ttf") format("truetype");
     font-style: italic;
 }
 
@@ -108,7 +108,7 @@
   color:#8a8a8a!important
 }
 .sidebar-container a:hover,.sidebar-container a:active{
-  color:#28a87d!important
+  color:#6699CC!important
 }
 .sidebar-container .tags a{
   border-color:#8a8a8a;
@@ -117,7 +117,7 @@
   margin-bottom:3px;
 }
 .sidebar-container .tags a:hover,.sidebar-container .tags a:active{
-  border-color:#28a87d
+  border-color:#6699CC
 }
 .sidebar-container .short-about img{
   width:90%;
@@ -195,7 +195,7 @@ a{
   color:#000
 }
 a:hover,a:focus{
-  color:#28a87d
+  color:#6699CC
 }
 a img:hover,a img:focus{
   cursor:zoom-in
@@ -263,7 +263,7 @@ pre code{
   font-family:'Input Mono Condensed','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
 }
 .post-container a{
-  color:#28a87d;
+  color:#6699CC;
 }
 .post-container a:hover,.post-container a:focus{
   color:#34cf9b;
@@ -454,13 +454,13 @@ pre code{
     color:#404040;
   }
   .navbar-custom.is-fixed .navbar-brand:hover,.navbar-custom.is-fixed .navbar-brand:focus{
-    color:#28a87d;
+    color:#6699CC;
   }
   .navbar-custom.is-fixed .nav li a{
     color:#404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,.navbar-custom.is-fixed .nav li a:focus{
-    color:#28a87d;
+    color:#6699CC;
   }
   .navbar-custom.is-visible{
     -webkit-transform:translate3d(0,100%,0);
@@ -588,7 +588,7 @@ pre code{
 }
 .post-preview>a:hover,.post-preview>a:focus{
   text-decoration:none;
-  color:#28a87d;
+  color:#6699CC;
 }
 .post-preview>a>.post-title{
   font-size:2.8rem;
@@ -606,7 +606,7 @@ pre code{
 }
 .post-preview>.post-meta{
   font-family:'Cabinet Grotesk','Arial', sans-serif;
-  color:#28a87d;
+  color:#6699CC;
   font-size:1.45rem;
   font-weight:600;
   margin-top:.5em;
@@ -616,7 +616,7 @@ pre code{
   color:#404040;
 }
 .post-preview>.post-meta>a:hover,.post-preview>.post-meta>a:focus{
-  color:#28a87d;
+  color:#6699CC;
   text-decoration:underline;
 }
 
@@ -685,7 +685,7 @@ footer .copyright a{
   color:#208865;
 }
 footer .copyright a:hover,footer .copyright a:focus{
-  color:#28a87d;
+  color:#6699CC;
 }
 .floating-label-form-group{
   font-size:1.4rem;
@@ -730,7 +730,7 @@ footer .copyright a:hover,footer .copyright a:focus{
   opacity:1;
 }
 .floating-label-form-group-with-focus label{
-  color:#28a87d;
+  color:#6699CC;
 }
 form .row:first-child .floating-label-form-group{
   border-top:.1rem solid #eee;
@@ -750,8 +750,8 @@ form .row:first-child .floating-label-form-group{
   padding:25px 35px;
 }
 .btn-default:hover,.btn-default:focus{
-  background-color:#28a87d;
-  border:1px solid #28a87d;
+  background-color:#6699CC;
+  border:1px solid #6699CC;
   color:#fff;
 }
 .pager{
@@ -780,8 +780,8 @@ color:gray;
 }
 .pager li>a:hover,.pager li>a:focus{
   color:#fff;
-  background-color:#28a87d;
-  border:1px solid #28a87d;
+  background-color:#6699CC;
+  border:1px solid #6699CC;
 }
 .pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span{
   color:gray;
@@ -791,12 +791,12 @@ color:gray;
 ::-moz-selection{
   color:#fff;
   text-shadow:none;
-  background:#28a87d;
+  background:#6699CC;
 }
 ::selection{
   color:#fff;
   text-shadow:none;
-  background:#28a87d;
+  background:#6699CC;
 }
 img::selection{
   color:#fff;
@@ -807,7 +807,7 @@ img::-moz-selection{
   background:0 0;
 }
 body{
-  webkit-tap-highlight-color:#28a87d;
+  webkit-tap-highlight-color:#6699CC;
 }
 .tags{
   margin-right:.1rem;
@@ -864,7 +864,7 @@ body{
   background:#D6D6D6;
 }
 #tag_cloud a:hover,#tag_cloud .tag:hover,#tag_cloud a:active,#tag_cloud .tag:active{
-  background-color:#28a87d!important;
+  background-color:#6699CC!important;
 }
 
 @media only screen and (min-width:768px){
@@ -887,7 +887,7 @@ body{
   margin-top:0;
 }
 .listing-seperator{
-  color:#28a87d;
+  color:#6699CC;
   font-size:2.1rem!important;
 }
 .listing-seperator::before{
