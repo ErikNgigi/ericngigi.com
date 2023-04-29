@@ -1,6 +1,7 @@
 # erikngigi.github.io
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9575972c-8751-4b3c-addf-7e9da231b9d6/deploy-status)](https://app.netlify.com/sites/ericngigi/deploys)
 
 This is a static website built using the Hugo Clean White theme. The Clean White theme is a minimalistic and responsive theme that is perfect for creating simple and elegant websites. This readme file provides a brief overview of how to use and customize the Hugo Clean White theme.
 

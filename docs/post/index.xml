@@ -5,7 +5,7 @@
     <description>Recent content in Posts on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Apr 2023 15:33:51 +0300</lastBuildDate><atom:link href="https://ericngigi.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 09:48:11 +0300</lastBuildDate><atom:link href="https://ericngigi.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Choose a Linux Distribution</title>
       <link>https://ericngigi.netlify.app/post/linux/01-choose-a-linux-distribution/</link>
@@ -49,6 +49,727 @@
       
       <guid>https://ericngigi.netlify.app/post/linux/05-securing-linux-system/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>07 Arch Linux Tutorial</title>
+      <link>https://ericngigi.netlify.app/post/linux/07-arch-linux-tutorial/</link>
+      <pubDate>Sat, 29 Apr 2023 09:48:11 +0300</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/post/linux/07-arch-linux-tutorial/</guid>
+      <description>&lt;p&gt;In post installation we will be using a lot of &lt;code&gt;sudo&lt;/code&gt;. I&amp;rsquo;m not responsible if you broke your newly installed system.&lt;/p&gt;
+&lt;h3 id=&#34;connect-to-the-internet&#34;&gt;Connect to the internet&lt;/h3&gt;
+&lt;p&gt;We will be downloading stuff so we need an internet connection! So set-up your connection first!&lt;/p&gt;
+&lt;h3 id=&#34;check-for-updates&#34;&gt;Check for Updates&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s recommended to check for updates first before installing anything so:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -Syu
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;display-server-and-protocol&#34;&gt;Display Server and Protocol&lt;/h3&gt;
+&lt;p&gt;We need to install a display server, a protocol or both. Normally, your desktop environment or window manager of choice will automatically install these as a dependency. But for this guide&amp;rsquo;s sake we will install &lt;code&gt;X&lt;/code&gt; server:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S xorg-server xorg-xrdb xorg-xinit xorg-xrandr xorg-xev xorg-xdpyinfo xorg-xprop
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you&amp;rsquo;re planning to use a window manager like &lt;code&gt;awesome&lt;/code&gt;, &lt;code&gt;bspwm&lt;/code&gt; or &lt;code&gt;i3&lt;/code&gt;, you should install X. While if you&amp;rsquo;re planning to use &lt;code&gt;sway&lt;/code&gt;, then wayland it is. If &lt;code&gt;GNOME&lt;/code&gt;, you can install both. Again, your environment of choice will automatically install these as its dependencies.&lt;/p&gt;
+&lt;h4 id=&#34;video-drivers&#34;&gt;Video Drivers&lt;/h4&gt;
+&lt;p&gt;After installing the graphical server, we need to install the video drivers. I&amp;rsquo;m only using an integrated &lt;code&gt;AMD&lt;/code&gt; graphics card.&lt;/p&gt;
+&lt;p&gt;For AMD graphics. Read the arch wiki on &lt;a href=&#34;https://wiki.archlinux.org/title/ATI&#34;&gt;ATI&lt;/a&gt; before procedding any futher.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S xf86-video-ati vulkan-icd-loader libvdpau-va-gl  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For Intel Graphics. Read the arch wiki on &lt;a href=&#34;https://wiki.archlinux.org/title/Intel_graphics&#34;&gt;Intel&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S xf86-video-intel vulkan-intel vulkan-icd-loader libva-intel-driver
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add your (kernel) graphics driver to your initramfs. For example, if using &lt;code&gt;ati&lt;/code&gt; add &lt;code&gt;radeon&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim /etc/mkinitcpio.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then add &lt;code&gt;radeon&lt;/code&gt; to the &lt;code&gt;MODULES&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;MODULES=(radeon ...)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Generate the mkinitcpio file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mkinitcpio -p linux-lts
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;audio-drivers&#34;&gt;Audio Drivers&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S alsa-utils alsa-plugins alsa-firmware
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;file-system-tools&#34;&gt;File System Tools&lt;/h4&gt;
+&lt;p&gt;File system tools&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S unrar unzip p7zip unarchiver gvfs-mtp libmtp ntfs-3g android-udev mtpfs xdg-user-dirs
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;xdg-user-dirs&lt;/code&gt; is a tool to help manage &amp;ldquo;well known&amp;rdquo; user directories like the desktop folder and the music folder. This will be automatically run on your next log in. Though you can manually generate XDG user directories by:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;xdg-user-dirs-update
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;git&#34;&gt;Git&lt;/h4&gt;
+&lt;p&gt;If you didn&amp;rsquo;t include &lt;code&gt;git&lt;/code&gt; on &lt;code&gt;pacstrap&lt;/code&gt; earlier, it&amp;rsquo;s time to install it now. This tool will come in handy later:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S git
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;aur-helper&#34;&gt;AUR Helper&lt;/h4&gt;
+&lt;p&gt;The &amp;ldquo;later&amp;rdquo; is now, old man. We will now install an AUR helper, &lt;code&gt;yay&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Clone &lt;code&gt;yay&lt;/code&gt; from the AUR using &lt;code&gt;git&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone https://aur.archlinux.org/yay.git
+cd yay/
+makepkg -sri
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;missing-kernel-modules&#34;&gt;Missing Kernel Modules&lt;/h4&gt;
+&lt;p&gt;If you noticed, there&amp;rsquo;s a warning message while running &lt;code&gt;mkinitcpio -p linux&lt;/code&gt;, fix this by installing these firmwares:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yay -S wd719x-firmware aic94xx-firmware --removemake --noconfirm
+mkinitcpio -p linux-lts 
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;desktop-environment-and-window-manager&#34;&gt;Desktop Environment and Window Manager&lt;/h4&gt;
+&lt;p&gt;Install your preferred desktop environment or window manager.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Binary Space Partitioning Window Manager(bspwm)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I install bspwm together with sxhkd that serves as the X hot key daemon.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S bspwm sxhkd
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Picom as the compositor:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S picom
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Rofi as the application launcher:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S rofi
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;terminal-emulator&#34;&gt;Terminal Emulator&lt;/h4&gt;
+&lt;p&gt;After installing an environment, we need a terminal emulator. Every linux user&amp;rsquo;s first partner. Note that we&amp;rsquo;re still on the &lt;code&gt;TTY&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install your preferred terminal emulator.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m an &lt;code&gt;alacritty&lt;/code&gt; guy. In this guide, I&amp;rsquo;ll include a guide to set-up &lt;code&gt;alacritty&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alacritty&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I always prefer to setup alacritty together with alacritty-themes. This enables me to change up alacritty&amp;rsquo;s themes from time to time:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yay -S alacritty alacritty-themes
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;gtk&#34;&gt;GTK&lt;/h4&gt;
+&lt;p&gt;GTK, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces.&lt;/p&gt;
+&lt;p&gt;If not yet installed:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S gtk3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Install GTK engines&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S gtk-engine-murrine gtk-engines gnome-theme-extra
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;file-managers&#34;&gt;File Managers&lt;/h4&gt;
+&lt;p&gt;I prefer to use a light-weight file manager such as &lt;code&gt;thunar&lt;/code&gt; for the graphical file manager and &lt;code&gt;nnn&lt;/code&gt; for the CLI file manager.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S thunar nnn
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;cli-based-text-editor&#34;&gt;CLI-based Text Editor&lt;/h4&gt;
+&lt;p&gt;&amp;lsquo;Nvchad&amp;rsquo; is my prefered choice for an IDE. Read the &lt;a href=&#34;https://nvchad.github.io/&#34;&gt;NVchad&lt;/a&gt; documentation before installation.&lt;/p&gt;
+&lt;p&gt;Ensure you have installed &lt;code&gt;neovim&lt;/code&gt; before you can install Nvchad.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S neovim
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;gui-based-text-editors&#34;&gt;GUI-based Text Editors&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;vim&lt;/code&gt; is my text editor of choice, but sublime Text 3 is my go-to GUI text editor as it&amp;rsquo;s lighter than the &lt;del&gt;bloated&lt;/del&gt; chromium-based counterparts like &lt;code&gt;atom&lt;/code&gt; and &lt;code&gt;vscode&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yay -S sublime-text-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note that Sublime is not &amp;ldquo;free&amp;rdquo; and needs a license.&lt;/p&gt;
+&lt;h4 id=&#34;web-browsers&#34;&gt;Web browsers&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;Brave-browser&lt;/code&gt; is my trusted web browser.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yay -S brave-bin
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;reboot-then-login&#34;&gt;Reboot then Login&lt;/h4&gt;
+&lt;p&gt;The system&amp;rsquo;s fully functional! You can now login to you system with all the configuration we&amp;rsquo;ve done so far.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+&lt;h4 id=&#34;power-management-for-laptops&#34;&gt;Power Management for Laptops&lt;/h4&gt;
+&lt;p&gt;TLP brings you the benefits of advanced power management for Linux without the need to understand every technical detail. &lt;strong&gt;This is for laptops.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Install and enable it now:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S tlp
+systemctl enable --now tlp.service
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Install &lt;code&gt;upower&lt;/code&gt;, &lt;code&gt;acpid&lt;/code&gt; and &lt;code&gt;acpi_call&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S acpid acpi_call upower
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enable acpid&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl enable acpid.service
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;fonts&#34;&gt;Fonts&lt;/h4&gt;
+&lt;p&gt;Improve fonts.&lt;/p&gt;
+&lt;p&gt;Install these fonts. Inter will be my system font no matter what the environment.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S ttf-dejavu ttf-liberation noto-fonts noto-fonts-emoji ttf-roboto ttf-jetbrains-mono
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yay -S ttf-monaco
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Additional fonts to support Asian characters&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S noto-fonts-cjk noto-fonts-extra
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enable font presets by creating symbolic links:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
+ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
+ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The above will disable embedded bitmap for all fonts, enable sub-pixel RGB rendering, and enable the LCD filter which is designed to reduce colour fringing when subpixel rendering is used.&lt;/p&gt;
+&lt;p&gt;For font consistency, all applications should be set to use the &lt;code&gt;serif&lt;/code&gt;, &lt;code&gt;sans-serif&lt;/code&gt;, and &lt;code&gt;monospace&lt;/code&gt; aliases, which are mapped to particular fonts by fontconfig.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;/etc/fonts/local.conf&lt;/code&gt;, then add:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;!DOCTYPE fontconfig SYSTEM &amp;#34;fonts.dtd&amp;#34;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;fontconfig&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;match&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;edit&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;mode=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;prepend&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;family&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Inter&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;match&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;target=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;pattern&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;test&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;qual=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;any&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;family&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;serif&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;edit&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;family&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;mode=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;assign&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;binding=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;same&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Noto Serif&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;match&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;target=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;pattern&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;test&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;qual=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;any&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;family&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;sans-serif&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;edit&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;family&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;mode=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;assign&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;binding=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;same&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Noto Sans&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;match&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;target=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;pattern&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;test&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;qual=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;any&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;family&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;monospace&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/test&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;edit&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;name=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;family&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;mode=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;assign&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;binding=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;same&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;string&amp;gt;&lt;/span&gt;Noto Mono&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/edit&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/fontconfig&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Update and set your font of choice on settings.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://ericngigi.netlify.app/post/linux/06-arch-linux-tutorial/&#34;&gt;Arch Installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>06 Arch Linux Tutorial</title>
+      <link>https://ericngigi.netlify.app/post/linux/06-arch-linux-tutorial/</link>
+      <pubDate>Sat, 29 Apr 2023 09:45:37 +0300</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/post/linux/06-arch-linux-tutorial/</guid>
+      <description>&lt;p&gt;This is my personal guide. I recommend that you read the official &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34;&gt;wiki&lt;/a&gt;. The purpose of this guide is to speed up my personal install of &lt;code&gt;Archlinux&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;why-archlinux&#34;&gt;Why Archlinux&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;Archlinux&lt;/code&gt; distribution gives you the freedom to &lt;code&gt;do it yourself&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt; that your kernel and initramfs are on the root file system, recovery after a crash may prove troublesome.&lt;/p&gt;
+&lt;p&gt;They are many ways you can layout your partitions, I will focus on:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Type of hardware (&lt;em&gt;BIOS&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The bootloader (&lt;em&gt;GRUB&lt;/em&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I use my laptop for technical work, so the order,the type and the size of partitions matter for my use case.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I am just a speed enthusiast, I like High Performance Computing and why not try to learn by doing it!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &lt;strong&gt;MAIN&lt;/strong&gt; reason of installing vanilla linux(&lt;code&gt;Archlinux&lt;/code&gt;) are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;No Bloatware&lt;/strong&gt; - Imagine &lt;code&gt;4GB&lt;/code&gt; image for Windows, &lt;code&gt;2GB+&lt;/code&gt; for Fedora or Ubuntu but Arch Linux approx. &lt;code&gt;700MB&lt;/code&gt;. Softwares preinstalled that you will never use.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance &amp;amp; Security&lt;/strong&gt; - Other distributions contain spyware you didn&amp;rsquo;t install and are working in the background slowing your machine and making you quite uncomfortable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning&lt;/strong&gt; - A better understanding of Linux.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Minimalism&lt;/strong&gt; - Keep It Simple Stupid (KISS)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pre-installation&#34;&gt;Pre-installation&lt;/h2&gt;
+&lt;p&gt;Before installing, make sure to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read the &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34;&gt;wiki&lt;/a&gt;. It is advisable to read that instead. I wrote this guide for myself&lt;/li&gt;
+&lt;li&gt;Acquire an installation image from &lt;a href=&#34;https://www.archlinux.org/download&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Verify signature.&lt;/li&gt;
+&lt;li&gt;Prepare an installation medium.&lt;/li&gt;
+&lt;li&gt;Boot the live environment.&lt;/li&gt;
+&lt;li&gt;Basic understanding of &lt;a href=&#34;https://www.openvim.com/&#34;&gt;Vim&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;create-an-installation-medium&#34;&gt;Create an Installation Medium&lt;/h2&gt;
+&lt;p&gt;First we need to create an installation medium to boot from:&lt;/p&gt;
+&lt;p&gt;On Linux using the &lt;code&gt;dd&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dd if=path_to_arch_iso of=/dev/sd* status=progress
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dd&lt;/code&gt; CLI utility for converting and copying files.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;if&lt;/code&gt; the input file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;of&lt;/code&gt; the output file&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;progress&lt;/code&gt; see periodic transfer statistics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;installation-medium-boot&#34;&gt;Installation Medium Boot&lt;/h1&gt;
+&lt;h2 id=&#34;change-font-settings&#34;&gt;Change Font Settings&lt;/h2&gt;
+&lt;p&gt;If the terminal font is too small, which can happen if you have a high resolution display, then execute the following command:&lt;/p&gt;
+&lt;p&gt;Set the font size to:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;setfont lat4a-19 -m 8859-2
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;connect-to-the-internet&#34;&gt;Connect to the internet&lt;/h2&gt;
+&lt;p&gt;We need to make sure that we are connected to the internet to be able to install Arch Linux &lt;code&gt;base&lt;/code&gt; and &lt;code&gt;linux&lt;/code&gt; packages. Let’s see the names of our interfaces.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ip addr
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should see something like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1: lo: &amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+		link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eno1: &amp;lt;NO-CARRIER,BROADCAST,MULTICAST,UP&amp;gt; mtu 1500 qdisc fq_codel state DOWN mode DEFAULT group default qlen 1000
+		link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+3: wlo1: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP mode DORMANT group default qlen 1000
+		link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff permaddr 00:00:00:00:00:00
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;eno1&lt;/code&gt; is the wired interface.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wlo1&lt;/code&gt; is the wireless interface.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wired-connection&#34;&gt;Wired Connection&lt;/h3&gt;
+&lt;p&gt;If you are on a wired connection, you can enable your wired interface by systemctl start &lt;code&gt;dhcpcd@&amp;lt;interface&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl start dhcpcd@eno1
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;wireless-connection&#34;&gt;Wireless Connection&lt;/h3&gt;
+&lt;p&gt;If you are on a laptop, you can connect to a wireless access point using &lt;code&gt;iwctl&lt;/code&gt; command from &lt;code&gt;iwd&lt;/code&gt;. Note that it&amp;rsquo;s already enabled by default. Also make sure the wireless card is not blocked with &lt;code&gt;rfkill&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To show current status:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;rfkill list
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If the card is hard-blocked, use the hardware button (switch) to unblock it. If the card is not hard-blocked but soft-blocked, use the following command:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;rfkill unblock wifi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Scan for network.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;iwctl station wlo1 scan
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Get the list of scanned networks by:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;iwctl station wlo1 get-networks
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Connect to your network.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;iwctl -P &amp;#34;PASSPHRASE&amp;#34; station wlo1 connect &amp;#34;NETWORKNAME&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Ping the Goggle DNS servers to make sure we are online:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ping -c 5 8.8.8.8
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-c 5&lt;/code&gt;    number of times to ping.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;8.8.8.8&lt;/code&gt; Google DNS server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you receive Unknown host or Destination host unreachable response, means you are not online yet. Review your network configuration and redo the steps above.&lt;/p&gt;
+&lt;h2 id=&#34;update-the-system-clock&#34;&gt;Update the system clock&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;timedatectl&lt;/code&gt; to ensure the system clock is accurate:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;timedatectl set-ntp true
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To check the service status, use &lt;code&gt;timedatectl status&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;partition-the-disks&#34;&gt;Partition the disks&lt;/h2&gt;
+&lt;p&gt;When recognized by the live system, disks are assigned to a block device such as &lt;code&gt;/dev/sda&lt;/code&gt;, &lt;code&gt;/dev/nvme0n1&lt;/code&gt; or &lt;code&gt;/dev/mmcblk0&lt;/code&gt;. To identify these devices, use lsblk or fdisk.  The most common main drive is &lt;code&gt;sda&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;lsblk
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Results ending in &lt;code&gt;rom&lt;/code&gt;, &lt;code&gt;loop&lt;/code&gt; or &lt;code&gt;airoot&lt;/code&gt; may be ignored.&lt;/p&gt;
+&lt;p&gt;In this guide, I&amp;rsquo;ll create a one type of partition for the drive. A normal installation that is unencrypted:&lt;/p&gt;
+&lt;h3 id=&#34;unencrypted-filesystem&#34;&gt;Unencrypted filesystem&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;NOTE THE FOLLOWING STEPS WILL COMPLETELY FORMAT YOUR DISK NODES. ENSURE YOU&amp;rsquo;VE READ THE WIKI AND UNDERSTAND THE STEPS BELOW BEFORE EXECUTION&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Let’s clean up our main drive to create new partitions for our installation. And yeah, in this guide, we will use &lt;code&gt;/dev/sda&lt;/code&gt; as our disk.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;fdisk /dev/sda 
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;p&lt;!-- raw HTML omitted --&gt; to list all partitions.&lt;/p&gt;
+&lt;p&gt;Now we should be presented with our main drive showing the partition number, partition size, partition type, and partition name.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;d&lt;!-- raw HTML omitted --&gt; to &lt;strong&gt;delete a partition&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Input the number of the partition you want deleted. &lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt; or &lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;w&lt;!-- raw HTML omitted --&gt; to write changes to the disk.&lt;/p&gt;
+&lt;p&gt;Note that this will &lt;em&gt;&lt;strong&gt;format&lt;/strong&gt;&lt;/em&gt; your entire drive so your data will be gone. &lt;strong&gt;THIS CANNOT BE UNDONE&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;p&lt;!-- raw HTML omitted --&gt; to list all partitions.&lt;/p&gt;
+&lt;p&gt;Now we should be presented with our main drive showing the partition number, partition size, partition type, and partition name.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create the &lt;code&gt;swap&lt;/code&gt; partition&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; to create a new partition for the swap.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;p&lt;!-- raw HTML omitted --&gt; to select &lt;code&gt;primary&lt;/code&gt; partition for the swap.&lt;/li&gt;
+&lt;li&gt;Just hit enter to select the default option for the first sector.&lt;/li&gt;
+&lt;li&gt;For the last sector I always assign mine to &lt;!-- raw HTML omitted --&gt;+8G&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;t&lt;!-- raw HTML omitted --&gt; to change the partition.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;82&lt;!-- raw HTML omitted --&gt; to change partition to &lt;code&gt;Linux swap / Solaris&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;size-of-swap-partition&#34;&gt;Size of Swap Partition.&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;RAM Installed&lt;/th&gt;
+&lt;th&gt;Swap Space&lt;/th&gt;
+&lt;th&gt;Swap Space With Hibernation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Less than 2GB&lt;/td&gt;
+&lt;td&gt;2X RAM&lt;/td&gt;
+&lt;td&gt;3X RAM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2GB - 8GB&lt;/td&gt;
+&lt;td&gt;=RAM&lt;/td&gt;
+&lt;td&gt;2X RAM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8GB - 64GB&lt;/td&gt;
+&lt;td&gt;4G to 0.5X RAM&lt;/td&gt;
+&lt;td&gt;1.5X RAM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;gt;64GB&lt;/td&gt;
+&lt;td&gt;Minimum 4GB&lt;/td&gt;
+&lt;td&gt;Hibernation not recommended&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create the &lt;code&gt;root&lt;/code&gt; partition&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; to create a new root partition.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;p&lt;!-- raw HTML omitted --&gt; to select &lt;code&gt;primary&lt;/code&gt; for the root partition.&lt;/li&gt;
+&lt;li&gt;Hit enter to select the default option for the first sector.&lt;/li&gt;
+&lt;li&gt;Hit enter to select last sector and input your size for the root partition. &lt;!-- raw HTML omitted --&gt;+150G&lt;!-- raw HTML omitted --&gt;.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;t&lt;!-- raw HTML omitted --&gt; to change the partition.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;83&lt;!-- raw HTML omitted --&gt; to change partition to &lt;code&gt;Linux&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create the &lt;code&gt;home&lt;/code&gt; partition&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; to create a new home partition.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;p&lt;!-- raw HTML omitted --&gt; to select &lt;code&gt;primary&lt;/code&gt; for the home partition.&lt;/li&gt;
+&lt;li&gt;Hit enter to select the default option for the first sector.&lt;/li&gt;
+&lt;li&gt;Hit enter again to use the remainder of the disk.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;t&lt;!-- raw HTML omitted --&gt; to change the partition.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;83&lt;!-- raw HTML omitted --&gt; to change partition to &lt;code&gt;Linux&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lastly write changes to disk &lt;code&gt;/dev/sda&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;w&lt;!-- raw HTML omitted --&gt; to write all changes to the disk.&lt;/li&gt;
+&lt;li&gt;Enter &lt;!-- raw HTML omitted --&gt;q&lt;!-- raw HTML omitted --&gt; to quit &lt;code&gt;fdisk&lt;/code&gt; utility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;verifying-the-partitions&#34;&gt;Verifying the partitions&lt;/h2&gt;
+&lt;p&gt;Use &lt;code&gt;lsblk&lt;/code&gt; again to check the partitions we created.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;lsblk
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should see &lt;em&gt;something like this&lt;/em&gt;:&lt;/p&gt;
+&lt;h3 id=&#34;unencrypted-filesystem-1&#34;&gt;Unencrypted filesystem&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NAME&lt;/th&gt;
+&lt;th&gt;MAJ:MIN&lt;/th&gt;
+&lt;th&gt;RM&lt;/th&gt;
+&lt;th&gt;SIZE&lt;/th&gt;
+&lt;th&gt;RO&lt;/th&gt;
+&lt;th&gt;TYPE&lt;/th&gt;
+&lt;th&gt;MOUNTPOINT&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;sda&lt;/td&gt;
+&lt;td&gt;8:0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;447.1G&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sda1&lt;/td&gt;
+&lt;td&gt;8:1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;8G&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;part&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sda2&lt;/td&gt;
+&lt;td&gt;8:2&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;150G&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;part&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sda3&lt;/td&gt;
+&lt;td&gt;8:3&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;289G&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;part&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;sda&lt;/code&gt;&lt;/strong&gt; is the main disk&lt;br&gt;
+&lt;strong&gt;&lt;code&gt;sda1&lt;/code&gt;&lt;/strong&gt; is the swap partition&lt;br&gt;
+&lt;strong&gt;&lt;code&gt;sda2&lt;/code&gt;&lt;/strong&gt; is the root partition&lt;br&gt;
+&lt;strong&gt;&lt;code&gt;sda3&lt;/code&gt;&lt;/strong&gt; is the home partition&lt;/p&gt;
+&lt;h2 id=&#34;format-the-partitions&#34;&gt;Format the partitions&lt;/h2&gt;
+&lt;h3 id=&#34;unencrypted-filesystem-2&#34;&gt;Unencrypted filesystem&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create and enable our &lt;code&gt;swap&lt;/code&gt; under the &lt;code&gt;/dev/sda1&lt;/code&gt; partition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mkswap /dev/sda1
+swapon /dev/sda1
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Format &lt;code&gt;/dev/sda2&lt;/code&gt; and &lt;code&gt;/dev/sda3&lt;/code&gt; partition as &lt;code&gt;BTRFS&lt;/code&gt;. This will be our &lt;code&gt;root&lt;/code&gt; and &lt;code&gt;home&lt;/code&gt;  partition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mkfs.btrfs /dev/sda2
+mkfs.btrfs /dev/sda3
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;mount-the-filesystems&#34;&gt;Mount the filesystems&lt;/h2&gt;
+&lt;h3 id=&#34;unencryped-partition&#34;&gt;Unencryped partition&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Mount the &lt;code&gt;/dev/sda1&lt;/code&gt; partition to &lt;code&gt;/mnt&lt;/code&gt;. This is our &lt;code&gt;/&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mount -o noatime,space_cache=v2,compress=zstd /dev/sda2 /mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Create a &lt;code&gt;/home&lt;/code&gt; mountpoint:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mkdir /mnt/home  
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Mount &lt;code&gt;/dev/sda3&lt;/code&gt; to &lt;code&gt;/mnt/home&lt;/code&gt; partition. This is will be our &lt;code&gt;/home&lt;/code&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mount -o noatime,space_cache=v2,compress=zstd /dev/sda3 /mnt/home
+&lt;/code&gt;&lt;/pre&gt;&lt;h6 id=&#34;btrfs-options&#34;&gt;Btrfs Options:&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-o&lt;/code&gt; add mount options&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;noatime&lt;/code&gt; Do not update inode access times on this filesystem. This speeds up reads since the access time metadata is not updated.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;space_cache=v2&lt;/code&gt; Options to control the free space cache. The free space cache greatly improves performance when reading block group free space into memory.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;compress=zstd&lt;/code&gt; Control BTRFS file data compression. (zstd) for higher compression ratios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can read more about btrfs mount options &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We don’t need to mount &lt;code&gt;swap&lt;/code&gt; since it is already enabled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;The final result of &lt;code&gt;lsblk&lt;/code&gt; should be something like this:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;NAME&lt;/th&gt;
+&lt;th&gt;MAJ:MIN&lt;/th&gt;
+&lt;th&gt;RM&lt;/th&gt;
+&lt;th&gt;SIZE&lt;/th&gt;
+&lt;th&gt;RO&lt;/th&gt;
+&lt;th&gt;TYPE&lt;/th&gt;
+&lt;th&gt;MOUNTPOINT&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;sda&lt;/td&gt;
+&lt;td&gt;8:0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;447.1G&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;disk&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sda1&lt;/td&gt;
+&lt;td&gt;8:1&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;8G&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;part&lt;/td&gt;
+&lt;td&gt;swap&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sda2&lt;/td&gt;
+&lt;td&gt;8:2&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;150G&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;part&lt;/td&gt;
+&lt;td&gt;/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;sda3&lt;/td&gt;
+&lt;td&gt;8:3&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;289G&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;part&lt;/td&gt;
+&lt;td&gt;/home&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;p&gt;Now let’s go ahead and install &lt;code&gt;base&lt;/code&gt;, &lt;code&gt;linux&lt;/code&gt;, &lt;code&gt;linux-firmware&lt;/code&gt;, and &lt;code&gt;base-devel&lt;/code&gt; packages into our system.&lt;/p&gt;
+&lt;p&gt;Ensure you have installed &lt;code&gt;reflector&lt;/code&gt; and &lt;code&gt;archlinux-keyring&lt;/code&gt; before procedding with pacstrap installation.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S reflector archlinux-keyring
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacstrap /mnt base linux linux-firmware vim amd-ucode btrfs-progs
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;pacstrap will install the packages mentioned above on a newly made root partition:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;base&lt;/code&gt;: Base linux system.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;linux&lt;/code&gt;: Latest linux kernel and modules.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;linux-firmware&lt;/code&gt;: Firmware files for linux.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vim&lt;/code&gt;: Terminal based text editor.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;intel-ucode&lt;/code&gt;: Microcode update files for Intel CPUs.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;amd-ucode&lt;/code&gt;: Microde update files for AMD CPUs.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;btrfs-progress&lt;/code&gt;: Brtfs filesystem utilites.
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Other kernel available for installation are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;linux-lts&lt;/code&gt;: Long term support of the Linux Kernel.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;linux-zen&lt;/code&gt;: For the performance driven users.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;linux-hardened&lt;/code&gt;: For the security concerned users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Users interested in installing other kernels on the system read this &lt;a href=&#34;https://btrfs.readthedocs.io/en/latest/btrfs-man5.html&#34;&gt;post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;base&lt;/code&gt; package does not include all tools from the live installation, so installing other packages may be necessary for a fully functional base system. In particular, consider installing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;userspace utilities for the management of file systems that will be used on the system,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ntfs-3g&lt;/code&gt;: NTFS filesystem driver and utilities&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unrar&lt;/code&gt;: The RAR uncompression program&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unzip&lt;/code&gt;: For extracting and viewing files in &lt;code&gt;.zip&lt;/code&gt; archives&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p7zip&lt;/code&gt;: Command-line file archiver with high compression ratio&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unarchiver&lt;/code&gt;: &lt;code&gt;unar&lt;/code&gt; and &lt;code&gt;lsar&lt;/code&gt;: Objective-C tools for uncompressing archive files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gvfs-mtp&lt;/code&gt;: Virtual filesystem implementation for &lt;code&gt;GIO&lt;/code&gt; (&lt;code&gt;MTP&lt;/code&gt; backend; Android, media player)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;libmtp&lt;/code&gt;: Library implementation of the Media Transfer Protocol&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;android-udev&lt;/code&gt;: Udev rules to connect Android devices to your linux box&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mtpfs&lt;/code&gt;: A FUSE filesystem that supports reading and writing from any MTP devic&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xdg-user-dirs&lt;/code&gt;: Manage user directories like &lt;code&gt;~/Desktop&lt;/code&gt; and &lt;code&gt;~/Music&lt;/code&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;software necessary for networking,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;dhcpcd&lt;/code&gt;: RFC2131 compliant DHCP client daemon&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;iwd&lt;/code&gt;: Internet Wireless Daemon&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inetutils&lt;/code&gt;: A collection of common network programs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;iputils&lt;/code&gt;: Network monitoring tools, including &lt;code&gt;ping&lt;/code&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;packages for accessing documentation in man and info pages,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;man-db&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;man-pages&lt;/code&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;and more useful tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git&lt;/code&gt;: the fast distributed version control system&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tmux&lt;/code&gt;: A terminal multiplexer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;less&lt;/code&gt;: A terminal based program for viewing text files&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;usbutils&lt;/code&gt;: USB Device Utilities&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bash-completion&lt;/code&gt;: Programmable completion for the bash shell&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;exa&lt;/code&gt;: CLI utility for listing files. Modern day replacement for &lt;code&gt;ls&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These tools will be useful later.&lt;/p&gt;
+&lt;h2 id=&#34;generating-the-fstab&#34;&gt;Generating the fstab&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;genfstab -U /mnt &amp;gt;&amp;gt; /mnt/etc/fstab
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Check the resulting &lt;code&gt;/mnt/etc/fstab&lt;/code&gt; file, and edit it in case of errors.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat /mnt/etc/fstab
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;chroot&#34;&gt;Chroot&lt;/h2&gt;
+&lt;p&gt;Now, change root into the newly installed system&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;arch-chroot /mnt /bin/bash
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;time-zone&#34;&gt;Time zone&lt;/h2&gt;
+&lt;p&gt;A selection of timezones can be found under &lt;code&gt;/usr/share/zoneinfo/&lt;/code&gt;. Since I am in the Kenya, I will be using &lt;code&gt;/usr/share/zoneinfo/Africa/Nairobi&lt;/code&gt;. Select the appropriate timezone for your country:&lt;/p&gt;
+&lt;p&gt;Create a symolic link to &lt;code&gt;etc/localtime&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ln -sf /usr/share/zoneinfo/Africa/Nairobi /etc/localtime
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Run &lt;code&gt;hwclock&lt;/code&gt; to generate &lt;code&gt;/etc/adjtime&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hwclock --systohc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This command assumes the hardware clock is set to UTC.&lt;/p&gt;
+&lt;h2 id=&#34;localization&#34;&gt;Localization&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;locale&lt;/code&gt; defines which language the system uses, and other regional considerations such as currency denomination, numerology, and character sets. Possible values are listed in &lt;code&gt;/etc/locale.gen&lt;/code&gt;. Uncomment &lt;code&gt;en_US.UTF-8&lt;/code&gt;, as well as other needed localisations.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim /etc/locale.gen
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Uncomment&lt;/strong&gt; &lt;code&gt;en_US.UTF-8 UTF-8&lt;/code&gt; in &lt;code&gt;/etc/locale.gen&lt;/code&gt;, &lt;strong&gt;save&lt;/strong&gt; the file, and generate them with:&lt;/p&gt;
+&lt;p&gt;or use the command to uncomment the line:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sed -i `178s` /etc/locale.gen
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;generate the &lt;code&gt;locale.gen&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;locale-gen
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create the &lt;code&gt;locale.conf&lt;/code&gt; file, and set the LANG variable accordingly:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;LANG=en_US.UTF-8&amp;#34; &amp;gt;&amp;gt; /etc/locale.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you set the keyboard layout earlier, make the changes persistent in &lt;code&gt;vconsole.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;KEYMAP=us&amp;#34; &amp;gt; /etc/vconsole.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;network-configuration&#34;&gt;Network configuration&lt;/h2&gt;
+&lt;p&gt;Create the hostname file. In this guide I&amp;rsquo;ll just use &lt;code&gt;MYHOSTNAME&lt;/code&gt; as hostname. Hostname is the host name of the host.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;MYHOSTNAME&amp;#34; &amp;gt; /etc/hostname
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Open &lt;code&gt;/etc/hosts&lt;/code&gt; to add matching entries to &lt;code&gt;hosts&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;127.0.0.1    localhost  
+::1          localhost  
+127.0.1.1    MYHOSTNAME.localdomain	  MYHOSTNAME
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If the system has a permanent IP address, it should be used instead of &lt;code&gt;127.0.1.1&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;adding-btrfs-mofule-to-mkinitcpio&#34;&gt;Adding btrfs mofule to mkinitcpio&lt;/h2&gt;
+&lt;p&gt;Since we create the formatted the system using btrfs, we need to add the &lt;code&gt;btrfs&lt;/code&gt; module to the kernel inorder to initalized it at boot.&lt;/p&gt;
+&lt;p&gt;Edit the mkinitcpio configuration file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim /etc/mkinitcpio.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add &lt;code&gt;btrfs&lt;/code&gt; to the modules section.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;MODULES=(btrfs)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;unencrypted-filesystem-3&#34;&gt;Unencrypted filesystem&lt;/h3&gt;
+&lt;p&gt;Generate the &lt;code&gt;mkinitcpio&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mkinitcpio -p linux
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;adding-repositories---multilib-and-aur&#34;&gt;Adding Repositories - multilib and AUR&lt;/h2&gt;
+&lt;p&gt;Enable multilib and AUR repositories in &lt;code&gt;/etc/pacman.conf&lt;/code&gt;. Open it with your editor of choice:&lt;/p&gt;
+&lt;h3 id=&#34;adding-multilib-repository&#34;&gt;Adding multilib repository&lt;/h3&gt;
+&lt;p&gt;Uncomment &lt;code&gt;multilib&lt;/code&gt; (remove # from the beginning of the lines). It should look like this:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[multilib]
+Include = /etc/pacman.d/mirrorlist
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;adding-the-aur-repository&#34;&gt;Adding the AUR repository&lt;/h3&gt;
+&lt;p&gt;Add the following lines at the end of your &lt;code&gt;/etc/pacman.conf&lt;/code&gt; to enable the AUR repo:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/$arch
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;pacman-easter-eggs&#34;&gt;Pacman easter eggs&lt;/h3&gt;
+&lt;p&gt;You can enable the &amp;ldquo;easter-eggs&amp;rdquo; in &lt;code&gt;pacman&lt;/code&gt;, the package manager of archlinux.&lt;/p&gt;
+&lt;p&gt;Open &lt;code&gt;/etc/pacman.conf&lt;/code&gt;, then find &lt;code&gt;# Misc options&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To add colors to &lt;code&gt;pacman&lt;/code&gt;, uncomment &lt;code&gt;Color&lt;/code&gt;. To add the &amp;ldquo;Pac-Man&amp;rdquo; animation to &lt;code&gt;pacman&lt;/code&gt; add the following command: &lt;code&gt;ILoveCandy&lt;/code&gt; under the &lt;code&gt;Color&lt;/code&gt; string:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Color
+ILoveCandy
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;update-repositories-and-packages&#34;&gt;Update repositories and packages&lt;/h3&gt;
+&lt;p&gt;To check if you successfully added the repositories and enable the easter-eggs, run:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -Syu
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If updating returns an error, open the &lt;code&gt;pacman.conf&lt;/code&gt; again and check for human errors. Yes, you f&amp;rsquo;ed up big time.&lt;/p&gt;
+&lt;h3 id=&#34;install-packages&#34;&gt;Install packages&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S grub efibootmgr os-prober ntfs-3g \
+networkmanager network-manager-applet wireless_tools \
+wpa_supplicant dialog mtools dosfstools base-devel \
+linux-headers alsa-utils openssh 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;installing-grub&#34;&gt;Installing GRUB&lt;/h3&gt;
+&lt;p&gt;Installing grub on a legacy system:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;grub-install --target=i386-pc /dev/sda 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Installing grub on a UEFI system:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;grub-install --target=x86_64-efi --efi-directory=/boot/ --bootloader-id=GRUB
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Genertate the configuration file:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;grub-mkconfig -o /boot/grub/grub.cfg
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;root-password&#34;&gt;Root password&lt;/h2&gt;
+&lt;p&gt;Set the &lt;code&gt;root&lt;/code&gt; password:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enter your password twice to set the root password.&lt;/p&gt;
+&lt;h2 id=&#34;add-a-user-account&#34;&gt;Add a user account&lt;/h2&gt;
+&lt;p&gt;Add a new user account. In this guide, I&amp;rsquo;ll just use &lt;code&gt;MYUSERNAME&lt;/code&gt; as the username of the new user aside from &lt;code&gt;root&lt;/code&gt; account. Of course, change the example username with your own:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;useradd -m -g users -G wheel,storage,power,video,audio,rfkill,input -s /bin/bash MYUSERNAME
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will create a new user and its &lt;code&gt;home&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Set the password of user &lt;code&gt;MYUSERNAME&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;passwd MYUSERNAME
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;add-the-new-user-to-sudoers&#34;&gt;Add the new user to sudoers:&lt;/h2&gt;
+&lt;p&gt;If you want a root privilege in the future by using the &lt;code&gt;sudo&lt;/code&gt; command, you should grant one yourself:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;EDITOR=vim visudo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Uncomment the line (Remove #):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;%wheel ALL=(ALL) ALL
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;enable-internet-connection-for-the-next-boot&#34;&gt;Enable internet connection for the next boot&lt;/h2&gt;
+&lt;p&gt;To enable the network daemons on your next reboot, you need to enable &lt;code&gt;dhcpcd.service&lt;/code&gt; for wired connection and &lt;code&gt;iwd.service&lt;/code&gt; for a wireless one.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl enable dhcpcd iwd
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;exit-chroot-and-reboot&#34;&gt;Exit chroot and reboot:&lt;/h2&gt;
+&lt;p&gt;Exit the chroot environment by typing &lt;code&gt;exit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Unmount all partitions with the following command:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;umount -R /mnt
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Finally, &lt;code&gt;reboot&lt;/code&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;reboot
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://ericngigi.netlify.app/post/linux/07-arch-linux-tutorial/&#34;&gt;Post Installation&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
     <item>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="LinuxOps">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ericngigi.netlify.appimages/banner/header-banner-image-01.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/" >
+    
+
+    
+
+    
+      <meta name="title" content="06 Arch Linux Tutorial" />
+      <meta property="og:title" content="06 Arch Linux Tutorial - " />
+      <meta property="twitter:title" content="06 Arch Linux Tutorial - " />
+      <meta property="twitter:text:title" content="06 Arch Linux Tutorial - " />
+    
+
+    
+      <meta name="description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you.">
+      <meta property="og:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+      <meta property="twitter:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+    
+
+    
+
+    <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+
+    <title>06 Arch Linux Tutorial - Leading with Innovation</title>
+
+    <link rel="canonical" href="/post/linux/06-arch-linux-tutorial/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="/terminal-128.png" width=37% style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/archive/">Archive</a></li>
+                    
+                        <li><a href="/notes/">Notes</a></li>
+                    
+                        <li><a href="/top/about/">About</a></li>
+                    
+                        <li><a href="/top/services/">Services</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/banner/header-banner-image-01.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/" title="">
+                            
+                        </a>
+                        
+                        <a class="tag" href="/tags/" title="">
+                            
+                        </a>
+                        
+                        <a class="tag" href="/tags/" title="">
+                            
+                        </a>
+                        
+                    </div>
+                    <h1>06 Arch Linux Tutorial</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			
+			Saturday • April 29, 2023 
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h3>Table of Contents</h3>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#why-archlinux">Why Archlinux</a></li>
+        <li><a href="#pre-installation">Pre-installation</a></li>
+        <li><a href="#create-an-installation-medium">Create an Installation Medium</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation-medium-boot">Installation Medium Boot</a>
+      <ul>
+        <li><a href="#change-font-settings">Change Font Settings</a></li>
+        <li><a href="#connect-to-the-internet">Connect to the internet</a></li>
+        <li><a href="#update-the-system-clock">Update the system clock</a></li>
+        <li><a href="#partition-the-disks">Partition the disks</a></li>
+        <li><a href="#verifying-the-partitions">Verifying the partitions</a></li>
+        <li><a href="#format-the-partitions">Format the partitions</a></li>
+        <li><a href="#mount-the-filesystems">Mount the filesystems</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#generating-the-fstab">Generating the fstab</a></li>
+        <li><a href="#chroot">Chroot</a></li>
+        <li><a href="#time-zone">Time zone</a></li>
+        <li><a href="#localization">Localization</a></li>
+        <li><a href="#network-configuration">Network configuration</a></li>
+        <li><a href="#adding-btrfs-mofule-to-mkinitcpio">Adding btrfs mofule to mkinitcpio</a></li>
+        <li><a href="#adding-repositories---multilib-and-aur">Adding Repositories - multilib and AUR</a></li>
+        <li><a href="#root-password">Root password</a></li>
+        <li><a href="#add-a-user-account">Add a user account</a></li>
+        <li><a href="#add-the-new-user-to-sudoers">Add the new user to sudoers:</a></li>
+        <li><a href="#enable-internet-connection-for-the-next-boot">Enable internet connection for the next boot</a></li>
+        <li><a href="#exit-chroot-and-reboot">Exit chroot and reboot:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                <p>This is my personal guide. I recommend that you read the official <a href="https://wiki.archlinux.org/index.php/installation_guide">wiki</a>. The purpose of this guide is to speed up my personal install of <code>Archlinux</code>.</p>
+<h2 id="why-archlinux">Why Archlinux</h2>
+<p>The <code>Archlinux</code> distribution gives you the freedom to <code>do it yourself</code>.</p>
+<p><strong>NOTE</strong> that your kernel and initramfs are on the root file system, recovery after a crash may prove troublesome.</p>
+<p>They are many ways you can layout your partitions, I will focus on:</p>
+<ol>
+<li>
+<p>Type of hardware (<em>BIOS</em>)</p>
+</li>
+<li>
+<p>The bootloader (<em>GRUB</em>)</p>
+</li>
+<li>
+<p>I use my laptop for technical work, so the order,the type and the size of partitions matter for my use case.</p>
+</li>
+<li>
+<p>I am just a speed enthusiast, I like High Performance Computing and why not try to learn by doing it!</p>
+</li>
+</ol>
+<p>The <strong>MAIN</strong> reason of installing vanilla linux(<code>Archlinux</code>) are:</p>
+<ul>
+<li><strong>No Bloatware</strong> - Imagine <code>4GB</code> image for Windows, <code>2GB+</code> for Fedora or Ubuntu but Arch Linux approx. <code>700MB</code>. Softwares preinstalled that you will never use.</li>
+<li><strong>Performance &amp; Security</strong> - Other distributions contain spyware you didn&rsquo;t install and are working in the background slowing your machine and making you quite uncomfortable.</li>
+<li><strong>Learning</strong> - A better understanding of Linux.</li>
+<li><strong>Minimalism</strong> - Keep It Simple Stupid (KISS)</li>
+</ul>
+<h2 id="pre-installation">Pre-installation</h2>
+<p>Before installing, make sure to:</p>
+<ul>
+<li>Read the <a href="https://wiki.archlinux.org/index.php/installation_guide">wiki</a>. It is advisable to read that instead. I wrote this guide for myself</li>
+<li>Acquire an installation image from <a href="https://www.archlinux.org/download">here</a>.</li>
+<li>Verify signature.</li>
+<li>Prepare an installation medium.</li>
+<li>Boot the live environment.</li>
+<li>Basic understanding of <a href="https://www.openvim.com/">Vim</a>.</li>
+</ul>
+<h2 id="create-an-installation-medium">Create an Installation Medium</h2>
+<p>First we need to create an installation medium to boot from:</p>
+<p>On Linux using the <code>dd</code> command:</p>
+<pre tabindex="0"><code>dd if=path_to_arch_iso of=/dev/sd* status=progress
+</code></pre><ul>
+<li><code>dd</code> CLI utility for converting and copying files.</li>
+<li><code>if</code> the input file</li>
+<li><code>of</code> the output file</li>
+<li><code>progress</code> see periodic transfer statistics.</li>
+</ul>
+<hr>
+<h1 id="installation-medium-boot">Installation Medium Boot</h1>
+<h2 id="change-font-settings">Change Font Settings</h2>
+<p>If the terminal font is too small, which can happen if you have a high resolution display, then execute the following command:</p>
+<p>Set the font size to:</p>
+<pre tabindex="0"><code>setfont lat4a-19 -m 8859-2
+</code></pre><h2 id="connect-to-the-internet">Connect to the internet</h2>
+<p>We need to make sure that we are connected to the internet to be able to install Arch Linux <code>base</code> and <code>linux</code> packages. Let’s see the names of our interfaces.</p>
+<pre tabindex="0"><code>ip addr
+</code></pre><p>You should see something like this:</p>
+<pre tabindex="0"><code>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+		link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eno1: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc fq_codel state DOWN mode DEFAULT group default qlen 1000
+		link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+3: wlo1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP mode DORMANT group default qlen 1000
+		link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff permaddr 00:00:00:00:00:00
+</code></pre><ul>
+<li><code>eno1</code> is the wired interface.</li>
+<li><code>wlo1</code> is the wireless interface.</li>
+</ul>
+<h3 id="wired-connection">Wired Connection</h3>
+<p>If you are on a wired connection, you can enable your wired interface by systemctl start <code>dhcpcd@&lt;interface&gt;</code>.</p>
+<pre tabindex="0"><code>systemctl start dhcpcd@eno1
+</code></pre><h3 id="wireless-connection">Wireless Connection</h3>
+<p>If you are on a laptop, you can connect to a wireless access point using <code>iwctl</code> command from <code>iwd</code>. Note that it&rsquo;s already enabled by default. Also make sure the wireless card is not blocked with <code>rfkill</code>.</p>
+<p>To show current status:</p>
+<pre tabindex="0"><code>rfkill list
+</code></pre><p>If the card is hard-blocked, use the hardware button (switch) to unblock it. If the card is not hard-blocked but soft-blocked, use the following command:</p>
+<pre tabindex="0"><code>rfkill unblock wifi
+</code></pre><p>Scan for network.</p>
+<pre tabindex="0"><code>iwctl station wlo1 scan
+</code></pre><p>Get the list of scanned networks by:</p>
+<pre tabindex="0"><code>iwctl station wlo1 get-networks
+</code></pre><p>Connect to your network.</p>
+<pre tabindex="0"><code>iwctl -P &#34;PASSPHRASE&#34; station wlo1 connect &#34;NETWORKNAME&#34;
+</code></pre><p>Ping the Goggle DNS servers to make sure we are online:</p>
+<pre tabindex="0"><code>ping -c 5 8.8.8.8
+</code></pre><ul>
+<li><code>-c 5</code>    number of times to ping.</li>
+<li><code>8.8.8.8</code> Google DNS server.</li>
+</ul>
+<p>If you receive Unknown host or Destination host unreachable response, means you are not online yet. Review your network configuration and redo the steps above.</p>
+<h2 id="update-the-system-clock">Update the system clock</h2>
+<p>Use <code>timedatectl</code> to ensure the system clock is accurate:</p>
+<pre tabindex="0"><code>timedatectl set-ntp true
+</code></pre><p>To check the service status, use <code>timedatectl status</code>.</p>
+<h2 id="partition-the-disks">Partition the disks</h2>
+<p>When recognized by the live system, disks are assigned to a block device such as <code>/dev/sda</code>, <code>/dev/nvme0n1</code> or <code>/dev/mmcblk0</code>. To identify these devices, use lsblk or fdisk.  The most common main drive is <code>sda</code>.</p>
+<pre tabindex="0"><code>lsblk
+</code></pre><p>Results ending in <code>rom</code>, <code>loop</code> or <code>airoot</code> may be ignored.</p>
+<p>In this guide, I&rsquo;ll create a one type of partition for the drive. A normal installation that is unencrypted:</p>
+<h3 id="unencrypted-filesystem">Unencrypted filesystem</h3>
+<p><strong>NOTE THE FOLLOWING STEPS WILL COMPLETELY FORMAT YOUR DISK NODES. ENSURE YOU&rsquo;VE READ THE WIKI AND UNDERSTAND THE STEPS BELOW BEFORE EXECUTION</strong></p>
+<ul>
+<li>Let’s clean up our main drive to create new partitions for our installation. And yeah, in this guide, we will use <code>/dev/sda</code> as our disk.</li>
+</ul>
+<pre tabindex="0"><code>fdisk /dev/sda 
+</code></pre><ul>
+<li>
+<p>Press <!-- raw HTML omitted -->p<!-- raw HTML omitted --> to list all partitions.</p>
+<p>Now we should be presented with our main drive showing the partition number, partition size, partition type, and partition name.</p>
+</li>
+<li>
+<p>Press <!-- raw HTML omitted -->d<!-- raw HTML omitted --> to <strong>delete a partition</strong>.</p>
+<p>Input the number of the partition you want deleted. <!-- raw HTML omitted -->1<!-- raw HTML omitted --> or <!-- raw HTML omitted -->2<!-- raw HTML omitted --></p>
+</li>
+<li>
+<p>Press <!-- raw HTML omitted -->w<!-- raw HTML omitted --> to write changes to the disk.</p>
+<p>Note that this will <em><strong>format</strong></em> your entire drive so your data will be gone. <strong>THIS CANNOT BE UNDONE</strong>.</p>
+</li>
+<li>
+<p>Press <!-- raw HTML omitted -->p<!-- raw HTML omitted --> to list all partitions.</p>
+<p>Now we should be presented with our main drive showing the partition number, partition size, partition type, and partition name.</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Create the <code>swap</code> partition</p>
+<ul>
+<li>Enter <!-- raw HTML omitted -->n<!-- raw HTML omitted --> to create a new partition for the swap.</li>
+<li>Enter <!-- raw HTML omitted -->p<!-- raw HTML omitted --> to select <code>primary</code> partition for the swap.</li>
+<li>Just hit enter to select the default option for the first sector.</li>
+<li>For the last sector I always assign mine to <!-- raw HTML omitted -->+8G<!-- raw HTML omitted -->.</li>
+<li>Enter <!-- raw HTML omitted -->t<!-- raw HTML omitted --> to change the partition.</li>
+<li>Enter <!-- raw HTML omitted -->82<!-- raw HTML omitted --> to change partition to <code>Linux swap / Solaris</code>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="size-of-swap-partition">Size of Swap Partition.</h3>
+<table>
+<thead>
+<tr>
+<th>RAM Installed</th>
+<th>Swap Space</th>
+<th>Swap Space With Hibernation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Less than 2GB</td>
+<td>2X RAM</td>
+<td>3X RAM</td>
+</tr>
+<tr>
+<td>2GB - 8GB</td>
+<td>=RAM</td>
+<td>2X RAM</td>
+</tr>
+<tr>
+<td>8GB - 64GB</td>
+<td>4G to 0.5X RAM</td>
+<td>1.5X RAM</td>
+</tr>
+<tr>
+<td>&gt;64GB</td>
+<td>Minimum 4GB</td>
+<td>Hibernation not recommended</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<p>Create the <code>root</code> partition</p>
+<ul>
+<li>Enter <!-- raw HTML omitted -->n<!-- raw HTML omitted --> to create a new root partition.</li>
+<li>Enter <!-- raw HTML omitted -->p<!-- raw HTML omitted --> to select <code>primary</code> for the root partition.</li>
+<li>Hit enter to select the default option for the first sector.</li>
+<li>Hit enter to select last sector and input your size for the root partition. <!-- raw HTML omitted -->+150G<!-- raw HTML omitted -->.</li>
+<li>Enter <!-- raw HTML omitted -->t<!-- raw HTML omitted --> to change the partition.</li>
+<li>Enter <!-- raw HTML omitted -->83<!-- raw HTML omitted --> to change partition to <code>Linux</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Create the <code>home</code> partition</p>
+<ul>
+<li>Enter <!-- raw HTML omitted -->n<!-- raw HTML omitted --> to create a new home partition.</li>
+<li>Enter <!-- raw HTML omitted -->p<!-- raw HTML omitted --> to select <code>primary</code> for the home partition.</li>
+<li>Hit enter to select the default option for the first sector.</li>
+<li>Hit enter again to use the remainder of the disk.</li>
+<li>Enter <!-- raw HTML omitted -->t<!-- raw HTML omitted --> to change the partition.</li>
+<li>Enter <!-- raw HTML omitted -->83<!-- raw HTML omitted --> to change partition to <code>Linux</code>.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Lastly write changes to disk <code>/dev/sda</code></p>
+<ul>
+<li>Enter <!-- raw HTML omitted -->w<!-- raw HTML omitted --> to write all changes to the disk.</li>
+<li>Enter <!-- raw HTML omitted -->q<!-- raw HTML omitted --> to quit <code>fdisk</code> utility.</li>
+</ul>
+</li>
+</ul>
+<h2 id="verifying-the-partitions">Verifying the partitions</h2>
+<p>Use <code>lsblk</code> again to check the partitions we created.</p>
+<pre tabindex="0"><code>lsblk
+</code></pre><p>You should see <em>something like this</em>:</p>
+<h3 id="unencrypted-filesystem-1">Unencrypted filesystem</h3>
+<table>
+<thead>
+<tr>
+<th>NAME</th>
+<th>MAJ:MIN</th>
+<th>RM</th>
+<th>SIZE</th>
+<th>RO</th>
+<th>TYPE</th>
+<th>MOUNTPOINT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sda</td>
+<td>8:0</td>
+<td>0</td>
+<td>447.1G</td>
+<td>0</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>sda1</td>
+<td>8:1</td>
+<td>0</td>
+<td>8G</td>
+<td>0</td>
+<td>part</td>
+<td></td>
+</tr>
+<tr>
+<td>sda2</td>
+<td>8:2</td>
+<td>0</td>
+<td>150G</td>
+<td>0</td>
+<td>part</td>
+<td></td>
+</tr>
+<tr>
+<td>sda3</td>
+<td>8:3</td>
+<td>0</td>
+<td>289G</td>
+<td>0</td>
+<td>part</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>sda</code></strong> is the main disk<br>
+<strong><code>sda1</code></strong> is the swap partition<br>
+<strong><code>sda2</code></strong> is the root partition<br>
+<strong><code>sda3</code></strong> is the home partition</p>
+<h2 id="format-the-partitions">Format the partitions</h2>
+<h3 id="unencrypted-filesystem-2">Unencrypted filesystem</h3>
+<ul>
+<li>Create and enable our <code>swap</code> under the <code>/dev/sda1</code> partition.</li>
+</ul>
+<pre tabindex="0"><code>mkswap /dev/sda1
+swapon /dev/sda1
+</code></pre><ul>
+<li>Format <code>/dev/sda2</code> and <code>/dev/sda3</code> partition as <code>BTRFS</code>. This will be our <code>root</code> and <code>home</code>  partition.</li>
+</ul>
+<pre tabindex="0"><code>mkfs.btrfs /dev/sda2
+mkfs.btrfs /dev/sda3
+</code></pre><h2 id="mount-the-filesystems">Mount the filesystems</h2>
+<h3 id="unencryped-partition">Unencryped partition</h3>
+<ul>
+<li>Mount the <code>/dev/sda1</code> partition to <code>/mnt</code>. This is our <code>/</code>:</li>
+</ul>
+<pre tabindex="0"><code>mount -o noatime,space_cache=v2,compress=zstd /dev/sda2 /mnt
+</code></pre><ul>
+<li>Create a <code>/home</code> mountpoint:</li>
+</ul>
+<pre tabindex="0"><code>mkdir /mnt/home  
+</code></pre><ul>
+<li>Mount <code>/dev/sda3</code> to <code>/mnt/home</code> partition. This is will be our <code>/home</code>:</li>
+</ul>
+<pre tabindex="0"><code>mount -o noatime,space_cache=v2,compress=zstd /dev/sda3 /mnt/home
+</code></pre><h6 id="btrfs-options">Btrfs Options:</h6>
+<ul>
+<li><code>-o</code> add mount options</li>
+<li><code>noatime</code> Do not update inode access times on this filesystem. This speeds up reads since the access time metadata is not updated.</li>
+<li><code>space_cache=v2</code> Options to control the free space cache. The free space cache greatly improves performance when reading block group free space into memory.</li>
+<li><code>compress=zstd</code> Control BTRFS file data compression. (zstd) for higher compression ratios.</li>
+</ul>
+<p>You can read more about btrfs mount options <!-- raw HTML omitted -->here<!-- raw HTML omitted -->.</p>
+<ul>
+<li>We don’t need to mount <code>swap</code> since it is already enabled.</li>
+</ul>
+<hr>
+<p>The final result of <code>lsblk</code> should be something like this:</p>
+<table>
+<thead>
+<tr>
+<th>NAME</th>
+<th>MAJ:MIN</th>
+<th>RM</th>
+<th>SIZE</th>
+<th>RO</th>
+<th>TYPE</th>
+<th>MOUNTPOINT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sda</td>
+<td>8:0</td>
+<td>0</td>
+<td>447.1G</td>
+<td>0</td>
+<td>disk</td>
+<td></td>
+</tr>
+<tr>
+<td>sda1</td>
+<td>8:1</td>
+<td>0</td>
+<td>8G</td>
+<td>0</td>
+<td>part</td>
+<td>swap</td>
+</tr>
+<tr>
+<td>sda2</td>
+<td>8:2</td>
+<td>0</td>
+<td>150G</td>
+<td>0</td>
+<td>part</td>
+<td>/</td>
+</tr>
+<tr>
+<td>sda3</td>
+<td>8:3</td>
+<td>0</td>
+<td>289G</td>
+<td>0</td>
+<td>part</td>
+<td>/home</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="installation">Installation</h2>
+<p>Now let’s go ahead and install <code>base</code>, <code>linux</code>, <code>linux-firmware</code>, and <code>base-devel</code> packages into our system.</p>
+<p>Ensure you have installed <code>reflector</code> and <code>archlinux-keyring</code> before procedding with pacstrap installation.</p>
+<pre tabindex="0"><code>pacman -S reflector archlinux-keyring
+</code></pre><pre tabindex="0"><code>pacstrap /mnt base linux linux-firmware vim amd-ucode btrfs-progs
+</code></pre><ul>
+<li>
+<p>pacstrap will install the packages mentioned above on a newly made root partition:</p>
+<ul>
+<li><code>base</code>: Base linux system.</li>
+<li><code>linux</code>: Latest linux kernel and modules.</li>
+<li><code>linux-firmware</code>: Firmware files for linux.</li>
+<li><code>vim</code>: Terminal based text editor.</li>
+<li><code>intel-ucode</code>: Microcode update files for Intel CPUs.</li>
+<li><code>amd-ucode</code>: Microde update files for AMD CPUs.</li>
+<li><code>btrfs-progress</code>: Brtfs filesystem utilites.
+<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+</li>
+<li>
+<p>Other kernel available for installation are:</p>
+<ul>
+<li><code>linux-lts</code>: Long term support of the Linux Kernel.</li>
+<li><code>linux-zen</code>: For the performance driven users.</li>
+<li><code>linux-hardened</code>: For the security concerned users.</li>
+</ul>
+</li>
+</ul>
+<p>Users interested in installing other kernels on the system read this <a href="https://btrfs.readthedocs.io/en/latest/btrfs-man5.html">post</a>.</p>
+<p>The <code>base</code> package does not include all tools from the live installation, so installing other packages may be necessary for a fully functional base system. In particular, consider installing:</p>
+<ul>
+<li>
+<p>userspace utilities for the management of file systems that will be used on the system,</p>
+<ul>
+<li><code>ntfs-3g</code>: NTFS filesystem driver and utilities</li>
+<li><code>unrar</code>: The RAR uncompression program</li>
+<li><code>unzip</code>: For extracting and viewing files in <code>.zip</code> archives</li>
+<li><code>p7zip</code>: Command-line file archiver with high compression ratio</li>
+<li><code>unarchiver</code>: <code>unar</code> and <code>lsar</code>: Objective-C tools for uncompressing archive files</li>
+<li><code>gvfs-mtp</code>: Virtual filesystem implementation for <code>GIO</code> (<code>MTP</code> backend; Android, media player)</li>
+<li><code>libmtp</code>: Library implementation of the Media Transfer Protocol</li>
+<li><code>android-udev</code>: Udev rules to connect Android devices to your linux box</li>
+<li><code>mtpfs</code>: A FUSE filesystem that supports reading and writing from any MTP devic</li>
+<li><code>xdg-user-dirs</code>: Manage user directories like <code>~/Desktop</code> and <code>~/Music</code>
+<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+</li>
+<li>
+<p>software necessary for networking,</p>
+<ul>
+<li><code>dhcpcd</code>: RFC2131 compliant DHCP client daemon</li>
+<li><code>iwd</code>: Internet Wireless Daemon</li>
+<li><code>inetutils</code>: A collection of common network programs</li>
+<li><code>iputils</code>: Network monitoring tools, including <code>ping</code>
+<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+</li>
+<li>
+<p>packages for accessing documentation in man and info pages,</p>
+<ul>
+<li><code>man-db</code></li>
+<li><code>man-pages</code>
+<!-- raw HTML omitted --><!-- raw HTML omitted --></li>
+</ul>
+</li>
+<li>
+<p>and more useful tools:</p>
+<ul>
+<li><code>git</code>: the fast distributed version control system</li>
+<li><code>tmux</code>: A terminal multiplexer</li>
+<li><code>less</code>: A terminal based program for viewing text files</li>
+<li><code>usbutils</code>: USB Device Utilities</li>
+<li><code>bash-completion</code>: Programmable completion for the bash shell</li>
+<li><code>exa</code>: CLI utility for listing files. Modern day replacement for <code>ls</code></li>
+</ul>
+</li>
+</ul>
+<p>These tools will be useful later.</p>
+<h2 id="generating-the-fstab">Generating the fstab</h2>
+<pre tabindex="0"><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre><p>Check the resulting <code>/mnt/etc/fstab</code> file, and edit it in case of errors.</p>
+<pre tabindex="0"><code>cat /mnt/etc/fstab
+</code></pre><h2 id="chroot">Chroot</h2>
+<p>Now, change root into the newly installed system</p>
+<pre tabindex="0"><code>arch-chroot /mnt /bin/bash
+</code></pre><h2 id="time-zone">Time zone</h2>
+<p>A selection of timezones can be found under <code>/usr/share/zoneinfo/</code>. Since I am in the Kenya, I will be using <code>/usr/share/zoneinfo/Africa/Nairobi</code>. Select the appropriate timezone for your country:</p>
+<p>Create a symolic link to <code>etc/localtime</code></p>
+<pre tabindex="0"><code>ln -sf /usr/share/zoneinfo/Africa/Nairobi /etc/localtime
+</code></pre><p>Run <code>hwclock</code> to generate <code>/etc/adjtime</code>:</p>
+<pre tabindex="0"><code>hwclock --systohc
+</code></pre><p>This command assumes the hardware clock is set to UTC.</p>
+<h2 id="localization">Localization</h2>
+<p>The <code>locale</code> defines which language the system uses, and other regional considerations such as currency denomination, numerology, and character sets. Possible values are listed in <code>/etc/locale.gen</code>. Uncomment <code>en_US.UTF-8</code>, as well as other needed localisations.</p>
+<pre tabindex="0"><code>vim /etc/locale.gen
+</code></pre><p><strong>Uncomment</strong> <code>en_US.UTF-8 UTF-8</code> in <code>/etc/locale.gen</code>, <strong>save</strong> the file, and generate them with:</p>
+<p>or use the command to uncomment the line:</p>
+<pre tabindex="0"><code>sed -i `178s` /etc/locale.gen
+</code></pre><p>generate the <code>locale.gen</code> file:</p>
+<pre tabindex="0"><code>locale-gen
+</code></pre><p>Create the <code>locale.conf</code> file, and set the LANG variable accordingly:</p>
+<pre tabindex="0"><code>echo &#34;LANG=en_US.UTF-8&#34; &gt;&gt; /etc/locale.conf
+</code></pre><p>If you set the keyboard layout earlier, make the changes persistent in <code>vconsole.conf</code>:</p>
+<pre tabindex="0"><code>echo &#34;KEYMAP=us&#34; &gt; /etc/vconsole.conf
+</code></pre><h2 id="network-configuration">Network configuration</h2>
+<p>Create the hostname file. In this guide I&rsquo;ll just use <code>MYHOSTNAME</code> as hostname. Hostname is the host name of the host.</p>
+<pre tabindex="0"><code>echo &#34;MYHOSTNAME&#34; &gt; /etc/hostname
+</code></pre><p>Open <code>/etc/hosts</code> to add matching entries to <code>hosts</code>:</p>
+<pre tabindex="0"><code>127.0.0.1    localhost  
+::1          localhost  
+127.0.1.1    MYHOSTNAME.localdomain	  MYHOSTNAME
+</code></pre><p>If the system has a permanent IP address, it should be used instead of <code>127.0.1.1</code>.</p>
+<h2 id="adding-btrfs-mofule-to-mkinitcpio">Adding btrfs mofule to mkinitcpio</h2>
+<p>Since we create the formatted the system using btrfs, we need to add the <code>btrfs</code> module to the kernel inorder to initalized it at boot.</p>
+<p>Edit the mkinitcpio configuration file:</p>
+<pre tabindex="0"><code>vim /etc/mkinitcpio.conf
+</code></pre><p>Add <code>btrfs</code> to the modules section.</p>
+<pre tabindex="0"><code>MODULES=(btrfs)
+</code></pre><h3 id="unencrypted-filesystem-3">Unencrypted filesystem</h3>
+<p>Generate the <code>mkinitcpio</code></p>
+<pre tabindex="0"><code>mkinitcpio -p linux
+</code></pre><h2 id="adding-repositories---multilib-and-aur">Adding Repositories - multilib and AUR</h2>
+<p>Enable multilib and AUR repositories in <code>/etc/pacman.conf</code>. Open it with your editor of choice:</p>
+<h3 id="adding-multilib-repository">Adding multilib repository</h3>
+<p>Uncomment <code>multilib</code> (remove # from the beginning of the lines). It should look like this:</p>
+<pre tabindex="0"><code>[multilib]
+Include = /etc/pacman.d/mirrorlist
+</code></pre><h3 id="adding-the-aur-repository">Adding the AUR repository</h3>
+<p>Add the following lines at the end of your <code>/etc/pacman.conf</code> to enable the AUR repo:</p>
+<pre tabindex="0"><code>[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/$arch
+</code></pre><h3 id="pacman-easter-eggs">Pacman easter eggs</h3>
+<p>You can enable the &ldquo;easter-eggs&rdquo; in <code>pacman</code>, the package manager of archlinux.</p>
+<p>Open <code>/etc/pacman.conf</code>, then find <code># Misc options</code>.</p>
+<p>To add colors to <code>pacman</code>, uncomment <code>Color</code>. To add the &ldquo;Pac-Man&rdquo; animation to <code>pacman</code> add the following command: <code>ILoveCandy</code> under the <code>Color</code> string:</p>
+<pre tabindex="0"><code>Color
+ILoveCandy
+</code></pre><h3 id="update-repositories-and-packages">Update repositories and packages</h3>
+<p>To check if you successfully added the repositories and enable the easter-eggs, run:</p>
+<pre tabindex="0"><code>pacman -Syu
+</code></pre><p>If updating returns an error, open the <code>pacman.conf</code> again and check for human errors. Yes, you f&rsquo;ed up big time.</p>
+<h3 id="install-packages">Install packages</h3>
+<pre tabindex="0"><code>pacman -S grub efibootmgr os-prober ntfs-3g \
+networkmanager network-manager-applet wireless_tools \
+wpa_supplicant dialog mtools dosfstools base-devel \
+linux-headers alsa-utils openssh 
+</code></pre><h3 id="installing-grub">Installing GRUB</h3>
+<p>Installing grub on a legacy system:</p>
+<pre tabindex="0"><code>grub-install --target=i386-pc /dev/sda 
+</code></pre><p>Installing grub on a UEFI system:</p>
+<pre tabindex="0"><code>grub-install --target=x86_64-efi --efi-directory=/boot/ --bootloader-id=GRUB
+</code></pre><p>Genertate the configuration file:</p>
+<pre tabindex="0"><code>grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre><h2 id="root-password">Root password</h2>
+<p>Set the <code>root</code> password:</p>
+<pre tabindex="0"><code>passwd
+</code></pre><p>Enter your password twice to set the root password.</p>
+<h2 id="add-a-user-account">Add a user account</h2>
+<p>Add a new user account. In this guide, I&rsquo;ll just use <code>MYUSERNAME</code> as the username of the new user aside from <code>root</code> account. Of course, change the example username with your own:</p>
+<pre tabindex="0"><code>useradd -m -g users -G wheel,storage,power,video,audio,rfkill,input -s /bin/bash MYUSERNAME
+</code></pre><p>This will create a new user and its <code>home</code> folder.</p>
+<p>Set the password of user <code>MYUSERNAME</code>:</p>
+<pre tabindex="0"><code>passwd MYUSERNAME
+</code></pre><h2 id="add-the-new-user-to-sudoers">Add the new user to sudoers:</h2>
+<p>If you want a root privilege in the future by using the <code>sudo</code> command, you should grant one yourself:</p>
+<pre tabindex="0"><code>EDITOR=vim visudo
+</code></pre><p>Uncomment the line (Remove #):</p>
+<pre tabindex="0"><code>%wheel ALL=(ALL) ALL
+</code></pre><h2 id="enable-internet-connection-for-the-next-boot">Enable internet connection for the next boot</h2>
+<p>To enable the network daemons on your next reboot, you need to enable <code>dhcpcd.service</code> for wired connection and <code>iwd.service</code> for a wireless one.</p>
+<pre tabindex="0"><code>systemctl enable dhcpcd iwd
+</code></pre><h2 id="exit-chroot-and-reboot">Exit chroot and reboot:</h2>
+<p>Exit the chroot environment by typing <code>exit</code>.</p>
+<p>Unmount all partitions with the following command:</p>
+<pre tabindex="0"><code>umount -R /mnt
+</code></pre><p>Finally, <code>reboot</code>.</p>
+<pre tabindex="0"><code>reboot
+</code></pre><hr>
+<ol>
+<li><a href="https://ericngigi.netlify.app/post/linux/07-arch-linux-tutorial/">Post Installation</a></li>
+</ol>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/docker/getting-started-with-docker/" data-toggle="tooltip" data-placement="top" title="Getting Started With Docker">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/linux/07-arch-linux-tutorial/" data-toggle="tooltip" data-placement="top" title="07 Arch Linux Tutorial">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                <section>
+                  <br>
+                  <h6>Quick Links</h6>
+                    <ul class="list-inline">
+                        
+                    </ul>
+                </section>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+
+
+
+                    
+                    <li>
+                        <a href="mailto:ericmosesngigi@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/ErikNgigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/erik-ngigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                </ul>
+                
+                
+                
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page powered by <a href="https://www.netlify.com/">Netlify</a>.<br>Customized with CSS &bull; Maintained with Hugo &bull; Build with ♥
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; LinuxOps 2019–2022. All rights reserved.
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
