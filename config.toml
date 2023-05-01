@@ -60,6 +60,9 @@ home = ["HTML", "RSS"]
   title =  "Archive"
   href =  "/archive/"
   [[params.addtional_menus]]
+  title = "Portfolio"
+  href = "/top/portfolio/"
+  [[params.addtional_menus]]
   title =  "Certifications"
   href =  "/top/certifications/"
   [[params.addtional_menus]]
