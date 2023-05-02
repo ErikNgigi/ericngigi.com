@@ -5,7 +5,7 @@
     <description>Recent content in Posts on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Apr 2023 09:48:11 +0300</lastBuildDate><atom:link href="https://ericngigi.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 09:45:37 +0301</lastBuildDate><atom:link href="https://ericngigi.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Choose a Linux Distribution</title>
       <link>https://ericngigi.netlify.app/post/linux/01-choose-a-linux-distribution/</link>
@@ -52,11 +52,106 @@
     </item>
     
     <item>
-      <title>07 Arch Linux Tutorial</title>
-      <link>https://ericngigi.netlify.app/post/linux/07-arch-linux-tutorial/</link>
-      <pubDate>Sat, 29 Apr 2023 09:48:11 +0300</pubDate>
+      <title>Arch Linux Extra Installation</title>
+      <link>https://ericngigi.netlify.app/post/arch-linux/03-arch-linux-base-install/</link>
+      <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/linux/07-arch-linux-tutorial/</guid>
+      <guid>https://ericngigi.netlify.app/post/arch-linux/03-arch-linux-base-install/</guid>
+      <description>&lt;p&gt;The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.&lt;/p&gt;
+&lt;h2 id=&#34;theming&#34;&gt;Theming&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Icon themes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;papirus-icon-theme&lt;/li&gt;
+&lt;li&gt;tela-icon-theme&lt;/li&gt;
+&lt;li&gt;tela-circle-icon-theme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GTK Theme&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;whitesur-dark&lt;/li&gt;
+&lt;li&gt;orchis theme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Qt5 Theme&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;qt5ct&lt;/code&gt; with kvantum&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Cursor Theme&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vimix-cursors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;shell&#34;&gt;Shell&lt;/h2&gt;
+&lt;p&gt;Install &lt;code&gt;zsh&lt;/code&gt; to replace &lt;code&gt;bash&lt;/code&gt; shell&lt;/p&gt;
+&lt;p&gt;Install &lt;code&gt;zsh&lt;/code&gt;:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S zsh fzf
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;zsh&lt;/code&gt;: a modern replacement for the bash shell&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fzf&lt;/code&gt;: fuzzy finder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;daily-apps&#34;&gt;Daily Apps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Browser&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brave-bin&lt;/code&gt;: Brave Browser&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Media&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mpv&lt;/code&gt;: media player&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;clementine&lt;/code&gt;: Graphical music player&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;feh&lt;/code&gt; image viewer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;obs&lt;/code&gt;: screen recorder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Media and Graphics Editing Tools&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gimp&lt;/code&gt;: image manipulation program&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inkscape&lt;/code&gt;: vector graphics editor&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ffmpeg&lt;/code&gt;: video converter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;imagemagick&lt;/code&gt;: image viewing/manipulation program&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Misc&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;flameshot&lt;/code&gt;: screenshot tool&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zathura-pdf-mupdf&lt;/code&gt;: as pdf viewer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;redshift&lt;/code&gt;: blue light filter&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mugshot&lt;/code&gt;: personal user details updater&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arandr&lt;/code&gt;: xrandr front-end&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qbittorent&lt;/code&gt;: Graphical bittorent client&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;htop&lt;/code&gt;: CLI interactive process viewer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scrcpy&lt;/code&gt;: android viewing tool&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xmind&lt;/code&gt;: mind mapping tool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;grub-configuration&#34;&gt;Grub Configuration&lt;/h2&gt;
+&lt;p&gt;I add the following lines to &lt;code&gt;GRUB_CMD_LINUX_DEFAULT&lt;/code&gt; to disable the laptop screen after boot.&lt;/p&gt;
+&lt;p&gt;Use &lt;code&gt;xrandr&lt;/code&gt; to determine the id of each screen.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;xrandr -q
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;GRUB_CMDLINE_LINUX_DEFAULT=&amp;#34;loglevel=3 quiet mitigations=off video=VGA-1:e video=LVDS-1:d radeon.dpm=0 radeon.aspm=0 radeon.pcie_gen2=0 radeon.audio=0 radeon.msi=0 nowatchdog&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Arch Linux Post Installation</title>
+      <link>https://ericngigi.netlify.app/post/arch-linux/02-arch-linux-base-install/</link>
+      <pubDate>Sat, 29 Apr 2023 09:45:37 +0302</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/post/arch-linux/02-arch-linux-base-install/</guid>
       <description>&lt;p&gt;In post installation we will be using a lot of &lt;code&gt;sudo&lt;/code&gt;. I&amp;rsquo;m not responsible if you broke your newly installed system.&lt;/p&gt;
 &lt;h3 id=&#34;connect-to-the-internet&#34;&gt;Connect to the internet&lt;/h3&gt;
 &lt;p&gt;We will be downloading stuff so we need an internet connection! So set-up your connection first!&lt;/p&gt;
@@ -218,19 +313,15 @@ ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;/fontconfig&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Update and set your font of choice on settings.&lt;/p&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://ericngigi.netlify.app/post/linux/06-arch-linux-tutorial/&#34;&gt;Arch Installation&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 </description>
     </item>
     
     <item>
-      <title>06 Arch Linux Tutorial</title>
-      <link>https://ericngigi.netlify.app/post/linux/06-arch-linux-tutorial/</link>
-      <pubDate>Sat, 29 Apr 2023 09:45:37 +0300</pubDate>
+      <title>Arch Linux Base Installation</title>
+      <link>https://ericngigi.netlify.app/post/arch-linux/01-arch-linux-base-install/</link>
+      <pubDate>Sat, 29 Apr 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/linux/06-arch-linux-tutorial/</guid>
+      <guid>https://ericngigi.netlify.app/post/arch-linux/01-arch-linux-base-install/</guid>
       <description>&lt;p&gt;This is my personal guide. I recommend that you read the official &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34;&gt;wiki&lt;/a&gt;. The purpose of this guide is to speed up my personal install of &lt;code&gt;Archlinux&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-archlinux&#34;&gt;Why Archlinux&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;Archlinux&lt;/code&gt; distribution gives you the freedom to &lt;code&gt;do it yourself&lt;/code&gt;.&lt;/p&gt;
@@ -765,11 +856,7 @@ linux-headers alsa-utils openssh
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;umount -R /mnt
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Finally, &lt;code&gt;reboot&lt;/code&gt;.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;reboot
-&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://ericngigi.netlify.app/post/linux/07-arch-linux-tutorial/&#34;&gt;Post Installation&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="LinuxOps">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ericngigi.netlify.appimages/banner/header-banner-image-05.jpg">
+
+    
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://www.cedricscherer.com/" >
+    
+
+    
+
+    
+      <meta name="title" content="Arch Linux Post Installation" />
+      <meta property="og:title" content="Arch Linux Post Installation - " />
+      <meta property="twitter:title" content="Arch Linux Post Installation - " />
+      <meta property="twitter:text:title" content="Arch Linux Post Installation - " />
+    
+
+    
+      <meta name="description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you.">
+      <meta property="og:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+      <meta property="twitter:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+    
+
+    
+
+    <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+
+    <title>Arch Linux Post Installation - Leading with Innovation</title>
+
+    <link rel="canonical" href="/post/arch-linux/02-arch-linux-base-install/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="/terminal-128.png" width=37% style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/archive/">Archive</a></li>
+                    
+                        <li><a href="/top/portfolio/">Portfolio</a></li>
+                    
+                        <li><a href="/top/certifications/">Certifications</a></li>
+                    
+                        <li><a href="/top/about/">About</a></li>
+                    
+                        <li><a href="/top/services/">Services</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/post/arch/geowaves.png')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/arch-linux" title="Arch Linux">
+                            Arch Linux
+                        </a>
+                        
+                        <a class="tag" href="/tags/tutorial" title="Tutorial">
+                            Tutorial
+                        </a>
+                        
+                    </div>
+                    <h1>Arch Linux Post Installation</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			
+			Saturday • April 29, 2023 
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h3>Table of Contents</h3>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#extras">Extras</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                <p>In post installation we will be using a lot of <code>sudo</code>. I&rsquo;m not responsible if you broke your newly installed system.</p>
+<h3 id="connect-to-the-internet">Connect to the internet</h3>
+<p>We will be downloading stuff so we need an internet connection! So set-up your connection first!</p>
+<h3 id="check-for-updates">Check for Updates</h3>
+<p>It&rsquo;s recommended to check for updates first before installing anything so:</p>
+<pre tabindex="0"><code>pacman -Syu
+</code></pre><h3 id="display-server-and-protocol">Display Server and Protocol</h3>
+<p>We need to install a display server, a protocol or both. Normally, your desktop environment or window manager of choice will automatically install these as a dependency. But for this guide&rsquo;s sake we will install <code>X</code> server:</p>
+<pre tabindex="0"><code>pacman -S xorg-server xorg-xrdb xorg-xinit xorg-xrandr xorg-xev xorg-xdpyinfo xorg-xprop
+</code></pre><p>If you&rsquo;re planning to use a window manager like <code>awesome</code>, <code>bspwm</code> or <code>i3</code>, you should install X. While if you&rsquo;re planning to use <code>sway</code>, then wayland it is. If <code>GNOME</code>, you can install both. Again, your environment of choice will automatically install these as its dependencies.</p>
+<h4 id="video-drivers">Video Drivers</h4>
+<p>After installing the graphical server, we need to install the video drivers. I&rsquo;m only using an integrated <code>AMD</code> graphics card.</p>
+<p>For AMD graphics. Read the arch wiki on <a href="https://wiki.archlinux.org/title/ATI">ATI</a> before procedding any futher.</p>
+<pre tabindex="0"><code>pacman -S xf86-video-ati vulkan-icd-loader libvdpau-va-gl  
+</code></pre><p>For Intel Graphics. Read the arch wiki on <a href="https://wiki.archlinux.org/title/Intel_graphics">Intel</a></p>
+<pre tabindex="0"><code>pacman -S xf86-video-intel vulkan-intel vulkan-icd-loader libva-intel-driver
+</code></pre><p>Add your (kernel) graphics driver to your initramfs. For example, if using <code>ati</code> add <code>radeon</code>:</p>
+<pre tabindex="0"><code>vim /etc/mkinitcpio.conf
+</code></pre><p>Then add <code>radeon</code> to the <code>MODULES</code>:</p>
+<pre tabindex="0"><code>MODULES=(radeon ...)
+</code></pre><p>Generate the mkinitcpio file:</p>
+<pre tabindex="0"><code>mkinitcpio -p linux-lts
+</code></pre><h4 id="audio-drivers">Audio Drivers</h4>
+<pre tabindex="0"><code>pacman -S alsa-utils alsa-plugins alsa-firmware
+</code></pre><h4 id="file-system-tools">File System Tools</h4>
+<p>File system tools</p>
+<pre tabindex="0"><code>pacman -S unrar unzip p7zip unarchiver gvfs-mtp libmtp ntfs-3g android-udev mtpfs xdg-user-dirs
+</code></pre><p><code>xdg-user-dirs</code> is a tool to help manage &ldquo;well known&rdquo; user directories like the desktop folder and the music folder. This will be automatically run on your next log in. Though you can manually generate XDG user directories by:</p>
+<pre tabindex="0"><code>xdg-user-dirs-update
+</code></pre><h4 id="git">Git</h4>
+<p>If you didn&rsquo;t include <code>git</code> on <code>pacstrap</code> earlier, it&rsquo;s time to install it now. This tool will come in handy later:</p>
+<pre tabindex="0"><code>pacman -S git
+</code></pre><h4 id="aur-helper">AUR Helper</h4>
+<p>The &ldquo;later&rdquo; is now, old man. We will now install an AUR helper, <code>yay</code>.</p>
+<p>Clone <code>yay</code> from the AUR using <code>git</code>.</p>
+<pre tabindex="0"><code>git clone https://aur.archlinux.org/yay.git
+cd yay/
+makepkg -sri
+</code></pre><h4 id="missing-kernel-modules">Missing Kernel Modules</h4>
+<p>If you noticed, there&rsquo;s a warning message while running <code>mkinitcpio -p linux</code>, fix this by installing these firmwares:</p>
+<pre tabindex="0"><code>yay -S wd719x-firmware aic94xx-firmware --removemake --noconfirm
+mkinitcpio -p linux-lts 
+</code></pre><h4 id="desktop-environment-and-window-manager">Desktop Environment and Window Manager</h4>
+<p>Install your preferred desktop environment or window manager.</p>
+<ul>
+<li>
+<p>Binary Space Partitioning Window Manager(bspwm)</p>
+<ul>
+<li>
+<p>I install bspwm together with sxhkd that serves as the X hot key daemon.</p>
+<pre tabindex="0"><code>sudo pacman -S bspwm sxhkd
+</code></pre></li>
+<li>
+<p>Picom as the compositor:</p>
+<pre tabindex="0"><code>sudo pacman -S picom
+</code></pre></li>
+<li>
+<p>Rofi as the application launcher:</p>
+<pre tabindex="0"><code>sudo pacman -S rofi
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h4 id="terminal-emulator">Terminal Emulator</h4>
+<p>After installing an environment, we need a terminal emulator. Every linux user&rsquo;s first partner. Note that we&rsquo;re still on the <code>TTY</code>.</p>
+<ul>
+<li>
+<p>Install your preferred terminal emulator.</p>
+<p>I&rsquo;m an <code>alacritty</code> guy. In this guide, I&rsquo;ll include a guide to set-up <code>alacritty</code></p>
+</li>
+<li>
+<p>Alacritty</p>
+<ul>
+<li>
+<p>I always prefer to setup alacritty together with alacritty-themes. This enables me to change up alacritty&rsquo;s themes from time to time:</p>
+<pre tabindex="0"><code>yay -S alacritty alacritty-themes
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h4 id="gtk">GTK</h4>
+<p>GTK, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces.</p>
+<p>If not yet installed:</p>
+<pre tabindex="0"><code>pacman -S gtk3
+</code></pre><p>Install GTK engines</p>
+<pre tabindex="0"><code>pacman -S gtk-engine-murrine gtk-engines gnome-theme-extra
+</code></pre><h4 id="file-managers">File Managers</h4>
+<p>I prefer to use a light-weight file manager such as <code>thunar</code> for the graphical file manager and <code>nnn</code> for the CLI file manager.</p>
+<pre tabindex="0"><code>pacman -S thunar nnn
+</code></pre><h4 id="cli-based-text-editor">CLI-based Text Editor</h4>
+<p>&lsquo;Nvchad&rsquo; is my prefered choice for an IDE. Read the <a href="https://nvchad.github.io/">NVchad</a> documentation before installation.</p>
+<p>Ensure you have installed <code>neovim</code> before you can install Nvchad.</p>
+<pre tabindex="0"><code>sudo pacman -S neovim
+</code></pre><h4 id="gui-based-text-editors">GUI-based Text Editors</h4>
+<p><code>vim</code> is my text editor of choice, but sublime Text 3 is my go-to GUI text editor as it&rsquo;s lighter than the <del>bloated</del> chromium-based counterparts like <code>atom</code> and <code>vscode</code>.</p>
+<pre tabindex="0"><code>yay -S sublime-text-dev
+</code></pre><p>Note that Sublime is not &ldquo;free&rdquo; and needs a license.</p>
+<h4 id="web-browsers">Web browsers</h4>
+<p><code>Brave-browser</code> is my trusted web browser.</p>
+<pre tabindex="0"><code>yay -S brave-bin
+</code></pre><h4 id="reboot-then-login">Reboot then Login</h4>
+<p>The system&rsquo;s fully functional! You can now login to you system with all the configuration we&rsquo;ve done so far.</p>
+<pre tabindex="0"><code>reboot
+</code></pre><h2 id="extras">Extras</h2>
+<h4 id="power-management-for-laptops">Power Management for Laptops</h4>
+<p>TLP brings you the benefits of advanced power management for Linux without the need to understand every technical detail. <strong>This is for laptops.</strong></p>
+<p>Install and enable it now:</p>
+<pre tabindex="0"><code>pacman -S tlp
+systemctl enable --now tlp.service
+</code></pre><p>Install <code>upower</code>, <code>acpid</code> and <code>acpi_call</code>:</p>
+<pre tabindex="0"><code>pacman -S acpid acpi_call upower
+</code></pre><p>Enable acpid</p>
+<pre tabindex="0"><code>systemctl enable acpid.service
+</code></pre><h4 id="fonts">Fonts</h4>
+<p>Improve fonts.</p>
+<p>Install these fonts. Inter will be my system font no matter what the environment.</p>
+<pre tabindex="0"><code>sudo pacman -S ttf-dejavu ttf-liberation noto-fonts noto-fonts-emoji ttf-roboto ttf-jetbrains-mono
+</code></pre><pre tabindex="0"><code>yay -S ttf-monaco
+</code></pre><p>Additional fonts to support Asian characters</p>
+<pre tabindex="0"><code>sudo pacman -S noto-fonts-cjk noto-fonts-extra
+</code></pre><p>Enable font presets by creating symbolic links:</p>
+<pre tabindex="0"><code>ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
+ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
+ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
+</code></pre><p>The above will disable embedded bitmap for all fonts, enable sub-pixel RGB rendering, and enable the LCD filter which is designed to reduce colour fringing when subpixel rendering is used.</p>
+<p>For font consistency, all applications should be set to use the <code>serif</code>, <code>sans-serif</code>, and <code>monospace</code> aliases, which are mapped to particular fonts by fontconfig.</p>
+<p>Create <code>/etc/fonts/local.conf</code>, then add:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;?xml version=&#34;1.0&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;!DOCTYPE fontconfig SYSTEM &#34;fonts.dtd&#34;&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;fontconfig&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">&lt;match&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;edit</span> <span style="color:#50fa7b">mode=</span><span style="color:#f1fa8c">&#34;prepend&#34;</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;family&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">&lt;string&gt;</span>Inter<span style="color:#ff79c6">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;/edit&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">&lt;/match&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">&lt;match</span> <span style="color:#50fa7b">target=</span><span style="color:#f1fa8c">&#34;pattern&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;test</span> <span style="color:#50fa7b">qual=</span><span style="color:#f1fa8c">&#34;any&#34;</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;family&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">&lt;string&gt;</span>serif<span style="color:#ff79c6">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;/test&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;edit</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;family&#34;</span> <span style="color:#50fa7b">mode=</span><span style="color:#f1fa8c">&#34;assign&#34;</span> <span style="color:#50fa7b">binding=</span><span style="color:#f1fa8c">&#34;same&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">&lt;string&gt;</span>Noto Serif<span style="color:#ff79c6">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;/edit&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">&lt;/match&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">&lt;match</span> <span style="color:#50fa7b">target=</span><span style="color:#f1fa8c">&#34;pattern&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;test</span> <span style="color:#50fa7b">qual=</span><span style="color:#f1fa8c">&#34;any&#34;</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;family&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">&lt;string&gt;</span>sans-serif<span style="color:#ff79c6">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;/test&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;edit</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;family&#34;</span> <span style="color:#50fa7b">mode=</span><span style="color:#f1fa8c">&#34;assign&#34;</span> <span style="color:#50fa7b">binding=</span><span style="color:#f1fa8c">&#34;same&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">&lt;string&gt;</span>Noto Sans<span style="color:#ff79c6">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;/edit&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">&lt;/match&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">&lt;match</span> <span style="color:#50fa7b">target=</span><span style="color:#f1fa8c">&#34;pattern&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;test</span> <span style="color:#50fa7b">qual=</span><span style="color:#f1fa8c">&#34;any&#34;</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;family&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">&lt;string&gt;</span>monospace<span style="color:#ff79c6">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;/test&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;edit</span> <span style="color:#50fa7b">name=</span><span style="color:#f1fa8c">&#34;family&#34;</span> <span style="color:#50fa7b">mode=</span><span style="color:#f1fa8c">&#34;assign&#34;</span> <span style="color:#50fa7b">binding=</span><span style="color:#f1fa8c">&#34;same&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>			<span style="color:#ff79c6">&lt;string&gt;</span>Noto Mono<span style="color:#ff79c6">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">&lt;/edit&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">&lt;/match&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">&lt;/fontconfig&gt;</span>
+</span></span></code></pre></div><p>Update and set your font of choice on settings.</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/arch-linux/01-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Base Installation">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/arch-linux/03-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Extra Installation">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                <section>
+                  <br>
+                  <h6>Quick Links</h6>
+                    <ul class="list-inline">
+                        
+                    </ul>
+                </section>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+
+
+
+                    
+                    <li>
+                        <a href="mailto:ericmosesngigi@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/ErikNgigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/erik-ngigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                </ul>
+                
+                
+                
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page powered by <a href="https://www.netlify.com/">Netlify</a>.<br>Customized with CSS &bull; Maintained with Hugo &bull; Build with ♥
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; LinuxOps 2019–2022. All rights reserved.
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

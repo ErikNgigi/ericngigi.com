@@ -1,11 +1,10 @@
 ---
-title: "07 Arch Linux Tutorial"
-summary: ""
-date: 2023-04-29T09:48:11+03:00
+title: "Arch Linux Post Installation"
+summary: "This post provides a step-by-step guide on what to do after installing the base installation of Archlinux, including configuring the system and installing additional packages."
+date: 2023-04-29T09:45:37+03:02
 author: "Eric Ngigi"
-image: ""
-tags: ["", "", ""]
-categories: [""]
+image: "/images/post/arch/geowaves.png"
+tags: ["Arch Linux", "Tutorial"]
 ---
 
 In post installation we will be using a lot of `sudo`. I'm not responsible if you broke your newly installed system.
@@ -310,7 +309,3 @@ Create `/etc/fonts/local.conf`, then add:
 ```
 
 Update and set your font of choice on settings.
-
----
-
-1. [Arch Installation]({{<ref "06-arch-linux-tutorial" >}})

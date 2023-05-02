@@ -17,17 +17,29 @@
     <loc>https://ericngigi.netlify.app/post/linux/05-securing-linux-system/</loc>
     <lastmod>2023-04-28T15:33:51+03:00</lastmod>
   </url><url>
-    <loc>https://ericngigi.netlify.app/post/linux/07-arch-linux-tutorial/</loc>
-    <lastmod>2023-04-29T09:48:11+03:00</lastmod>
+    <loc>https://ericngigi.netlify.app/tags/arch-linux/</loc>
+    <lastmod>2023-04-29T09:45:37+03:01</lastmod>
+  </url><url>
+    <loc>https://ericngigi.netlify.app/post/arch-linux/03-arch-linux-base-install/</loc>
+    <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
     <loc>https://ericngigi.netlify.app/</loc>
-    <lastmod>2023-04-29T09:48:11+03:00</lastmod>
+    <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
     <loc>https://ericngigi.netlify.app/post/</loc>
-    <lastmod>2023-04-29T09:48:11+03:00</lastmod>
+    <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
-    <loc>https://ericngigi.netlify.app/post/linux/06-arch-linux-tutorial/</loc>
-    <lastmod>2023-04-29T09:45:37+03:00</lastmod>
+    <loc>https://ericngigi.netlify.app/tags/</loc>
+    <lastmod>2023-04-29T09:45:37+03:01</lastmod>
+  </url><url>
+    <loc>https://ericngigi.netlify.app/tags/tutorial/</loc>
+    <lastmod>2023-04-29T09:45:37+03:01</lastmod>
+  </url><url>
+    <loc>https://ericngigi.netlify.app/post/arch-linux/02-arch-linux-base-install/</loc>
+    <lastmod>2023-04-29T09:45:37+03:02</lastmod>
+  </url><url>
+    <loc>https://ericngigi.netlify.app/post/arch-linux/01-arch-linux-base-install/</loc>
+    <lastmod>2023-04-29T09:45:37+03:03</lastmod>
   </url><url>
     <loc>https://ericngigi.netlify.app/tags/containerization/</loc>
     <lastmod>2023-04-27T14:33:39+03:00</lastmod>
@@ -36,9 +48,6 @@
     <lastmod>2023-04-27T14:33:39+03:00</lastmod>
   </url><url>
     <loc>https://ericngigi.netlify.app/post/docker/getting-started-with-docker/</loc>
-    <lastmod>2023-04-27T14:33:39+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/tags/</loc>
     <lastmod>2023-04-27T14:33:39+03:00</lastmod>
   </url><url>
     <loc>https://ericngigi.netlify.app/tags/virtualization/</loc>
@@ -56,14 +65,19 @@
     <loc>https://ericngigi.netlify.app/tags/netlify/</loc>
     <lastmod>2023-04-26T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ericngigi.netlify.app/top/about/</loc>
+    <loc>https://ericngigi.netlify.app/top/portfolio/</loc>
+    <lastmod>2020-04-25T21:25:07-04:00</lastmod>
+  </url><url>
+    <loc>https://ericngigi.netlify.app/top/</loc>
+    <lastmod>2020-04-25T21:25:07-04:00</lastmod>
   </url><url>
     <loc>https://ericngigi.netlify.app/top/certifications/</loc>
+    <lastmod>2020-04-23T16:01:51-04:00</lastmod>
+  </url><url>
+    <loc>https://ericngigi.netlify.app/top/about/</loc>
   </url><url>
     <loc>https://ericngigi.netlify.app/top/services/</loc>
   </url><url>
     <loc>https://ericngigi.netlify.app/categories/</loc>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/top/</loc>
   </url>
 </urlset>

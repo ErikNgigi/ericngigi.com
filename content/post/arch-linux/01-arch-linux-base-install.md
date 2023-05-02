@@ -1,11 +1,10 @@
 ---
-title: "06 Arch Linux Tutorial"
-summary: ""
-date: 2023-04-29T09:45:37+03:00
+title: "Arch Linux Base Installation"
+summary: "Arch Linux is a minimal and lightweight Linux distribution that provides a customizable base installation for users to build their own system according to their preferences."
+date: 2023-04-29T09:45:37+03:03
 author: "Eric Ngigi"
-image: ""
-tags: ["", "", ""]
-categories: [""]
+image: "/images/post/arch/geowaves.png"
+tags: ["Arch Linux", "Tutorial"]
 ---
 
 
@@ -648,6 +647,3 @@ Finally, `reboot`.
 ``````
 reboot
 ``````
----
-
-1. [Post Installation]({{<ref "07-arch-linux-tutorial" >}})
