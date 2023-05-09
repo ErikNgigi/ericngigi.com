@@ -34,7 +34,7 @@ Basic knowledge of Git with its command-line interface and GitHub/Netlify accoun
 
 According to the official Hugo documentation, it is not recommended to install Hugo using the pacman manager using the code below to the latest version of Hugo. 
 
-```bash
+```
 pacman -S hugo
 ```
 ![installing-hugo](/images/post/hugo/installing-hugo.png)
@@ -43,7 +43,7 @@ pacman -S hugo
 
 To create a new site, execute the hugo new site command in the site’s root directory, for example:
 
-```bash
+```
 hugo new site 'examplesite'
 ```
 

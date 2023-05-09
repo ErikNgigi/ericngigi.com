@@ -1,7 +1,5 @@
 <div id="title-info" class="title-info">
   {{ if .Site.Params.googlefonts }}
-  {{ template "_internal/google_analytics.html" . }}
-  {{ template "_internal/google_analytics_async.html" . }}
   <link rel="stylesheet" href="{{ .Site.Params.googlefonts }}" type="text/css" media="all" />
   {{ end }}
   <div id='site-title' class='site-title'>
