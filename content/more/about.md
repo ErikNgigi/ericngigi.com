@@ -1,5 +1,6 @@
 ---
 layout: page
+showTOC: false
 ---
 
 ## About Me

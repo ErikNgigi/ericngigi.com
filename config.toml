@@ -36,7 +36,7 @@ home = ["HTML", "RSS"]
   about_me = true
 
   [params.social]
-  rss            = true 
+  rss            = false 
   email          = "ericmosesngigi@gmail.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
@@ -61,16 +61,13 @@ home = ["HTML", "RSS"]
   href =  "/archive/"
   [[params.addtional_menus]]
   title = "Portfolio"
-  href = "/top/portfolio/"
+  href = "/more/portfolio/"
   [[params.addtional_menus]]
   title =  "Certifications"
-  href =  "/top/certifications/"
+  href =  "/more/certifications/"
   [[params.addtional_menus]]
   title =  "About"
-  href =  "/top/about/"
-  [[params.addtional_menus]]
-  title =  "Services"
-  href =  "/top/services/"
+  href =  "/more/about/"
 
   [markup]
   [markup.tableOfContents]

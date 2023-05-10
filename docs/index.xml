@@ -1011,11 +1011,20 @@ git submodule add https://github.com/
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>https://ericngigi.netlify.app/top/portfolio/</link>
+      <title>Mores</title>
+      <link>https://ericngigi.netlify.app/more/</link>
       <pubDate>Sat, 25 Apr 2020 21:25:07 -0400</pubDate>
       
-      <guid>https://ericngigi.netlify.app/top/portfolio/</guid>
+      <guid>https://ericngigi.netlify.app/more/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://ericngigi.netlify.app/more/portfolio/</link>
+      <pubDate>Sat, 25 Apr 2020 21:25:07 -0400</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/more/portfolio/</guid>
       <description>&lt;h3 id=&#34;2023&#34;&gt;2023&lt;/h3&gt;
 &lt;h5 id=&#34;learning-go&#34;&gt;Learning Go&lt;/h5&gt;
 &lt;ol&gt;
@@ -1135,20 +1144,11 @@ Technologies used: &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&
     </item>
     
     <item>
-      <title>Tops</title>
-      <link>https://ericngigi.netlify.app/top/</link>
-      <pubDate>Sat, 25 Apr 2020 21:25:07 -0400</pubDate>
-      
-      <guid>https://ericngigi.netlify.app/top/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Certifications</title>
-      <link>https://ericngigi.netlify.app/top/certifications/</link>
+      <link>https://ericngigi.netlify.app/more/certifications/</link>
       <pubDate>Thu, 23 Apr 2020 16:01:51 -0400</pubDate>
       
-      <guid>https://ericngigi.netlify.app/top/certifications/</guid>
+      <guid>https://ericngigi.netlify.app/more/certifications/</guid>
       <description>&lt;h3 id=&#34;2020&#34;&gt;2020&lt;/h3&gt;
 &lt;h5 id=&#34;hackerrank-python-intermediate&#34;&gt;HackerRank Python (intermediate)&lt;/h5&gt;
 &lt;p&gt;Issued by &lt;a href=&#34;https://www.hackerrank.com/&#34;&gt;HackerRank&lt;/a&gt;&lt;br&gt;
@@ -1212,10 +1212,10 @@ Credential ID: 12529840&lt;br&gt;
     
     <item>
       <title></title>
-      <link>https://ericngigi.netlify.app/top/about/</link>
+      <link>https://ericngigi.netlify.app/more/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/top/about/</guid>
+      <guid>https://ericngigi.netlify.app/more/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
 &lt;p&gt;I am a passionate Linux enthusiast and free software advocate with years of experience in developing and maintaining Linux systems. I have a deep understanding of the inner workings of the Linux kernel and have extensive knowledge of various Linux distributions, including Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
 &lt;p&gt;I am also skilled in various programming languages, including Python, Go, JAMstack and Bash scripting, and have used these languages to automate and streamline various processes in my DevOps career. My expertise in automation and infrastructure as code has allowed me to optimize system performance, reduce downtime, and increase scalability.&lt;/p&gt;
@@ -1225,16 +1225,6 @@ Credential ID: 12529840&lt;br&gt;
 write-ups about my personal project experiences. In case you need to contact me, please email
 at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.com&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ericngigi.netlify.app/top/services/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ericngigi.netlify.app/top/services/</guid>
-      <description>&lt;h1 id=&#34;services-we-offer&#34;&gt;Services We Offer&lt;/h1&gt;
 </description>
     </item>
     
