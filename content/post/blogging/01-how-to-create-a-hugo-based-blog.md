@@ -5,6 +5,7 @@ date:        2023-04-26 09:00:00
 author:      "Eric Ngigi"
 image:       "images/post/hugo/header-banner-image-02.jpg"
 tags:        ["Hugo", "Github Pages", "Netlify"]
+draft: true
 ---
 
 # How to Create a Hugo-Based Blog Hosted on GitHub Pages and Netlify: A Technical Guide

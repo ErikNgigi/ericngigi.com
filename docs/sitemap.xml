@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ericngigi.netlify.app/post/linux/01-choose-a-linux-distribution/</loc>
-    <lastmod>2023-04-28T15:30:56+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/post/linux/02-getting-started-with-linux-cl/</loc>
-    <lastmod>2023-04-28T15:32:47+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/post/linux/03-configure-linux-environment/</loc>
-    <lastmod>2023-04-28T15:33:05+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/post/linux/04-beginner-network-configuration/</loc>
-    <lastmod>2023-04-28T15:33:30+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/post/linux/05-securing-linux-system/</loc>
-    <lastmod>2023-04-28T15:33:51+03:00</lastmod>
-  </url><url>
     <loc>https://ericngigi.netlify.app/tags/arch-linux/</loc>
     <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
@@ -41,41 +26,10 @@
     <loc>https://ericngigi.netlify.app/post/arch-linux/01-arch-linux-base-install/</loc>
     <lastmod>2023-04-29T09:45:37+03:03</lastmod>
   </url><url>
-    <loc>https://ericngigi.netlify.app/tags/containerization/</loc>
-    <lastmod>2023-04-27T14:33:39+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/tags/docker/</loc>
-    <lastmod>2023-04-27T14:33:39+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/post/docker/getting-started-with-docker/</loc>
-    <lastmod>2023-04-27T14:33:39+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/tags/virtualization/</loc>
-    <lastmod>2023-04-27T14:33:39+03:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/tags/github-pages/</loc>
-    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/post/blogging/01-how-to-create-a-hugo-based-blog/</loc>
-    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/tags/hugo/</loc>
-    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/tags/netlify/</loc>
-    <lastmod>2023-04-26T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/more/</loc>
-    <lastmod>2020-04-25T21:25:07-04:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/more/portfolio/</loc>
-    <lastmod>2020-04-25T21:25:07-04:00</lastmod>
-  </url><url>
-    <loc>https://ericngigi.netlify.app/more/certifications/</loc>
-    <lastmod>2020-04-23T16:01:51-04:00</lastmod>
-  </url><url>
     <loc>https://ericngigi.netlify.app/more/about/</loc>
   </url><url>
     <loc>https://ericngigi.netlify.app/categories/</loc>
+  </url><url>
+    <loc>https://ericngigi.netlify.app/more/</loc>
   </url>
 </urlset>
