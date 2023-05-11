@@ -11,8 +11,8 @@
     <meta property="og:image" content="https://ericngigi.netlify.appimages/banner/header-banner-image-05.jpg">
 
     
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:image" content="https://www.cedricscherer.com/" >
+    
+    
     
 
     
@@ -99,13 +99,11 @@
 		    
                         <li><a href="/archive/">Archive</a></li>
                     
-                        <li><a href="/top/portfolio/">Portfolio</a></li>
+                        <li><a href="/more/portfolio/">Portfolio</a></li>
                     
-                        <li><a href="/top/certifications/">Certifications</a></li>
+                        <li><a href="/more/certifications/">Certifications</a></li>
                     
-                        <li><a href="/top/about/">About</a></li>
-                    
-                        <li><a href="/top/services/">Services</a></li>
+                        <li><a href="/more/about/">About</a></li>
                     
 
                     
@@ -232,12 +230,12 @@
 <p>Basic knowledge of Git with its command-line interface and GitHub/Netlify accounts are the prerequisites for this tutorial. As a host operating system, I will be using Archlinux.</p>
 <h2 id="install-hugo">Install Hugo</h2>
 <p>According to the official Hugo documentation, it is not recommended to install Hugo using the pacman manager using the code below to the latest version of Hugo.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S hugo
-</span></span></code></pre></div><p><img src="/images/post/hugo/installing-hugo.png" alt="installing-hugo"></p>
+<pre tabindex="0"><code>pacman -S hugo
+</code></pre><p><img src="/images/post/hugo/installing-hugo.png" alt="installing-hugo"></p>
 <h2 id="creating-a-new-site">Creating a new site</h2>
 <p>To create a new site, execute the hugo new site command in the site’s root directory, for example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site <span style="color:#f1fa8c">&#39;examplesite&#39;</span>
-</span></span></code></pre></div><p>I&rsquo;m using erikngigi.github.io as a site name because I currently own the domain name and intend to utilize it as a custom domain for my website. The freshly generated site has the proper framework, but no content or theme.</p>
+<pre tabindex="0"><code>hugo new site &#39;examplesite&#39;
+</code></pre><p>I&rsquo;m using erikngigi.github.io as a site name because I currently own the domain name and intend to utilize it as a custom domain for my website. The freshly generated site has the proper framework, but no content or theme.</p>
 <p><img src="/images/post/hugo/creating-hugo-new-site.png" alt="hugo-new-site"></p>
 <p>You must first select a Hugo theme before continue. <a href="https://themes.gohugo.io/">Hugo</a> has a profusion of themes to meet a variety of interests and needs. I choose the Clean White Hugo theme because it is blog-friendly, responsive, and multilingual. It also supports Disqus comments, Algolia search, and Google Analytics.</p>
 <p>Move to the site’s root directory and initialize a Git repository:</p>
@@ -335,15 +333,6 @@ git submodule add https://github.com/
 		                
                     
                       
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
                 </ul>
                 
                 
@@ -412,7 +401,11 @@ git submodule add https://github.com/
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+<<<<<<< HEAD
 	ga('create', 'G-J3W04RXRNJ', 'auto');
+=======
+	ga('create', 'G-F0PQWDF2RZ', 'auto');
+>>>>>>> development
 	
 	ga('send', 'pageview');
 }

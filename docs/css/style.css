@@ -90,6 +90,64 @@
     src: url("../fonts/InputSansCondensed-LightItalic.ttf") format("truetype");
     font-style: italic;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+    font-style: bold;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Bold.ttf") format("truetype");
+    font-style: bold;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Light.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Medium.ttf") format("truetype");
+    font-style: medium;
+}
 
 .sidebar-container{
   color:#676767;
@@ -150,7 +208,8 @@
 }
 
 body{
-  font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  /* font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system; */
+  font-family:'Roboto-Medium','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   line-height:1.8;
   font-size:2.05rem;
   font-weight:400;
@@ -206,7 +265,7 @@ article{
 }
 
 blockquote{
-  font-family:'Input Sans','Arial','Helvetica',sans-serif,-apple-system;
+  font-family:'JetBrainsMono-Medium','Arial','Helvetica',sans-serif,-apple-system;
   color:#414c48;
   font-size:17px;
   font-weight: 500;
@@ -260,7 +319,7 @@ pre code{
   word-wrap:normal;
   font-weight:400;
   font-size:14.6px;
-  font-family:'Input Mono Condensed','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
+  font-family:'JetBrainsMono-Regular','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
 }
 .post-container a{
   color:#6699CC;
@@ -523,7 +582,8 @@ pre code{
   letter-spacing:1.25px;
 }
 .intro-header .site-heading .subheading{
-  font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  /* font-family:'Cabinet Grotesk','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system; */
+  font-family:'Roboto-Medium','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   font-size:1.75rem;
   line-height:1.1;
   display:block;
@@ -551,7 +611,8 @@ pre code{
   display:block;
 }
 .intro-header .post-heading .meta{
-  font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif;
+  /* font-family:'Cabinet Grotesk','Arial','Helvetica',sans-serif; */
+  font-family:'Roboto-Medium','Arial','Helvetica',sans-serif;
   font-weight:600;
   font-size:1.4rem;
 }
@@ -605,7 +666,8 @@ pre code{
   margin-bottom:1rem;
 }
 .post-preview>.post-meta{
-  font-family:'Cabinet Grotesk','Arial', sans-serif;
+  /* font-family:'Cabinet Grotesk','Arial', sans-serif; */
+  font-family:'Roboto-Medium','Arial', sans-serif;
   color:#6699CC;
   font-size:1.45rem;
   font-weight:600;
@@ -818,7 +880,8 @@ body{
   border:1.2px solid rgba(255,255,255,.8);
   border-radius:999em;
   padding:.2rem .8rem .1rem;
-  font-family:'Cabinet Grotesk','Arial',sans-serif,-apple-system;
+  /* font-family:'Cabinet Grotesk','Arial',sans-serif,-apple-system; */
+  font-family:'Roboto-Medium','Arial',sans-serif,-apple-system;
   color:#fff;
   line-height:1.6;
   font-size:1.2rem;
@@ -1096,7 +1159,8 @@ body{
 .gallery-caption {
   color: #8c8c8c;
   display: block;
-  font-family: "Cabinet Grotesk", sans-serif;
+  /* font-family: "Cabinet Grotesk", sans-serif; */
+  font-family: "Roboto-Medium", sans-serif;
   font-size: 12px;
   padding: 0.5em 0;
 }

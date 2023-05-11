@@ -4,6 +4,8 @@ date: 2020-04-25T21:25:07-04:00
 excludeFromTopNav: false
 showDate: false
 showComments: false
+showTOC: false
+draft: true
 ---
 
 ### 2023

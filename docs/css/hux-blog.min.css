@@ -10,47 +10,105 @@
        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
   font-weight: 100 900;
 }
+/* @font-face { */
+/*   font-family: 'Input Mono'; */
+/*   src: url("../fonts/InputMono-Regular.ttf") format("truetype"); */
+/* } */
+/* @font-face { */
+/*   font-family: 'Input Mono'; */
+/*   src: url("../fonts/InputMono-Bold.ttf") format("truetype"); */
+/*   font-weight: bold; */
+/* } */
+/* @font-face { */
+/*   font-family: 'Input Mono'; */
+/*   src: url("../fonts/InputMono-Italic.ttf") format("truetype"); */
+/*   font-style: italic; */
+/* } */
+/* @font-face { */
+/*   font-family: 'Input Mono Condensed'; */
+/*   src: url("../fonts/InputMonoCondensed-Regular.ttf") format("truetype"); */
+/* } */
+/* @font-face { */
+/*   font-family: 'Input Mono Condensed'; */
+/*   src: url("../fonts/InputMonoCondensed-Bold.ttf") format("truetype"); */
+/*   font-weight: bold; */
+/* } */
+/* @font-face { */
+/*   font-family: 'Input Mono Condensed'; */
+/*   src: url("../fonts/InputMonoCondensed-Italic.ttf") format("truetype"); */
+/*   font-style: italic; */
+/* } */
+/* @font-face { */
+/*   font-family: 'Input Sans'; */
+/*   src: url("../fonts/InputSansCondensed-Light.ttf") format("truetype"); */
+/* } */
+/* @font-face { */
+/*   font-family: 'Input Sans'; */
+/*   src: url("../fonts/InputSans-Medium.ttf") format("truetype"); */
+/*   font-weight:bold; */
+/* } */
+/* @font-face { */
+/*   font-family: 'Input Sans'; */
+/*   src: url("../fonts/InputSansCondensed-LightItalic.ttf") format("truetype"); */
+/*   font-style: italic; */
+/* } */
 @font-face {
-  font-family: 'Input Mono';
-  src: url("../fonts/InputMono-Regular.ttf") format("truetype");
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Input Mono';
-  src: url("../fonts/InputMono-Bold.ttf") format("truetype");
-  font-weight: bold;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-style: bold;
 }
 @font-face {
-  font-family: 'Input Mono';
-  src: url("../fonts/InputMono-Italic.ttf") format("truetype");
-  font-style: italic;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+    font-style: italic;
 }
 @font-face {
-  font-family: 'Input Mono Condensed';
-  src: url("../fonts/InputMonoCondensed-Regular.ttf") format("truetype");
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
+    font-style: italic;
 }
 @font-face {
-  font-family: 'Input Mono Condensed';
-  src: url("../fonts/InputMonoCondensed-Bold.ttf") format("truetype");
-  font-weight: bold;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-style: bold;
 }
 @font-face {
-  font-family: 'Input Mono Condensed';
-  src: url("../fonts/InputMonoCondensed-Italic.ttf") format("truetype");
-  font-style: italic;
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
+    font-style: bold;
 }
 @font-face {
-  font-family: 'Input Sans';
-  src: url("../fonts/InputSansCondensed-Light.ttf") format("truetype");
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+    font-style: bold;
 }
 @font-face {
-  font-family: 'Input Sans';
-  src: url("../fonts/InputSans-Medium.ttf") format("truetype");
-  font-weight:bold;
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Input Sans';
-  src: url("../fonts/InputSansCondensed-LightItalic.ttf") format("truetype");
-  font-style: italic;
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Bold.ttf") format("truetype");
+    font-style: bold;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Light.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url("../fonts/JetBrainsMono-Medium.ttf") format("truetype");
+    font-style: medium;
 }
 
 .sidebar-container {
@@ -113,7 +171,8 @@
 }
 
 body {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
   line-height: 1.8;
   font-size: 2.05rem;
   font-weight: 430;
@@ -133,9 +192,10 @@ p {
 
 
 h1,h2,h3,h6 {
-  font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  /* font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system; */
+  font-family: 'Roboto-Black','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   line-height: 1.2;
-  font-weight: 860;
+  font-weight: 900;
 	font-feature-settings: "ss01" 1;
 }
 h1 {
@@ -143,7 +203,8 @@ h1 {
   letter-spacing: 1px;
 }
 .navbar h1 {
-  font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   font-weight: 860;
   font-size: 4rem;
   font-feature-settings: "ss01" 1;
@@ -152,14 +213,15 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 3.9rem;
+  font-size: 2.8rem;
 }
 h3 {
   font-weight: 720;
   font-size: 3.1rem;
 }
 h4,h5 {
-  font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
   font-weight: 860;
   line-height: 1.2;
   letter-spacing: -.25px;
@@ -208,7 +270,7 @@ article {
 }
 
 blockquote {
-  font-family: 'Input Sans','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'JetBrainsMono-Medium','Arial','Helvetica',sans-serif,-apple-system;
   color: #414c48;
   font-size: 17px;
   font-weight: 500;
@@ -262,7 +324,7 @@ pre code {
   word-wrap: normal;
   font-weight: 400;
   font-size: 14.6px;
-  font-family: 'Input Mono Condensed','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
+  font-family: 'JetBrainsMono-Regular','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
 }
 .post-container a {
   color: #6495ED;
@@ -372,7 +434,8 @@ pre code {
   color: transparent;
 }
 .navbar-custom, .navbar-brand, .nav li a {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
   font-weight: 600;
   color: #fff;
   height: 56px;
@@ -565,7 +628,8 @@ pre code {
   letter-spacing: 1.25px;
 }
 .intro-header .site-heading .subheading {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
   font-size: 1.75rem;
   line-height: 1.1;
   display: block;
@@ -599,7 +663,8 @@ pre code {
   display: block;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
   font-weight: 780;
   font-size: 1.4rem;
 	font-feature-settings: "ss01" 1;
@@ -641,7 +706,8 @@ pre code {
 }
 
 .post-preview>a>.post-title {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
   font-size: 2.8rem;
   font-weight: 780;
   letter-spacing: -.25px;
@@ -659,7 +725,8 @@ pre code {
   margin-bottom: 1rem;
 }
 .post-preview>.post-meta {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
   /*font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;*/
   color: #6495ED;
   font-size: 1.5rem;
@@ -793,7 +860,8 @@ form .row:first-child .floating-label-form-group {
   border-top: .1rem solid #eee;
 }
 .btn {
-  font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  /* font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system; */
+  font-family: 'Roboto-Black','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   font-weight: 600;
   line-height: 1.7;
   text-transform: uppercase;
@@ -878,7 +946,8 @@ body {
   border: 1.2px solid rgba(255,255,255,.8);
   border-radius: 999em;
   padding: .2rem .8rem .1rem;
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
   color: #fff;
   line-height: 1.6;
   font-size: 1.2rem;
@@ -963,7 +1032,8 @@ body {
 }
 
 .one-tag-list .tag-text {
-  font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  /* font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system; */
+  font-family: 'Roboto-Black','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   font-weight: 720;
   line-height: 1.7;
 	font-feature-settings: "ss01" 1;
@@ -1166,7 +1236,8 @@ a.about-bold:hover {
 }
 
 .highlight {
-  font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system;
+  /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
+  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
   font-size: 1.8rem;
   font-weight: 780;
   color: #6495ED;
@@ -1210,7 +1281,8 @@ a.about-bold:hover {
 }
 
 .emphasize {
-  font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  /* font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system; */
+  font-family: 'Roboto-Black','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   font-size: 2.85rem;
   font-weight: 600;
   line-height: 1.15;

@@ -4,10 +4,12 @@ date: 2020-04-23T16:01:51-04:00
 excludeFromTopNav: false
 showDate: false
 showComments: false
+showTOC: false
 # set the link if you want to redirect the user.
 link: ""
 # set the html target parameter if you want to change default behavior
 target: "_blank"
+draft: true
 ---
 
 ### 2020
