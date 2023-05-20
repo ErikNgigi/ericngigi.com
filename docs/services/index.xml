@@ -1,0 +1,54 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on LinuxOps</title>
+    <link>https://ericngigi.netlify.app/services/</link>
+    <description>Recent content in Services on LinuxOps</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 May 2023 09:45:37 +0303</lastBuildDate><atom:link href="https://ericngigi.netlify.app/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://ericngigi.netlify.app/services/resumes/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/services/resumes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://ericngigi.netlify.app/more/services/resumes.md&#34;&gt;An Internal Link to a Section Heading&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>https://ericngigi.netlify.app/services/services/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/services/services/</guid>
+      <description>&lt;p&gt;Our comprehensive range of services includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;services/resumes&#34;&gt;Custom CV Writing or Revamp&lt;/a&gt;: Our expert writers will craft personalized CVs that highlight your unique skills, experiences, and achievements. We also provide professional revamping services for your existing CV to make it stand out.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Building Responsive Websites: We specialize in creating visually stunning and user-friendly websites that adapt seamlessly across all devices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithmic Trading Scripts: Harness the power of automation in the financial markets with our cutting-edge algorithmic trading scripts. Streamline your trading strategies and maximize your potential for success.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SEO Optimization for LinkedIn: Enhance your LinkedIn profile visibility and reach with our SEO optimization techniques. Stand out to potential employers and professional connections on the world&amp;rsquo;s largest professional networking platform.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Explore our diverse range of services and let us take your digital presence to the next leve&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ericngigi.netlify.app/services/algoscripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/services/algoscripts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

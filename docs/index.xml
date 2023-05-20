@@ -5,7 +5,168 @@
     <description>Recent content on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Apr 2023 09:45:37 +0301</lastBuildDate><atom:link href="https://ericngigi.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 May 2023 09:45:37 +0303</lastBuildDate><atom:link href="https://ericngigi.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://ericngigi.netlify.app/services/resumes/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/services/resumes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://ericngigi.netlify.app/more/services/resumes.md&#34;&gt;An Internal Link to a Section Heading&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LinuxOps</title>
+      <link>https://ericngigi.netlify.app/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mores</title>
+      <link>https://ericngigi.netlify.app/more/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/more/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resume Templates</title>
+      <link>https://ericngigi.netlify.app/more/services/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/more/services/</guid>
+      <description>&lt;h2 id=&#34;one-column-resume&#34;&gt;One Column Resume&lt;/h2&gt;
+&lt;p&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://ericngigi.netlify.app/css/hugo-easy-gallery.css&#34; /&gt;
+
+&lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://ericngigi.netlify.appimages/services/test/011.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://ericngigi.netlify.appimages/services/test/011.png&#34; alt=&#34;011&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;011&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://ericngigi.netlify.appimages/services/test/011.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://ericngigi.netlify.appimages/services/test/012.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://ericngigi.netlify.appimages/services/test/012.png&#34; alt=&#34;012&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;012&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://ericngigi.netlify.appimages/services/test/012.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+&lt;/div&gt;
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ &lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+ &lt;script src=&#34;https://ericngigi.netlify.app/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
+ 
+ 
+ &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+ &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css&#34; integrity=&#34;sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=&#34; crossorigin=&#34;anonymous&#34; /&gt;
+ &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js&#34; integrity=&#34;sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+ &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js&#34; integrity=&#34;sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
+ 
+ 
+ &lt;div class=&#34;pswp&#34; tabindex=&#34;-1&#34; role=&#34;dialog&#34; aria-hidden=&#34;true&#34;&gt;
+ 
+ &lt;div class=&#34;pswp__bg&#34;&gt;&lt;/div&gt;
+ 
+ &lt;div class=&#34;pswp__scroll-wrap&#34;&gt;
+     
+     &lt;div class=&#34;pswp__container&#34;&gt;
+       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+       &lt;div class=&#34;pswp__item&#34;&gt;&lt;/div&gt;
+     &lt;/div&gt;
+     
+     &lt;div class=&#34;pswp__ui pswp__ui--hidden&#34;&gt;
+     &lt;div class=&#34;pswp__top-bar&#34;&gt;
+       
+       &lt;div class=&#34;pswp__counter&#34;&gt;&lt;/div&gt;
+       &lt;button class=&#34;pswp__button pswp__button--close&#34; title=&#34;Close (Esc)&#34;&gt;&lt;/button&gt;
+       &lt;button class=&#34;pswp__button pswp__button--share&#34; title=&#34;Share&#34;&gt;&lt;/button&gt;
+       &lt;button class=&#34;pswp__button pswp__button--fs&#34; title=&#34;Toggle fullscreen&#34;&gt;&lt;/button&gt;
+       &lt;button class=&#34;pswp__button pswp__button--zoom&#34; title=&#34;Zoom in/out&#34;&gt;&lt;/button&gt;
+       
+       
+       &lt;div class=&#34;pswp__preloader&#34;&gt;
+         &lt;div class=&#34;pswp__preloader__icn&#34;&gt;
+           &lt;div class=&#34;pswp__preloader__cut&#34;&gt;
+             &lt;div class=&#34;pswp__preloader__donut&#34;&gt;&lt;/div&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&#34;pswp__share-modal pswp__share-modal--hidden pswp__single-tap&#34;&gt;
+       &lt;div class=&#34;pswp__share-tooltip&#34;&gt;&lt;/div&gt;
+     &lt;/div&gt;
+     &lt;button class=&#34;pswp__button pswp__button--arrow--left&#34; title=&#34;Previous (arrow left)&#34;&gt;
+     &lt;/button&gt;
+     &lt;button class=&#34;pswp__button pswp__button--arrow--right&#34; title=&#34;Next (arrow right)&#34;&gt;
+     &lt;/button&gt;
+     &lt;div class=&#34;pswp__caption&#34;&gt;
+       &lt;div class=&#34;pswp__caption__center&#34;&gt;&lt;/div&gt;
+     &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;/div&gt;
+ &lt;/div&gt;
+ 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>https://ericngigi.netlify.app/services/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/services/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>https://ericngigi.netlify.app/services/services/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/services/services/</guid>
+      <description>&lt;p&gt;Our comprehensive range of services includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;services/resumes&#34;&gt;Custom CV Writing or Revamp&lt;/a&gt;: Our expert writers will craft personalized CVs that highlight your unique skills, experiences, and achievements. We also provide professional revamping services for your existing CV to make it stand out.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Building Responsive Websites: We specialize in creating visually stunning and user-friendly websites that adapt seamlessly across all devices.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algorithmic Trading Scripts: Harness the power of automation in the financial markets with our cutting-edge algorithmic trading scripts. Streamline your trading strategies and maximize your potential for success.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SEO Optimization for LinkedIn: Enhance your LinkedIn profile visibility and reach with our SEO optimization techniques. Stand out to potential employers and professional connections on the world&amp;rsquo;s largest professional networking platform.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Explore our diverse range of services and let us take your digital presence to the next leve&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Arch Linux</title>
       <link>https://ericngigi.netlify.app/tags/arch-linux/</link>
@@ -108,15 +269,6 @@
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;xrandr -q
 &lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;GRUB_CMDLINE_LINUX_DEFAULT=&amp;#34;loglevel=3 quiet mitigations=off video=VGA-1:e video=LVDS-1:d radeon.dpm=0 radeon.aspm=0 radeon.pcie_gen2=0 radeon.audio=0 radeon.msi=0 nowatchdog&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    
-    <item>
-      <title>LinuxOps</title>
-      <link>https://ericngigi.netlify.app/</link>
-      <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
-      
-      <guid>https://ericngigi.netlify.app/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -878,20 +1030,20 @@ at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.
     </item>
     
     <item>
+      <title></title>
+      <link>https://ericngigi.netlify.app/services/algoscripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ericngigi.netlify.app/services/algoscripts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Categories</title>
       <link>https://ericngigi.netlify.app/categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ericngigi.netlify.app/categories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mores</title>
-      <link>https://ericngigi.netlify.app/more/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ericngigi.netlify.app/more/</guid>
       <description></description>
     </item>
     
