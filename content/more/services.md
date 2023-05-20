@@ -8,4 +8,4 @@ showTOC: false
 
 ## One Column Resume
 
-{{< gallery dir="images/services/test" />}} {{< load-photoswipe >}}
+{{< gallery dir="/images/services/test" />}} {{< load-photoswipe >}}
