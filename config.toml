@@ -66,7 +66,7 @@ home = ["HTML", "RSS"]
   title =  "About"
   href =  "/more/about/"
   [[params.addtional_menus]]
-  title =  "Resume Templates"
+  title =  "Services"
   href =  "/more/services/"
 
   [markup]
