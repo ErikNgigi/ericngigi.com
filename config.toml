@@ -1,6 +1,6 @@
 
 baseurl = "https://ericngigi.netlify.app"
-title = "AlgoEndevaours"
+title = "LinuxOps"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
@@ -16,7 +16,7 @@ publishDir = "docs"
 home = ["HTML", "RSS"]
 
 [params]
-  header_image = "images/banner/header-banner-image-06.jpg"
+  header_image = "images/banner/header-banner-image-05.jpg"
   SEOTitle = "Leading with Innovation"
   description = "Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi's blog, discovering a bigger world with you."
   keyword = "Eric, eric, Eric's Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps"

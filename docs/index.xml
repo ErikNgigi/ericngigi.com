@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AlgoEndevaours</title>
+    <title>LinuxOps</title>
     <link>https://ericngigi.netlify.app/</link>
-    <description>Recent content on AlgoEndevaours</description>
+    <description>Recent content on LinuxOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 May 2023 09:45:37 +0303</lastBuildDate><atom:link href="https://ericngigi.netlify.app/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>AlgoEndevaours</title>
+      <title>LinuxOps</title>
       <link>https://ericngigi.netlify.app/</link>
       <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
       
