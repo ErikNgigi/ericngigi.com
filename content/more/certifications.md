@@ -1,6 +1,7 @@
 ---
 title: "Certifications"
 date: 2020-04-23T16:01:51-04:00
+draft: true
 excludeFromTopNav: false
 showDate: false
 showComments: false
@@ -9,7 +10,6 @@ showTOC: false
 link: ""
 # set the html target parameter if you want to change default behavior
 target: "_blank"
-draft: true
 ---
 
 ### 2020

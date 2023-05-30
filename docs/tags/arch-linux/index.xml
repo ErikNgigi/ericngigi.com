@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Arch Linux on LinuxOps</title>
+    <title>Arch Linux on Eric Ngigi</title>
     <link>https://ericngigi.netlify.app/tags/arch-linux/</link>
-    <description>Recent content in Arch Linux on LinuxOps</description>
+    <description>Recent content in Arch Linux on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Apr 2023 09:45:37 +0301</lastBuildDate><atom:link href="https://ericngigi.netlify.app/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />

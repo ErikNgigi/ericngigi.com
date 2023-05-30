@@ -1,6 +1,6 @@
 
 baseurl = "https://ericngigi.netlify.app"
-title = "LinuxOps"
+title = "Eric Ngigi"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
 # Enable comments by entering your Disqus shortname
