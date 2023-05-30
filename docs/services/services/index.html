@@ -18,10 +18,10 @@
     
 
     
-      <meta name="title" content="Arch Linux Extra Installation" />
-      <meta property="og:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:text:title" content="Arch Linux Extra Installation - " />
+      <meta name="title" content="Services" />
+      <meta property="og:title" content="Services - " />
+      <meta property="twitter:title" content="Services - " />
+      <meta property="twitter:text:title" content="Services - " />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
     <link rel="shortcut icon" href="/favicons/favicon.ico">
 
-    <title>Arch Linux Extra Installation - Leading with Innovation</title>
+    <title>Services - Leading with Innovation</title>
 
-    <link rel="canonical" href="/post/arch-linux/03-arch-linux-base-install/">
+    <link rel="canonical" href="/services/services/">
 
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -103,7 +103,7 @@
                     
                         <li><a href="/more/about/">About</a></li>
                     
-                        <li><a href="/more/services/">Services</a></li>
+                        <li><a href="/more/services/">Resume Templates</a></li>
                     
 
                     
@@ -148,7 +148,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/images/post/arch/geowaves.png')
+        background-image: url('/images/banner/service-banner-01.jpg')
     }
 </style>
 <header class="intro-header">
@@ -158,20 +158,12 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/arch-linux" title="Arch Linux">
-                            Arch Linux
-                        </a>
-                        
-                        <a class="tag" href="/tags/tutorial" title="Tutorial">
-                            Tutorial
-                        </a>
-                        
                     </div>
-                    <h1>Arch Linux Extra Installation</h1>
-                    <h2 class="subheading"></h2>
+                    <h1>Services</h1>
+                    <h2 class="subheading">Explore our comprehensive suite of offerings and unlock the potential for success.</h2>
                     <span class="meta">
 			
-			Saturday • April 29, 2023 
+			Monday • May 15, 2023 
                         
                     </span>
                 </div>
@@ -194,109 +186,23 @@
                 post-container">
 
                 
-                <header>
-                    <h3>Table of Contents</h3>
-                </header>
-                <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#theming">Theming</a></li>
-        <li><a href="#shell">Shell</a></li>
-        <li><a href="#daily-apps">Daily Apps</a></li>
-        <li><a href="#grub-configuration">Grub Configuration</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-                
-                <p>The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.</p>
-<h2 id="theming">Theming</h2>
+                <p>Our comprehensive range of services includes:</p>
 <ul>
 <li>
-<p>Icon themes</p>
-<ul>
-<li>papirus-icon-theme</li>
-<li>tela-icon-theme</li>
-<li>tela-circle-icon-theme</li>
-</ul>
+<p><a href="services/resumes">Custom CV Writing or Revamp</a>: Our expert writers will craft personalized CVs that highlight your unique skills, experiences, and achievements. We also provide professional revamping services for your existing CV to make it stand out.</p>
 </li>
 <li>
-<p>GTK Theme</p>
-<ul>
-<li>whitesur-dark</li>
-<li>orchis theme</li>
-</ul>
+<p>Building Responsive Websites: We specialize in creating visually stunning and user-friendly websites that adapt seamlessly across all devices.</p>
 </li>
 <li>
-<p>Qt5 Theme</p>
-<ul>
-<li><code>qt5ct</code> with kvantum</li>
-</ul>
+<p>Algorithmic Trading Scripts: Harness the power of automation in the financial markets with our cutting-edge algorithmic trading scripts. Streamline your trading strategies and maximize your potential for success.</p>
 </li>
 <li>
-<p>Cursor Theme</p>
-<ul>
-<li>vimix-cursors</li>
-</ul>
+<p>SEO Optimization for LinkedIn: Enhance your LinkedIn profile visibility and reach with our SEO optimization techniques. Stand out to potential employers and professional connections on the world&rsquo;s largest professional networking platform.</p>
 </li>
 </ul>
-<h2 id="shell">Shell</h2>
-<p>Install <code>zsh</code> to replace <code>bash</code> shell</p>
-<p>Install <code>zsh</code>:</p>
-<pre tabindex="0"><code>pacman -S zsh fzf
-</code></pre><ul>
-<li><code>zsh</code>: a modern replacement for the bash shell</li>
-<li><code>fzf</code>: fuzzy finder</li>
-</ul>
-<h2 id="daily-apps">Daily Apps</h2>
-<ul>
-<li>
-<p>Browser</p>
-<ul>
-<li><code>brave-bin</code>: Brave Browser</li>
-</ul>
-</li>
-<li>
-<p>Media</p>
-<ul>
-<li><code>mpv</code>: media player</li>
-<li><code>clementine</code>: Graphical music player</li>
-<li><code>feh</code> image viewer</li>
-<li><code>obs</code>: screen recorder</li>
-</ul>
-</li>
-<li>
-<p>Media and Graphics Editing Tools</p>
-<ul>
-<li><code>gimp</code>: image manipulation program</li>
-<li><code>inkscape</code>: vector graphics editor</li>
-<li><code>ffmpeg</code>: video converter</li>
-<li><code>imagemagick</code>: image viewing/manipulation program</li>
-</ul>
-</li>
-<li>
-<p>Misc</p>
-<ul>
-<li><code>flameshot</code>: screenshot tool</li>
-<li><code>zathura-pdf-mupdf</code>: as pdf viewer</li>
-<li><code>redshift</code>: blue light filter</li>
-<li><code>mugshot</code>: personal user details updater</li>
-<li><code>arandr</code>: xrandr front-end</li>
-<li><code>qbittorent</code>: Graphical bittorent client</li>
-<li><code>htop</code>: CLI interactive process viewer</li>
-<li><code>scrcpy</code>: android viewing tool</li>
-<li><code>xmind</code>: mind mapping tool</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="grub-configuration">Grub Configuration</h2>
-<p>I add the following lines to <code>GRUB_CMD_LINUX_DEFAULT</code> to disable the laptop screen after boot.</p>
-<p>Use <code>xrandr</code> to determine the id of each screen.</p>
-<pre tabindex="0"><code>xrandr -q
-</code></pre><pre tabindex="0"><code>GRUB_CMDLINE_LINUX_DEFAULT=&#34;loglevel=3 quiet mitigations=off video=VGA-1:e video=LVDS-1:d radeon.dpm=0 radeon.aspm=0 radeon.pcie_gen2=0 radeon.audio=0 radeon.msi=0 nowatchdog&#34;
-</code></pre>
+<p>Explore our diverse range of services and let us take your digital presence to the next leve</p>
+
 
                 
 
@@ -304,9 +210,13 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/arch-linux/02-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Post Installation">&larr; Previous Post</a>
+                        <a href="/services/algoscripts/" data-toggle="tooltip" data-placement="top" title="">&larr; Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/services/resumes/" data-toggle="tooltip" data-placement="top" title="">Next Post &rarr;</a>
+                    </li>
                     
                 </ul>
 
@@ -444,6 +354,19 @@
 
 
 
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-267193971-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 

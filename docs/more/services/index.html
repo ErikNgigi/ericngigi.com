@@ -18,10 +18,10 @@
     
 
     
-      <meta name="title" content="Arch Linux Extra Installation" />
-      <meta property="og:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:text:title" content="Arch Linux Extra Installation - " />
+      <meta name="title" content="Our Services" />
+      <meta property="og:title" content="Our Services - " />
+      <meta property="twitter:title" content="Our Services - " />
+      <meta property="twitter:text:title" content="Our Services - " />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
     <link rel="shortcut icon" href="/favicons/favicon.ico">
 
-    <title>Arch Linux Extra Installation - Leading with Innovation</title>
+    <title>Our Services - Leading with Innovation</title>
 
-    <link rel="canonical" href="/post/arch-linux/03-arch-linux-base-install/">
+    <link rel="canonical" href="/more/services/">
 
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -148,7 +148,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/images/post/arch/geowaves.png')
+        background-image: url('/images/banner/header-banner-image-05.jpg')
     }
 </style>
 <header class="intro-header">
@@ -158,20 +158,12 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/arch-linux" title="Arch Linux">
-                            Arch Linux
-                        </a>
-                        
-                        <a class="tag" href="/tags/tutorial" title="Tutorial">
-                            Tutorial
-                        </a>
-                        
                     </div>
-                    <h1>Arch Linux Extra Installation</h1>
-                    <h2 class="subheading"></h2>
+                    <h1>Our Services</h1>
+                    <h2 class="subheading">Explore our comprehensive suite resume templates and unlock the potential for success.</h2>
                     <span class="meta">
 			
-			Saturday • April 29, 2023 
+			Monday • May 15, 2023 
                         
                     </span>
                 </div>
@@ -194,109 +186,23 @@
                 post-container">
 
                 
-                <header>
-                    <h3>Table of Contents</h3>
-                </header>
-                <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#theming">Theming</a></li>
-        <li><a href="#shell">Shell</a></li>
-        <li><a href="#daily-apps">Daily Apps</a></li>
-        <li><a href="#grub-configuration">Grub Configuration</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-                
-                <p>The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.</p>
-<h2 id="theming">Theming</h2>
-<ul>
-<li>
-<p>Icon themes</p>
-<ul>
-<li>papirus-icon-theme</li>
-<li>tela-icon-theme</li>
-<li>tela-circle-icon-theme</li>
-</ul>
-</li>
-<li>
-<p>GTK Theme</p>
-<ul>
-<li>whitesur-dark</li>
-<li>orchis theme</li>
-</ul>
-</li>
-<li>
-<p>Qt5 Theme</p>
-<ul>
-<li><code>qt5ct</code> with kvantum</li>
-</ul>
-</li>
-<li>
-<p>Cursor Theme</p>
-<ul>
-<li>vimix-cursors</li>
-</ul>
-</li>
-</ul>
-<h2 id="shell">Shell</h2>
-<p>Install <code>zsh</code> to replace <code>bash</code> shell</p>
-<p>Install <code>zsh</code>:</p>
-<pre tabindex="0"><code>pacman -S zsh fzf
-</code></pre><ul>
-<li><code>zsh</code>: a modern replacement for the bash shell</li>
-<li><code>fzf</code>: fuzzy finder</li>
-</ul>
-<h2 id="daily-apps">Daily Apps</h2>
-<ul>
-<li>
-<p>Browser</p>
-<ul>
-<li><code>brave-bin</code>: Brave Browser</li>
-</ul>
-</li>
-<li>
-<p>Media</p>
-<ul>
-<li><code>mpv</code>: media player</li>
-<li><code>clementine</code>: Graphical music player</li>
-<li><code>feh</code> image viewer</li>
-<li><code>obs</code>: screen recorder</li>
-</ul>
-</li>
-<li>
-<p>Media and Graphics Editing Tools</p>
-<ul>
-<li><code>gimp</code>: image manipulation program</li>
-<li><code>inkscape</code>: vector graphics editor</li>
-<li><code>ffmpeg</code>: video converter</li>
-<li><code>imagemagick</code>: image viewing/manipulation program</li>
-</ul>
-</li>
-<li>
-<p>Misc</p>
-<ul>
-<li><code>flameshot</code>: screenshot tool</li>
-<li><code>zathura-pdf-mupdf</code>: as pdf viewer</li>
-<li><code>redshift</code>: blue light filter</li>
-<li><code>mugshot</code>: personal user details updater</li>
-<li><code>arandr</code>: xrandr front-end</li>
-<li><code>qbittorent</code>: Graphical bittorent client</li>
-<li><code>htop</code>: CLI interactive process viewer</li>
-<li><code>scrcpy</code>: android viewing tool</li>
-<li><code>xmind</code>: mind mapping tool</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="grub-configuration">Grub Configuration</h2>
-<p>I add the following lines to <code>GRUB_CMD_LINUX_DEFAULT</code> to disable the laptop screen after boot.</p>
-<p>Use <code>xrandr</code> to determine the id of each screen.</p>
-<pre tabindex="0"><code>xrandr -q
-</code></pre><pre tabindex="0"><code>GRUB_CMDLINE_LINUX_DEFAULT=&#34;loglevel=3 quiet mitigations=off video=VGA-1:e video=LVDS-1:d radeon.dpm=0 radeon.aspm=0 radeon.pcie_gen2=0 radeon.audio=0 radeon.msi=0 nowatchdog&#34;
-</code></pre>
+                <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="introduction">Introduction</h1>
+<p>In today&rsquo;s digital age, it&rsquo;s crucial to make a lasting impression and stay ahead of the competition. At our company, we offer a range of services designed to elevate your online presence, boost your career prospects, and expand your skillset. Here&rsquo;s why investing your time and money in our services can be a game-changer.</p>
+<h3 id="custom-designed-static-website-showcasing-your-portfolioservicesstatic-website"><a href="/services/static-website">Custom Designed Static Website: Showcasing Your Portfolio</a></h3>
+<p>A professionally designed static website tailored to your unique style and needs is a powerful tool for presenting your portfolio. Impress potential clients and employers with a visually appealing and user-friendly platform that showcases your skills, projects, and achievements.</p>
+<h3 id="resume-and-cover-letter-templates-making-a-memorable-first-impressionservicescustom-resumes"><a href="/services/custom-resumes">Resume and Cover Letter Templates: Making a Memorable First Impression</a></h3>
+<p>Crafting an impactful resume and cover letter is essential for landing your dream job. Our meticulously designed templates ensure a polished and professional appearance while highlighting your strengths and accomplishments. Stand out from the competition and leave a lasting impression.</p>
+<h3 id="algorithmic-trading-scripts-maximizing-your-investment-potentialservicesalgorithm-scripts"><a href="/services/algorithm-scripts">Algorithmic Trading Scripts: Maximizing Your Investment Potential</a></h3>
+<p>For those interested in the financial markets, our algorithmic trading scripts provide a competitive edge. Leverage the power of automation and data-driven strategies to make informed trading decisions, optimize profits, and minimize risks. Unlock new possibilities in the world of finance.</p>
+<h3 id="learning-aws-harnessing-the-power-of-cloud-computingserviceslearning-aws"><a href="/services/learning-aws">Learning AWS: Harnessing the Power of Cloud Computing</a></h3>
+<p>As cloud computing continues to revolutionize industries, mastering Amazon Web Services (AWS) is a valuable skillset. Our comprehensive courses and hands-on learning materials will empower you to navigate the AWS ecosystem, enabling you to build scalable and secure cloud-based solutions.</p>
+<h3 id="custom-online-stores-empowering-your-e-commerce-journeyservicesecommerce"><a href="/services/ecommerce">Custom Online Stores: Empowering Your E-Commerce Journey</a></h3>
+<p>In the booming world of e-commerce, a custom online store sets you apart from the crowd. We provide tailored solutions that ensure seamless user experiences, robust security, and scalable infrastructure. Take your business to new heights with an online store that reflects your brand and captivates customers.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Investing in our services is an investment in your personal and professional growth. Whether you need a stunning portfolio website, standout resume templates, algorithmic trading scripts, AWS expertise, or a custom online store, we are here to empower your journey. Join us and unlock your full potential in today&rsquo;s dynamic digital landscape.</p>
+
 
                 
 
@@ -304,7 +210,7 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/arch-linux/02-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Post Installation">&larr; Previous Post</a>
+                        <a href="/more/about/" data-toggle="tooltip" data-placement="top" title="">&larr; Previous Post</a>
                     </li>
                     
                     
