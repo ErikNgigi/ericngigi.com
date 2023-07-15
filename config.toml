@@ -28,8 +28,8 @@ home = ["HTML", "RSS"]
   # Sidebar settings
   sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
   sidebar_avatar = "images/eric-ngigi-profile-picture.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
-  featured_tags = false
-  featured_condition_size = 1
+  featured_tags = true
+  featured_condition_size = 0
   support_button = true
   friends = false
   bookmarks = false
