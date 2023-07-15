@@ -466,7 +466,6 @@ pre code {
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: inherit;
   transition: all 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:before {
