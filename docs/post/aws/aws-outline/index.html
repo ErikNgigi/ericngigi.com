@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Eric Ngigi">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ericngigi.netlify.appimages/banner/header-banner-image-05.jpg">
+
+    
+    
+    
+    
+
+    
+
+    
+      <meta name="title" content="Amazon Web Services (AWS) Learning Path" />
+      <meta property="og:title" content="Amazon Web Services (AWS) Learning Path - " />
+      <meta property="twitter:title" content="Amazon Web Services (AWS) Learning Path - " />
+      <meta property="twitter:text:title" content="Amazon Web Services (AWS) Learning Path - " />
+    
+
+    
+      <meta name="description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you.">
+      <meta property="og:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+      <meta property="twitter:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+    
+
+    
+
+    <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+
+    <title>Amazon Web Services (AWS) Learning Path - Leading with Innovation</title>
+
+    <link rel="canonical" href="/post/aws/aws-outline/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src="/terminal-128.png" width=37% style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/more/about/">About</a></li>
+                    
+                        <li><a href="/more/services/">Services</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/post/aws/aws_banner.webp')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/aws" title="AWS">
+                            AWS
+                        </a>
+                        
+                    </div>
+                    <h1>Amazon Web Services (AWS) Learning Path</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			
+			Saturday • July 15, 2023 
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h3>Table of Contents</h3>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction:</a>
+      <ul>
+        <li><a href="#section-1-building-a-solid-foundation">Section 1: Building a Solid Foundation</a></li>
+        <li><a href="#section-2-version-control-systems-vcs">Section 2: Version Control Systems (VCS)</a></li>
+        <li><a href="#section-3-continuous-integration-and-deployment-with-aws">Section 3: Continuous Integration and Deployment with AWS</a></li>
+        <li><a href="#section-4-configuration-management-with-aws">Section 4: Configuration Management with AWS</a></li>
+        <li><a href="#section-5-containerization-and-orchestration-with-aws">Section 5: Containerization and Orchestration with AWS</a></li>
+        <li><a href="#section-6-monitoring-and-logging-in-aws">Section 6: Monitoring and Logging in AWS</a></li>
+        <li><a href="#section-7-infrastructure-security-and-compliance-on-aws">Section 7: Infrastructure Security and Compliance on AWS</a></li>
+        <li><a href="#section-8-advanced-topics-in-aws-devops">Section 8: Advanced Topics in AWS DevOps</a></li>
+      </ul>
+    </li>
+    <li><a href="#learning-outline">Learning Outline</a></li>
+  </ul>
+</nav>
+                
+                <h1 id="introduction">Introduction:</h1>
+<p>In today&rsquo;s digital landscape, businesses are constantly seeking innovative ways to accelerate development, enhance scalability, and ensure operational efficiency. As cloud computing continues to revolutionize the IT industry, mastering Amazon Web Services (AWS) has become a crucial skill for aspiring DevOps professionals. The course outline presented below provides a comprehensive learning path, enabling individuals to harness the power of AWS and thrive in the world of cloud-based infrastructure and automation.</p>
+<h2 id="section-1-building-a-solid-foundation">Section 1: Building a Solid Foundation</h2>
+<p>The journey begins with an introduction to DevOps principles and culture, emphasizing the collaborative mindset and agile practices that drive successful development and operations teams. Learners delve into the benefits of adopting DevOps methodologies and gain an understanding of the essential tools and roles involved in the DevOps toolchain.</p>
+<h2 id="section-2-version-control-systems-vcs">Section 2: Version Control Systems (VCS)</h2>
+<p>A strong VCS foundation is vital for effective collaboration and code management. Students learn the ins and outs of popular VCS tools like Git, including workflows, branching strategies, and remote repository management. By mastering VCS, individuals gain the ability to efficiently track code changes, resolve conflicts, and maintain code integrity within DevOps environments.</p>
+<h2 id="section-3-continuous-integration-and-deployment-with-aws">Section 3: Continuous Integration and Deployment with AWS</h2>
+<p>With a solid grasp of VCS, learners progress to the heart of DevOps: continuous integration and deployment. This section explores the powerful capabilities of AWS services such as CodePipeline, CodeBuild, and CloudFormation. Participants discover how to automate the build, test, and deployment processes, resulting in faster delivery cycles and increased application quality.</p>
+<h2 id="section-4-configuration-management-with-aws">Section 4: Configuration Management with AWS</h2>
+<p>Managing infrastructure configurations efficiently is a critical aspect of successful DevOps practices. Students learn how to leverage AWS CloudFormation and OpsWorks to define and provision resources as code, ensuring consistent and scalable infrastructure deployments. The section also covers automated configuration management techniques, empowering learners to maintain infrastructure integrity throughout the software delivery lifecycle.</p>
+<h2 id="section-5-containerization-and-orchestration-with-aws">Section 5: Containerization and Orchestration with AWS</h2>
+<p>Containerization has revolutionized application deployment, scalability, and portability. Participants explore Docker and delve into Amazon Elastic Container Service (ECS) and Elastic Kubernetes Service (EKS), learning how to orchestrate containers effectively. By mastering containerization and orchestration, individuals can deploy and manage applications in a highly scalable and resilient manner.</p>
+<h2 id="section-6-monitoring-and-logging-in-aws">Section 6: Monitoring and Logging in AWS</h2>
+<p>To ensure the health and performance of applications, learners gain expertise in monitoring and logging using AWS CloudWatch, CloudWatch Logs, and X-Ray. By proactively monitoring metrics, setting alarms, and analyzing logs, participants can detect issues early and ensure optimal application performance.</p>
+<h2 id="section-7-infrastructure-security-and-compliance-on-aws">Section 7: Infrastructure Security and Compliance on AWS</h2>
+<p>Security and compliance are paramount in the cloud. This section focuses on AWS security best practices, IAM roles and policies, and AWS services like Config and Secrets Manager. By implementing robust security measures, individuals can protect their infrastructure and data while adhering to industry regulations and compliance standards.</p>
+<h2 id="section-8-advanced-topics-in-aws-devops">Section 8: Advanced Topics in AWS DevOps</h2>
+<p>The final section delves into advanced concepts to elevate learners&rsquo; skills. Topics include advanced infrastructure as code techniques using AWS CDK, advanced deployment strategies, multi-region architectures, and disaster recovery solutions. These advanced skills empower individuals to architect and maintain highly available, fault-tolerant, and scalable systems on AWS.</p>
+<h1 id="learning-outline">Learning Outline</h1>
+<hr>
+<ul>
+<li>
+<p>Introduction to DevOps</p>
+<ul>
+<li>Understanding DevOps Principles and Culture
+<ul>
+<li>Collaboration and Communication in DevOps Teams</li>
+<li>Continuous Integration and Continuous Deployment (CI/CD) Practices</li>
+<li>Agile and DevOps Alignment</li>
+</ul>
+</li>
+<li>Benefits and Importance of DevOps in Software Development
+<ul>
+<li>Faster Time-to-Market and Continuous Delivery</li>
+<li>Improved Collaboration and Efficiency</li>
+<li>Enhanced Product Quality and Stability</li>
+</ul>
+</li>
+<li>DevOps Toolchain Overview
+<ul>
+<li>Version Control Systems (VCS)</li>
+<li>Continuous Integration (CI) Tools</li>
+<li>Configuration Management Tools</li>
+<li>Containerization and Orchestration Platforms</li>
+<li>Deployment and Release Management Tools</li>
+<li>Monitoring and Logging Solutions</li>
+<li>Collaboration and Communication Tools</li>
+</ul>
+</li>
+<li>DevOps Roles and Responsibilities
+<ul>
+<li>DevOps Engineer</li>
+<li>Release Manager</li>
+<li>Automation Engineer</li>
+<li>Site Reliability Engineer (SRE)</li>
+<li>Continuous Integration/Continuous Deployment (CI/CD) Specialist</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Version Control Systems (VCS)</p>
+<ul>
+<li>Introduction to Version Control Systems
+<ul>
+<li>Centralized vs. Distributed VCS</li>
+<li>Git, SVN, and Mercurial Overview</li>
+<li>Branching and Merging Concepts</li>
+</ul>
+</li>
+<li>Git Fundamentals and Workflow
+<ul>
+<li>Repository Initialization and Cloning</li>
+<li>Committing Changes and Viewing History</li>
+<li>Branching and Merging Strategies</li>
+<li>Resolving Conflicts and Code Reviews</li>
+<li>Tagging and Release Management</li>
+</ul>
+</li>
+<li>Branching and Merging Strategies
+<ul>
+<li>Feature Branch Workflow</li>
+<li>Gitflow Workflow</li>
+<li>Trunk-Based Development</li>
+</ul>
+</li>
+<li>Collaboration and Remote Repositories
+<ul>
+<li>Collaborating with Git (Push, Pull, Fetch)</li>
+<li>Working with Remote Repositories (GitHub, GitLab, Bitbucket)</li>
+<li>Git Hooks and Integrations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Continuous Integration (CI)</p>
+<ul>
+<li>Introduction to Continuous Integration
+<ul>
+<li>CI Goals and Benefits</li>
+<li>Building a CI/CD Pipeline</li>
+<li>CI/CD Pipeline Stages and Components</li>
+</ul>
+</li>
+<li>Building and Testing Automation
+<ul>
+<li>Building and Packaging Applications</li>
+<li>Unit Testing and Test Frameworks</li>
+<li>Integration Testing and Test Coverage</li>
+<li>Automated Test Execution and Reporting</li>
+</ul>
+</li>
+<li>CI/CD Pipelines and Workflows
+<ul>
+<li>Pipeline Configuration and Job Definitions</li>
+<li>Triggering Pipelines on Code Changes (Webhooks, Polling)</li>
+<li>Artifact Management and Deployment Strategies</li>
+<li>Pipeline Orchestration and Dependencies</li>
+<li>Environment Provisioning and Teardown</li>
+</ul>
+</li>
+<li>Integration with Version Control and Build Tools
+<ul>
+<li>Configuring CI/CD with VCS Integration</li>
+<li>Integrating with Build Tools (Maven, Gradle, npm)</li>
+<li>Code Quality Analysis and Static Code Analysis Tools</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Configuration Management</p>
+<ul>
+<li>Introduction to Configuration Management
+<ul>
+<li>Configuration Management Benefits and Goals</li>
+<li>Infrastructure as Code (IaC) Concepts</li>
+<li>Push vs. Pull Configuration Management</li>
+<li>Idempotency and Desired State Configuration</li>
+</ul>
+</li>
+<li>Infrastructure as Code (IaC) Tools
+<ul>
+<li>Ansible Overview and Playbooks</li>
+<li>Chef Overview and Recipes/Cookbooks</li>
+<li>Puppet Overview and Manifests</li>
+<li>Comparison of IaC Tools</li>
+</ul>
+</li>
+<li>Using Configuration Management Tools
+<ul>
+<li>Configuring Infrastructure and Provisioning</li>
+<li>Managing Configuration Drift and Compliance</li>
+<li>Automating Application Deployments</li>
+<li>Configuration Management Best Practices</li>
+</ul>
+</li>
+<li>Configuration Management in Cloud Environments
+<ul>
+<li>Cloud-Specific Configuration Management Considerations</li>
+<li>Cloud Provider Tools (AWS CloudFormation, Azure ARM)</li>
+<li>Infrastructure Provisioning with Terraform</li>
+<li>Immutable Infrastructure Concepts</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Containerization and Orchestration</p>
+<ul>
+<li>Introduction to Containers and Containerization
+<ul>
+<li>Containerization Benefits and Use Cases</li>
+<li>Container Runtimes (Docker, Containerd)</li>
+<li>Container Images and Registries</li>
+</ul>
+</li>
+<li>Docker Fundamentals
+<ul>
+<li>Docker Architecture and Components</li>
+<li>Docker Images and Containers</li>
+<li>Docker Networking and Volumes</li>
+<li>Dockerfile and Image Creation</li>
+</ul>
+</li>
+<li>Container Registries and Images
+<ul>
+<li>Working with Public and Private Registries</li>
+<li>Image Tagging and Versioning Strategies</li>
+<li>Container Image Security and Vulnerability Scanning</li>
+</ul>
+</li>
+<li>Kubernetes Introduction and Architecture
+<ul>
+<li>Kubernetes Components and Control Plane</li>
+<li>Nodes, Pods, and Containers in Kubernetes</li>
+<li>Services and Load Balancing</li>
+<li>Kubernetes Resources and Manifests (YAML)</li>
+</ul>
+</li>
+<li>Deploying and Managing Applications with Kubernetes
+<ul>
+<li>Deploying Applications to Kubernetes Cluster</li>
+<li>Scaling and Load Balancing in Kubernetes</li>
+<li>Self-Healing and Rolling Updates</li>
+<li>Application Configuration and Secrets</li>
+<li>Monitoring and Logging with Kubernetes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Continuous Deployment (CD)</p>
+<ul>
+<li>Introduction to Continuous Deployment
+<ul>
+<li>CD Goals and Benefits</li>
+<li>Deployment Pipeline Automation</li>
+<li>Continuous Verification and Validation</li>
+</ul>
+</li>
+<li>Release Management and Versioning
+<ul>
+<li>Versioning Strategies and SemVer</li>
+<li>Release Branching and Tagging</li>
+<li>Change Management and Release Documentation</li>
+</ul>
+</li>
+<li>Deployment Strategies (Rolling Updates, Blue-Green, Canary)
+<ul>
+<li>Rolling Updates Deployment Strategy</li>
+<li>Blue-Green Deployment Strategy</li>
+<li>Canary Deployment Strategy</li>
+</ul>
+</li>
+<li>Monitoring and Observability in CD
+<ul>
+<li>Monitoring Application Health and Performance</li>
+<li>Telemetry and Metrics Collection</li>
+<li>Log Aggregation and Analysis</li>
+<li>Distributed Tracing and Error Reporting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Infrastructure Monitoring and Logging</p>
+<ul>
+<li>Introduction to Infrastructure Monitoring
+<ul>
+<li>Monitoring Goals and Best Practices</li>
+<li>Monitoring Types (Infrastructure, Application, Synthetic)</li>
+<li>Observability vs. Monitoring</li>
+</ul>
+</li>
+<li>Monitoring Tools and Metrics Collection
+<ul>
+<li>Monitoring Agents and Data Collectors</li>
+<li>Metrics Types and Time Series Databases</li>
+<li>Alerting Rules and Thresholds</li>
+<li>Dashboards and Visualizations</li>
+</ul>
+</li>
+<li>Log Management and Analysis
+<ul>
+<li>Log Collection and Centralized Logging</li>
+<li>Log Storage and Indexing</li>
+<li>Log Parsing and Querying</li>
+<li>Log Analysis and Anomaly Detection</li>
+</ul>
+</li>
+<li>Alerting and Incident Management
+<ul>
+<li>Setting Up Alerts and Notifications</li>
+<li>Incident Response and Escalation</li>
+<li>Incident Management Tools</li>
+<li>Post-Incident Analysis and Improvement</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Cloud Computing and AWS Basics</p>
+<ul>
+<li>Introduction to Cloud Computing
+<ul>
+<li>Cloud Computing Models (IaaS, PaaS, SaaS)</li>
+<li>Public Cloud Providers Overview</li>
+<li>Cloud Deployment Models (Public, Private, Hybrid)</li>
+<li>Cloud Service and Deployment Models Comparison</li>
+</ul>
+</li>
+<li>Overview of AWS Services and Architecture
+<ul>
+<li>AWS Global Infrastructure and Availability Zones</li>
+<li>Compute Services (EC2, Lambda)</li>
+<li>Storage Services (S3, EBS)</li>
+<li>Database Services (RDS, DynamoDB)</li>
+<li>Networking and Content Delivery Services</li>
+<li>Identity and Access Management (IAM)</li>
+</ul>
+</li>
+<li>Deploying Applications on AWS
+<ul>
+<li>Creating and Configuring EC2 Instances</li>
+<li>Load Balancers and Auto Scaling Groups</li>
+<li>Security Groups and Network Access Control Lists (NACLs)</li>
+<li>Deploying Serverless Applications with AWS Lambda</li>
+</ul>
+</li>
+<li>Infrastructure Automation with AWS CloudFormation
+<ul>
+<li>Introduction to AWS CloudFormation</li>
+<li>Defining Stacks and Templates</li>
+<li>Infrastructure as Code with CloudFormation</li>
+<li>Deploying and Updating Stacks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Scripting and Automation</p>
+<ul>
+<li>Introduction to Scripting Languages (e.g., Python, Bash)
+<ul>
+<li>Scripting vs. Programming Languages</li>
+<li>Python and Bash Scripting Basics</li>
+<li>Variables, Data Types, and Operators</li>
+<li>Control Structures and Functions</li>
+</ul>
+</li>
+<li>Automating Tasks and Workflows
+<ul>
+<li>Scripting and Automating Common Operations</li>
+<li>Working with Files and Directories</li>
+<li>Error Handling and Logging</li>
+<li>Scheduling and Cron Jobs</li>
+</ul>
+</li>
+<li>Scripting for Infrastructure Provisioning and Configuration
+<ul>
+<li>Scripting Configuration Management with Ansible</li>
+<li>Scripting Deployment Workflows with Jenkins</li>
+<li>Scripting Cloud Infrastructure with Terraform</li>
+<li>Scripting Cloud Provider APIs (e.g., AWS Boto3, Azure CLI)</li>
+</ul>
+</li>
+<li>Error Handling and Script Maintenance
+<ul>
+<li>Debugging and Troubleshooting Scripts</li>
+<li>Error Handling Techniques</li>
+<li>Script Maintenance and Versioning</li>
+<li>Script Security Best Practices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>DevOps Best Practices and Tools</p>
+<ul>
+<li>Microservices Architecture and Containerization
+<ul>
+<li>Microservices Principles and Benefits</li>
+<li>Decomposing Monolithic Applications</li>
+<li>Containerization Benefits for Microservices</li>
+<li>Deploying Microservices with Kubernetes</li>
+</ul>
+</li>
+<li>Security and Compliance in DevOps
+<ul>
+<li>DevSecOps Principles and Practices</li>
+<li>Security Considerations for CI/CD Pipelines</li>
+<li>Vulnerability Scanning and Code Analysis</li>
+<li>Compliance and Auditing in DevOps</li>
+</ul>
+</li>
+<li>Collaboration and Communication Tools
+<ul>
+<li>Collaboration and Chat Tools (Slack, Microsoft Teams)</li>
+<li>Issue Tracking and Project Management Tools (Jira, Trello)</li>
+<li>Version Control Integration and Pull Requests</li>
+<li>Knowledge Sharing and Documentation Tools (Confluence, Wiki)</li>
+</ul>
+</li>
+<li>DevOps Testing and Test Automation
+<ul>
+<li>Testing Strategies in DevOps</li>
+<li>Unit Testing and Test Automation Frameworks</li>
+<li>Integration Testing and Mocking</li>
+<li>Test Coverage and Continuous Testing</li>
+</ul>
+</li>
+<li>Continuous Improvement and Feedback Loops
+<ul>
+<li>Feedback Loops and Continuous Learning</li>
+<li>Metrics and KPIs for Continuous Improvement</li>
+<li>Incident Analysis and Post-Mortems</li>
+<li>Feedback Gathering and User Experience Improvement</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/arch-linux/03-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Extra Installation">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                <section>
+                  <br>
+                  <h6>Quick Links</h6>
+                    <ul class="list-inline">
+                        
+                    </ul>
+                </section>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+
+
+
+                    
+                    <li>
+                        <a href="mailto:ericmosesngigi@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/ErikNgigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/erik-ngigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                </ul>
+                
+                
+                
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page powered by <a href="https://www.netlify.com/">Netlify</a>.<br>Customized with CSS &bull; Maintained with Hugo &bull; Build with ♥
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Eric Ngigi 2019–2022. All rights reserved.
+                    <br>
+                    Content on this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>.
+                    <br>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
