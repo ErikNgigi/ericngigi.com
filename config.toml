@@ -65,9 +65,9 @@ home = ["HTML", "RSS"]
   [[params.addtional_menus]]
   title =  "About"
   href =  "/more/about/"
-  [[params.addtional_menus]]
-  title =  "Services"
-  href =  "/more/services/"
+  # [[params.addtional_menus]]
+  # title =  "Services"
+  # href =  "/more/services/"
 
   [markup]
   [markup.tableOfContents]
