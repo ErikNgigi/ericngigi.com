@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Eric Ngigi</title>
-    <link>https://ericngigi.netlify.app/post/</link>
+    <link>https://ericngigi.com/post/</link>
     <description>Recent content in Posts on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ericngigi.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ericngigi.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amazon Web Services (AWS) Learning Path</title>
-      <link>https://ericngigi.netlify.app/post/aws/aws-outline/</link>
+      <link>https://ericngigi.com/post/aws/aws-outline/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/aws/aws-outline/</guid>
+      <guid>https://ericngigi.com/post/aws/aws-outline/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
 &lt;p&gt;In today&amp;rsquo;s digital landscape, businesses are constantly seeking innovative ways to accelerate development, enhance scalability, and ensure operational efficiency. As cloud computing continues to revolutionize the IT industry, mastering Amazon Web Services (AWS) has become a crucial skill for aspiring DevOps professionals. The course outline presented below provides a comprehensive learning path, enabling individuals to harness the power of AWS and thrive in the world of cloud-based infrastructure and automation.&lt;/p&gt;
 &lt;h2 id=&#34;section-1-building-a-solid-foundation&#34;&gt;Section 1: Building a Solid Foundation&lt;/h2&gt;
@@ -421,10 +421,10 @@
     
     <item>
       <title>Arch Linux Extra Installation</title>
-      <link>https://ericngigi.netlify.app/post/arch-linux/03-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/03-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/arch-linux/03-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/03-arch-linux-base-install/</guid>
       <description>&lt;p&gt;The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.&lt;/p&gt;
 &lt;h2 id=&#34;theming&#34;&gt;Theming&lt;/h2&gt;
 &lt;ul&gt;
@@ -516,10 +516,10 @@
     
     <item>
       <title>Arch Linux Post Installation</title>
-      <link>https://ericngigi.netlify.app/post/arch-linux/02-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/02-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0302</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/arch-linux/02-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/02-arch-linux-base-install/</guid>
       <description>&lt;p&gt;In post installation we will be using a lot of &lt;code&gt;sudo&lt;/code&gt;. I&amp;rsquo;m not responsible if you broke your newly installed system.&lt;/p&gt;
 &lt;h3 id=&#34;connect-to-the-internet&#34;&gt;Connect to the internet&lt;/h3&gt;
 &lt;p&gt;We will be downloading stuff so we need an internet connection! So set-up your connection first!&lt;/p&gt;
@@ -686,10 +686,10 @@ ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
     
     <item>
       <title>Arch Linux Base Installation</title>
-      <link>https://ericngigi.netlify.app/post/arch-linux/01-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/01-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/arch-linux/01-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/01-arch-linux-base-install/</guid>
       <description>&lt;p&gt;This is my personal guide. I recommend that you read the official &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34;&gt;wiki&lt;/a&gt;. The purpose of this guide is to speed up my personal install of &lt;code&gt;Archlinux&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-archlinux&#34;&gt;Why Archlinux&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;Archlinux&lt;/code&gt; distribution gives you the freedom to &lt;code&gt;do it yourself&lt;/code&gt;.&lt;/p&gt;

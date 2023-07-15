@@ -1,27 +1,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on Eric Ngigi</title>
-    <link>https://ericngigi.netlify.app/services/</link>
+    <link>https://ericngigi.com/services/</link>
     <description>Recent content in Services on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 May 2023 09:45:37 +0303</lastBuildDate><atom:link href="https://ericngigi.netlify.app/services/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 May 2023 09:45:37 +0303</lastBuildDate><atom:link href="https://ericngigi.com/services/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://ericngigi.netlify.app/services/custom-resumes/</link>
+      <link>https://ericngigi.com/services/custom-resumes/</link>
       <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/custom-resumes/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://ericngigi.netlify.app/more/services/resumes.md&#34;&gt;An Internal Link to a Section Heading&lt;/a&gt;&lt;/p&gt;
+      <guid>https://ericngigi.com/services/custom-resumes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://ericngigi.com/more/services/resumes.md&#34;&gt;An Internal Link to a Section Heading&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Services</title>
-      <link>https://ericngigi.netlify.app/services/learning-aws/</link>
+      <link>https://ericngigi.com/services/learning-aws/</link>
       <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/learning-aws/</guid>
+      <guid>https://ericngigi.com/services/learning-aws/</guid>
       <description>&lt;p&gt;Our comprehensive range of services includes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -43,19 +43,19 @@
     
     <item>
       <title></title>
-      <link>https://ericngigi.netlify.app/services/ecommerce/</link>
+      <link>https://ericngigi.com/services/ecommerce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/ecommerce/</guid>
+      <guid>https://ericngigi.com/services/ecommerce/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://ericngigi.netlify.app/services/static-website/</link>
+      <link>https://ericngigi.com/services/static-website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/static-website/</guid>
+      <guid>https://ericngigi.com/services/static-website/</guid>
       <description></description>
     </item>
     

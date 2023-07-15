@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eric Ngigi</title>
-    <link>https://ericngigi.netlify.app/</link>
+    <link>https://ericngigi.com/</link>
     <description>Recent content on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ericngigi.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ericngigi.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amazon Web Services (AWS) Learning Path</title>
-      <link>https://ericngigi.netlify.app/post/aws/aws-outline/</link>
+      <link>https://ericngigi.com/post/aws/aws-outline/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/aws/aws-outline/</guid>
+      <guid>https://ericngigi.com/post/aws/aws-outline/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
 &lt;p&gt;In today&amp;rsquo;s digital landscape, businesses are constantly seeking innovative ways to accelerate development, enhance scalability, and ensure operational efficiency. As cloud computing continues to revolutionize the IT industry, mastering Amazon Web Services (AWS) has become a crucial skill for aspiring DevOps professionals. The course outline presented below provides a comprehensive learning path, enabling individuals to harness the power of AWS and thrive in the world of cloud-based infrastructure and automation.&lt;/p&gt;
 &lt;h2 id=&#34;section-1-building-a-solid-foundation&#34;&gt;Section 1: Building a Solid Foundation&lt;/h2&gt;
@@ -421,78 +421,78 @@
     
     <item>
       <title>AWS</title>
-      <link>https://ericngigi.netlify.app/tags/aws/</link>
+      <link>https://ericngigi.com/tags/aws/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/tags/aws/</guid>
+      <guid>https://ericngigi.com/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Eric Ngigi</title>
-      <link>https://ericngigi.netlify.app/</link>
+      <link>https://ericngigi.com/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/</guid>
+      <guid>https://ericngigi.com/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts</title>
-      <link>https://ericngigi.netlify.app/post/</link>
+      <link>https://ericngigi.com/post/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/</guid>
+      <guid>https://ericngigi.com/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>https://ericngigi.netlify.app/tags/</link>
+      <link>https://ericngigi.com/tags/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/tags/</guid>
+      <guid>https://ericngigi.com/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://ericngigi.netlify.app/services/custom-resumes/</link>
+      <link>https://ericngigi.com/services/custom-resumes/</link>
       <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/custom-resumes/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://ericngigi.netlify.app/more/services/resumes.md&#34;&gt;An Internal Link to a Section Heading&lt;/a&gt;&lt;/p&gt;
+      <guid>https://ericngigi.com/services/custom-resumes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://ericngigi.com/more/services/resumes.md&#34;&gt;An Internal Link to a Section Heading&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Mores</title>
-      <link>https://ericngigi.netlify.app/more/</link>
+      <link>https://ericngigi.com/more/</link>
       <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/more/</guid>
+      <guid>https://ericngigi.com/more/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Our Services</title>
-      <link>https://ericngigi.netlify.app/more/services/</link>
+      <link>https://ericngigi.com/more/services/</link>
       <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/more/services/</guid>
+      <guid>https://ericngigi.com/more/services/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;In today&amp;rsquo;s digital age, it&amp;rsquo;s crucial to make a lasting impression and stay ahead of the competition. At our company, we offer a range of services designed to elevate your online presence, boost your career prospects, and expand your skillset. Here&amp;rsquo;s why investing your time and money in our services can be a game-changer.&lt;/p&gt;
-&lt;h3 id=&#34;custom-designed-static-website-showcasing-your-portfolioservicesstatic-website&#34;&gt;&lt;a href=&#34;https://ericngigi.netlify.app/services/static-website&#34;&gt;Custom Designed Static Website: Showcasing Your Portfolio&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;custom-designed-static-website-showcasing-your-portfolioservicesstatic-website&#34;&gt;&lt;a href=&#34;https://ericngigi.com/services/static-website&#34;&gt;Custom Designed Static Website: Showcasing Your Portfolio&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;A professionally designed static website tailored to your unique style and needs is a powerful tool for presenting your portfolio. Impress potential clients and employers with a visually appealing and user-friendly platform that showcases your skills, projects, and achievements.&lt;/p&gt;
-&lt;h3 id=&#34;resume-and-cover-letter-templates-making-a-memorable-first-impressionservicescustom-resumes&#34;&gt;&lt;a href=&#34;https://ericngigi.netlify.app/services/custom-resumes&#34;&gt;Resume and Cover Letter Templates: Making a Memorable First Impression&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;resume-and-cover-letter-templates-making-a-memorable-first-impressionservicescustom-resumes&#34;&gt;&lt;a href=&#34;https://ericngigi.com/services/custom-resumes&#34;&gt;Resume and Cover Letter Templates: Making a Memorable First Impression&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Crafting an impactful resume and cover letter is essential for landing your dream job. Our meticulously designed templates ensure a polished and professional appearance while highlighting your strengths and accomplishments. Stand out from the competition and leave a lasting impression.&lt;/p&gt;
-&lt;h3 id=&#34;algorithmic-trading-scripts-maximizing-your-investment-potentialservicesalgorithm-scripts&#34;&gt;&lt;a href=&#34;https://ericngigi.netlify.app/services/algorithm-scripts&#34;&gt;Algorithmic Trading Scripts: Maximizing Your Investment Potential&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;algorithmic-trading-scripts-maximizing-your-investment-potentialservicesalgorithm-scripts&#34;&gt;&lt;a href=&#34;https://ericngigi.com/services/algorithm-scripts&#34;&gt;Algorithmic Trading Scripts: Maximizing Your Investment Potential&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;For those interested in the financial markets, our algorithmic trading scripts provide a competitive edge. Leverage the power of automation and data-driven strategies to make informed trading decisions, optimize profits, and minimize risks. Unlock new possibilities in the world of finance.&lt;/p&gt;
-&lt;h3 id=&#34;learning-aws-harnessing-the-power-of-cloud-computingserviceslearning-aws&#34;&gt;&lt;a href=&#34;https://ericngigi.netlify.app/services/learning-aws&#34;&gt;Learning AWS: Harnessing the Power of Cloud Computing&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;learning-aws-harnessing-the-power-of-cloud-computingserviceslearning-aws&#34;&gt;&lt;a href=&#34;https://ericngigi.com/services/learning-aws&#34;&gt;Learning AWS: Harnessing the Power of Cloud Computing&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;As cloud computing continues to revolutionize industries, mastering Amazon Web Services (AWS) is a valuable skillset. Our comprehensive courses and hands-on learning materials will empower you to navigate the AWS ecosystem, enabling you to build scalable and secure cloud-based solutions.&lt;/p&gt;
-&lt;h3 id=&#34;custom-online-stores-empowering-your-e-commerce-journeyservicesecommerce&#34;&gt;&lt;a href=&#34;https://ericngigi.netlify.app/services/ecommerce&#34;&gt;Custom Online Stores: Empowering Your E-Commerce Journey&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;custom-online-stores-empowering-your-e-commerce-journeyservicesecommerce&#34;&gt;&lt;a href=&#34;https://ericngigi.com/services/ecommerce&#34;&gt;Custom Online Stores: Empowering Your E-Commerce Journey&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;In the booming world of e-commerce, a custom online store sets you apart from the crowd. We provide tailored solutions that ensure seamless user experiences, robust security, and scalable infrastructure. Take your business to new heights with an online store that reflects your brand and captivates customers.&lt;/p&gt;
 &lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;Investing in our services is an investment in your personal and professional growth. Whether you need a stunning portfolio website, standout resume templates, algorithmic trading scripts, AWS expertise, or a custom online store, we are here to empower your journey. Join us and unlock your full potential in today&amp;rsquo;s dynamic digital landscape.&lt;/p&gt;
@@ -501,19 +501,19 @@
     
     <item>
       <title>Services</title>
-      <link>https://ericngigi.netlify.app/services/</link>
+      <link>https://ericngigi.com/services/</link>
       <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/</guid>
+      <guid>https://ericngigi.com/services/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Services</title>
-      <link>https://ericngigi.netlify.app/services/learning-aws/</link>
+      <link>https://ericngigi.com/services/learning-aws/</link>
       <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/learning-aws/</guid>
+      <guid>https://ericngigi.com/services/learning-aws/</guid>
       <description>&lt;p&gt;Our comprehensive range of services includes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -535,19 +535,19 @@
     
     <item>
       <title>Arch Linux</title>
-      <link>https://ericngigi.netlify.app/tags/arch-linux/</link>
+      <link>https://ericngigi.com/tags/arch-linux/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://ericngigi.netlify.app/tags/arch-linux/</guid>
+      <guid>https://ericngigi.com/tags/arch-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arch Linux Extra Installation</title>
-      <link>https://ericngigi.netlify.app/post/arch-linux/03-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/03-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/arch-linux/03-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/03-arch-linux-base-install/</guid>
       <description>&lt;p&gt;The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.&lt;/p&gt;
 &lt;h2 id=&#34;theming&#34;&gt;Theming&lt;/h2&gt;
 &lt;ul&gt;
@@ -639,19 +639,19 @@
     
     <item>
       <title>Tutorial</title>
-      <link>https://ericngigi.netlify.app/tags/tutorial/</link>
+      <link>https://ericngigi.com/tags/tutorial/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://ericngigi.netlify.app/tags/tutorial/</guid>
+      <guid>https://ericngigi.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arch Linux Post Installation</title>
-      <link>https://ericngigi.netlify.app/post/arch-linux/02-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/02-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0302</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/arch-linux/02-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/02-arch-linux-base-install/</guid>
       <description>&lt;p&gt;In post installation we will be using a lot of &lt;code&gt;sudo&lt;/code&gt;. I&amp;rsquo;m not responsible if you broke your newly installed system.&lt;/p&gt;
 &lt;h3 id=&#34;connect-to-the-internet&#34;&gt;Connect to the internet&lt;/h3&gt;
 &lt;p&gt;We will be downloading stuff so we need an internet connection! So set-up your connection first!&lt;/p&gt;
@@ -818,10 +818,10 @@ ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
     
     <item>
       <title>Arch Linux Base Installation</title>
-      <link>https://ericngigi.netlify.app/post/arch-linux/01-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/01-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://ericngigi.netlify.app/post/arch-linux/01-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/01-arch-linux-base-install/</guid>
       <description>&lt;p&gt;This is my personal guide. I recommend that you read the official &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34;&gt;wiki&lt;/a&gt;. The purpose of this guide is to speed up my personal install of &lt;code&gt;Archlinux&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-archlinux&#34;&gt;Why Archlinux&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;Archlinux&lt;/code&gt; distribution gives you the freedom to &lt;code&gt;do it yourself&lt;/code&gt;.&lt;/p&gt;
@@ -1361,10 +1361,10 @@ linux-headers alsa-utils openssh
     
     <item>
       <title></title>
-      <link>https://ericngigi.netlify.app/more/about/</link>
+      <link>https://ericngigi.com/more/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/more/about/</guid>
+      <guid>https://ericngigi.com/more/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
 &lt;p&gt;I am a passionate Linux enthusiast and free software advocate with years of experience in developing and maintaining Linux systems. I have a deep understanding of the inner workings of the Linux kernel and have extensive knowledge of various Linux distributions, including Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
 &lt;p&gt;I am also skilled in various programming languages, including Python, Go, JAMstack and Bash scripting, and have used these languages to automate and streamline various processes in my DevOps career. My expertise in automation and infrastructure as code has allowed me to optimize system performance, reduce downtime, and increase scalability.&lt;/p&gt;
@@ -1379,28 +1379,28 @@ at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.
     
     <item>
       <title></title>
-      <link>https://ericngigi.netlify.app/services/ecommerce/</link>
+      <link>https://ericngigi.com/services/ecommerce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/ecommerce/</guid>
+      <guid>https://ericngigi.com/services/ecommerce/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://ericngigi.netlify.app/services/static-website/</link>
+      <link>https://ericngigi.com/services/static-website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/services/static-website/</guid>
+      <guid>https://ericngigi.com/services/static-website/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Categories</title>
-      <link>https://ericngigi.netlify.app/categories/</link>
+      <link>https://ericngigi.com/categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.netlify.app/categories/</guid>
+      <guid>https://ericngigi.com/categories/</guid>
       <description></description>
     </item>
     
