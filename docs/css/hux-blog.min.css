@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Canicule Display";
   src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
-  font-weight: 100 900;
+  font-weight: 50 450;
 }
 @font-face {
   font-family: 'Cabinet Grotesk';
   src: url('../fonts/CabinetGrotesk-Variable.woff2') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.woff') format("woff-variations"),
        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
-  font-weight: 100 900;
+  font-weight: 50 450;
 }
 /* @font-face { */
 /*   font-family: 'Input Mono'; */
@@ -172,10 +172,10 @@
 
 body {
   /* font-family: 'Cabinet Grotesk','Arial','Helvetica',sans-serif,-apple-system; */
-  font-family: 'Roboto-Medium','Arial','Helvetica',sans-serif,-apple-system;
+  font-family: 'Roboto-Regular','Arial','Helvetica',sans-serif,-apple-system;
   line-height: 1.8;
-  font-size: 2.05rem;
-  font-weight: 430;
+  font-size: 1.85rem;
+  /* font-weight: 100; */
   color: #000;
   overflow-x: hidden;
 	font-feature-settings: "ss01" 1;
