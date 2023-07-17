@@ -21,13 +21,13 @@ home = ["HTML", "RSS"]
   description = "Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi's blog, discovering a bigger world with you."
   keyword = "Eric, eric, Eric's Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps"
   slogan = "Leading with Innovation"
-  image_404 = "images/404/404-error-01.jpg"
+  image_404 = "images/404/404.webp"
   title_404 = "You came to the wasteland without knowledge :("
   omit_categories = false
 
   # Sidebar settings
   sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
-  sidebar_avatar = "images/eric-ngigi-profile-picture.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
+  sidebar_avatar = "images/profile_image.webp"      # use absolute URL, seeing it's used in both `/` and `/about/`
   featured_tags = true
   featured_condition_size = 0
   support_button = true

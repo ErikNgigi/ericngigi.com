@@ -3,7 +3,7 @@ title: "Arch Linux Base Installation"
 summary: "Arch Linux is a minimal and lightweight Linux distribution that provides a customizable base installation for users to build their own system according to their preferences."
 date: 2023-04-29T09:45:37+03:03
 author: "Eric Ngigi"
-image: "/images/post/arch/geowaves.png"
+image: "/images/post/arch/geowaves.webp"
 tags: ["Arch Linux", "Tutorial"]
 ---
 
