@@ -1,5 +1,5 @@
 
-baseurl = "https://ericngigi.com"
+baseurl = "https://www.ericngigi.com"
 title = "Eric Ngigi"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
@@ -71,7 +71,7 @@ home = ["HTML", "RSS"]
 
   [markup]
   [markup.tableOfContents]
-    endLevel = 2
+    endLevel = 3
     startLevel = 1
   [markup.highlight]
     style = "dracula"

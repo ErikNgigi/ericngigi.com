@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS on Eric Ngigi</title>
-    <link>https://ericngigi.com/tags/aws/</link>
+    <link>https://www.ericngigi.com/tags/aws/</link>
     <description>Recent content in AWS on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ericngigi.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amazon Web Services (AWS) Learning Path</title>
-      <link>https://ericngigi.com/post/aws/aws-outline/</link>
+      <link>https://www.ericngigi.com/post/aws/aws-outline/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ericngigi.com/post/aws/aws-outline/</guid>
+      <guid>https://www.ericngigi.com/post/aws/aws-outline/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
 &lt;p&gt;In today&amp;rsquo;s digital landscape, businesses are constantly seeking innovative ways to accelerate development, enhance scalability, and ensure operational efficiency. As cloud computing continues to revolutionize the IT industry, mastering Amazon Web Services (AWS) has become a crucial skill for aspiring DevOps professionals. The course outline presented below provides a comprehensive learning path, enabling individuals to harness the power of AWS and thrive in the world of cloud-based infrastructure and automation.&lt;/p&gt;
 &lt;h2 id=&#34;section-1-building-a-solid-foundation&#34;&gt;Section 1: Building a Solid Foundation&lt;/h2&gt;
