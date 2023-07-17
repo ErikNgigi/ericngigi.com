@@ -26,11 +26,11 @@ home = ["HTML", "RSS"]
   omit_categories = false
 
   # Sidebar settings
-  sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
+  sidebar_about_description = "Software Developer. Open Source Enthusiast. Life Adventurer"
   sidebar_avatar = "images/profile_image.webp"      # use absolute URL, seeing it's used in both `/` and `/about/`
   featured_tags = true
   featured_condition_size = 1
-  support_button = true
+  support_button = false
   friends = false
   bookmarks = false
   about_me = true
