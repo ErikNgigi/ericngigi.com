@@ -1,41 +1,52 @@
 ---
-title: "Amazon Web Services (AWS) Learning Path"
-summary: "Unlocking the Power of the Cloud: Mastering AWS for Innovation and Scalability"
+title: "Mastering Linux and AWS: Unleashing Cloud Excellence"
+summary: "Unlock Limitless Possibilities: Embark on Your Linux to AWS Journey Today! 🚀 Discover the Power of Linux as Your Gateway to AWS Excellence. 🐧🌟 This step-by-step post is your ticket to conquer the cloud, empowering you with Linux proficiency and unleashing the full potential of AWS architecture. Get started now and watch your tech career soar to new heights!"
 date: 2023-07-15
 author: "Eric Ngigi"
 image: "/images/post/aws/aws_banner.webp"
-tags: ["AWS", "Roadmap"]
+tags: ["Linux", "Cloud Computing", "AWS"]
 ---
 
 # Introduction:
-In today's digital landscape, businesses are constantly seeking innovative ways to accelerate development, enhance scalability, and ensure operational efficiency. As cloud computing continues to revolutionize the IT industry, mastering Amazon Web Services (AWS) has become a crucial skill for aspiring DevOps professionals. The course outline presented below provides a comprehensive learning path, enabling individuals to harness the power of AWS and thrive in the world of cloud-based infrastructure and automation.
-
-## Section 1: Building a Solid Foundation
-The journey begins with an introduction to DevOps principles and culture, emphasizing the collaborative mindset and agile practices that drive successful development and operations teams. Learners delve into the benefits of adopting DevOps methodologies and gain an understanding of the essential tools and roles involved in the DevOps toolchain.
-
-## Section 2: Version Control Systems (VCS)
-A strong VCS foundation is vital for effective collaboration and code management. Students learn the ins and outs of popular VCS tools like Git, including workflows, branching strategies, and remote repository management. By mastering VCS, individuals gain the ability to efficiently track code changes, resolve conflicts, and maintain code integrity within DevOps environments.
-
-## Section 3: Continuous Integration and Deployment with AWS
-With a solid grasp of VCS, learners progress to the heart of DevOps: continuous integration and deployment. This section explores the powerful capabilities of AWS services such as CodePipeline, CodeBuild, and CloudFormation. Participants discover how to automate the build, test, and deployment processes, resulting in faster delivery cycles and increased application quality.
-
-## Section 4: Configuration Management with AWS
-Managing infrastructure configurations efficiently is a critical aspect of successful DevOps practices. Students learn how to leverage AWS CloudFormation and OpsWorks to define and provision resources as code, ensuring consistent and scalable infrastructure deployments. The section also covers automated configuration management techniques, empowering learners to maintain infrastructure integrity throughout the software delivery lifecycle.
-
-## Section 5: Containerization and Orchestration with AWS
-Containerization has revolutionized application deployment, scalability, and portability. Participants explore Docker and delve into Amazon Elastic Container Service (ECS) and Elastic Kubernetes Service (EKS), learning how to orchestrate containers effectively. By mastering containerization and orchestration, individuals can deploy and manage applications in a highly scalable and resilient manner.
-
-## Section 6: Monitoring and Logging in AWS
-To ensure the health and performance of applications, learners gain expertise in monitoring and logging using AWS CloudWatch, CloudWatch Logs, and X-Ray. By proactively monitoring metrics, setting alarms, and analyzing logs, participants can detect issues early and ensure optimal application performance.
-
-## Section 7: Infrastructure Security and Compliance on AWS
-Security and compliance are paramount in the cloud. This section focuses on AWS security best practices, IAM roles and policies, and AWS services like Config and Secrets Manager. By implementing robust security measures, individuals can protect their infrastructure and data while adhering to industry regulations and compliance standards.
-
-## Section 8: Advanced Topics in AWS DevOps
-The final section delves into advanced concepts to elevate learners' skills. Topics include advanced infrastructure as code techniques using AWS CDK, advanced deployment strategies, multi-region architectures, and disaster recovery solutions. These advanced skills empower individuals to architect and maintain highly available, fault-tolerant, and scalable systems on AWS.
+---
+Welcome to "Mastering Linux and AWS: Unleashing Cloud Excellence" - your comprehensive learning material! In today's tech world, cloud expertise is in high demand, and AWS leads the way. Our material equips you with vital Linux and AWS skills, empowering you with limitless career opportunities. Linux serves as your AWS foundation, while AWS offers scalable, innovative solutions for businesses. Gain hands-on experience, become a sought-after cloud architect, DevOps engineer, or consultant, and lead transformative cloud initiatives. Let's embark on this transformative journey together and shape your bright future in the cloud-driven landscape!
 
 # Learning Outline
 ---
+- Introduction to Cloud Computing and AWS
+  - Understanding Cloud Computing and its Advantages
+  - AWS Overview and Core Services for Beginners
+
+- Getting Started with Linux
+  - Introduction to Operating Systems
+  - Overview of Linux Distributions (Ubuntu, CentOS, etc.)
+  - Installing Linux (Virtual Machine or Dual Boot)
+  - Linux Command-Line Interface (CLI) Basics
+    - Command-Line Navigation and File System
+    - Working with Files and Directories
+    - Linux Command Syntax and Options
+
+- Linux File System and Permissions
+  - File System Navigation and Directory Structure
+  - File and Directory Permissions in Linux
+  - Managing Files and Directories
+    - Copying, Moving, and Renaming Files
+    - File Permissions and Ownership
+
+- Package Management and Software Installation
+  - Managing Software Packages with Package Managers
+  - Installing, Updating, and Removing Software
+  - Exploring Package Repositories
+    - Repository Configuration and Package Sources
+    - Package Searching and Dependencies
+
+- User and Group Management
+  - Managing Users and Groups in Linux
+  - User Account Configuration and Password Management
+  - Sudo and Privilege Escalation
+    - Understanding Sudo and Sudoers Configuration
+    - Managing User Privileges with Sudo
+    
 - Introduction to DevOps
   - Understanding DevOps Principles and Culture
     - Collaboration and Communication in DevOps Teams

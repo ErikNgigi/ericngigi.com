@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AWS on Eric Ngigi</title>
-    <link>https://www.ericngigi.com/tags/aws/</link>
-    <description>Recent content in AWS on Eric Ngigi</description>
+    <title>Cloud Computing on Eric Ngigi</title>
+    <link>https://www.ericngigi.com/tags/cloud-computing/</link>
+    <description>Recent content in Cloud Computing on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/tags/cloud-computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mastering Linux and AWS: Unleashing Cloud Excellence</title>
       <link>https://www.ericngigi.com/post/aws/aws-outline/</link>

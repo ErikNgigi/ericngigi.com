@@ -7,32 +7,114 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Amazon Web Services (AWS) Learning Path</title>
+      <title>AWS</title>
+      <link>https://www.ericngigi.com/tags/aws/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ericngigi.com/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud Computing</title>
+      <link>https://www.ericngigi.com/tags/cloud-computing/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ericngigi.com/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eric Ngigi</title>
+      <link>https://www.ericngigi.com/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ericngigi.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://www.ericngigi.com/tags/linux/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ericngigi.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mastering Linux and AWS: Unleashing Cloud Excellence</title>
       <link>https://www.ericngigi.com/post/aws/aws-outline/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.ericngigi.com/post/aws/aws-outline/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
-&lt;p&gt;In today&amp;rsquo;s digital landscape, businesses are constantly seeking innovative ways to accelerate development, enhance scalability, and ensure operational efficiency. As cloud computing continues to revolutionize the IT industry, mastering Amazon Web Services (AWS) has become a crucial skill for aspiring DevOps professionals. The course outline presented below provides a comprehensive learning path, enabling individuals to harness the power of AWS and thrive in the world of cloud-based infrastructure and automation.&lt;/p&gt;
-&lt;h2 id=&#34;section-1-building-a-solid-foundation&#34;&gt;Section 1: Building a Solid Foundation&lt;/h2&gt;
-&lt;p&gt;The journey begins with an introduction to DevOps principles and culture, emphasizing the collaborative mindset and agile practices that drive successful development and operations teams. Learners delve into the benefits of adopting DevOps methodologies and gain an understanding of the essential tools and roles involved in the DevOps toolchain.&lt;/p&gt;
-&lt;h2 id=&#34;section-2-version-control-systems-vcs&#34;&gt;Section 2: Version Control Systems (VCS)&lt;/h2&gt;
-&lt;p&gt;A strong VCS foundation is vital for effective collaboration and code management. Students learn the ins and outs of popular VCS tools like Git, including workflows, branching strategies, and remote repository management. By mastering VCS, individuals gain the ability to efficiently track code changes, resolve conflicts, and maintain code integrity within DevOps environments.&lt;/p&gt;
-&lt;h2 id=&#34;section-3-continuous-integration-and-deployment-with-aws&#34;&gt;Section 3: Continuous Integration and Deployment with AWS&lt;/h2&gt;
-&lt;p&gt;With a solid grasp of VCS, learners progress to the heart of DevOps: continuous integration and deployment. This section explores the powerful capabilities of AWS services such as CodePipeline, CodeBuild, and CloudFormation. Participants discover how to automate the build, test, and deployment processes, resulting in faster delivery cycles and increased application quality.&lt;/p&gt;
-&lt;h2 id=&#34;section-4-configuration-management-with-aws&#34;&gt;Section 4: Configuration Management with AWS&lt;/h2&gt;
-&lt;p&gt;Managing infrastructure configurations efficiently is a critical aspect of successful DevOps practices. Students learn how to leverage AWS CloudFormation and OpsWorks to define and provision resources as code, ensuring consistent and scalable infrastructure deployments. The section also covers automated configuration management techniques, empowering learners to maintain infrastructure integrity throughout the software delivery lifecycle.&lt;/p&gt;
-&lt;h2 id=&#34;section-5-containerization-and-orchestration-with-aws&#34;&gt;Section 5: Containerization and Orchestration with AWS&lt;/h2&gt;
-&lt;p&gt;Containerization has revolutionized application deployment, scalability, and portability. Participants explore Docker and delve into Amazon Elastic Container Service (ECS) and Elastic Kubernetes Service (EKS), learning how to orchestrate containers effectively. By mastering containerization and orchestration, individuals can deploy and manage applications in a highly scalable and resilient manner.&lt;/p&gt;
-&lt;h2 id=&#34;section-6-monitoring-and-logging-in-aws&#34;&gt;Section 6: Monitoring and Logging in AWS&lt;/h2&gt;
-&lt;p&gt;To ensure the health and performance of applications, learners gain expertise in monitoring and logging using AWS CloudWatch, CloudWatch Logs, and X-Ray. By proactively monitoring metrics, setting alarms, and analyzing logs, participants can detect issues early and ensure optimal application performance.&lt;/p&gt;
-&lt;h2 id=&#34;section-7-infrastructure-security-and-compliance-on-aws&#34;&gt;Section 7: Infrastructure Security and Compliance on AWS&lt;/h2&gt;
-&lt;p&gt;Security and compliance are paramount in the cloud. This section focuses on AWS security best practices, IAM roles and policies, and AWS services like Config and Secrets Manager. By implementing robust security measures, individuals can protect their infrastructure and data while adhering to industry regulations and compliance standards.&lt;/p&gt;
-&lt;h2 id=&#34;section-8-advanced-topics-in-aws-devops&#34;&gt;Section 8: Advanced Topics in AWS DevOps&lt;/h2&gt;
-&lt;p&gt;The final section delves into advanced concepts to elevate learners&amp;rsquo; skills. Topics include advanced infrastructure as code techniques using AWS CDK, advanced deployment strategies, multi-region architectures, and disaster recovery solutions. These advanced skills empower individuals to architect and maintain highly available, fault-tolerant, and scalable systems on AWS.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Welcome to &amp;ldquo;Mastering Linux and AWS: Unleashing Cloud Excellence&amp;rdquo; - your comprehensive learning material! In today&amp;rsquo;s tech world, cloud expertise is in high demand, and AWS leads the way. Our material equips you with vital Linux and AWS skills, empowering you with limitless career opportunities. Linux serves as your AWS foundation, while AWS offers scalable, innovative solutions for businesses. Gain hands-on experience, become a sought-after cloud architect, DevOps engineer, or consultant, and lead transformative cloud initiatives. Let&amp;rsquo;s embark on this transformative journey together and shape your bright future in the cloud-driven landscape!&lt;/p&gt;
 &lt;h1 id=&#34;learning-outline&#34;&gt;Learning Outline&lt;/h1&gt;
 &lt;hr&gt;
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Introduction to Cloud Computing and AWS&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Understanding Cloud Computing and its Advantages&lt;/li&gt;
+&lt;li&gt;AWS Overview and Core Services for Beginners&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Getting Started with Linux&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to Operating Systems&lt;/li&gt;
+&lt;li&gt;Overview of Linux Distributions (Ubuntu, CentOS, etc.)&lt;/li&gt;
+&lt;li&gt;Installing Linux (Virtual Machine or Dual Boot)&lt;/li&gt;
+&lt;li&gt;Linux Command-Line Interface (CLI) Basics
+&lt;ul&gt;
+&lt;li&gt;Command-Line Navigation and File System&lt;/li&gt;
+&lt;li&gt;Working with Files and Directories&lt;/li&gt;
+&lt;li&gt;Linux Command Syntax and Options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Linux File System and Permissions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;File System Navigation and Directory Structure&lt;/li&gt;
+&lt;li&gt;File and Directory Permissions in Linux&lt;/li&gt;
+&lt;li&gt;Managing Files and Directories
+&lt;ul&gt;
+&lt;li&gt;Copying, Moving, and Renaming Files&lt;/li&gt;
+&lt;li&gt;File Permissions and Ownership&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Package Management and Software Installation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Managing Software Packages with Package Managers&lt;/li&gt;
+&lt;li&gt;Installing, Updating, and Removing Software&lt;/li&gt;
+&lt;li&gt;Exploring Package Repositories
+&lt;ul&gt;
+&lt;li&gt;Repository Configuration and Package Sources&lt;/li&gt;
+&lt;li&gt;Package Searching and Dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;User and Group Management&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Managing Users and Groups in Linux&lt;/li&gt;
+&lt;li&gt;User Account Configuration and Password Management&lt;/li&gt;
+&lt;li&gt;Sudo and Privilege Escalation
+&lt;ul&gt;
+&lt;li&gt;Understanding Sudo and Sudoers Configuration&lt;/li&gt;
+&lt;li&gt;Managing User Privileges with Sudo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Introduction to DevOps&lt;/p&gt;
 &lt;ul&gt;
@@ -420,38 +502,11 @@
     </item>
     
     <item>
-      <title>AWS</title>
-      <link>https://www.ericngigi.com/tags/aws/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ericngigi.com/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Eric Ngigi</title>
-      <link>https://www.ericngigi.com/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ericngigi.com/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Posts</title>
       <link>https://www.ericngigi.com/post/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.ericngigi.com/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Roadmap</title>
-      <link>https://www.ericngigi.com/tags/roadmap/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ericngigi.com/tags/roadmap/</guid>
       <description></description>
     </item>
     
