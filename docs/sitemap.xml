@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ericngigi.com/more/templates/</loc>
+    <lastmod>2023-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ericngigi.com/</loc>
+    <lastmod>2023-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.ericngigi.com/more/</loc>
+    <lastmod>2023-07-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.ericngigi.com/tags/aws/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ericngigi.com/tags/cloud-computing/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.ericngigi.com/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ericngigi.com/tags/linux/</loc>
@@ -24,9 +30,6 @@
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.ericngigi.com/services/custom-resumes/</loc>
-    <lastmod>2023-05-15T09:45:37+03:03</lastmod>
-  </url><url>
-    <loc>https://www.ericngigi.com/more/</loc>
     <lastmod>2023-05-15T09:45:37+03:03</lastmod>
   </url><url>
     <loc>https://www.ericngigi.com/more/services/</loc>
@@ -54,8 +57,6 @@
     <lastmod>2023-04-29T09:45:37+03:03</lastmod>
   </url><url>
     <loc>https://www.ericngigi.com/more/about/</loc>
-  </url><url>
-    <loc>https://www.ericngigi.com/more/templates/</loc>
   </url><url>
     <loc>https://www.ericngigi.com/services/ecommerce/</loc>
   </url><url>

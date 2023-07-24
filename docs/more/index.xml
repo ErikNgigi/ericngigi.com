@@ -5,61 +5,140 @@
     <description>Recent content in Mores on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 May 2023 09:45:37 +0303</lastBuildDate><atom:link href="https://www.ericngigi.com/more/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/more/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Our Services</title>
-      <link>https://www.ericngigi.com/more/services/</link>
-      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
-      
-      <guid>https://www.ericngigi.com/more/services/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;In today&amp;rsquo;s digital age, it&amp;rsquo;s crucial to make a lasting impression and stay ahead of the competition. At our company, we offer a range of services designed to elevate your online presence, boost your career prospects, and expand your skillset. Here&amp;rsquo;s why investing your time and money in our services can be a game-changer.&lt;/p&gt;
-&lt;h3 id=&#34;custom-designed-static-website-showcasing-your-portfolioservicesstatic-website&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/static-website&#34;&gt;Custom Designed Static Website: Showcasing Your Portfolio&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;A professionally designed static website tailored to your unique style and needs is a powerful tool for presenting your portfolio. Impress potential clients and employers with a visually appealing and user-friendly platform that showcases your skills, projects, and achievements.&lt;/p&gt;
-&lt;h3 id=&#34;resume-and-cover-letter-templates-making-a-memorable-first-impressionservicescustom-resumes&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/custom-resumes&#34;&gt;Resume and Cover Letter Templates: Making a Memorable First Impression&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Crafting an impactful resume and cover letter is essential for landing your dream job. Our meticulously designed templates ensure a polished and professional appearance while highlighting your strengths and accomplishments. Stand out from the competition and leave a lasting impression.&lt;/p&gt;
-&lt;h3 id=&#34;algorithmic-trading-scripts-maximizing-your-investment-potentialservicesalgorithm-scripts&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/algorithm-scripts&#34;&gt;Algorithmic Trading Scripts: Maximizing Your Investment Potential&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;For those interested in the financial markets, our algorithmic trading scripts provide a competitive edge. Leverage the power of automation and data-driven strategies to make informed trading decisions, optimize profits, and minimize risks. Unlock new possibilities in the world of finance.&lt;/p&gt;
-&lt;h3 id=&#34;learning-aws-harnessing-the-power-of-cloud-computingserviceslearning-aws&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/learning-aws&#34;&gt;Learning AWS: Harnessing the Power of Cloud Computing&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;As cloud computing continues to revolutionize industries, mastering Amazon Web Services (AWS) is a valuable skillset. Our comprehensive courses and hands-on learning materials will empower you to navigate the AWS ecosystem, enabling you to build scalable and secure cloud-based solutions.&lt;/p&gt;
-&lt;h3 id=&#34;custom-online-stores-empowering-your-e-commerce-journeyservicesecommerce&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/ecommerce&#34;&gt;Custom Online Stores: Empowering Your E-Commerce Journey&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;In the booming world of e-commerce, a custom online store sets you apart from the crowd. We provide tailored solutions that ensure seamless user experiences, robust security, and scalable infrastructure. Take your business to new heights with an online store that reflects your brand and captivates customers.&lt;/p&gt;
-&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;Investing in our services is an investment in your personal and professional growth. Whether you need a stunning portfolio website, standout resume templates, algorithmic trading scripts, AWS expertise, or a custom online store, we are here to empower your journey. Join us and unlock your full potential in today&amp;rsquo;s dynamic digital landscape.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.ericngigi.com/more/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ericngigi.com/more/about/</guid>
-      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
-&lt;p&gt;I am a passionate Linux enthusiast and free software advocate with years of experience in developing and maintaining Linux systems. I have a deep understanding of the inner workings of the Linux kernel and have extensive knowledge of various Linux distributions, including Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
-&lt;p&gt;I am also skilled in various programming languages, including Python, Go, JAMstack and Bash scripting, and have used these languages to automate and streamline various processes in my DevOps career. My expertise in automation and infrastructure as code has allowed me to optimize system performance, reduce downtime, and increase scalability.&lt;/p&gt;
-&lt;p&gt;As a free software advocate, I firmly believe in the importance of open-source software and its ability to empower individuals and organizations to achieve their goals. I am committed to sharing my knowledge and promoting free software whenever possible.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re looking for a Linux expert who is passionate about free software and has the technical skills to make a real difference in your organization, then look no further. Let&amp;rsquo;s work together to build the perfect solution for your needs. You can find more detailed information about my professional experience in my &lt;a href=&#34;https://www.linkedin.com/in/erik-ngigi&#34;&gt;LinkedIn profile&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This blog is mostly about my software development/DevOps adventures. You can find here various how-tos, tutorials, and
-write-ups about my personal project experiences. In case you need to contact me, please email
-at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.com&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Curriculum Vitae and Cover Letters</title>
       <link>https://www.ericngigi.com/more/templates/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.ericngigi.com/more/templates/</guid>
-      <description>&lt;h1 id=&#34;resume-templates&#34;&gt;Resume Templates&lt;/h1&gt;
+      <description>&lt;p&gt;Welcome to our diverse gallery of customizable templates! We offer a wide range of designs catering to various industries and professions. From elegant and modern to creative and artistic, our collection ensures that clients can find the perfect match for their needs. Simply select your preferred template and tailor it to showcase your unique skills and experience. Get ready to impress employers and stand out from the crowd with a professionally crafted CV and cover letter. Your dream job awaits!&lt;/p&gt;
+&lt;h1 id=&#34;resume-templates&#34;&gt;Resume Templates&lt;/h1&gt;
 &lt;p&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.ericngigi.com/css/hugo-easy-gallery.css&#34; /&gt;
 
 &lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-01.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-01.png&#34; alt=&#34;Curriculum Vitae Templates 01&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 01&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-01.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-02.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-02.png&#34; alt=&#34;Curriculum Vitae Templates 02&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 02&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-02.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-03.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-03.png&#34; alt=&#34;Curriculum Vitae Templates 03&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 03&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-03.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-04.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-04.png&#34; alt=&#34;Curriculum Vitae Templates 04&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 04&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-04.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-05.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-05.png&#34; alt=&#34;Curriculum Vitae Templates 05&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 05&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-05.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-06.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-06.png&#34; alt=&#34;Curriculum Vitae Templates 06&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 06&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-06.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-07.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-07.png&#34; alt=&#34;Curriculum Vitae Templates 07&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 07&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-07.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-08.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-08.png&#34; alt=&#34;Curriculum Vitae Templates 08&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 08&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-08.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-09.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-09.png&#34; alt=&#34;Curriculum Vitae Templates 09&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 09&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-09.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-10.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-10.png&#34; alt=&#34;Curriculum Vitae Templates 10&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 10&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-10.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-11.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-11.png&#34; alt=&#34;Curriculum Vitae Templates 11&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Curriculum Vitae Templates 11&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/resumes/Curriculum-Vitae-Templates-11.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
 &lt;/div&gt;
  
  
@@ -123,17 +202,128 @@ at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.
  &lt;/div&gt;
  
 &lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;h1 id=&#34;cover-letters&#34;&gt;Cover Letters&lt;/h1&gt;
 &lt;p&gt;
 
 
 &lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-01.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-01.png&#34; alt=&#34;Cover Letter Templates 01&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Cover Letter Templates 01&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-01.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-02.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-02.png&#34; alt=&#34;Cover Letter Templates 02&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Cover Letter Templates 02&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-02.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-03.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-03.png&#34; alt=&#34;Cover Letter Templates 03&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Cover Letter Templates 03&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-03.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-04.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-04.png&#34; alt=&#34;Cover Letter Templates 04&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Cover Letter Templates 04&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-04.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-05.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-05.png&#34; alt=&#34;Cover Letter Templates 05&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Cover Letter Templates 05&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-05.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
+				&lt;div class=&#34;box&#34;&gt;
+				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-06.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-06.png&#34; alt=&#34;Cover Letter Templates 06&#34; /&gt;
+				    &lt;/div&gt;
+			      &lt;figcaption&gt;
+		          &lt;p&gt;Cover Letter Templates 06&lt;/p&gt;
+			      &lt;/figcaption&gt;
+				    &lt;a href=&#34;https://www.ericngigi.comimages/post/academia/cover-letters/Cover-Letter-Templates-06.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				  &lt;/figure&gt;
+				&lt;/div&gt;
 &lt;/div&gt;
  
  
  
  
 &lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Our Services</title>
+      <link>https://www.ericngigi.com/more/services/</link>
+      <pubDate>Mon, 15 May 2023 09:45:37 +0303</pubDate>
+      
+      <guid>https://www.ericngigi.com/more/services/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In today&amp;rsquo;s digital age, it&amp;rsquo;s crucial to make a lasting impression and stay ahead of the competition. At our company, we offer a range of services designed to elevate your online presence, boost your career prospects, and expand your skillset. Here&amp;rsquo;s why investing your time and money in our services can be a game-changer.&lt;/p&gt;
+&lt;h3 id=&#34;custom-designed-static-website-showcasing-your-portfolioservicesstatic-website&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/static-website&#34;&gt;Custom Designed Static Website: Showcasing Your Portfolio&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;A professionally designed static website tailored to your unique style and needs is a powerful tool for presenting your portfolio. Impress potential clients and employers with a visually appealing and user-friendly platform that showcases your skills, projects, and achievements.&lt;/p&gt;
+&lt;h3 id=&#34;resume-and-cover-letter-templates-making-a-memorable-first-impressionservicescustom-resumes&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/custom-resumes&#34;&gt;Resume and Cover Letter Templates: Making a Memorable First Impression&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Crafting an impactful resume and cover letter is essential for landing your dream job. Our meticulously designed templates ensure a polished and professional appearance while highlighting your strengths and accomplishments. Stand out from the competition and leave a lasting impression.&lt;/p&gt;
+&lt;h3 id=&#34;algorithmic-trading-scripts-maximizing-your-investment-potentialservicesalgorithm-scripts&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/algorithm-scripts&#34;&gt;Algorithmic Trading Scripts: Maximizing Your Investment Potential&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;For those interested in the financial markets, our algorithmic trading scripts provide a competitive edge. Leverage the power of automation and data-driven strategies to make informed trading decisions, optimize profits, and minimize risks. Unlock new possibilities in the world of finance.&lt;/p&gt;
+&lt;h3 id=&#34;learning-aws-harnessing-the-power-of-cloud-computingserviceslearning-aws&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/learning-aws&#34;&gt;Learning AWS: Harnessing the Power of Cloud Computing&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;As cloud computing continues to revolutionize industries, mastering Amazon Web Services (AWS) is a valuable skillset. Our comprehensive courses and hands-on learning materials will empower you to navigate the AWS ecosystem, enabling you to build scalable and secure cloud-based solutions.&lt;/p&gt;
+&lt;h3 id=&#34;custom-online-stores-empowering-your-e-commerce-journeyservicesecommerce&#34;&gt;&lt;a href=&#34;https://www.ericngigi.com/services/ecommerce&#34;&gt;Custom Online Stores: Empowering Your E-Commerce Journey&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;In the booming world of e-commerce, a custom online store sets you apart from the crowd. We provide tailored solutions that ensure seamless user experiences, robust security, and scalable infrastructure. Take your business to new heights with an online store that reflects your brand and captivates customers.&lt;/p&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Investing in our services is an investment in your personal and professional growth. Whether you need a stunning portfolio website, standout resume templates, algorithmic trading scripts, AWS expertise, or a custom online store, we are here to empower your journey. Join us and unlock your full potential in today&amp;rsquo;s dynamic digital landscape.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.ericngigi.com/more/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ericngigi.com/more/about/</guid>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
+&lt;p&gt;I am a passionate Linux enthusiast and free software advocate with years of experience in developing and maintaining Linux systems. I have a deep understanding of the inner workings of the Linux kernel and have extensive knowledge of various Linux distributions, including Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
+&lt;p&gt;I am also skilled in various programming languages, including Python, Go, JAMstack and Bash scripting, and have used these languages to automate and streamline various processes in my DevOps career. My expertise in automation and infrastructure as code has allowed me to optimize system performance, reduce downtime, and increase scalability.&lt;/p&gt;
+&lt;p&gt;As a free software advocate, I firmly believe in the importance of open-source software and its ability to empower individuals and organizations to achieve their goals. I am committed to sharing my knowledge and promoting free software whenever possible.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re looking for a Linux expert who is passionate about free software and has the technical skills to make a real difference in your organization, then look no further. Let&amp;rsquo;s work together to build the perfect solution for your needs. You can find more detailed information about my professional experience in my &lt;a href=&#34;https://www.linkedin.com/in/erik-ngigi&#34;&gt;LinkedIn profile&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This blog is mostly about my software development/DevOps adventures. You can find here various how-tos, tutorials, and
+write-ups about my personal project experiences. In case you need to contact me, please email
+at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34;&gt;ericmosesngigi@gmail.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;open-source-projects&#34;&gt;Open Source Projects&lt;/h2&gt;
 </description>
     </item>
     
