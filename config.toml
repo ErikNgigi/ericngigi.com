@@ -63,11 +63,11 @@ home = ["HTML", "RSS"]
   # title =  "Certifications"
   # href =  "/more/certifications/"
   [[params.addtional_menus]]
+  title =  "Templates"
+  href =  "/more/templates/"
+  [[params.addtional_menus]]
   title =  "About"
   href =  "/more/about/"
-  # [[params.addtional_menus]]
-  # title =  "Services"
-  # href =  "/more/services/"
 
   [markup]
   [markup.tableOfContents]
