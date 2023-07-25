@@ -226,9 +226,11 @@
 </code></pre><p>If you&rsquo;re planning to use a window manager like <code>awesome</code>, <code>bspwm</code> or <code>i3</code>, you should install X. While if you&rsquo;re planning to use <code>sway</code>, then wayland it is. If <code>GNOME</code>, you can install both. Again, your environment of choice will automatically install these as its dependencies.</p>
 <h4 id="video-drivers">Video Drivers</h4>
 <p>After installing the graphical server, we need to install the video drivers. I&rsquo;m only using an integrated <code>AMD</code> graphics card.</p>
-<p>For AMD graphics. Read the arch wiki on <a href="https://wiki.archlinux.org/title/ATI">ATI</a> before procedding any futher.</p>
+<p>For AMD graphics. Read the arch wiki on <a href="https://wiki.archlinux.org/title/ATI" target="_blank" >ATI</a>
+ before procedding any futher.</p>
 <pre tabindex="0"><code>pacman -S xf86-video-ati vulkan-icd-loader libvdpau-va-gl  
-</code></pre><p>For Intel Graphics. Read the arch wiki on <a href="https://wiki.archlinux.org/title/Intel_graphics">Intel</a></p>
+</code></pre><p>For Intel Graphics. Read the arch wiki on <a href="https://wiki.archlinux.org/title/Intel_graphics" target="_blank" >Intel</a>
+</p>
 <pre tabindex="0"><code>pacman -S xf86-video-intel vulkan-intel vulkan-icd-loader libva-intel-driver
 </code></pre><p>Add your (kernel) graphics driver to your initramfs. For example, if using <code>ati</code> add <code>radeon</code>:</p>
 <pre tabindex="0"><code>vim /etc/mkinitcpio.conf
@@ -304,7 +306,8 @@ mkinitcpio -p linux-lts
 <p>I prefer to use a light-weight file manager such as <code>thunar</code> for the graphical file manager and <code>nnn</code> for the CLI file manager.</p>
 <pre tabindex="0"><code>pacman -S thunar nnn
 </code></pre><h4 id="cli-based-text-editor">CLI-based Text Editor</h4>
-<p>&lsquo;Nvchad&rsquo; is my prefered choice for an IDE. Read the <a href="https://nvchad.github.io/">NVchad</a> documentation before installation.</p>
+<p>&lsquo;Nvchad&rsquo; is my prefered choice for an IDE. Read the <a href="https://nvchad.github.io/" target="_blank" >NVchad</a>
+ documentation before installation.</p>
 <p>Ensure you have installed <code>neovim</code> before you can install Nvchad.</p>
 <pre tabindex="0"><code>sudo pacman -S neovim
 </code></pre><h4 id="gui-based-text-editors">GUI-based Text Editors</h4>

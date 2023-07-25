@@ -119,9 +119,11 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you&amp;rsquo;re planning to use a window manager like &lt;code&gt;awesome&lt;/code&gt;, &lt;code&gt;bspwm&lt;/code&gt; or &lt;code&gt;i3&lt;/code&gt;, you should install X. While if you&amp;rsquo;re planning to use &lt;code&gt;sway&lt;/code&gt;, then wayland it is. If &lt;code&gt;GNOME&lt;/code&gt;, you can install both. Again, your environment of choice will automatically install these as its dependencies.&lt;/p&gt;
 &lt;h4 id=&#34;video-drivers&#34;&gt;Video Drivers&lt;/h4&gt;
 &lt;p&gt;After installing the graphical server, we need to install the video drivers. I&amp;rsquo;m only using an integrated &lt;code&gt;AMD&lt;/code&gt; graphics card.&lt;/p&gt;
-&lt;p&gt;For AMD graphics. Read the arch wiki on &lt;a href=&#34;https://wiki.archlinux.org/title/ATI&#34;&gt;ATI&lt;/a&gt; before procedding any futher.&lt;/p&gt;
+&lt;p&gt;For AMD graphics. Read the arch wiki on &lt;a href=&#34;https://wiki.archlinux.org/title/ATI&#34; target=&#34;_blank&#34; &gt;ATI&lt;/a&gt;
+ before procedding any futher.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S xf86-video-ati vulkan-icd-loader libvdpau-va-gl  
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For Intel Graphics. Read the arch wiki on &lt;a href=&#34;https://wiki.archlinux.org/title/Intel_graphics&#34;&gt;Intel&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For Intel Graphics. Read the arch wiki on &lt;a href=&#34;https://wiki.archlinux.org/title/Intel_graphics&#34; target=&#34;_blank&#34; &gt;Intel&lt;/a&gt;
+&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S xf86-video-intel vulkan-intel vulkan-icd-loader libva-intel-driver
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add your (kernel) graphics driver to your initramfs. For example, if using &lt;code&gt;ati&lt;/code&gt; add &lt;code&gt;radeon&lt;/code&gt;:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;vim /etc/mkinitcpio.conf
@@ -197,7 +199,8 @@ mkinitcpio -p linux-lts
 &lt;p&gt;I prefer to use a light-weight file manager such as &lt;code&gt;thunar&lt;/code&gt; for the graphical file manager and &lt;code&gt;nnn&lt;/code&gt; for the CLI file manager.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pacman -S thunar nnn
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;cli-based-text-editor&#34;&gt;CLI-based Text Editor&lt;/h4&gt;
-&lt;p&gt;&amp;lsquo;Nvchad&amp;rsquo; is my prefered choice for an IDE. Read the &lt;a href=&#34;https://nvchad.github.io/&#34;&gt;NVchad&lt;/a&gt; documentation before installation.&lt;/p&gt;
+&lt;p&gt;&amp;lsquo;Nvchad&amp;rsquo; is my prefered choice for an IDE. Read the &lt;a href=&#34;https://nvchad.github.io/&#34; target=&#34;_blank&#34; &gt;NVchad&lt;/a&gt;
+ documentation before installation.&lt;/p&gt;
 &lt;p&gt;Ensure you have installed &lt;code&gt;neovim&lt;/code&gt; before you can install Nvchad.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S neovim
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;gui-based-text-editors&#34;&gt;GUI-based Text Editors&lt;/h4&gt;
@@ -277,7 +280,8 @@ ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0303</pubDate>
       
       <guid>https://www.ericngigi.com/post/arch-linux/01-arch-linux-base-install/</guid>
-      <description>&lt;p&gt;This is my personal guide. I recommend that you read the official &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34;&gt;wiki&lt;/a&gt;. The purpose of this guide is to speed up my personal install of &lt;code&gt;Archlinux&lt;/code&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This is my personal guide. I recommend that you read the official &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34; target=&#34;_blank&#34; &gt;wiki&lt;/a&gt;
+. The purpose of this guide is to speed up my personal install of &lt;code&gt;Archlinux&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-archlinux&#34;&gt;Why Archlinux&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;Archlinux&lt;/code&gt; distribution gives you the freedom to &lt;code&gt;do it yourself&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTE&lt;/strong&gt; that your kernel and initramfs are on the root file system, recovery after a crash may prove troublesome.&lt;/p&gt;
@@ -306,12 +310,15 @@ ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
 &lt;h2 id=&#34;pre-installation&#34;&gt;Pre-installation&lt;/h2&gt;
 &lt;p&gt;Before installing, make sure to:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Read the &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34;&gt;wiki&lt;/a&gt;. It is advisable to read that instead. I wrote this guide for myself&lt;/li&gt;
-&lt;li&gt;Acquire an installation image from &lt;a href=&#34;https://www.archlinux.org/download&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Read the &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34; target=&#34;_blank&#34; &gt;wiki&lt;/a&gt;
+. It is advisable to read that instead. I wrote this guide for myself&lt;/li&gt;
+&lt;li&gt;Acquire an installation image from &lt;a href=&#34;https://www.archlinux.org/download&#34; target=&#34;_blank&#34; &gt;here&lt;/a&gt;
+.&lt;/li&gt;
 &lt;li&gt;Verify signature.&lt;/li&gt;
 &lt;li&gt;Prepare an installation medium.&lt;/li&gt;
 &lt;li&gt;Boot the live environment.&lt;/li&gt;
-&lt;li&gt;Basic understanding of &lt;a href=&#34;https://www.openvim.com/&#34;&gt;Vim&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Basic understanding of &lt;a href=&#34;https://www.openvim.com/&#34; target=&#34;_blank&#34; &gt;Vim&lt;/a&gt;
+.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;create-an-installation-medium&#34;&gt;Create an Installation Medium&lt;/h2&gt;
 &lt;p&gt;First we need to create an installation medium to boot from:&lt;/p&gt;
@@ -661,7 +668,8 @@ mkfs.btrfs /dev/sda3
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Users interested in installing other kernels on the system read this &lt;a href=&#34;https://btrfs.readthedocs.io/en/latest/btrfs-man5.html&#34;&gt;post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Users interested in installing other kernels on the system read this &lt;a href=&#34;https://btrfs.readthedocs.io/en/latest/btrfs-man5.html&#34; target=&#34;_blank&#34; &gt;post&lt;/a&gt;
+.&lt;/p&gt;
 &lt;p&gt;The &lt;code&gt;base&lt;/code&gt; package does not include all tools from the live installation, so installing other packages may be necessary for a fully functional base system. In particular, consider installing:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
