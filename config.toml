@@ -60,8 +60,12 @@ home = ["HTML", "RSS"]
   title =  "Templates"
   href =  "/more/templates/"
   [[params.addtional_menus]]
-  title =  "About"
+  title =  "Bio"
   href =  "/more/about/"
+  [[params.addtional_menus]]
+  title =  "Portfolio"
+  href =  "/more/portfolio/"
+
 
   [markup]
   [markup.tableOfContents]

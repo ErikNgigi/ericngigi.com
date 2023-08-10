@@ -221,8 +221,8 @@ h3 {
 }
 h4,h5 {
   /* font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system; */
-  font-family: 'Roboto-Medium','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
-  font-weight: 860;
+  font-family: 'Roboto-Black','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
+  font-weight: 800;
   line-height: 1.2;
   letter-spacing: -.25px;
 	font-feature-settings: "ss01" 1;

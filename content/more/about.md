@@ -17,6 +17,3 @@ If you're looking for a Linux expert who is passionate about free software and h
 This blog is mostly about my software development/DevOps adventures. You can find here various how-tos, tutorials, and
 write-ups about my personal project experiences. In case you need to contact me, please email
 at [ericmosesngigi@gmail.com](mailto:ericmosesngigi@gmail.com).
-
-## Open Source Projects
-
