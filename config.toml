@@ -56,16 +56,18 @@ home = ["HTML", "RSS"]
   #xing          = "https://www.xing.com/profile/yourxingid"
   #git           = "full profile url for git user"
 
-  [[params.addtional_menus]]
-  title =  "Templates"
-  href =  "/more/templates/"
-  [[params.addtional_menus]]
-  title =  "Bio"
-  href =  "/more/about/"
+  # [[params.addtional_menus]]
+  # title =  "Templates"
+  # href =  "/more/templates/"
   [[params.addtional_menus]]
   title =  "Portfolio"
   href =  "/more/portfolio/"
-
+  [[params.addtional_menus]]
+  title = "Pitch"
+  href = "/more/pitch/"
+  [[params.addtional_menus]]
+  title =  "About"
+  href =  "/more/about/"
 
   [markup]
   [markup.tableOfContents]

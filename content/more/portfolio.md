@@ -1,23 +1,21 @@
 ---
-title: "Showcasing the Journey of a Software Engineer"
+title: "My Journey as an AWS Cloud Engineer"
 subtitle: "Showcasing my journey through lines of code and innovative solutions."
 date: 2023-08-10
 author: "Eric Ngigi"
+# image: "/images/banner/alx_banner.webp"
 draft: false
 excludeFromTopNav: true
-showDate: false
+showDate: true
 showComments: false
 showTOC: false
 ---
-# My Journey with ALX Africa
 
-## Introduction
-
-Since joining ALX Africa, my journey has been filled with learning, growth, and exciting challenges. I've had the opportunity to work on various projects, collaborate with talented peers, and expand my skills as a software engineer.
+# Portfolio
 
 ## Month 2 Week 10 Group Work: Slide Deck
 
-### Project: Regional Integration Through A Marketplace Application.
+### 1. Project: Regional Integration.
 
 In Month 2 Week 10, our group collaborated on a project that pushed our boundaries and showcased our ability to work together as a team. Here's a brief overview of our project:
 
@@ -53,36 +51,7 @@ Our slide deck for the Month 2 Week 10 project presentation encapsulated the ess
 8. **Future Scope:** Potential avenues for project expansion and improvements.
 9. **Acknowledgments:** Gratitude to mentors, peers, and ALX Africa for their support.
 
-You can view the group slides by clicking on the link: [Google Sheets Slide](https://docs.google.com/presentation/d/1taYlugA4cp6gsFfGEdspJpLBJJDN4r_igYWR7sI1KKQ/edit?usp=sharing)
-
-<!-- #### Slide 1: Introduction -->
-<!-- ![giggs](/images/slides/slide_01.jpg) -->
-<!-- #### Slide 2:  -->
-<!-- ![giggs](/images/slides/slide_02.jpg) -->
-<!-- #### Slide 3: -->
-<!-- ![giggs](/images/slides/slide_03.jpg) -->
-<!-- #### Slide 4: -->
-<!-- ![giggs](/images/slides/slide_04.jpg) -->
-<!-- #### Slide 5: -->
-<!-- ![giggs](/images/slides/slide_05.jpg) -->
-<!-- #### Slide 6: -->
-<!-- ![giggs](/images/slides/slide_06.jpg) -->
-<!-- #### Slide 7: -->
-<!-- ![giggs](/images/slides/slide_07.jpg) -->
-<!-- #### Slide 8: -->
-<!-- ![giggs](/images/slides/slide_08.jpg) -->
-<!-- #### Slide 9: -->
-<!-- ![giggs](/images/slides/slide_09.jpg) -->
-<!-- #### Slide 10: -->
-<!-- ![giggs](/images/slides/slide_10.jpg) -->
-<!-- #### Slide 11 -->
-<!-- ![giggs](/images/slides/slide_11.jpg) -->
-<!-- #### Slide 12 -->
-<!-- ![giggs](/images/slides/slide_12.jpg) -->
-<!-- #### Slide 13 -->
-<!-- ![giggs](/images/slides/slide_13.jpg) -->
-<!-- #### Slide 14 -->
-<!-- ![giggs](/images/slides/slide_14.jpg) -->
+You can view the group slides by clicking on the link: [Group Work Document](/documents/milestone10_group_work.pdf)
 
 ## Group YouTube Video
 
