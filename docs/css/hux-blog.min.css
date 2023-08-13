@@ -1,15 +1,15 @@
-@font-face {
-  font-family: "Canicule Display";
-  src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations");
-  font-weight: 50 450;
-}
-@font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('../fonts/CabinetGrotesk-Variable.woff2') format("woff-variations"),
-       url('../fonts/CabinetGrotesk-Variable.woff') format("woff-variations"),
-       url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
-  font-weight: 50 450;
-}
+/* @font-face { */
+/*   font-family: "Canicule Display"; */
+/*   src: url('../fonts/CaniculeDisplay0.1VF.woff') format("woff-variations"); */
+/*   font-weight: 50 450; */
+/* } */
+/* @font-face { */
+/*   font-family: 'Cabinet Grotesk'; */
+/*   src: url('../fonts/CabinetGrotesk-Variable.woff2') format("woff-variations"), */
+/*        url('../fonts/CabinetGrotesk-Variable.woff') format("woff-variations"), */
+/*        url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype'); */
+/*   font-weight: 50 450; */
+/* } */
 /* @font-face { */
 /*   font-family: 'Input Mono'; */
 /*   src: url("../fonts/InputMono-Regular.ttf") format("truetype"); */
@@ -195,7 +195,7 @@ h1,h2,h3,h6 {
   /* font-family: 'Canicule Display','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system; */
   font-family: 'Roboto-Black','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
   line-height: 1.2;
-  font-weight: 900;
+  font-weight: 600;
 	font-feature-settings: "ss01" 1;
 }
 h1 {
@@ -205,7 +205,7 @@ h1 {
 .navbar h1 {
   /* font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system; */
   font-family: 'Roboto-Medium','Arial Black','Arial','Helvetica',sans-serif,-apple-system;
-  font-weight: 860;
+  font-weight: 700;
   font-size: 4rem;
   font-feature-settings: "ss01" 1;
 }
@@ -216,13 +216,13 @@ h2 {
   font-size: 2.8rem;
 }
 h3 {
-  font-weight: 720;
+  font-weight: 600;
   font-size: 2.6rem;
 }
 h4,h5 {
   /* font-family: 'Cabinet Grotesk','Arial Black','Arial','Helvetica',sans-serif,-apple-system; */
   font-family: 'Roboto-Black','Georgia','Times New Roman','Times','Times-Roman',serif,-apple-system;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: -.25px;
 	font-feature-settings: "ss01" 1;

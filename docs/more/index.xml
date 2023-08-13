@@ -5,18 +5,51 @@
     <description>Recent content in Mores on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/more/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/more/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Showcasing the Journey of a Software Engineer</title>
+      <title>Elevator Pitch</title>
+      <link>https://www.ericngigi.com/more/pitch/</link>
+      <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ericngigi.com/more/pitch/</guid>
+      <description>&lt;p&gt;Are you seeking an accomplished AWS Cloud Engineer with a proven track record of over 3 years in the industry, coupled with extensive Linux expertise? Look no further. With a deep understanding of cloud architecture and hands-on experience with AWS services, I bring a unique blend of technical skill and real-world problem-solving. My proficiency in designing, deploying, and optimizing cloud solutions, combined with a mastery of Linux systems, empowers me to create scalable and reliable infrastructures. Whether it&amp;rsquo;s crafting seamless migrations, implementing robust security measures, or ensuring high availability, I am poised to drive innovation and efficiency in your cloud environment. Elevate your cloud capabilities with an AWS Cloud Engineer who bridges strategic vision with actionable results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://www.ericngigi.com/more/about/</link>
+      <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ericngigi.com/more/about/</guid>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;I am a dedicated Linux enthusiast and advocate of open-source software, possessing extensive experience in the development and maintenance of Linux systems. My professional journey spans years of cultivating a profound comprehension of the intricate mechanics of the Linux kernel, coupled with a comprehensive mastery of diverse Linux distributions, encompassing Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
+&lt;p&gt;Furthermore, I possess proficient skills in an array of programming languages such as Python, Go, JAMstack, and Bash scripting. My adeptness in these languages has been instrumental in orchestrating automation and optimizing processes throughout my tenure in the DevOps domain. This proficiency in automation, intertwined with my prowess in infrastructure as code, has been pivotal in enhancing system performance, curtailing downtime, and fostering scalability.&lt;/p&gt;
+&lt;p&gt;My advocacy for free software underscores my unwavering belief in the transformative potential of open-source software, catalyzing empowerment for individuals and enterprises alike. I am steadfast in my commitment to disseminating knowledge and advancing the cause of free software whenever feasible.&lt;/p&gt;
+&lt;p&gt;Should you seek a Linux specialist whose fervor for free software is complemented by a reservoir of technical competencies, your search concludes here. Together, we can craft tailor-made solutions to address your organizational requirements with efficacy. For an in-depth overview of my professional trajectory, please refer to my &lt;a href=&#34;https://www.linkedin.com/in/erik-ngigi&#34; target=&#34;_blank&#34; &gt;LinkedIn&lt;/a&gt;
+ profile. You can also access my comprehensive &lt;a href=&#34;https://www.ericngigi.com/documents/Curriculum-Vitae.pdf&#34; &gt;resume&lt;/a&gt;
+ for a detailed professional background.&lt;/p&gt;
+&lt;p&gt;I maintain a blog focused primarily on my exploits in software development and DevOps. This platform is replete with an array of how-to guides, tutorials, and insights drawn from my personal project undertakings. If you wish to initiate contact, please direct your emails to &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34; &gt;ericmosesngigi@gmail.com&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Journey as an AWS Cloud Engineer</title>
       <link>https://www.ericngigi.com/more/portfolio/</link>
       <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>https://www.ericngigi.com/more/portfolio/</guid>
-      <description>&lt;h1 id=&#34;my-journey-with-alx-africa&#34;&gt;My Journey with ALX Africa&lt;/h1&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Since joining ALX Africa, my journey has been filled with learning, growth, and exciting challenges. I&amp;rsquo;ve had the opportunity to work on various projects, collaborate with talented peers, and expand my skills as a software engineer.&lt;/p&gt;
+      <description>&lt;h1 id=&#34;portfolio&#34;&gt;Portfolio&lt;/h1&gt;
 &lt;h2 id=&#34;month-2-week-10-group-work-slide-deck&#34;&gt;Month 2 Week 10 Group Work: Slide Deck&lt;/h2&gt;
-&lt;h3 id=&#34;project-regional-integration-through-a-marketplace-application&#34;&gt;Project: Regional Integration Through A Marketplace Application.&lt;/h3&gt;
+&lt;h3 id=&#34;1-project-regional-integration&#34;&gt;1. Project: Regional Integration.&lt;/h3&gt;
 &lt;p&gt;In Month 2 Week 10, our group collaborated on a project that pushed our boundaries and showcased our ability to work together as a team. Here&amp;rsquo;s a brief overview of our project:&lt;/p&gt;
 &lt;h4 id=&#34;goals&#34;&gt;Goals&lt;/h4&gt;
 &lt;ul&gt;
@@ -49,36 +82,8 @@
 &lt;li&gt;&lt;strong&gt;Future Scope:&lt;/strong&gt; Potential avenues for project expansion and improvements.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Acknowledgments:&lt;/strong&gt; Gratitude to mentors, peers, and ALX Africa for their support.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;You can view the group slides by clicking on the link: &lt;a href=&#34;https://docs.google.com/presentation/d/1taYlugA4cp6gsFfGEdspJpLBJJDN4r_igYWR7sI1KKQ/edit?usp=sharing&#34; target=&#34;_blank&#34; &gt;Google Sheets Slide&lt;/a&gt;
+&lt;p&gt;You can view the group slides by clicking on the link: &lt;a href=&#34;https://www.ericngigi.com/documents/milestone10_group_work.pdf&#34; &gt;Group Work Document&lt;/a&gt;
 &lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;
 &lt;h2 id=&#34;group-youtube-video&#34;&gt;Group YouTube Video&lt;/h2&gt;
 &lt;h3 id=&#34;team-maven-showcase-video&#34;&gt;Team Maven Showcase Video&lt;/h3&gt;
 &lt;p&gt;We recorded a comprehensive YouTube video to visually present our project&amp;rsquo;s outcomes and functionalities. In this video, we cover:&lt;/p&gt;
@@ -352,25 +357,6 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://www.ericngigi.com/more/about/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ericngigi.com/more/about/</guid>
-      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
-&lt;p&gt;I am a passionate Linux enthusiast and free software advocate with years of experience in developing and maintaining Linux systems. I have a deep understanding of the inner workings of the Linux kernel and have extensive knowledge of various Linux distributions, including Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
-&lt;p&gt;I am also skilled in various programming languages, including Python, Go, JAMstack and Bash scripting, and have used these languages to automate and streamline various processes in my DevOps career. My expertise in automation and infrastructure as code has allowed me to optimize system performance, reduce downtime, and increase scalability.&lt;/p&gt;
-&lt;p&gt;As a free software advocate, I firmly believe in the importance of open-source software and its ability to empower individuals and organizations to achieve their goals. I am committed to sharing my knowledge and promoting free software whenever possible.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re looking for a Linux expert who is passionate about free software and has the technical skills to make a real difference in your organization, then look no further. Let&amp;rsquo;s work together to build the perfect solution for your needs. You can find more detailed information about my professional experience in my &lt;a href=&#34;https://www.linkedin.com/in/erik-ngigi&#34; target=&#34;_blank&#34; &gt;LinkedIn profile&lt;/a&gt;
-.&lt;/p&gt;
-&lt;p&gt;This blog is mostly about my software development/DevOps adventures. You can find here various how-tos, tutorials, and
-write-ups about my personal project experiences. In case you need to contact me, please email
-at &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34; &gt;ericmosesngigi@gmail.com&lt;/a&gt;
-.&lt;/p&gt;
 </description>
     </item>
     
