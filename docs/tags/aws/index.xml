@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS on Eric Ngigi</title>
-    <link>https://erikngigi.github.io/tags/aws/</link>
+    <link>https://erikngigi.github.io/ericngigi.com/tags/aws/</link>
     <description>Recent content in AWS on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/ericngigi.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mastering Linux and AWS: Unleashing Cloud Excellence</title>
-      <link>https://erikngigi.github.io/post/aws/aws-outline/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/post/aws/aws-outline/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/post/aws/aws-outline/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/post/aws/aws-outline/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;Welcome to &amp;ldquo;Mastering Linux and AWS: Unleashing Cloud Excellence&amp;rdquo; - your comprehensive learning material! In today&amp;rsquo;s tech world, cloud expertise is in high demand, and AWS leads the way. Our material equips you with vital Linux and AWS skills, empowering you with limitless career opportunities. Linux serves as your AWS foundation, while AWS offers scalable, innovative solutions for businesses. Gain hands-on experience, become a sought-after cloud architect, DevOps engineer, or consultant, and lead transformative cloud initiatives. Let&amp;rsquo;s embark on this transformative journey together and shape your bright future in the cloud-driven landscape!&lt;/p&gt;

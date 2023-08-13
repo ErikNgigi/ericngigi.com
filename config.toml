@@ -1,6 +1,6 @@
 
 # baseurl = "https://www.ericngigi.com/"
-baseurl = "https://erikngigi.github.io/"
+baseurl = "https://erikngigi.github.io/ericngigi.com/"
 title = "Eric Ngigi"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"

@@ -1,45 +1,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eric Ngigi</title>
-    <link>https://erikngigi.github.io/</link>
+    <link>https://erikngigi.github.io/ericngigi.com/</link>
     <description>Recent content on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://erikngigi.github.io/ericngigi.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elevator Pitch</title>
-      <link>https://erikngigi.github.io/more/pitch/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/more/pitch/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/more/pitch/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/more/pitch/</guid>
       <description>&lt;p&gt;Are you seeking an accomplished AWS Cloud Engineer with a proven track record of over 3 years in the industry, coupled with extensive Linux expertise? Look no further. With a deep understanding of cloud architecture and hands-on experience with AWS services, I bring a unique blend of technical skill and real-world problem-solving. My proficiency in designing, deploying, and optimizing cloud solutions, combined with a mastery of Linux systems, empowers me to create scalable and reliable infrastructures. Whether it&amp;rsquo;s crafting seamless migrations, implementing robust security measures, or ensuring high availability, I am poised to drive innovation and efficiency in your cloud environment. Elevate your cloud capabilities with an AWS Cloud Engineer who bridges strategic vision with actionable results.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Eric Ngigi</title>
-      <link>https://erikngigi.github.io/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mores</title>
-      <link>https://erikngigi.github.io/more/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/more/</link>
       <pubDate>Sun, 13 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/more/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/more/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>https://erikngigi.github.io/more/about/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/more/about/</link>
       <pubDate>Sat, 12 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/more/about/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/more/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;!-- raw HTML omitted --&gt;
@@ -52,7 +52,7 @@
 &lt;p&gt;Furthermore, I possess proficient skills in an array of programming languages such as Python, Go, JAMstack, and Bash scripting. My adeptness in these languages has been instrumental in orchestrating automation and optimizing processes throughout my tenure in the DevOps domain. This proficiency in automation, intertwined with my prowess in infrastructure as code, has been pivotal in enhancing system performance, curtailing downtime, and fostering scalability.&lt;/p&gt;
 &lt;p&gt;My advocacy for free software underscores my unwavering belief in the transformative potential of open-source software, catalyzing empowerment for individuals and enterprises alike. I am steadfast in my commitment to disseminating knowledge and advancing the cause of free software whenever feasible.&lt;/p&gt;
 &lt;p&gt;Should you seek a Linux specialist whose fervor for free software is complemented by a reservoir of technical competencies, your search concludes here. Together, we can craft tailor-made solutions to address your organizational requirements with efficacy. For an in-depth overview of my professional trajectory, please refer to my &lt;a href=&#34;https://www.linkedin.com/in/erik-ngigi&#34; target=&#34;_blank&#34; &gt;LinkedIn&lt;/a&gt;
- profile. You can also access my comprehensive &lt;a href=&#34;https://erikngigi.github.io/documents/Curriculum-Vitae.pdf&#34; &gt;resume&lt;/a&gt;
+ profile. You can also access my comprehensive &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/documents/Curriculum-Vitae.pdf&#34; &gt;resume&lt;/a&gt;
  for a detailed professional background.&lt;/p&gt;
 &lt;p&gt;I maintain a blog focused primarily on my exploits in software development and DevOps. This platform is replete with an array of how-to guides, tutorials, and insights drawn from my personal project undertakings. If you wish to initiate contact, please direct your emails to &lt;a href=&#34;mailto:ericmosesngigi@gmail.com&#34; &gt;ericmosesngigi@gmail.com&lt;/a&gt;
 &lt;/p&gt;
@@ -61,10 +61,10 @@
     
     <item>
       <title>My Journey as an AWS Cloud Engineer</title>
-      <link>https://erikngigi.github.io/more/portfolio/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/more/portfolio/</link>
       <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/more/portfolio/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/more/portfolio/</guid>
       <description>&lt;h1 id=&#34;portfolio&#34;&gt;Portfolio&lt;/h1&gt;
 &lt;h2 id=&#34;month-2-week-10-group-work-slide-deck&#34;&gt;Month 2 Week 10 Group Work: Slide Deck&lt;/h2&gt;
 &lt;h3 id=&#34;1-project-regional-integration&#34;&gt;1. Project: Regional Integration.&lt;/h3&gt;
@@ -100,7 +100,7 @@
 &lt;li&gt;&lt;strong&gt;Future Scope:&lt;/strong&gt; Potential avenues for project expansion and improvements.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Acknowledgments:&lt;/strong&gt; Gratitude to mentors, peers, and ALX Africa for their support.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;You can view the group slides by clicking on the link: &lt;a href=&#34;https://erikngigi.github.io/documents/milestone10_group_work.pdf&#34; &gt;Group Work Document&lt;/a&gt;
+&lt;p&gt;You can view the group slides by clicking on the link: &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/documents/milestone10_group_work.pdf&#34; &gt;Group Work Document&lt;/a&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;group-youtube-video&#34;&gt;Group YouTube Video&lt;/h2&gt;
 &lt;h3 id=&#34;team-maven-showcase-video&#34;&gt;Team Maven Showcase Video&lt;/h3&gt;
@@ -125,103 +125,103 @@
     
     <item>
       <title>Curriculum Vitae and Cover Letters</title>
-      <link>https://erikngigi.github.io/more/templates/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/more/templates/</link>
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/more/templates/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/more/templates/</guid>
       <description>&lt;p&gt;Welcome to our diverse gallery of customizable templates. We offer a wide range of designs catering to various industries and professions. From elegant and modern to creative and artistic, our collection ensures that clients can find the perfect match for their needs. Simply select your preferred template and tailor it to showcase your unique skills and experience. Get ready to impress employers and stand out from the crowd with a professionally crafted CV and cover letter. Your dream job awaits.&lt;/p&gt;
 &lt;h2 id=&#34;resume-templates&#34;&gt;Resume Templates&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://erikngigi.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://erikngigi.github.io/ericngigi.com/css/hugo-easy-gallery.css&#34; /&gt;
 
 &lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#34; alt=&#34;Curriculum Vitae Templates 01&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#34; alt=&#34;Curriculum Vitae Templates 01&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 01&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#34; alt=&#34;Curriculum Vitae Templates 02&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#34; alt=&#34;Curriculum Vitae Templates 02&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 02&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#34; alt=&#34;Curriculum Vitae Templates 03&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#34; alt=&#34;Curriculum Vitae Templates 03&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 03&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#34; alt=&#34;Curriculum Vitae Templates 04&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#34; alt=&#34;Curriculum Vitae Templates 04&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 04&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#34; alt=&#34;Curriculum Vitae Templates 05&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#34; alt=&#34;Curriculum Vitae Templates 05&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 05&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#34; alt=&#34;Curriculum Vitae Templates 06&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#34; alt=&#34;Curriculum Vitae Templates 06&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 06&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#34; alt=&#34;Curriculum Vitae Templates 07&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#34; alt=&#34;Curriculum Vitae Templates 07&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 07&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#34; alt=&#34;Curriculum Vitae Templates 08&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#34; alt=&#34;Curriculum Vitae Templates 08&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 08&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://erikngigi.github.io/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;https://erikngigi.github.io/ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 &lt;/div&gt;
@@ -233,7 +233,7 @@
  
  
  &lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- &lt;script src=&#34;https://erikngigi.github.io/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
+ &lt;script src=&#34;https://erikngigi.github.io/ericngigi.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
  
  
  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
@@ -380,37 +380,37 @@
     
     <item>
       <title>AWS</title>
-      <link>https://erikngigi.github.io/tags/aws/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/tags/aws/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/tags/aws/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloud Computing</title>
-      <link>https://erikngigi.github.io/tags/cloud-computing/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/tags/cloud-computing/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/tags/cloud-computing/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/tags/cloud-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://erikngigi.github.io/tags/linux/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/tags/linux/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/tags/linux/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mastering Linux and AWS: Unleashing Cloud Excellence</title>
-      <link>https://erikngigi.github.io/post/aws/aws-outline/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/post/aws/aws-outline/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/post/aws/aws-outline/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/post/aws/aws-outline/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction:&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;Welcome to &amp;ldquo;Mastering Linux and AWS: Unleashing Cloud Excellence&amp;rdquo; - your comprehensive learning material! In today&amp;rsquo;s tech world, cloud expertise is in high demand, and AWS leads the way. Our material equips you with vital Linux and AWS skills, empowering you with limitless career opportunities. Linux serves as your AWS foundation, while AWS offers scalable, innovative solutions for businesses. Gain hands-on experience, become a sought-after cloud architect, DevOps engineer, or consultant, and lead transformative cloud initiatives. Let&amp;rsquo;s embark on this transformative journey together and shape your bright future in the cloud-driven landscape!&lt;/p&gt;
@@ -866,37 +866,37 @@
     
     <item>
       <title>Posts</title>
-      <link>https://erikngigi.github.io/post/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/post/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/post/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>https://erikngigi.github.io/tags/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/tags/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/tags/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arch Linux</title>
-      <link>https://erikngigi.github.io/tags/arch-linux/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/tags/arch-linux/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://erikngigi.github.io/tags/arch-linux/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/tags/arch-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arch Linux Extra Installation</title>
-      <link>https://erikngigi.github.io/post/arch-linux/03-arch-linux-base-install/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/post/arch-linux/03-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://erikngigi.github.io/post/arch-linux/03-arch-linux-base-install/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/post/arch-linux/03-arch-linux-base-install/</guid>
       <description>&lt;p&gt;The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.&lt;/p&gt;
 &lt;h2 id=&#34;theming&#34;&gt;Theming&lt;/h2&gt;
 &lt;ul&gt;
@@ -988,19 +988,19 @@
     
     <item>
       <title>Tutorial</title>
-      <link>https://erikngigi.github.io/tags/tutorial/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/tags/tutorial/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://erikngigi.github.io/tags/tutorial/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arch Linux Post Installation</title>
-      <link>https://erikngigi.github.io/post/arch-linux/02-arch-linux-base-install/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/post/arch-linux/02-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0302</pubDate>
       
-      <guid>https://erikngigi.github.io/post/arch-linux/02-arch-linux-base-install/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/post/arch-linux/02-arch-linux-base-install/</guid>
       <description>&lt;p&gt;In post installation we will be using a lot of &lt;code&gt;sudo&lt;/code&gt;. I&amp;rsquo;m not responsible if you broke your newly installed system.&lt;/p&gt;
 &lt;h3 id=&#34;connect-to-the-internet&#34;&gt;Connect to the internet&lt;/h3&gt;
 &lt;p&gt;We will be downloading stuff so we need an internet connection! So set-up your connection first!&lt;/p&gt;
@@ -1170,10 +1170,10 @@ ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
     
     <item>
       <title>Arch Linux Base Installation</title>
-      <link>https://erikngigi.github.io/post/arch-linux/01-arch-linux-base-install/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/post/arch-linux/01-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0303</pubDate>
       
-      <guid>https://erikngigi.github.io/post/arch-linux/01-arch-linux-base-install/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/post/arch-linux/01-arch-linux-base-install/</guid>
       <description>&lt;p&gt;This is my personal guide. I recommend that you read the official &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34; target=&#34;_blank&#34; &gt;wiki&lt;/a&gt;
 . The purpose of this guide is to speed up my personal install of &lt;code&gt;Archlinux&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-archlinux&#34;&gt;Why Archlinux&lt;/h2&gt;
@@ -1718,10 +1718,10 @@ linux-headers alsa-utils openssh
     
     <item>
       <title>Categories</title>
-      <link>https://erikngigi.github.io/categories/</link>
+      <link>https://erikngigi.github.io/ericngigi.com/categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://erikngigi.github.io/categories/</guid>
+      <guid>https://erikngigi.github.io/ericngigi.com/categories/</guid>
       <description></description>
     </item>
     
