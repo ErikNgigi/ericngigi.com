@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.ericngigi.com/</loc>
+    <loc>/</loc>
     <lastmod>2023-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/more/</loc>
+    <loc>/more/</loc>
     <lastmod>2023-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/more/portfolio/</loc>
+    <loc>/more/portfolio/</loc>
     <lastmod>2023-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/more/templates/</loc>
+    <loc>/more/templates/</loc>
     <lastmod>2023-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/tags/aws/</loc>
+    <loc>/tags/aws/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/tags/cloud-computing/</loc>
+    <loc>/tags/cloud-computing/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/tags/linux/</loc>
+    <loc>/tags/linux/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/post/aws/aws-outline/</loc>
+    <loc>/post/aws/aws-outline/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/more/about/</loc>
+    <loc>/more/about/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/tags/arch-linux/</loc>
+    <loc>/tags/arch-linux/</loc>
     <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/post/arch-linux/03-arch-linux-base-install/</loc>
+    <loc>/post/arch-linux/03-arch-linux-base-install/</loc>
     <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/tags/tutorial/</loc>
+    <loc>/tags/tutorial/</loc>
     <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/post/arch-linux/02-arch-linux-base-install/</loc>
+    <loc>/post/arch-linux/02-arch-linux-base-install/</loc>
     <lastmod>2023-04-29T09:45:37+03:02</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/post/arch-linux/01-arch-linux-base-install/</loc>
+    <loc>/post/arch-linux/01-arch-linux-base-install/</loc>
     <lastmod>2023-04-29T09:45:37+03:03</lastmod>
   </url><url>
-    <loc>https://www.ericngigi.com/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>

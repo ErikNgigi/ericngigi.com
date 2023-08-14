@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mores on Eric Ngigi</title>
-    <link>https://www.ericngigi.com/more/</link>
+    <link>/more/</link>
     <description>Recent content in Mores on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/more/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="/more/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Showcasing the Journey of a Software Engineer</title>
-      <link>https://www.ericngigi.com/more/portfolio/</link>
+      <link>/more/portfolio/</link>
       <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ericngigi.com/more/portfolio/</guid>
+      <guid>/more/portfolio/</guid>
       <description>&lt;h1 id=&#34;my-journey-with-alx-africa&#34;&gt;My Journey with ALX Africa&lt;/h1&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Since joining ALX Africa, my journey has been filled with learning, growth, and exciting challenges. I&amp;rsquo;ve had the opportunity to work on various projects, collaborate with talented peers, and expand my skills as a software engineer.&lt;/p&gt;
@@ -102,103 +102,103 @@
     
     <item>
       <title>Curriculum Vitae and Cover Letters</title>
-      <link>https://www.ericngigi.com/more/templates/</link>
+      <link>/more/templates/</link>
       <pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ericngigi.com/more/templates/</guid>
+      <guid>/more/templates/</guid>
       <description>&lt;p&gt;Welcome to our diverse gallery of customizable templates. We offer a wide range of designs catering to various industries and professions. From elegant and modern to creative and artistic, our collection ensures that clients can find the perfect match for their needs. Simply select your preferred template and tailor it to showcase your unique skills and experience. Get ready to impress employers and stand out from the crowd with a professionally crafted CV and cover letter. Your dream job awaits.&lt;/p&gt;
 &lt;h2 id=&#34;resume-templates&#34;&gt;Resume Templates&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://www.ericngigi.com/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;/css/hugo-easy-gallery.css&#34; /&gt;
 
 &lt;div class=&#34;gallery caption-position-none caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#34; alt=&#34;Curriculum Vitae Templates 01&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;images/post/academia/resumes/Curriculum-Vitae-Templates-01.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-01.png&#34; alt=&#34;Curriculum Vitae Templates 01&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 01&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-01.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-01.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#34; alt=&#34;Curriculum Vitae Templates 02&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;images/post/academia/resumes/Curriculum-Vitae-Templates-02.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-02.png&#34; alt=&#34;Curriculum Vitae Templates 02&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 02&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-02.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-02.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#34; alt=&#34;Curriculum Vitae Templates 03&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;images/post/academia/resumes/Curriculum-Vitae-Templates-03.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-03.png&#34; alt=&#34;Curriculum Vitae Templates 03&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 03&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-03.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-03.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#34; alt=&#34;Curriculum Vitae Templates 04&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;images/post/academia/resumes/Curriculum-Vitae-Templates-04.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-04.png&#34; alt=&#34;Curriculum Vitae Templates 04&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 04&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-04.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-04.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#34; alt=&#34;Curriculum Vitae Templates 05&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;images/post/academia/resumes/Curriculum-Vitae-Templates-05.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-05.png&#34; alt=&#34;Curriculum Vitae Templates 05&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 05&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-05.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-05.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#34; alt=&#34;Curriculum Vitae Templates 06&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;images/post/academia/resumes/Curriculum-Vitae-Templates-06.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-06.png&#34; alt=&#34;Curriculum Vitae Templates 06&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 06&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-06.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-06.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#34; alt=&#34;Curriculum Vitae Templates 07&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;images/post/academia/resumes/Curriculum-Vitae-Templates-07.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-07.png&#34; alt=&#34;Curriculum Vitae Templates 07&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 07&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-07.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-07.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 				&lt;div class=&#34;box&#34;&gt;
 				  &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#39;);&#34; &gt;
-				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#34; alt=&#34;Curriculum Vitae Templates 08&#34; /&gt;
+				    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;images/post/academia/resumes/Curriculum-Vitae-Templates-08.png&#39;);&#34; &gt;
+				      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-08.png&#34; alt=&#34;Curriculum Vitae Templates 08&#34; /&gt;
 				    &lt;/div&gt;
 			      &lt;figcaption&gt;
 		          &lt;p&gt;Curriculum Vitae Templates 08&lt;/p&gt;
 			      &lt;/figcaption&gt;
-				    &lt;a href=&#34;https://www.ericngigi.com/images/post/academia/resumes//Curriculum-Vitae-Templates-08.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+				    &lt;a href=&#34;images/post/academia/resumes/Curriculum-Vitae-Templates-08.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
 				  &lt;/figure&gt;
 				&lt;/div&gt;
 &lt;/div&gt;
@@ -210,7 +210,7 @@
  
  
  &lt;script src=&#34;https://code.jquery.com/jquery-1.12.4.min.js&#34; integrity=&#34;sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
- &lt;script src=&#34;https://www.ericngigi.com/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
+ &lt;script src=&#34;/js/load-photoswipe.js&#34;&gt;&lt;/script&gt;
  
  
  &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css&#34; integrity=&#34;sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=&#34; crossorigin=&#34;anonymous&#34; /&gt;
@@ -357,10 +357,10 @@
     
     <item>
       <title>About Me</title>
-      <link>https://www.ericngigi.com/more/about/</link>
+      <link>/more/about/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ericngigi.com/more/about/</guid>
+      <guid>/more/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
 &lt;p&gt;I am a passionate Linux enthusiast and free software advocate with years of experience in developing and maintaining Linux systems. I have a deep understanding of the inner workings of the Linux kernel and have extensive knowledge of various Linux distributions, including Arch Linux, Debian, Ubuntu, and CentOS.&lt;/p&gt;
 &lt;p&gt;I am also skilled in various programming languages, including Python, Go, JAMstack and Bash scripting, and have used these languages to automate and streamline various processes in my DevOps career. My expertise in automation and infrastructure as code has allowed me to optimize system performance, reduce downtime, and increase scalability.&lt;/p&gt;

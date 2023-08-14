@@ -1,53 +1,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Eric Ngigi</title>
-    <link>https://www.ericngigi.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ericngigi.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS</title>
-      <link>https://www.ericngigi.com/tags/aws/</link>
+      <link>/tags/aws/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ericngigi.com/tags/aws/</guid>
+      <guid>/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cloud Computing</title>
-      <link>https://www.ericngigi.com/tags/cloud-computing/</link>
+      <link>/tags/cloud-computing/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ericngigi.com/tags/cloud-computing/</guid>
+      <guid>/tags/cloud-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://www.ericngigi.com/tags/linux/</link>
+      <link>/tags/linux/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ericngigi.com/tags/linux/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arch Linux</title>
-      <link>https://www.ericngigi.com/tags/arch-linux/</link>
+      <link>/tags/arch-linux/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://www.ericngigi.com/tags/arch-linux/</guid>
+      <guid>/tags/arch-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorial</title>
-      <link>https://www.ericngigi.com/tags/tutorial/</link>
+      <link>/tags/tutorial/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>https://www.ericngigi.com/tags/tutorial/</guid>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     
