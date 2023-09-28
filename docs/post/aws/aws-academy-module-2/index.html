@@ -18,10 +18,10 @@
     
 
     
-      <meta name="title" content="Arch Linux Extra Installation" />
-      <meta property="og:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:text:title" content="Arch Linux Extra Installation - " />
+      <meta name="title" content="AWS Academy: Cloud Economics and Billing" />
+      <meta property="og:title" content="AWS Academy: Cloud Economics and Billing - " />
+      <meta property="twitter:title" content="AWS Academy: Cloud Economics and Billing - " />
+      <meta property="twitter:text:title" content="AWS Academy: Cloud Economics and Billing - " />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
     <link rel="shortcut icon" href="/favicons/favicon.ico">
 
-    <title>Arch Linux Extra Installation - Leading with Innovation</title>
+    <title>AWS Academy: Cloud Economics and Billing - Leading with Innovation</title>
 
-    <link rel="canonical" href="/post/arch-linux/03-arch-linux-base-install/">
+    <link rel="canonical" href="/post/aws/aws-academy-module-2/">
 
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -144,7 +144,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/images/post/arch/geowaves.webp')
+        background-image: url('/images/banner/homepage_banner.webp')
     }
 </style>
 <header class="intro-header">
@@ -154,20 +154,24 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/arch-linux" title="Arch Linux">
-                            Arch Linux
+                        <a class="tag" href="/tags/linux" title="Linux">
+                            Linux
                         </a>
                         
-                        <a class="tag" href="/tags/tutorial" title="Tutorial">
-                            Tutorial
+                        <a class="tag" href="/tags/cloud-computing" title="Cloud Computing">
+                            Cloud Computing
+                        </a>
+                        
+                        <a class="tag" href="/tags/aws" title="AWS">
+                            AWS
                         </a>
                         
                     </div>
-                    <h1>Arch Linux Extra Installation</h1>
+                    <h1>AWS Academy: Cloud Economics and Billing</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
 			
-			Saturday • April 29, 2023 
+			Tuesday • September 26, 2023 
                         
                     </span>
                 </div>
@@ -195,104 +199,191 @@
                 </header>
                 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#module-2---cloud-economics-and-billing">Module 2 - Cloud Economics and Billing</a>
       <ul>
-        <li><a href="#theming">Theming</a></li>
-        <li><a href="#shell">Shell</a></li>
-        <li><a href="#daily-apps">Daily Apps</a></li>
-        <li><a href="#grub-configuration">Grub Configuration</a></li>
+        <li><a href="#objectives--topics">Objectives / Topics</a></li>
+        <li><a href="#section-1-fundamentals-of-pricing">Section 1: Fundamentals of Pricing</a>
+          <ul>
+            <li><a href="#three-fundamental-cost-drivers-with-aws"><strong>Three Fundamental Cost Drivers with AWS</strong></a></li>
+            <li><a href="#paying-for-aws"><strong>Paying for AWS</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#section-2-total-cost-of-ownership">Section 2: Total Cost of Ownership</a>
+          <ul>
+            <li><a href="#tco-considerations"><strong>TCO Considerations</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#section-3-billing">Section 3: Billing</a>
+          <ul>
+            <li><a href="#aws-organizations"><strong>AWS Organizations</strong></a></li>
+            <li><a href="#aws-billing-and-cost-management"><strong>AWS Billing and Cost Management</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#section-4-technical-support">Section 4: Technical Support</a>
+          <ul>
+            <li><a href="#support-plans"><strong>Support Plans</strong></a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
 </nav>
                 
-                <p>The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.</p>
-<h2 id="theming">Theming</h2>
+                <h1 id="module-2---cloud-economics-and-billing">Module 2 - Cloud Economics and Billing</h1>
+<!-- raw HTML omitted -->
+<h2 id="objectives--topics">Objectives / Topics</h2>
 <ul>
-<li>
-<p>Icon themes</p>
+<li>Explain the AWS pricing philosophy</li>
+<li>Recognize fundamental pricing characteristics</li>
+<li>Indicate the elements of total cost of ownership</li>
+<li>Discuss the results of the Simple Monthly Calculator</li>
+<li>Identify how to set up an organizational structure that simplifies billing and account visibility to review cost data.</li>
+<li>Identify the functionality in the AWS Billing Dashboard</li>
+<li>Describe how to use AWS Bills, AWS Cost Explorer, AWS Budgets, and AWS Cost and Usage Reports</li>
+<li>Identify the various AWS technical support plans and features</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="section-1-fundamentals-of-pricing">Section 1: Fundamentals of Pricing</h2>
+<h3 id="three-fundamental-cost-drivers-with-aws"><strong>Three Fundamental Cost Drivers with AWS</strong></h3>
+<ol>
+<li>Compute - charged by use time, varies by instance</li>
+<li>Storage - charged per GB</li>
+<li>Data Transfer - outbound transfers are aggregated and charged per GB, inbound transfers and data transfers between services in the same AWS Region typically have no charge</li>
+</ol>
+<h3 id="paying-for-aws"><strong>Paying for AWS</strong></h3>
 <ul>
-<li>papirus-icon-theme</li>
-<li>tela-icon-theme</li>
-<li>tela-circle-icon-theme</li>
+<li>Pay for what you use</li>
+<li>Reserve and save up to 75% versus On-Demand
+<ul>
+<li>All Upfront Reserved Instance (AURI) -&gt; Large Discount</li>
+<li>Partial Upfront Reserved Instance (PURI) -&gt; Lower Discount</li>
+<li>No Upfront Payments Reserved Instance (NURI) -&gt; Smallest Discount</li>
 </ul>
 </li>
-<li>
-<p>GTK Theme</p>
+<li>Scale and save as usage increases
 <ul>
-<li>whitesur-dark</li>
-<li>orchis theme</li>
+<li>Tiered pricing for services like S3, EBS, EFS</li>
 </ul>
 </li>
-<li>
-<p>Qt5 Theme</p>
+<li>Save as AWS grows</li>
+<li>Custom Pricing
 <ul>
-<li><code>qt5ct</code> with kvantum</li>
-</ul>
-</li>
-<li>
-<p>Cursor Theme</p>
-<ul>
-<li>vimix-cursors</li>
-</ul>
-</li>
-</ul>
-<h2 id="shell">Shell</h2>
-<p>Install <code>zsh</code> to replace <code>bash</code> shell</p>
-<p>Install <code>zsh</code>:</p>
-<pre tabindex="0"><code>pacman -S zsh fzf
-</code></pre><ul>
-<li><code>zsh</code>: a modern replacement for the bash shell</li>
-<li><code>fzf</code>: fuzzy finder</li>
-</ul>
-<h2 id="daily-apps">Daily Apps</h2>
-<ul>
-<li>
-<p>Browser</p>
-<ul>
-<li><code>brave-bin</code>: Brave Browser</li>
-</ul>
-</li>
-<li>
-<p>Media</p>
-<ul>
-<li><code>mpv</code>: media player</li>
-<li><code>clementine</code>: Graphical music player</li>
-<li><code>feh</code> image viewer</li>
-<li><code>obs</code>: screen recorder</li>
-</ul>
-</li>
-<li>
-<p>Media and Graphics Editing Tools</p>
-<ul>
-<li><code>gimp</code>: image manipulation program</li>
-<li><code>inkscape</code>: vector graphics editor</li>
-<li><code>ffmpeg</code>: video converter</li>
-<li><code>imagemagick</code>: image viewing/manipulation program</li>
-</ul>
-</li>
-<li>
-<p>Misc</p>
-<ul>
-<li><code>flameshot</code>: screenshot tool</li>
-<li><code>zathura-pdf-mupdf</code>: as pdf viewer</li>
-<li><code>redshift</code>: blue light filter</li>
-<li><code>mugshot</code>: personal user details updater</li>
-<li><code>arandr</code>: xrandr front-end</li>
-<li><code>qbittorent</code>: Graphical bittorent client</li>
-<li><code>htop</code>: CLI interactive process viewer</li>
-<li><code>scrcpy</code>: android viewing tool</li>
-<li><code>xmind</code>: mind mapping tool</li>
+<li>Meet varying needs through custom pricing.</li>
+<li>Available for high-volume projects with unique requirements.</li>
 </ul>
 </li>
 </ul>
+<h4 id="the-services-below-are-free-but-there-might-be-charges-associated-with-other-aws-services-that-are-used-alongside-these-services">The services below are free but there might be charges associated with other AWS services that are used alongside these services.</h4>
+<ul>
+<li>Amazon VPC</li>
+<li>Elastic Beanstalk</li>
+<li>Auto Scaling</li>
+<li>AWS CloudFormation</li>
+<li>AWS Identity and Access Management</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="section-2-total-cost-of-ownership">Section 2: Total Cost of Ownership</h2>
+<p><strong>Total Cost of Ownership (TCO):</strong> The financial estimate to help identify direct and indirect costs of a system</p>
+<ul>
+<li>Compare the costs of running an entire infrastructure environment or specific workload on-premises versus on AWS</li>
+<li>Budget and build the business case for moving to the cloud</li>
+</ul>
+<h3 id="tco-considerations"><strong>TCO Considerations</strong></h3>
+<ol>
+<li>Server Costs
+<ul>
+<li>Hardware: Server, rack chassis power distribution units (PDUs), top-of-rack (TOR) switches, and maintenance</li>
+<li>Software: Operating system (OS), virtualization licenses, and maintenance</li>
+<li>Facilities: Space, power, and cooling</li>
+</ul>
+</li>
+<li>Storage Costs
+<ul>
+<li>Hardware: Storage disks, storage area network (SAN) or Fibre Channel (FC) switches</li>
+<li>Storage administration costs</li>
+<li>Facilities: Space, power, and cooling</li>
+</ul>
+</li>
+<li>Network Costs
+<ul>
+<li>Network Hardware: Local area network (LAN) switches, load balancer bandwidth costs</li>
+<li>Network administration costs</li>
+<li>Facilities: Space, power, and cooling</li>
+</ul>
+</li>
+<li>IT Labor Costs
+<ul>
+<li>Server administration costs</li>
+</ul>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="section-3-billing">Section 3: Billing</h2>
+<h3 id="aws-organizations"><strong>AWS Organizations</strong></h3>
+<p><strong>AWS Organizations:</strong> An account management service that enables you to consolidate multiple AWS accounts into an organization that you create and centrally manage. AWS Organizations includes account management and consolidated billing capabilities that enable you to better meet the budgetary, security, and compliance needs of a business.</p>
+<h4 id="key-features-and-benefits">Key Features and Benefits</h4>
+<ul>
+<li>Policy based account management</li>
+<li>Group based account management</li>
+<li>Application programming interfaces (APIs) that automate account management</li>
+<li>Consolidated billing</li>
+</ul>
+<h4 id="security">Security</h4>
+<ul>
+<li>Control access with AWS Identity and Access Management (IAM)</li>
+<li>IAM policiesenable you to allow or deny access to AWS services for users, groups, and roles.</li>
+<li>Service control policies (SCPs) enable you to allow or deny access to AWS services for individuals or group accounts in an organizational unit (OU).</li>
+</ul>
+<h4 id="setup">Setup</h4>
+<ol>
+<li>Create organization</li>
+<li>Create organizational units</li>
+<li>Create service control policies</li>
+<li>Test restrictions</li>
+</ol>
+<h4 id="accessing-aws-organizations">Accessing AWS Organizations</h4>
+<ul>
+<li>AWS Management Console</li>
+<li>AWS Command Line Interface (AWS CLI) tools</li>
+<li>Software Development Kits (SDKs)</li>
+<li>HTTPS Query Application Programming Interfaces (API)</li>
+</ul>
+<h3 id="aws-billing-and-cost-management"><strong>AWS Billing and Cost Management</strong></h3>
+<p><strong>AWS Billing and Cost Management:</strong> The service that you use to pay your AWS bill, monitor your usage, and analyze and control your costs.</p>
+<h4 id="tools">Tools</h4>
+<ul>
+<li><strong>AWS Budgets:</strong> It gives you the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount. You can also use it to set reservation utilization or coverage targets and receive alerts when your utilization drops below the threshold you define.</li>
+<li><strong>AWS Cost and Usage Report:</strong> Tracks your AWS usage and provides estimated charges associated with your account.</li>
+<li><strong>AWS Cost Explorer:</strong> Visualize, understand, and manage AWS costs and usage over time.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="section-4-technical-support">Section 4: Technical Support</h2>
+<p>AWS Support offers a range of plans that provide access to tools and expertise that support the success and operational health of your AWS solutions. All support plans provide 24/7 access to customer service, AWS documentation, whitepapers, and support forums.</p>
+<ul>
+<li>Proactive Guidance: Technical Account Manager (TAM)</li>
+<li>Best Practices: AWS Trusted Advisor</li>
+<li>Account Assistance: AWS Support Concierge</li>
+</ul>
+<h3 id="support-plans"><strong>Support Plans</strong></h3>
+<ul>
+<li><strong>Basic Support:</strong> Resource Center access, Service Health Dashboard, product FAQs, discussion forums, and support for health checks</li>
+<li><strong>Developer Support:</strong> Support for early development on AWS</li>
+<li><strong>Business Support:</strong> Customers that run production workloads</li>
+<li><strong>Enterprise Support:</strong> Customers that run business and mission-critical workloads</li>
+</ul>
+<p>Support response times vary based on plan and case severity. Basic offers no case support, all other support ranges from 24 hours to 15 minutes or less.</p>
+<!-- raw HTML omitted -->
 <hr>
-<h2 id="grub-configuration">Grub Configuration</h2>
-<p>I add the following lines to <code>GRUB_CMD_LINUX_DEFAULT</code> to disable the laptop screen after boot.</p>
-<p>Use <code>xrandr</code> to determine the id of each screen.</p>
-<pre tabindex="0"><code>xrandr -q
-</code></pre><pre tabindex="0"><code>GRUB_CMDLINE_LINUX_DEFAULT=&#34;loglevel=3 quiet mitigations=off video=VGA-1:e video=LVDS-1:d radeon.dpm=0 radeon.aspm=0 radeon.pcie_gen2=0 radeon.audio=0 radeon.msi=0 nowatchdog&#34;
-</code></pre>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
 
                 
 
@@ -300,12 +391,12 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/arch-linux/02-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Post Installation">&larr; Previous Post</a>
+                        <a href="/post/aws/aws-academy-module-1/" data-toggle="tooltip" data-placement="top" title="AWS Academy: Cloud Concepts Overview">&larr; Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/aws/aws-outline/" data-toggle="tooltip" data-placement="top" title="Mastering Linux and AWS: Unleashing Cloud Excellence">Next Post &rarr;</a>
+                        <a href="/post/aws/aws-academy-module-3/" data-toggle="tooltip" data-placement="top" title="AWS Academy: AWS Global Infrastructure Overview">Next Post &rarr;</a>
                     </li>
                     
                 </ul>

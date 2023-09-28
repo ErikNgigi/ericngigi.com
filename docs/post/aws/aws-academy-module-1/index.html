@@ -18,10 +18,10 @@
     
 
     
-      <meta name="title" content="Arch Linux Extra Installation" />
-      <meta property="og:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:text:title" content="Arch Linux Extra Installation - " />
+      <meta name="title" content="AWS Academy: Cloud Concepts Overview" />
+      <meta property="og:title" content="AWS Academy: Cloud Concepts Overview - " />
+      <meta property="twitter:title" content="AWS Academy: Cloud Concepts Overview - " />
+      <meta property="twitter:text:title" content="AWS Academy: Cloud Concepts Overview - " />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
     <link rel="shortcut icon" href="/favicons/favicon.ico">
 
-    <title>Arch Linux Extra Installation - Leading with Innovation</title>
+    <title>AWS Academy: Cloud Concepts Overview - Leading with Innovation</title>
 
-    <link rel="canonical" href="/post/arch-linux/03-arch-linux-base-install/">
+    <link rel="canonical" href="/post/aws/aws-academy-module-1/">
 
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -144,7 +144,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/images/post/arch/geowaves.webp')
+        background-image: url('/images/banner/homepage_banner.webp')
     }
 </style>
 <header class="intro-header">
@@ -154,20 +154,24 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/arch-linux" title="Arch Linux">
-                            Arch Linux
+                        <a class="tag" href="/tags/linux" title="Linux">
+                            Linux
                         </a>
                         
-                        <a class="tag" href="/tags/tutorial" title="Tutorial">
-                            Tutorial
+                        <a class="tag" href="/tags/cloud-computing" title="Cloud Computing">
+                            Cloud Computing
+                        </a>
+                        
+                        <a class="tag" href="/tags/aws" title="AWS">
+                            AWS
                         </a>
                         
                     </div>
-                    <h1>Arch Linux Extra Installation</h1>
+                    <h1>AWS Academy: Cloud Concepts Overview</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
 			
-			Saturday • April 29, 2023 
+			Tuesday • September 26, 2023 
                         
                     </span>
                 </div>
@@ -195,104 +199,175 @@
                 </header>
                 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#module-1---cloud-concepts-overview">Module 1 - Cloud Concepts Overview</a>
       <ul>
-        <li><a href="#theming">Theming</a></li>
-        <li><a href="#shell">Shell</a></li>
-        <li><a href="#daily-apps">Daily Apps</a></li>
-        <li><a href="#grub-configuration">Grub Configuration</a></li>
+        <li><a href="#objectives--topics">Objectives / Topics</a></li>
+        <li><a href="#section-1-intro-to-cloud-computing">Section 1: Intro to Cloud Computing</a>
+          <ul>
+            <li><a href="#traditional-computing-model"><strong>Traditional Computing Model</strong></a></li>
+            <li><a href="#cloud-computing-model"><strong>Cloud Computing Model</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#section-2-advantages-of-cloud-computing">Section 2: Advantages of Cloud Computing</a></li>
+        <li><a href="#section-3-introduction-to-amazon-web-services">Section 3: Introduction to Amazon Web Services</a>
+          <ul>
+            <li><a href="#what-is-aws">What is AWS?</a></li>
+          </ul>
+        </li>
+        <li><a href="#section-4-the-aws-cloud-adoption-framework-aws-caf">Section 4: The AWS Cloud Adoption Framework (AWS CAF)</a></li>
       </ul>
     </li>
   </ul>
 </nav>
                 
-                <p>The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.</p>
-<h2 id="theming">Theming</h2>
+                <h1 id="module-1---cloud-concepts-overview">Module 1 - Cloud Concepts Overview</h1>
+<!-- raw HTML omitted -->
+<h2 id="objectives--topics">Objectives / Topics</h2>
 <ul>
-<li>
-<p>Icon themes</p>
-<ul>
-<li>papirus-icon-theme</li>
-<li>tela-icon-theme</li>
-<li>tela-circle-icon-theme</li>
+<li>Define different types of cloud computing models</li>
+<li>Describe six advantages of cloud computing</li>
+<li>Recognize the main AWS service categories and core services</li>
+<li>Review the AWS Cloud Adoption Framework (AWS CAF)</li>
 </ul>
-</li>
-<li>
-<p>GTK Theme</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="section-1-intro-to-cloud-computing">Section 1: Intro to Cloud Computing</h2>
+<p><strong>Cloud Computing:</strong> The on-demand delivery of compute power, database, storage, applications, and other IT resources via the internet with pay-as-you-go pricing. Cloud computing enables you to stop thinking of infrastructure as hardware, and instead think of (and use) it as software.</p>
+<h3 id="traditional-computing-model"><strong>Traditional Computing Model</strong></h3>
 <ul>
-<li>whitesur-dark</li>
-<li>orchis theme</li>
+<li>Infrastructure as hardware</li>
+<li>Hardware solutions: Require space, staff, physical security, planning, capital expenditure</li>
+<li>Have a long hardware procurement cycle</li>
+<li>Require you to provision capacity by guessing theoretical maximum peaks</li>
 </ul>
-</li>
-<li>
-<p>Qt5 Theme</p>
+<h3 id="cloud-computing-model"><strong>Cloud Computing Model</strong></h3>
 <ul>
-<li><code>qt5ct</code> with kvantum</li>
-</ul>
-</li>
-<li>
-<p>Cursor Theme</p>
+<li>Infrastructure as software</li>
+<li>Software solutions:
 <ul>
-<li>vimix-cursors</li>
-</ul>
-</li>
-</ul>
-<h2 id="shell">Shell</h2>
-<p>Install <code>zsh</code> to replace <code>bash</code> shell</p>
-<p>Install <code>zsh</code>:</p>
-<pre tabindex="0"><code>pacman -S zsh fzf
-</code></pre><ul>
-<li><code>zsh</code>: a modern replacement for the bash shell</li>
-<li><code>fzf</code>: fuzzy finder</li>
-</ul>
-<h2 id="daily-apps">Daily Apps</h2>
-<ul>
-<li>
-<p>Browser</p>
-<ul>
-<li><code>brave-bin</code>: Brave Browser</li>
-</ul>
-</li>
-<li>
-<p>Media</p>
-<ul>
-<li><code>mpv</code>: media player</li>
-<li><code>clementine</code>: Graphical music player</li>
-<li><code>feh</code> image viewer</li>
-<li><code>obs</code>: screen recorder</li>
-</ul>
-</li>
-<li>
-<p>Media and Graphics Editing Tools</p>
-<ul>
-<li><code>gimp</code>: image manipulation program</li>
-<li><code>inkscape</code>: vector graphics editor</li>
-<li><code>ffmpeg</code>: video converter</li>
-<li><code>imagemagick</code>: image viewing/manipulation program</li>
-</ul>
-</li>
-<li>
-<p>Misc</p>
-<ul>
-<li><code>flameshot</code>: screenshot tool</li>
-<li><code>zathura-pdf-mupdf</code>: as pdf viewer</li>
-<li><code>redshift</code>: blue light filter</li>
-<li><code>mugshot</code>: personal user details updater</li>
-<li><code>arandr</code>: xrandr front-end</li>
-<li><code>qbittorent</code>: Graphical bittorent client</li>
-<li><code>htop</code>: CLI interactive process viewer</li>
-<li><code>scrcpy</code>: android viewing tool</li>
-<li><code>xmind</code>: mind mapping tool</li>
+<li>Are flexible</li>
+<li>Can change more quickly, easily, and cost-effectively than hardware solutions</li>
+<li>Eliminate the undifferentiated heavy-lifting tasks</li>
 </ul>
 </li>
 </ul>
+<p>Cloud service models vary on how much control you have over IT resources.</p>
+<ul>
+<li>Infrastructure as a Service (IaaS) - Most control</li>
+<li>Platform as a Service (PaaS)</li>
+<li>Software as a Service (SaaS) - Least control</li>
+</ul>
+<p>Cloud computing deployment models</p>
+<ol>
+<li>Cloud</li>
+<li>Hybrid</li>
+<li>On-premse (Private Cloud)</li>
+</ol>
+<p>Cloud computing can do almost anything the traditional IT can do.</p>
+<!-- raw HTML omitted -->
+<h2 id="section-2-advantages-of-cloud-computing">Section 2: Advantages of Cloud Computing</h2>
+<ul>
+<li>Pay only for the resources you consume (variable cost vs upfront capital expenditure)</li>
+<li>Economies of scale achieved by aggregate of all users</li>
+<li>Scaling on demand</li>
+<li>Speed and flexibility - changes are software level, not hardware like traditional computing</li>
+<li>Lower overhead due to not maintaining hardware and data centers</li>
+<li>Data centers are global, like a company&rsquo;s customer base</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="section-3-introduction-to-amazon-web-services">Section 3: Introduction to Amazon Web Services</h2>
+<p><strong>Web Service:</strong> Any piece of software that makes itself available over the internet and uses a standardized format—such as Extensible Markup Language (XML) or JavaScript Object Notation (JSON) — for the request and the response of an application programming interface (API) interaction.</p>
+<h3 id="what-is-aws">What is AWS?</h3>
+<ul>
+<li>AWS is a secure cloud platform that offers a broad set of global cloud-based products called services that are designed to work together.</li>
+<li>There are many categories of AWS services, and each category has many services to choose from.</li>
+<li>Choose a service based on your business goals and technology requirements.</li>
+<li>There are three ways to interact with AWS services:
+<ol>
+<li>AWS Management Console - Graphical interface</li>
+<li>Command Line Interface (CLI) - Access via discrete commands or scripts</li>
+<li>Software Development Kits (SDK) - Access directly from code</li>
+</ol>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="section-4-the-aws-cloud-adoption-framework-aws-caf">Section 4: The AWS Cloud Adoption Framework (AWS CAF)</h2>
+<ul>
+<li>
+<p>AWS CAF provides guidance and best practices to help organizations build a comprehensive approach to cloud computing across the organization and throughout the IT lifecycle to accelerate successful cloud adoption.</p>
+</li>
+<li>
+<p>AWS CAF is organized into six perspectives and perspectives consist of sets of capabilities.</p>
+<p><strong>Focused on Business Capabilities</strong></p>
+<ol>
+<li>Business - IT is aligned with business needs
+<ul>
+<li>IT Finance</li>
+<li>IT Strategy</li>
+<li>Benefits Realization</li>
+<li>Business Risk Management</li>
+</ul>
+</li>
+<li>People - training, staffing, and organizational changes
+<ul>
+<li>Resource Management</li>
+<li>Incentive Management</li>
+<li>Career Management</li>
+<li>Training Management</li>
+<li>Organizational Change Management</li>
+</ul>
+</li>
+<li>Governance - skills and processes align IT and business strategies and goals
+<ul>
+<li>Portfolio Management</li>
+<li>Program Project Management</li>
+<li>Business Performance Measurement</li>
+<li>License Management</li>
+</ul>
+</li>
+</ol>
+<p><strong>Focused on Technical Capabilities</strong></p>
+<ol start="4">
+<li>Platform - describe the architecture of the target state environment in detail
+<ul>
+<li>Compute Provisioning</li>
+<li>Network Provisioning</li>
+<li>Storage Provisioning</li>
+<li>Database Provisioning</li>
+<li>Systems and Solution Architechture</li>
+<li>Application Development</li>
+</ul>
+</li>
+<li>Security - the organization meets its security objectives
+<ul>
+<li>Identity and Access Management</li>
+<li>Detective Control</li>
+<li>Infrastructure Security</li>
+<li>Data Protection</li>
+<li>Incident Response</li>
+</ul>
+</li>
+<li>Operations - define how daily, quarterly, and yearly business will be conducted
+<ul>
+<li>Service Monitoring</li>
+<li>Application Performance Monitoring</li>
+<li>Resource Inventory Management</li>
+<li>Release Management / Change Management</li>
+<li>Reporting and Analytics</li>
+<li>Business Continuity / Disaster Recovery</li>
+<li>IT Service Catalog</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<!-- raw HTML omitted -->
 <hr>
-<h2 id="grub-configuration">Grub Configuration</h2>
-<p>I add the following lines to <code>GRUB_CMD_LINUX_DEFAULT</code> to disable the laptop screen after boot.</p>
-<p>Use <code>xrandr</code> to determine the id of each screen.</p>
-<pre tabindex="0"><code>xrandr -q
-</code></pre><pre tabindex="0"><code>GRUB_CMDLINE_LINUX_DEFAULT=&#34;loglevel=3 quiet mitigations=off video=VGA-1:e video=LVDS-1:d radeon.dpm=0 radeon.aspm=0 radeon.pcie_gen2=0 radeon.audio=0 radeon.msi=0 nowatchdog&#34;
-</code></pre>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
 
                 
 
@@ -300,12 +375,12 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/arch-linux/02-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Post Installation">&larr; Previous Post</a>
+                        <a href="/post/aws/aws-outline/" data-toggle="tooltip" data-placement="top" title="Mastering Linux and AWS: Unleashing Cloud Excellence">&larr; Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/aws/aws-outline/" data-toggle="tooltip" data-placement="top" title="Mastering Linux and AWS: Unleashing Cloud Excellence">Next Post &rarr;</a>
+                        <a href="/post/aws/aws-academy-module-2/" data-toggle="tooltip" data-placement="top" title="AWS Academy: Cloud Economics and Billing">Next Post &rarr;</a>
                     </li>
                     
                 </ul>

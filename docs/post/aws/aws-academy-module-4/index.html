@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Eric Ngigi">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="images/banner/homepage_banner.webp">
+
+    
+    
+    
+    
+
+    
+
+    
+      <meta name="title" content="AWS Academy: Cloud Security" />
+      <meta property="og:title" content="AWS Academy: Cloud Security - " />
+      <meta property="twitter:title" content="AWS Academy: Cloud Security - " />
+      <meta property="twitter:text:title" content="AWS Academy: Cloud Security - " />
+    
+
+    
+      <meta name="description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you.">
+      <meta property="og:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+      <meta property="twitter:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+    
+
+    
+
+    <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+
+    <title>AWS Academy: Cloud Security - Leading with Innovation</title>
+
+    <link rel="canonical" href="/post/aws/aws-academy-module-4/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img width=100% height=auto src="/favicons/favicon.ico" style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/more/templates/">Templates</a></li>
+                    
+                        <li><a href="/more/about/">Bio</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/banner/homepage_banner.webp')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/linux" title="Linux">
+                            Linux
+                        </a>
+                        
+                        <a class="tag" href="/tags/cloud-computing" title="Cloud Computing">
+                            Cloud Computing
+                        </a>
+                        
+                        <a class="tag" href="/tags/aws" title="AWS">
+                            AWS
+                        </a>
+                        
+                    </div>
+                    <h1>AWS Academy: Cloud Security</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			
+			Wednesday • September 27, 2023 
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h3>Table of Contents</h3>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#module-4---aws-cloud-security">Module 4 - AWS Cloud Security</a>
+      <ul>
+        <li><a href="#objectives--topics">Objectives / Topics</a></li>
+        <li><a href="#section-1-aws-shared-responsibility-model">Section 1: AWS Shared Responsibility Model</a>
+          <ul>
+            <li><a href="#customer-security"><strong>Customer Security</strong></a></li>
+            <li><a href="#aws-security"><strong>AWS Security</strong></a></li>
+            <li><a href="#service-characteristics-and-security"><strong>Service Characteristics and Security</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#section-2-identity-and-access-management-iam">Section 2: Identity and Access Management (IAM)</a>
+          <ul>
+            <li><a href="#essential-components"><strong>Essential Components</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#section-3-securing-a-new-aws-account">Section 3: Securing a New AWS Account</a></li>
+        <li><a href="#section-4-securing-accounts">Section 4: Securing Accounts</a>
+          <ul>
+            <li><a href="#aws-organizations"><strong>AWS Organizations</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#section-5-securing-data">Section 5: Securing Data</a>
+          <ul>
+            <li><a href="#data-at-rest"><strong>Data at Rest</strong></a></li>
+            <li><a href="#data-in-transit"><strong>Data in Transit</strong></a></li>
+          </ul>
+        </li>
+        <li><a href="#section-6-working-to-ensure-compliance">Section 6: Working to Ensure Compliance</a>
+          <ul>
+            <li><a href="#aws-config"><strong>AWS Config</strong></a></li>
+            <li><a href="#aws-artifact">AWS Artifact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                <h1 id="module-4---aws-cloud-security">Module 4 - AWS Cloud Security</h1>
+<!-- raw HTML omitted -->
+<h2 id="objectives--topics">Objectives / Topics</h2>
+<ul>
+<li>Recognize the shared responsibility model</li>
+<li>Identify the responsibility of the customer and AWS</li>
+<li>Recognize IAM users, groups, and roles</li>
+<li>Describe different types of security credentials in IAM</li>
+<li>Identify the steps to securing a new AWS account•Explore IAM users and groups</li>
+<li>Recognize how to secure AWS data</li>
+<li>Recognize AWS compliance programs</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="section-1-aws-shared-responsibility-model">Section 1: AWS Shared Responsibility Model</h2>
+<p>AWS security is divided by part of the cloud: customers are responsible for security <strong>in</strong> the cloud, AWS is responsible for security <strong>of</strong> the cloud.</p>
+<h3 id="customer-security"><strong>Customer Security</strong></h3>
+<ul>
+<li>Amazon Elastic Compute Cloud (Amazon EC2) instance operating system - Including patching, maintenance</li>
+<li>Applications - Passwords, role-based access, etc.</li>
+<li>Security group configuration</li>
+<li>OS or host-based firewalls - Including intrusion detection or prevention systems</li>
+<li>Network configurations</li>
+<li>Account management - Login and permission settings for each user</li>
+</ul>
+<h3 id="aws-security"><strong>AWS Security</strong></h3>
+<ul>
+<li>Physical security of data centers - Controlled, need-based access</li>
+<li>Hardware and software infrastructure - Storage decommissioning, host operating system (OS) access logging, and auditing</li>
+<li>Network infrastructure - Intrusion detection</li>
+<li>Virtualization infrastructure - Instance isolation</li>
+</ul>
+<h3 id="service-characteristics-and-security"><strong>Service Characteristics and Security</strong></h3>
+<p>Infrastructure as a service (IaaS)</p>
+<ul>
+<li>Customer has more flexibility over configuring networking and storage settings</li>
+<li>Customer is responsible for managing more aspects of the security</li>
+<li>Customer configures the access controls</li>
+</ul>
+<p>Platform as a service (PaaS)</p>
+<ul>
+<li>Customer does not need to manage the underlying infrastructure</li>
+<li>AWS handles the operating system, database patching, firewall configuration, and disaster recovery</li>
+<li>Customer can focus on managing code or data</li>
+</ul>
+<p>Software as a service (SaaS)</p>
+<ul>
+<li>Software is centrally hosted</li>
+<li>Licensed on a subscription model or pay-as-you-go basis.</li>
+<li>Services are typically accessed via web browser, mobile app, or application programming interface (API)</li>
+<li>Customers do not need to manage the infrastructure that supports the service</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="section-2-identity-and-access-management-iam">Section 2: Identity and Access Management (IAM)</h2>
+<p>AWS Identity and Access Management (IAM) is a web service that enables Amazon Web Services (AWS) customers to manage users and user permissions in AWS. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users can access.</p>
+<p>AWS Identity and Access Management (IAM) can be used to:</p>
+<ul>
+<li><strong>Manage IAM Users and their access:</strong> You can create Users and assign them individual security credentials (access keys, passwords, and multi-factor authentication devices). You can manage permissions to control which operations a User can perform.</li>
+<li><strong>Manage IAM Roles and their permissions:</strong> An IAM Role is similar to a User, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. However, instead of being uniquely associated with one person, a Role is intended to be assumableby anyone who needs it.</li>
+<li><strong>Manage federated users and their permissions:</strong> You can enable identity federationto allow existing users in your enterprise to access the AWS Management Console, to call AWS APIs and to access resources, without the need to create an IAM User for each identity.</li>
+</ul>
+<h3 id="essential-components"><strong>Essential Components</strong></h3>
+<p><strong>IAM User:</strong> A person or application that can authenticate with an AWS account. When you define an IAM user, you select what types of access the user is permitted to use.</p>
+<ul>
+<li>Programmatic Access
+<ul>
+<li>Authenticate using Access Key ID and Secret Access Key</li>
+<li>Provides AWS CLI and AWS SDK access</li>
+</ul>
+</li>
+<li>AWS Management Console Access
+<ul>
+<li>Authenticate using Account ID or Alias, or Username and Password</li>
+<li>Can enable Multi-Factor Authentication (MFA)</li>
+</ul>
+</li>
+</ul>
+<p><strong>IAM Group:</strong> A collection of IAM users that are granted identical authorization.</p>
+<ul>
+<li>A user can belong to multiple groups</li>
+<li>There is no default group</li>
+<li>Groups cannot be nested</li>
+</ul>
+<p><strong>IAM Policy:</strong> The document that defines which resources can be accessed and the level of access to each resource.</p>
+<ul>
+<li>Permissions determine which resources and operations are allowed.
+<ul>
+<li>All permissions are implicitly denied by default.</li>
+<li>If something is explicitly denied, it is never allowed.</li>
+</ul>
+</li>
+<li>Two Types of Policies:
+<ol>
+<li>Identity Based
+<ul>
+<li>Attach a policy to any IAM entity - user, group, or role</li>
+<li>Policies specify actions that may or may not be performed by the entity</li>
+<li>Policies and entities have a many-to-many relationship</li>
+<li>When the policy is updated, the changes to the policy are immediately apply against all Users and Groups that are attached to the policy.</li>
+</ul>
+</li>
+<li>Resource Based
+<ul>
+<li>Attached to a resource (such as an S3 bucket)</li>
+<li>Specifies who has access to the resource and what actions they can perform on it</li>
+<li>The policies are inline only, not managed. An inline policy is assigned to just one User or Group. Inline Policies are typically used to apply permissions for one-off situations.</li>
+<li>Resource-based policies are supported only by some AWS services</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<p><strong>IAM Role:</strong> Useful mechanism to grant a set of permissions for making AWS service requests.</p>
+<ul>
+<li>Similar to an IAM user: Attach permissions policies to it</li>
+<li>Different from an IAM user: Not uniquely associated with one person, intended to be assumable by a person, application, or service</li>
+<li>Role provides temporary security credentials</li>
+</ul>
+<p><strong>Principle of Least Privilege:</strong> The practice of limiting access rights for users to the bare minimum permissions they need to perform their work. Under POLP, users are granted permission to read, write or execute only the files or resources they need to do their jobs</p>
+<!-- raw HTML omitted -->
+<h2 id="section-3-securing-a-new-aws-account">Section 3: Securing a New AWS Account</h2>
+<p>Best practice: Do not use the AWS account root user except when necessary. Access to the account root user requires logging in with the email address and password that you used to create the account.</p>
+<ol>
+<li>Stop using the account root user as soon as possible
+<ol>
+<li>While you are logged in as the account root user, create an IAM user for yourself. Save the access keys if needed.</li>
+<li>Create an IAM group, give it full administrator permissions, and add the IAM user to the group.</li>
+<li>Disable and remove your account root user access keys, if they exist.</li>
+<li>Enable a password policy for users.</li>
+<li>Sign in with your new IAM user credentials.</li>
+</ol>
+</li>
+<li>Enable multi-factor authentication (MFA)</li>
+<li>Use AWS CloudTrail
+<ul>
+<li>CloudTrail tracks user activity on your account. It logs all API requests to resources in all supported services your account.</li>
+<li>Basic AWS CloudTrail event history is enabled by defaultand is free. It contains all management event data for the last 90 days of account activity (this can be extended beyon 90 days)</li>
+</ul>
+</li>
+<li>Enable a billing report, such as the <em>AWS Cost and Usage Report</em></li>
+</ol>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="section-4-securing-accounts">Section 4: Securing Accounts</h2>
+<h3 id="aws-organizations"><strong>AWS Organizations</strong></h3>
+<p>Organizations enable you to consolidate multiple AWS accounts so that you centrally manage them.</p>
+<p>Security Features of AWS Organizations:</p>
+<ul>
+<li>Group AWS accounts into organizational units (OUs) and attach different access policies to each OU.</li>
+<li>Integration and support for IAM. Permissions to a user are the intersection of what is allowed by AWS Organizations and what is granted by IAM in that account.</li>
+<li>Use service control policies to establish control over the AWS services and API actions that each AWS account can access</li>
+</ul>
+<h4 id="service-control-policies">Service Control Policies</h4>
+<ul>
+<li>Service control policies (SCPs) offer centralized control over accounts. Limit permissions that are available in an account that is part of an organization.</li>
+<li>Ensures that accounts comply with access control guidelines.</li>
+<li>SCPs are similar to IAM permissions policies – They use similar syntax, but an SCP never grants permissions. Instead, SCPs specify the maximum permissions for an organization.</li>
+</ul>
+<h4 id="key-management-service">Key Management Service</h4>
+<ul>
+<li>Enables you to create and manage encryption keys</li>
+<li>Enables you to control the use of encryption across AWS services and in your applications.</li>
+<li>Integrates with AWS CloudTrail to log all key usage.</li>
+<li>Uses hardware security modules (HSMs) that are validated by Federal Information Processing Standards (FIPS) 140-2 to protect keys</li>
+</ul>
+<h4 id="cognito">Cognito</h4>
+<ul>
+<li>Adds user sign-up, sign-in, and access control to your web and mobile applications. Scales to millions of users.</li>
+<li>Supports sign-in with social identity providers, such as Facebook, Google, and Amazon; and enterprise identity providers, such as Microsoft Active Directory via Security Assertion Markup Language (SAML) 2.0.</li>
+</ul>
+<h4 id="shield">Shield</h4>
+<ul>
+<li>Is a managed distributed denial of service (DDoS) protection service</li>
+<li>Provides always-on detection and automatic inline mitigations</li>
+<li>AWS Shield Standard enabled for at no additional cost. AWS Shield Advanced is an optional paid service.</li>
+<li>Use it to minimize application downtime and latency</li>
+</ul>
+<h2 id="section-5-securing-data">Section 5: Securing Data</h2>
+<h3 id="data-at-rest"><strong>Data at Rest</strong></h3>
+<ul>
+<li>Data at rest = Data stored physically (on disk or on tape)</li>
+<li>Encryption encodes data with a secret key, which makes it unreadable. Only those who have the secret key can decode the data.</li>
+<li>You can encrypt data stored in any service that is supported by AWS KMS</li>
+</ul>
+<h3 id="data-in-transit"><strong>Data in Transit</strong></h3>
+<ul>
+<li>Data in transit = Data moving across a network</li>
+<li>Transport Layer Security (TLS) — formerly SSL, is an open standard protocol. AWS Certificate Manager provides a way to manage, deploy, and renew TLS or SSL certificates</li>
+<li>Secure HTTP (HTTPS) creates a secure tunnel.</li>
+</ul>
+<h2 id="section-6-working-to-ensure-compliance">Section 6: Working to Ensure Compliance</h2>
+<p>Customers are subject to many different security and compliance regulations and requirements. AWS engages with certifying bodies and independent auditors to provide customers with detailed information about the policies, processes, and controls that are established and operated by AWS.</p>
+<p>Compliance programs can be broadly categorized:</p>
+<ul>
+<li>Certifications and attestations</li>
+<li>Laws, regulations, and privacy</li>
+<li>Alignments and frameworks - Industry or function-specific security or compliance requirements</li>
+</ul>
+<h3 id="aws-config"><strong>AWS Config</strong></h3>
+<ul>
+<li>Assess, audit, and evaluate the configurations of AWS resources.</li>
+<li>Automatically evaluate recorded configurations versus desired configurations.</li>
+<li>Review configuration changes and view detailed configuration histories.</li>
+</ul>
+<h3 id="aws-artifact">AWS Artifact</h3>
+<ul>
+<li>A resource for compliance-related information</li>
+<li>Provide access to security and compliance reports, and select online agreements</li>
+<li>Access AWS Artifact directly from the AWS Management Console</li>
+</ul>
+<!-- raw HTML omitted -->
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/aws/aws-academy-module-3/" data-toggle="tooltip" data-placement="top" title="AWS Academy: AWS Global Infrastructure Overview">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/aws/aws-academy-module-5/" data-toggle="tooltip" data-placement="top" title="AWS Academy: Networking and Content Delivery">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                  <hr class="hidden-sm hidden-xs">
+                  <br>
+                    <h6>Featured Tags</h6>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/arch-linux" title="arch-linux">
+                            arch-linux
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/aws" title="aws">
+                            aws
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/cloud-computing" title="cloud-computing">
+                            cloud-computing
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/linux" title="linux">
+                            linux
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                <section>
+                  <br>
+                  <h6>Quick Links</h6>
+                    <ul class="list-inline">
+                        
+                    </ul>
+                </section>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+
+
+
+                    
+                    <li>
+                        <a href="mailto:ericmosesngigi@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/ErikNgigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/erik-ngigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                </ul>
+                
+                
+                
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page powered by <a href="https://www.netlify.com/">Netlify</a>.<br>Customized with CSS &bull; Maintained with Hugo &bull; Build with ♥
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Eric Ngigi 2019–2022. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
