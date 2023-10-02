@@ -242,11 +242,11 @@ h6 {
 
 a {
   color: #9a9a9a;
-  font-weight: 500;
+  font-weight: 600;
 }
 a:hover,a:focus {
   color: #28A87D;
-  font-weight: 500;
+  font-weight: 600;
 }
 a img:hover,a img:focus {
   cursor: zoom-in
