@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Eric Ngigi">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="images/banner/homepage_banner.webp">
+
+    
+    
+    
+    
+
+    
+
+    
+      <meta name="title" content="Networking Fundamentals" />
+      <meta property="og:title" content="Networking Fundamentals - " />
+      <meta property="twitter:title" content="Networking Fundamentals - " />
+      <meta property="twitter:text:title" content="Networking Fundamentals - " />
+    
+
+    
+      <meta name="description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you.">
+      <meta property="og:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+      <meta property="twitter:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+    
+
+    
+
+    <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+
+    <title>Networking Fundamentals - Leading with Innovation</title>
+
+    <link rel="canonical" href="/post/networking/understanding-ipv4/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img width=100% height=auto src="/favicons/favicon.ico" style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/more/about/">About</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/banner/homepage_banner.webp')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/networking" title="Networking">
+                            Networking
+                        </a>
+                        
+                        <a class="tag" href="/tags/tutorial" title="Tutorial">
+                            Tutorial
+                        </a>
+                        
+                    </div>
+                    <h1>Networking Fundamentals</h1>
+                    <h2 class="subheading">Building the Foundation: Exploring Networking Fundamentals</h2>
+                    <span class="meta">
+			
+			Wednesday • October 4, 2023 
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h3>Table of Contents</h3>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#understanding-ipv4-and-the-basics-of-ipv4-addresses">Understanding IPv4 and the Basics of IPv4 Addresses</a>
+      <ul>
+        <li><a href="#ipv4-address-the-digital-identifiers">IPv4 Address: The Digital Identifiers</a></li>
+        <li><a href="#ipv4-address-format">IPv4 Address Format</a>
+          <ul>
+            <li><a href="#network-address">Network Address</a></li>
+            <li><a href="#host-address">Host Address</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#converting-the-decimal-ip-address-to-binary">Converting the Decimal IP Address to Binary</a>
+      <ul>
+        <li><a href="#decimal-number">Decimal Number</a></li>
+        <li><a href="#binary-number">Binary Number</a></li>
+        <li><a href="#converting-decimal-to-binary-ip-address">Converting Decimal to Binary IP Address</a></li>
+        <li><a href="#converting-binary-ip-address-to-decimal">Converting Binary IP Address to Decimal</a></li>
+      </ul>
+    </li>
+    <li><a href="#subnet-mask-explained">Subnet Mask Explained</a>
+      <ul>
+        <li><a href="#slash-notation">Slash Notation</a></li>
+      </ul>
+    </li>
+    <li><a href="#ip-address-classes">IP Address Classes</a></li>
+    <li><a href="#subnetting-explained">Subnetting Explained</a></li>
+    <li><a href="#cidr-classless-inter-domain-routing">CIDR (Classless inter-domain routing)</a>
+      <ul>
+        <li><a href="#subnet-creation">Subnet Creation</a>
+          <ul>
+            <li><a href="#subnetting-example">Subnetting Example</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                <h1 id="understanding-ipv4-and-the-basics-of-ipv4-addresses">Understanding IPv4 and the Basics of IPv4 Addresses</h1>
+<p>In the world of networking, the Internet Protocol (IP) is the backbone that enables devices to communicate and share data across the global network. One of the most well-known versions of the IP is IPv4, which stands for Internet Protocol Version 4. In this article, we&rsquo;ll explore what IPv4 is and delve into the fundamentals of IPv4 addresses.</p>
+<h2 id="ipv4-address-the-digital-identifiers">IPv4 Address: The Digital Identifiers</h2>
+<p>The cornerstone of IPv4 is the IP address, a 32-bit numerical label that uniquely identifies a device on a network. IPv4 addresses are typically written in a format known as &ldquo;dotted-decimal notation,&rdquo; where four octets (sets of 8 bits) are separated by periods (dots). For example, an IPv4 address might look like &ldquo;192.168.1.1.&rdquo;</p>
+<ul>
+<li><strong>32-bit Addressing</strong>: IPv4 addresses consist of 32 bits, divided into four octets. Each octet can represent a value from 0 to 255, making a total of over four billion unique IPv4 addresses possible.</li>
+<li><strong>Network and Host Identification</strong>: In an IPv4 address, the first part (the leftmost octets) identifies the network, while the last part (the rightmost octet) identifies the specific device, or host, within that network. This separation is crucial for routing data across the internet.</li>
+<li><strong>Address Classes</strong>: IPv4 addresses are categorized into five classes—A, B, C, D, and E—based on the range of values in the first octet. Each class has its own characteristics, address ranges, and default subnet masks, tailored to different network sizes and requirements.</li>
+<li><strong>Subnetting</strong>: IPv4 supports subnetting, a technique that allows network administrators to divide a larger IP address range into smaller subnetworks. Subnetting enhances network management, security, and efficiency.</li>
+</ul>
+<h2 id="ipv4-address-format">IPv4 Address Format</h2>
+<p>IPv4 addresses are represented as four decimal numbers separated by dots, a format commonly referred to as &lsquo;dotted decimal.&rsquo; Each of these four numbers is termed an &lsquo;octet&rsquo; due to its composition of 8 bits. Below, you can see the binary representation of each octet in the IPv4 address 192.168.10.100:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>1st Octet</th>
+<th>2nd Octet</th>
+<th>3rd Octet</th>
+<th>4th Octet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dotted Decimal</td>
+<td>192</td>
+<td>168</td>
+<td>10</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Binary</td>
+<td>11000000</td>
+<td>10101000</td>
+<td>00001010</td>
+<td>01100100</td>
+</tr>
+</tbody>
+</table>
+<p>An octet can contain values ranging from 0 to 255, resulting in the entire IPv4 address space spanning from 0.0.0.0 to 255.255.255.255. Within an IPv4 address, there are distinct segments: the network portion and the host portion. To identify these sections, a subnet mask is employed.</p>
+<h3 id="network-address">Network Address</h3>
+<p>The network part of the IPv4 address is on the left-hand side of the IP address. It specifies the particular network to where the IPv4 address belongs. The network portion of the address also identifies the IP address class of the IPv4 address.</p>
+<p>For example, we have the IPv4 address 192.168.10.100 and a /24 subnet mask. /24 simply means that the first 24 bits, starting from the left side, is the network portion of the IPv4 address. The 8 remaining bits of the 32 bits will be the host portion.</p>
+<h3 id="host-address">Host Address</h3>
+<p>The host portion of the IPv4 address uniquely identifies the device or the interface on your network. Hosts that have the same network portion can communicate with one another directly, without the need for the traffic to be routed.</p>
+<h1 id="converting-the-decimal-ip-address-to-binary">Converting the Decimal IP Address to Binary</h1>
+<p>IP addresses can be interpreted either in their decimal or binary forms; however, it&rsquo;s important to note that network devices exclusively comprehend the binary representation. Therefore, it becomes crucial for us to grasp the process of converting a decimal IP address into its binary equivalent.</p>
+<h2 id="decimal-number">Decimal Number</h2>
+<p>Decimal is a base-10 numbering system that&rsquo;s widely familiar to us. In this system, we employ ten distinct numerals to symbolize numbers ranging from zero to nine. These numerals are 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. When we reach the value ten, there is no specific numeral to denote it. Instead, we transition to the next place value, advancing from ones to tens and beyond.</p>
+<h2 id="binary-number">Binary Number</h2>
+<p>Binary numbers constitute an alternative numerical system predominantly employed to express machine language. In stark contrast to the decimal system, binary utilizes merely two numerals for representation, namely, 1 and 0. Each placeholder in the binary system possesses a distinct value, which is why it is often referred to as the Base 2 Numbering System.</p>
+<h2 id="converting-decimal-to-binary-ip-address">Converting Decimal to Binary IP Address</h2>
+<p>Below is an example of an IPv4 address in dotted decimal format and its corresponding binary format.</p>
+<p>IP Address = 192.168.32.47</p>
+<p><strong>NB</strong>: The 1st Octet of the IPv4 address is used in the calculation below:</p>
+<table>
+<thead>
+<tr>
+<th>Division by 2</th>
+<th>Quotient</th>
+<th>Remainder(Digit)</th>
+<th>Bit #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(192)/2</td>
+<td>96</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>(96)/2</td>
+<td>48</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>(48)/2</td>
+<td>24</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>(24)/2</td>
+<td>12</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td>(12)/2</td>
+<td>6</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>(6)/2</td>
+<td>3</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>(3)/2</td>
+<td>1</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>(1)/2</td>
+<td>0</td>
+<td>1</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="converting-binary-ip-address-to-decimal">Converting Binary IP Address to Decimal</h2>
+<p>Below is an example of an IPv4 address in binary format and its corresponding dotted decimal format.</p>
+<p>Binary format = 11000000</p>
+<p>(11000000)₂ = (1 × 2⁷) + (1 × 2⁶) + (0 × 2⁵) + (0 × 2⁴) + (0 × 2³) + (0 × 2²) + (0 × 2¹) + (0 × 2⁰) = 192</p>
+<p>The answer above corresponds to the 1st Octet of the following IP Address(192.168.32.47)</p>
+<h1 id="subnet-mask-explained">Subnet Mask Explained</h1>
+<p>An IP address is typically split into two distinct components: the network part and the host part. Take, for instance, a Class A IP address, where 8 bits are dedicated to identifying the network, leaving the remaining 24 bits to identify the host. This allocation aligns with the default subnet mask for a Class A IP address, which is 8 bits in length and is expressed in dotted decimal notation as 255.0.0.0.</p>
+<p>To comprehend this concept further, it&rsquo;s important to recognize that both an IP address and a subnet mask consist of 32 bits in total. Computers employ the subnet mask to differentiate between the network and host portions of an address. In this context, the &lsquo;1s&rsquo; in the subnet mask denote the network segment, while the &lsquo;0s&rsquo; represent the host portion.</p>
+<h2 id="slash-notation">Slash Notation</h2>
+<p>In addition to the familiar dotted decimal format, subnet masks can also be represented using slash notation. This notation consists of a forward slash (&rsquo;/&rsquo;) followed by the number of subnet mask bits. To determine the slash notation for a subnet mask, first, convert the dotted decimal format into binary, then count the consecutive &lsquo;1s&rsquo; in the binary representation, and finally, add the slash notation at the beginning.</p>
+<p>For instance, consider the dotted decimal subnet mask of 255.0.0.0. When expressed in binary, it becomes 11111111.00000000.00000000.00000000. By counting the consecutive &lsquo;1s,&rsquo; which in this case are 8, we can determine that the slash notation for 255.0.0.0 is /8.</p>
+<table>
+<thead>
+<tr>
+<th>Value of the First Octet</th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 - 127</td>
+<td>A</td>
+</tr>
+<tr>
+<td>128 - 191</td>
+<td>B</td>
+</tr>
+<tr>
+<td>192 - 223</td>
+<td>C</td>
+</tr>
+</tbody>
+</table>
+<h1 id="ip-address-classes">IP Address Classes</h1>
+<p>TCP/IP categorizes IP addresses into five distinct classes: Class A, Class B, Class C, Class D, and Class E. The designation of a class is determined by the value of the first octet of the IP address. The first three classes (A, B, and C) encompass IP addresses that can be utilized as host addresses. The remaining two classes, Class D and Class E, serve alternative functions, with Class D designated for multicast purposes and Class E reserved for experimental use.</p>
+<p>In Class A IP addresses, the initial 8 bits (or the first decimal number) are allocated to represent the network segment, leaving the remaining 24 bits to denote the host portion. For Class B addresses, the first 16 bits (or the first two decimal numbers) are designated for the network part, while the subsequent 16 bits serve as the host part. In the case of Class C, the initial 24 bits are reserved to define the network component, while the final 8 bits are utilized for specifying the host segment.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Public IP Range</th>
+<th>Network Bits</th>
+<th>Default Subnet Mask</th>
+<th>Slash Notation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>1.0.0.0 - 127.0.0.0</td>
+<td>8</td>
+<td>255.0.0.0</td>
+<td>/8</td>
+</tr>
+<tr>
+<td>B</td>
+<td>128.0.0.0 - 191.255.0.0</td>
+<td>16</td>
+<td>255.255.0.0</td>
+<td>/16</td>
+</tr>
+<tr>
+<td>C</td>
+<td>192.0.0.0 - 223.255.255.0</td>
+<td>24</td>
+<td>255.255.255.0</td>
+<td>/24</td>
+</tr>
+</tbody>
+</table>
+<h1 id="subnetting-explained">Subnetting Explained</h1>
+<p>Subnetting involves the partitioning of a network into multiple smaller networks, a practice employed to bolster routing efficiency, fortify network security, and diminish the size of broadcast domains. An evident drawback of having all hosts within a single network is the creation of a unified broadcast domain where any broadcast transmission initiated by any device permeates throughout the entire network, leading to a surfeit of unnecessary traffic.</p>
+<p>This setup also introduces security concerns, as every device gains unrestricted access to communicate with any other device on the network. This unrestricted access can pose potential security risks, for instance, having a server housing sensitive information coexist in the same network as user workstations.</p>
+<p>Subnetting also aids in addressing organizational concerns, particularly in extensive networks. In larger networks, different departments or units are often segregated into distinct subnets, streamlining network management and administration.</p>
+<h1 id="cidr-classless-inter-domain-routing">CIDR (Classless inter-domain routing)</h1>
+<p>CIDR (Classless Inter-Domain Routing) is a method of assigning public IP addresses that was introduced in 1993 by the Internet Engineering Task Force (IETF). It was devised to address two primary objectives:</p>
+<ol>
+<li>
+<p><strong>Mitigating IPv4 Address Exhaustion:</strong> CIDR was developed in response to the pressing issue of IPv4 address depletion. It sought to optimize IP address allocation in the face of dwindling available addresses.</p>
+</li>
+<li>
+<p><strong>Curbing the Expansion of Internet Routing Tables:</strong> Another key aim of CIDR was to slow down the proliferation of routing tables within Internet routers. This helped alleviate the strain on the core infrastructure of the internet.</p>
+</li>
+</ol>
+<p>Before the advent of CIDR, public IP address assignment adhered to class-based boundaries:</p>
+<ul>
+<li><strong>Class A:</strong> The classful subnet mask was /8, offering a total of 16,777,216 possible IP addresses (2 to the power of 24).</li>
+<li><strong>Class B:</strong> The classful subnet mask was /16, providing 65,536 addresses.</li>
+<li><strong>Class C:</strong> The classful subnet mask was /24, with only 256 addresses available.</li>
+</ul>
+<p>CIDR introduced a more flexible approach to IP address allocation, enabling the allocation of varying block sizes and allowing for a more efficient utilization of the dwindling IPv4 address space. It ushered in a more scalable and sustainable way of managing IP addresses on the internet.</p>
+<h2 id="subnet-creation">Subnet Creation</h2>
+<p>There are a couple of methods to create subnets. In this article, we&rsquo;ll be focusing on subnetting a default Class C address, which is 192.168.0.0, and comes with 24 subnet bits and 8 host bits as per the default configuration.</p>
+<p>Before diving into subnetting, it&rsquo;s essential to address two crucial questions:</p>
+<ol>
+<li>
+<p><strong>Determining the Number of Subnets Needed:</strong>
+To calculate the number of subnets required, we can employ the formula 2^x, where &lsquo;x&rsquo; represents the count of &lsquo;1s&rsquo; in the subnet mask. For instance, with just one subnet bit, we can generate 2^1, or 2 subnets. By extending this logic, using 2 bits yields 2^2, or 4 subnets, while 3 bits provide 2^3, or 8 subnets, and so forth.</p>
+</li>
+<li>
+<p><strong>Defining the Hosts per Subnet:</strong>
+For ascertaining the number of hosts per subnet, we utilize the formula 2^y - 2, where &lsquo;y&rsquo; corresponds to the count of &lsquo;0s&rsquo; in the subnet mask. This calculation excludes two addresses: one for the network address and another for the broadcast address, ensuring that we reserve these addresses for network identification and broadcast transmissions.</p>
+</li>
+</ol>
+<h3 id="subnetting-example">Subnetting Example</h3>
+<p>To illustrate the concept of subnetting, consider the following scenario. Suppose we need to subnet a Class C address, specifically 192.168.0.0/24, into two subnets, each accommodating up to 50 hosts. Here&rsquo;s how we can calculate and implement this:</p>
+<ol>
+<li>
+<p><strong>Determining the Subnet Mask:</strong>
+To create two subnets, we require 2^1, or 2, subnet bits. In our case, this necessitates borrowing one bit from the host portion. Let&rsquo;s convert the Class C address and its default subnet mask to binary form:</p>
+<ul>
+<li>192.168.0.0 = 11000000.10101000.00000000.00000000</li>
+<li>255.255.255.0 = 11111111.11111111.11111111.00000000</li>
+</ul>
+<p>By taking a single &lsquo;0&rsquo; from the host part of the subnet mask, we obtain the new subnet mask:</p>
+<ul>
+<li>255.255.255.128 = 11111111.11111111.11111111.10000000</li>
+</ul>
+<p>It&rsquo;s important to remember that the &lsquo;1s&rsquo; in the subnet mask denote the network portion.</p>
+</li>
+<li>
+<p><strong>Calculating Hosts per Subnet:</strong>
+With one bit allocated for subnetting, we&rsquo;re left with seven bits for hosts. This raises the question: can these seven bits accommodate at least 50 hosts per subnet? To ascertain this, we apply the formula 2^y - 2, where &lsquo;y&rsquo; represents the number of host bits. In this case, 2^7 - 2 equals 126, which is more than sufficient for our requirements.</p>
+</li>
+<li>
+<p><strong>Creating the Subnets:</strong>
+Our network now consists of two subnets, structured as follows:</p>
+<ul>
+<li>
+<p>192.168.0.0/25: The first subnet has a subnet number of 192.168.0.0. The range of IP addresses within this subnet spans from 192.168.0.0 to 192.168.0.127.</p>
+</li>
+<li>
+<p>192.168.0.128/25: The second subnet bears a subnet number of 192.168.0.128. The IP addresses in this subnet fall within the range of 192.168.0.128 to 192.168.0.255.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>This subnetting approach allows us to efficiently manage our network, dividing it into smaller, manageable segments while ensuring adequate host capacity for each subnet.</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/aws/aws-academy-all-modules/" data-toggle="tooltip" data-placement="top" title="AWS Academy Cloud Foundations">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                  <hr class="hidden-sm hidden-xs">
+                  <br>
+                    <h6>Featured Tags</h6>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/arch-linux" title="arch-linux">
+                            arch-linux
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/aws" title="aws">
+                            aws
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/cloud-computing" title="cloud-computing">
+                            cloud-computing
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                <section>
+                  <br>
+                  <h6>Quick Links</h6>
+                    <ul class="list-inline">
+                        
+                    </ul>
+                </section>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+
+
+
+                    
+                    <li>
+                        <a href="mailto:ericmosesngigi@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/ErikNgigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/erik-ngigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                </ul>
+                
+                
+                
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page powered by <a href="https://www.netlify.com/">Netlify</a>.<br>Customized with CSS &bull; Maintained with Hugo &bull; Build with ♥
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Eric Ngigi 2019–2023. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
