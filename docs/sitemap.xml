@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/aws/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/cloud-computing/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/</loc>
+    <lastmod>2023-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/aws/cloud-computing-concepts/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/networking/</loc>
@@ -20,13 +29,7 @@
     <loc>/tags/tutorial/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/aws/</loc>
-    <lastmod>2023-10-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/post/aws/aws-academy-all-modules/</loc>
-    <lastmod>2023-10-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/cloud-computing/</loc>
     <lastmod>2023-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/more/</loc>

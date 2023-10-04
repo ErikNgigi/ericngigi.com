@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Eric Ngigi">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="images/banner/homepage_banner.webp">
+
+    
+    
+    
+    
+
+    
+
+    
+      <meta name="title" content="Essential Cloud Computing Concepts for AWS Beginners" />
+      <meta property="og:title" content="Essential Cloud Computing Concepts for AWS Beginners - " />
+      <meta property="twitter:title" content="Essential Cloud Computing Concepts for AWS Beginners - " />
+      <meta property="twitter:text:title" content="Essential Cloud Computing Concepts for AWS Beginners - " />
+    
+
+    
+      <meta name="description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you.">
+      <meta property="og:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+      <meta property="twitter:description" content="Eric Ngigi, Programmer, Open Source Enthusiast, Life Explorer | Here is Eric Ngigi&#39;s blog, discovering a bigger world with you." />
+    
+
+    
+
+    <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+
+    <title>Essential Cloud Computing Concepts for AWS Beginners - Leading with Innovation</title>
+
+    <link rel="canonical" href="/post/aws/cloud-computing-concepts/">
+
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    
+    </head>
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img width=100% height=auto src="/favicons/favicon.ico" style='cursor:pointer;margin:-6px 0 0 -8px;'></a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Blog</a>
+                    </li>
+                    
+
+		    
+                        <li><a href="/more/about/">About</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/images/post/aws/aws_banner.webp')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/cloud-computing" title="Cloud Computing">
+                            Cloud Computing
+                        </a>
+                        
+                        <a class="tag" href="/tags/aws" title="AWS">
+                            AWS
+                        </a>
+                        
+                    </div>
+                    <h1>Essential Cloud Computing Concepts for AWS Beginners</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+			
+			Wednesday • October 4, 2023 
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h3>Table of Contents</h3>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#internet-and-networking">Internet and Networking</a></li>
+        <li><a href="#command-line-interfaces-clis">Command Line Interfaces (CLIs):</a></li>
+        <li><a href="#virtualization">Virtualization:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                
+                <p>Cloud computing has become an integral part of the modern IT landscape, and Amazon Web Services (AWS) stands as a prominent player in the cloud services industry. Whether you&rsquo;re considering a career in AWS or looking to enhance your cloud computing knowledge, it&rsquo;s crucial to grasp certain fundamental concepts before diving into AWS. In this article, we&rsquo;ll discuss why learning about internet and networking, command line interfaces (CLIs), and virtualization is essential as you embark on your AWS career.</p>
+<p><img src="/images/post/aws/networking-image.webp" alt="networking-basics"></p>
+<h2 id="internet-and-networking">Internet and Networking</h2>
+<p>Before delving into AWS, understanding internet and networking concepts is paramount for several reasons:</p>
+<ol>
+<li>
+<p><strong>Connectivity</strong>: AWS services are accessible over the internet, and a solid understanding of how data travels across networks is essential. Learning about protocols, IP addressing, subnets, and routing will help you configure and troubleshoot network components within AWS.</p>
+</li>
+<li>
+<p><strong>Security</strong>: Network security is a top priority in AWS. Without a grasp of networking fundamentals, you may struggle to set up firewalls, security groups, and network access controls effectively. Properly securing your AWS resources relies on a sound knowledge of networking principles.</p>
+</li>
+<li>
+<p><strong>Bandwidth and Latency</strong>: AWS offers various network-related services like Amazon VPC (Virtual Private Cloud) and AWS Direct Connect. Understanding concepts such as bandwidth, latency, and data transfer costs will help you make informed decisions about network architecture and resource placement.</p>
+</li>
+<li>
+<p><strong>Hybrid Cloud Environments</strong>: Many organizations use AWS in conjunction with on-premises infrastructure. Knowledge of networking ensures you can seamlessly integrate your AWS resources with existing systems through technologies like VPNs and Direct Connect.</p>
+</li>
+</ol>
+<p><img src="/images/post/aws/ubuntu-command-line.webp" alt="command-line-basics"></p>
+<h2 id="command-line-interfaces-clis">Command Line Interfaces (CLIs):</h2>
+<p>AWS provides both web-based and command line interfaces for managing resources. Learning the CLI, such as the AWS Command Line Interface (AWS CLI), is crucial for the following reasons:</p>
+<ol>
+<li>
+<p><strong>Efficiency</strong>: Using the CLI can be more efficient than navigating the AWS Management Console for repetitive tasks. Automation and scripting become much more accessible with CLI expertise.</p>
+</li>
+<li>
+<p><strong>Troubleshooting</strong>: When issues arise, having CLI skills allows you to investigate and resolve problems quickly. You can retrieve detailed logs and run diagnostic commands directly from the terminal.</p>
+</li>
+<li>
+<p><strong>Scalability and Automation</strong>: As your AWS projects grow, automating deployments and management tasks becomes essential. CLI proficiency is a stepping stone to infrastructure as code (IAC) tools like AWS CloudFormation.</p>
+</li>
+<li>
+<p><strong>Flexibility</strong>: Different AWS services provide CLI support, making it a versatile tool for managing diverse resources, from EC2 instances to S3 buckets and beyond.</p>
+</li>
+</ol>
+<p><img src="/images/post/aws/virtualization-image.webp" alt="server-virtualization"></p>
+<h2 id="virtualization">Virtualization:</h2>
+<p>Virtualization forms the foundation of cloud computing and AWS. Understanding virtualization is vital because:</p>
+<ol>
+<li>
+<p><strong>Resource Allocation</strong>: AWS instances run on virtualized hardware. Knowing how virtualization works enables you to optimize resource allocation, such as CPU, memory, and storage, for your workloads.</p>
+</li>
+<li>
+<p><strong>Isolation</strong>: Virtualization provides the isolation required to run multiple workloads securely on shared physical infrastructure. This is critical for maintaining data integrity and security in the cloud.</p>
+</li>
+<li>
+<p><strong>Elasticity</strong>: AWS&rsquo;s ability to scale resources up or down relies on virtualization technology. Understanding this allows you to leverage AWS&rsquo;s elasticity effectively.</p>
+</li>
+<li>
+<p><strong>Migration</strong>: Migrating existing on-premises systems to AWS often involves converting physical servers to virtual instances. Knowledge of virtualization helps with this transition.</p>
+</li>
+</ol>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/networking/understanding-ipv4/" data-toggle="tooltip" data-placement="top" title="Networking Fundamentals">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                  <hr class="hidden-sm hidden-xs">
+                  <br>
+                    <h6>Featured Tags</h6>
+                    <div class="tags">
+                        
+                        
+                        
+                        <a href="/tags/arch-linux" title="arch-linux">
+                            arch-linux
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/aws" title="aws">
+                            aws
+                        </a>
+                        
+                        
+                        
+                        <a href="/tags/cloud-computing" title="cloud-computing">
+                            cloud-computing
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/tutorial" title="tutorial">
+                            tutorial
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                <section>
+                  <br>
+                  <h6>Quick Links</h6>
+                    <ul class="list-inline">
+                        
+                    </ul>
+                </section>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+
+
+
+                    
+                    <li>
+                        <a href="mailto:ericmosesngigi@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/ErikNgigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/erik-ngigi">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		                
+                    
+                      
+                </ul>
+                
+                
+                
+		<p class="copyright text-muted">
+                    A <a href="https://gohugo.io/">HUGO</a> <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite</a> page powered by <a href="https://www.netlify.com/">Netlify</a>.<br>Customized with CSS &bull; Maintained with Hugo &bull; Build with ♥
+    </p>
+    <p class="copyright text-muted" style='font-size:8pt;'>
+                    &copy; Eric Ngigi 2019–2023. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#28a87d'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>

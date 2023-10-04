@@ -5,7 +5,68 @@
     <description>Recent content in AWS on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Essential Cloud Computing Concepts for AWS Beginners</title>
+      <link>/post/aws/cloud-computing-concepts/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/post/aws/cloud-computing-concepts/</guid>
+      <description>&lt;p&gt;Cloud computing has become an integral part of the modern IT landscape, and Amazon Web Services (AWS) stands as a prominent player in the cloud services industry. Whether you&amp;rsquo;re considering a career in AWS or looking to enhance your cloud computing knowledge, it&amp;rsquo;s crucial to grasp certain fundamental concepts before diving into AWS. In this article, we&amp;rsquo;ll discuss why learning about internet and networking, command line interfaces (CLIs), and virtualization is essential as you embark on your AWS career.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/post/aws/networking-image.webp&#34; alt=&#34;networking-basics&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;internet-and-networking&#34;&gt;Internet and Networking&lt;/h2&gt;
+&lt;p&gt;Before delving into AWS, understanding internet and networking concepts is paramount for several reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Connectivity&lt;/strong&gt;: AWS services are accessible over the internet, and a solid understanding of how data travels across networks is essential. Learning about protocols, IP addressing, subnets, and routing will help you configure and troubleshoot network components within AWS.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Security&lt;/strong&gt;: Network security is a top priority in AWS. Without a grasp of networking fundamentals, you may struggle to set up firewalls, security groups, and network access controls effectively. Properly securing your AWS resources relies on a sound knowledge of networking principles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Bandwidth and Latency&lt;/strong&gt;: AWS offers various network-related services like Amazon VPC (Virtual Private Cloud) and AWS Direct Connect. Understanding concepts such as bandwidth, latency, and data transfer costs will help you make informed decisions about network architecture and resource placement.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hybrid Cloud Environments&lt;/strong&gt;: Many organizations use AWS in conjunction with on-premises infrastructure. Knowledge of networking ensures you can seamlessly integrate your AWS resources with existing systems through technologies like VPNs and Direct Connect.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/post/aws/ubuntu-command-line.webp&#34; alt=&#34;command-line-basics&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;command-line-interfaces-clis&#34;&gt;Command Line Interfaces (CLIs):&lt;/h2&gt;
+&lt;p&gt;AWS provides both web-based and command line interfaces for managing resources. Learning the CLI, such as the AWS Command Line Interface (AWS CLI), is crucial for the following reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Efficiency&lt;/strong&gt;: Using the CLI can be more efficient than navigating the AWS Management Console for repetitive tasks. Automation and scripting become much more accessible with CLI expertise.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Troubleshooting&lt;/strong&gt;: When issues arise, having CLI skills allows you to investigate and resolve problems quickly. You can retrieve detailed logs and run diagnostic commands directly from the terminal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scalability and Automation&lt;/strong&gt;: As your AWS projects grow, automating deployments and management tasks becomes essential. CLI proficiency is a stepping stone to infrastructure as code (IAC) tools like AWS CloudFormation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Flexibility&lt;/strong&gt;: Different AWS services provide CLI support, making it a versatile tool for managing diverse resources, from EC2 instances to S3 buckets and beyond.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/post/aws/virtualization-image.webp&#34; alt=&#34;server-virtualization&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;virtualization&#34;&gt;Virtualization:&lt;/h2&gt;
+&lt;p&gt;Virtualization forms the foundation of cloud computing and AWS. Understanding virtualization is vital because:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Resource Allocation&lt;/strong&gt;: AWS instances run on virtualized hardware. Knowing how virtualization works enables you to optimize resource allocation, such as CPU, memory, and storage, for your workloads.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Isolation&lt;/strong&gt;: Virtualization provides the isolation required to run multiple workloads securely on shared physical infrastructure. This is critical for maintaining data integrity and security in the cloud.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Elasticity&lt;/strong&gt;: AWS&amp;rsquo;s ability to scale resources up or down relies on virtualization technology. Understanding this allows you to leverage AWS&amp;rsquo;s elasticity effectively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Migration&lt;/strong&gt;: Migrating existing on-premises systems to AWS often involves converting physical servers to virtual instances. Knowledge of virtualization helps with this transition.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
     <item>
       <title>AWS Academy Cloud Foundations</title>
       <link>/post/aws/aws-academy-all-modules/</link>
