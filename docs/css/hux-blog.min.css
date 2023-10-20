@@ -55,60 +55,72 @@
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Medium.ttf") format("truetype");
     font-style: bold;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Light.ttf") format("truetype");
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Bold.ttf") format("truetype");
     font-style: bold;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
     font-style: bold;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Black.ttf") format("truetype");
     font-style: bold;
+    font-display: swap;
 }
 @font-face {
     font-family: 'JetBrainsMono';
     src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 @font-face {
     font-family: 'JetBrainsMono';
     src: url("../fonts/JetBrainsMono-Bold.ttf") format("truetype");
     font-style: bold;
+    font-display: swap;
 }
 @font-face {
     font-family: 'JetBrainsMono';
     src: url("../fonts/JetBrainsMono-Light.ttf") format("truetype");
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'JetBrainsMono';
     src: url("../fonts/JetBrainsMono-Italic.ttf") format("truetype");
     font-style: italic;
+    font-display: swap;
 }
 @font-face {
     font-family: 'JetBrainsMono';
     src: url("../fonts/JetBrainsMono-Medium.ttf") format("truetype");
     font-style: medium;
+    font-display: swap;
 }
 
 .sidebar-container {
