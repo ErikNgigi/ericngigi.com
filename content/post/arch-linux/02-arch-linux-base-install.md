@@ -3,7 +3,7 @@ title: "Arch Linux Post Installation"
 summary: "This post provides a step-by-step guide on what to do after installing the base installation of Archlinux, including configuring the system and installing additional packages."
 date: 2023-04-29T09:45:37+03:02
 author: "Eric Ngigi"
-image: "/images/post/arch/geowaves.webp"
+image: "/post/arch-linux/arch_linux.webp"
 tags: ["Arch Linux", "Tutorial"]
 ---
 
@@ -260,7 +260,7 @@ sudo pacman -S noto-fonts-cjk noto-fonts-extra
 
 Enable font presets by creating symbolic links:
 
-```
+```bash
 ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
 ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
 ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d

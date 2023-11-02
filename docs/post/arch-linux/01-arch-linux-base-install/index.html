@@ -8,7 +8,7 @@
     
     <meta property="og:site_name" content="Eric Ngigi">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="images/banner/homepage_banner.webp">
+    <meta property="og:image" content="https://ericngigi.com/images/banner/homepage_banner.webp">
 
     
     
@@ -52,7 +52,8 @@
     <link rel="stylesheet" href="/css/zanshang.css">
 
     
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     
     <script src="/js/jquery.min.js"></script>
@@ -64,8 +65,8 @@
     <script src="/js/hux-blog.min.js"></script>
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
     
@@ -142,7 +143,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/images/post/arch/geowaves.webp')
+        background-image: url('/post/arch-linux/arch_linux.webp')
     }
 </style>
 <header class="intro-header">
@@ -187,80 +188,6 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                
-                <header>
-                    <h3>Table of Contents</h3>
-                </header>
-                <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#why-archlinux">Why Archlinux</a></li>
-        <li><a href="#pre-installation">Pre-installation</a></li>
-        <li><a href="#create-an-installation-medium">Create an Installation Medium</a></li>
-      </ul>
-    </li>
-    <li><a href="#installation-medium-boot">Installation Medium Boot</a>
-      <ul>
-        <li><a href="#change-font-settings">Change Font Settings</a></li>
-        <li><a href="#connect-to-the-internet">Connect to the internet</a>
-          <ul>
-            <li><a href="#wired-connection">Wired Connection</a></li>
-            <li><a href="#wireless-connection">Wireless Connection</a></li>
-          </ul>
-        </li>
-        <li><a href="#update-the-system-clock">Update the system clock</a></li>
-        <li><a href="#partition-the-disks">Partition the disks</a>
-          <ul>
-            <li><a href="#unencrypted-filesystem">Unencrypted filesystem</a></li>
-            <li><a href="#size-of-swap-partition">Size of Swap Partition.</a></li>
-          </ul>
-        </li>
-        <li><a href="#verifying-the-partitions">Verifying the partitions</a>
-          <ul>
-            <li><a href="#unencrypted-filesystem-1">Unencrypted filesystem</a></li>
-          </ul>
-        </li>
-        <li><a href="#format-the-partitions">Format the partitions</a>
-          <ul>
-            <li><a href="#unencrypted-filesystem-2">Unencrypted filesystem</a></li>
-          </ul>
-        </li>
-        <li><a href="#mount-the-filesystems">Mount the filesystems</a>
-          <ul>
-            <li><a href="#unencryped-partition">Unencryped partition</a></li>
-          </ul>
-        </li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#generating-the-fstab">Generating the fstab</a></li>
-        <li><a href="#chroot">Chroot</a></li>
-        <li><a href="#time-zone">Time zone</a></li>
-        <li><a href="#localization">Localization</a></li>
-        <li><a href="#network-configuration">Network configuration</a></li>
-        <li><a href="#adding-btrfs-mofule-to-mkinitcpio">Adding btrfs mofule to mkinitcpio</a>
-          <ul>
-            <li><a href="#unencrypted-filesystem-3">Unencrypted filesystem</a></li>
-          </ul>
-        </li>
-        <li><a href="#adding-repositories---multilib-and-aur">Adding Repositories - multilib and AUR</a>
-          <ul>
-            <li><a href="#adding-multilib-repository">Adding multilib repository</a></li>
-            <li><a href="#adding-the-aur-repository">Adding the AUR repository</a></li>
-            <li><a href="#pacman-easter-eggs">Pacman easter eggs</a></li>
-            <li><a href="#update-repositories-and-packages">Update repositories and packages</a></li>
-            <li><a href="#install-packages">Install packages</a></li>
-            <li><a href="#installing-grub">Installing GRUB</a></li>
-          </ul>
-        </li>
-        <li><a href="#root-password">Root password</a></li>
-        <li><a href="#add-a-user-account">Add a user account</a></li>
-        <li><a href="#add-the-new-user-to-sudoers">Add the new user to sudoers:</a></li>
-        <li><a href="#enable-internet-connection-for-the-next-boot">Enable internet connection for the next boot</a></li>
-        <li><a href="#exit-chroot-and-reboot">Exit chroot and reboot:</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
                 
                 <p>This is my personal guide. I recommend that you read the official <a href="https://wiki.archlinux.org/index.php/installation_guide" target="_blank" >wiki</a>
 . The purpose of this guide is to speed up my personal install of <code>Archlinux</code>.</p>
@@ -835,22 +762,6 @@ linux-headers alsa-utils openssh
                         <a href="/tags/arch-linux" title="arch-linux">
                             arch-linux
                         </a>
-                        
-                        
-                        
-                        <a href="/tags/aws" title="aws">
-                            aws
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/cloud-computing" title="cloud-computing">
-                            cloud-computing
-                        </a>
-                        
-                        
-                        
-                        
                         
                         
                         

@@ -1,17 +1,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arch Linux on Eric Ngigi</title>
-    <link>/tags/arch-linux/</link>
+    <link>https://ericngigi.com/tags/arch-linux/</link>
     <description>Recent content in Arch Linux on Eric Ngigi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Apr 2023 09:45:37 +0301</lastBuildDate><atom:link href="/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Apr 2023 09:45:37 +0301</lastBuildDate><atom:link href="https://ericngigi.com/tags/arch-linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arch Linux Extra Installation</title>
-      <link>/post/arch-linux/03-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/03-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0301</pubDate>
       
-      <guid>/post/arch-linux/03-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/03-arch-linux-base-install/</guid>
       <description>&lt;p&gt;The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.&lt;/p&gt;
 &lt;h2 id=&#34;theming&#34;&gt;Theming&lt;/h2&gt;
 &lt;ul&gt;
@@ -103,10 +103,10 @@
     
     <item>
       <title>Arch Linux Post Installation</title>
-      <link>/post/arch-linux/02-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/02-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0302</pubDate>
       
-      <guid>/post/arch-linux/02-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/02-arch-linux-base-install/</guid>
       <description>&lt;p&gt;In post installation we will be using a lot of &lt;code&gt;sudo&lt;/code&gt;. I&amp;rsquo;m not responsible if you broke your newly installed system.&lt;/p&gt;
 &lt;h3 id=&#34;connect-to-the-internet&#34;&gt;Connect to the internet&lt;/h3&gt;
 &lt;p&gt;We will be downloading stuff so we need an internet connection! So set-up your connection first!&lt;/p&gt;
@@ -231,10 +231,10 @@ systemctl enable --now tlp.service
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Additional fonts to support Asian characters&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S noto-fonts-cjk noto-fonts-extra
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Enable font presets by creating symbolic links:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
-ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
-ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The above will disable embedded bitmap for all fonts, enable sub-pixel RGB rendering, and enable the LCD filter which is designed to reduce colour fringing when subpixel rendering is used.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The above will disable embedded bitmap for all fonts, enable sub-pixel RGB rendering, and enable the LCD filter which is designed to reduce colour fringing when subpixel rendering is used.&lt;/p&gt;
 &lt;p&gt;For font consistency, all applications should be set to use the &lt;code&gt;serif&lt;/code&gt;, &lt;code&gt;sans-serif&lt;/code&gt;, and &lt;code&gt;monospace&lt;/code&gt; aliases, which are mapped to particular fonts by fontconfig.&lt;/p&gt;
 &lt;p&gt;Create &lt;code&gt;/etc/fonts/local.conf&lt;/code&gt;, then add:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34;?&amp;gt;&lt;/span&gt;
@@ -276,10 +276,10 @@ ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
     
     <item>
       <title>Arch Linux Base Installation</title>
-      <link>/post/arch-linux/01-arch-linux-base-install/</link>
+      <link>https://ericngigi.com/post/arch-linux/01-arch-linux-base-install/</link>
       <pubDate>Sat, 29 Apr 2023 09:45:37 +0303</pubDate>
       
-      <guid>/post/arch-linux/01-arch-linux-base-install/</guid>
+      <guid>https://ericngigi.com/post/arch-linux/01-arch-linux-base-install/</guid>
       <description>&lt;p&gt;This is my personal guide. I recommend that you read the official &lt;a href=&#34;https://wiki.archlinux.org/index.php/installation_guide&#34; target=&#34;_blank&#34; &gt;wiki&lt;/a&gt;
 . The purpose of this guide is to speed up my personal install of &lt;code&gt;Archlinux&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;why-archlinux&#34;&gt;Why Archlinux&lt;/h2&gt;

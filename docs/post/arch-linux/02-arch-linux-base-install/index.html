@@ -8,7 +8,7 @@
     
     <meta property="og:site_name" content="Eric Ngigi">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="images/banner/homepage_banner.webp">
+    <meta property="og:image" content="https://ericngigi.com/images/banner/homepage_banner.webp">
 
     
     
@@ -52,7 +52,8 @@
     <link rel="stylesheet" href="/css/zanshang.css">
 
     
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
     
     <script src="/js/jquery.min.js"></script>
@@ -64,8 +65,8 @@
     <script src="/js/hux-blog.min.js"></script>
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/foundation.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/foundation.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
     
@@ -142,7 +143,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/images/post/arch/geowaves.webp')
+        background-image: url('/post/arch-linux/arch_linux.webp')
     }
 </style>
 <header class="intro-header">
@@ -336,10 +337,10 @@ systemctl enable --now tlp.service
 </code></pre><p>Additional fonts to support Asian characters</p>
 <pre tabindex="0"><code>sudo pacman -S noto-fonts-cjk noto-fonts-extra
 </code></pre><p>Enable font presets by creating symbolic links:</p>
-<pre tabindex="0"><code>ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
-ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
-ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
-</code></pre><p>The above will disable embedded bitmap for all fonts, enable sub-pixel RGB rendering, and enable the LCD filter which is designed to reduce colour fringing when subpixel rendering is used.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ln -s /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
+</span></span><span style="display:flex;"><span>ln -s /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
+</span></span><span style="display:flex;"><span>ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
+</span></span></code></pre></div><p>The above will disable embedded bitmap for all fonts, enable sub-pixel RGB rendering, and enable the LCD filter which is designed to reduce colour fringing when subpixel rendering is used.</p>
 <p>For font consistency, all applications should be set to use the <code>serif</code>, <code>sans-serif</code>, and <code>monospace</code> aliases, which are mapped to particular fonts by fontconfig.</p>
 <p>Create <code>/etc/fonts/local.conf</code>, then add:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#ff79c6">&lt;?xml version=&#34;1.0&#34;?&gt;</span>
@@ -414,22 +415,6 @@ ln -s /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
                         <a href="/tags/arch-linux" title="arch-linux">
                             arch-linux
                         </a>
-                        
-                        
-                        
-                        <a href="/tags/aws" title="aws">
-                            aws
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/cloud-computing" title="cloud-computing">
-                            cloud-computing
-                        </a>
-                        
-                        
-                        
-                        
                         
                         
                         

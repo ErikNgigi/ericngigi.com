@@ -3,7 +3,7 @@ title: "Arch Linux Extra Installation"
 summary: "This post provides a step-by-step guide on what to do after installing the base installation of Archlinux, including configuring the system and installing additional packages."
 date: 2023-04-29T09:45:37+03:01
 author: "Eric Ngigi"
-image: "/images/post/arch/geowaves.webp"
+image: "/post/arch-linux/arch_linux.webp"
 tags: ["Arch Linux", "Tutorial"]
 ---
 

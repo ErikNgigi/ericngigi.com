@@ -228,7 +228,7 @@ h2 {
   font-size: 2.5rem;
 }
 h3 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 2.4rem;
 }
 h4,h5 {
@@ -336,7 +336,7 @@ pre code {
   word-wrap: normal;
   font-weight: 400;
   font-size: 14.6px;
-  font-family: 'JetBrainsMono-Regular','Menlo','Monaco','Consolas','Courier New','Courier',monospace,-apple-system;
+  font-family: 'monospace';
 }
 .post-container a {
   color: #28A87D;
