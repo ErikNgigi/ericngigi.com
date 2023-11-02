@@ -18,10 +18,10 @@
     
 
     
-      <meta name="title" content="Arch Linux Extra Installation" />
-      <meta property="og:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:title" content="Arch Linux Extra Installation - " />
-      <meta property="twitter:text:title" content="Arch Linux Extra Installation - " />
+      <meta name="title" content="Evolution From SDLC to a CloudSDLC" />
+      <meta property="og:title" content="Evolution From SDLC to a CloudSDLC - " />
+      <meta property="twitter:title" content="Evolution From SDLC to a CloudSDLC - " />
+      <meta property="twitter:text:title" content="Evolution From SDLC to a CloudSDLC - " />
     
 
     
@@ -35,9 +35,9 @@
     <meta name="keyword"  content="Eric, eric, Eric&#39;s Blog, Web, PaaS, SaaS, Kubernetes, Microservice, Docker, Linux, Open-Source, DevOps">
     <link rel="shortcut icon" href="/favicons/favicon.ico">
 
-    <title>Arch Linux Extra Installation - Leading with Innovation</title>
+    <title>Evolution From SDLC to a CloudSDLC - Leading with Innovation</title>
 
-    <link rel="canonical" href="/post/arch-linux/03-arch-linux-base-install/">
+    <link rel="canonical" href="/post/sdlc/cloudsdlc/">
 
     
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -143,7 +143,7 @@
 
 <style type="text/css">
     header.intro-header {
-        background-image: url('/post/arch-linux/arch_linux.webp')
+        background-image: url('/images/banner/homepage_banner.webp')
     }
 </style>
 <header class="intro-header">
@@ -153,20 +153,16 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/arch-linux" title="Arch Linux">
-                            Arch Linux
-                        </a>
-                        
-                        <a class="tag" href="/tags/tutorial" title="Tutorial">
-                            Tutorial
+                        <a class="tag" href="/tags/aws" title="AWS">
+                            AWS
                         </a>
                         
                     </div>
-                    <h1>Arch Linux Extra Installation</h1>
+                    <h1>Evolution From SDLC to a CloudSDLC</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
 			
-			Saturday • April 29, 2023 
+			Thursday • November 2, 2023 
                         
                     </span>
                 </div>
@@ -189,109 +185,55 @@
                 post-container">
 
                 
-                <header>
-                    <h3>Table of Contents</h3>
-                </header>
-                <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#theming">Theming</a></li>
-        <li><a href="#shell">Shell</a></li>
-        <li><a href="#daily-apps">Daily Apps</a></li>
-        <li><a href="#grub-configuration">Grub Configuration</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-                
-                <p>The sole purpose of this notes is to help me remember my workflow. Here are some of the things I always do.</p>
-<h2 id="theming">Theming</h2>
+                <hr>
+<h2 id="1-1st-stage-of-the-sdlc-evolution">1. 1st Stage of the SDLC Evolution</h2>
+<p><img src="/post/sdlc/sdlc_era_01.png" alt="SDLC Stage 1"></p>
 <ul>
 <li>
-<p>Icon themes</p>
-<ul>
-<li>papirus-icon-theme</li>
-<li>tela-icon-theme</li>
-<li>tela-circle-icon-theme</li>
-</ul>
+<p>The Waterfall Development Process: This era saw the prominence of the Waterfall development process. The Waterfall model was a structured, linear approach to software development that consisted of sequential phases, such as requirements gathering, system design, implementation, testing, deployment, and maintenance. While it aimed to ensure well-documented and high-quality projects, it suffered from rigidity and difficulty in adapting to changing requirements.</p>
 </li>
 <li>
-<p>GTK Theme</p>
-<ul>
-<li>whitesur-dark</li>
-<li>orchis theme</li>
-</ul>
+<p>Monolithic Application Architectures: Software applications were primarily built using monolithic architectures. In a monolithic approach, the entire application was developed as a single, self-contained unit. While this approach made development and management straightforward for smaller applications, it was less scalable and flexible, requiring the rebuilding and redeployment of the entire application for any updates or changes.</p>
 </li>
 <li>
-<p>Qt5 Theme</p>
-<ul>
-<li><code>qt5ct</code> with kvantum</li>
-</ul>
+<p>Physical Server Deployment: Software applications were deployed on physical servers, which were actual machines located in data centers or on-premises facilities. This process involved configuring these servers, installing the necessary software, and managing hardware resources. However, it came with challenges related to scalability, resource management, and high infrastructure costs, along with potential issues linked to hardware failures and maintenance.</p>
 </li>
 <li>
-<p>Cursor Theme</p>
-<ul>
-<li>vimix-cursors</li>
-</ul>
-</li>
-</ul>
-<h2 id="shell">Shell</h2>
-<p>Install <code>zsh</code> to replace <code>bash</code> shell</p>
-<p>Install <code>zsh</code>:</p>
-<pre tabindex="0"><code>pacman -S zsh fzf
-</code></pre><ul>
-<li><code>zsh</code>: a modern replacement for the bash shell</li>
-<li><code>fzf</code>: fuzzy finder</li>
-</ul>
-<h2 id="daily-apps">Daily Apps</h2>
-<ul>
-<li>
-<p>Browser</p>
-<ul>
-<li><code>brave-bin</code>: Brave Browser</li>
-</ul>
-</li>
-<li>
-<p>Media</p>
-<ul>
-<li><code>mpv</code>: media player</li>
-<li><code>clementine</code>: Graphical music player</li>
-<li><code>feh</code> image viewer</li>
-<li><code>obs</code>: screen recorder</li>
-</ul>
-</li>
-<li>
-<p>Media and Graphics Editing Tools</p>
-<ul>
-<li><code>gimp</code>: image manipulation program</li>
-<li><code>inkscape</code>: vector graphics editor</li>
-<li><code>ffmpeg</code>: video converter</li>
-<li><code>imagemagick</code>: image viewing/manipulation program</li>
-</ul>
-</li>
-<li>
-<p>Misc</p>
-<ul>
-<li><code>flameshot</code>: screenshot tool</li>
-<li><code>zathura-pdf-mupdf</code>: as pdf viewer</li>
-<li><code>redshift</code>: blue light filter</li>
-<li><code>mugshot</code>: personal user details updater</li>
-<li><code>arandr</code>: xrandr front-end</li>
-<li><code>qbittorent</code>: Graphical bittorent client</li>
-<li><code>htop</code>: CLI interactive process viewer</li>
-<li><code>scrcpy</code>: android viewing tool</li>
-<li><code>xmind</code>: mind mapping tool</li>
-</ul>
+<p>Datacenter-Based Application Infrastructure: Data centers served as the central hubs for software application infrastructure during this period. These facilities housed servers, networking equipment, and storage devices, providing the computing power and ensuring high availability. However, this model required substantial physical space, complex networking setups, and extensive cooling systems, along with the vulnerability of single points of failure.</p>
 </li>
 </ul>
 <hr>
-<h2 id="grub-configuration">Grub Configuration</h2>
-<p>I add the following lines to <code>GRUB_CMD_LINUX_DEFAULT</code> to disable the laptop screen after boot.</p>
-<p>Use <code>xrandr</code> to determine the id of each screen.</p>
-<pre tabindex="0"><code>xrandr -q
-</code></pre><pre tabindex="0"><code>GRUB_CMDLINE_LINUX_DEFAULT=&#34;loglevel=3 quiet mitigations=off video=VGA-1:e video=LVDS-1:d radeon.dpm=0 radeon.aspm=0 radeon.pcie_gen2=0 radeon.audio=0 radeon.msi=0 nowatchdog&#34;
-</code></pre>
+<h2 id="2-2nd-stage-of-the-sdlc-evolution">2. 2nd Stage of the SDLC Evolution</h2>
+<p><img src="/post/sdlc/sdlc_era_02.png" alt="SDLC Stage 2"></p>
+<ul>
+<li>
+<p>N-Tier Application Architectures: There was a notable transition to n-tier application architectures. These architectures segmented applications into multiple layers or tiers, each responsible for specific functionalities, including the user interface, application logic, and data storage. N-tier architectures offered improved scalability, maintainability, and the ability to update individual components without affecting the entire application, facilitating collaboration among development teams working on different layers simultaneously.</p>
+</li>
+<li>
+<p>Virtual Server Deployment: This era saw a shift from physical server deployment to virtual server deployment. Virtualization technology enabled the creation of virtual machines (VMs) on a single physical server, allowing multiple operating systems and applications to run independently on the same hardware. Virtual servers offered enhanced flexibility, resource utilization, and simplified server provisioning, contributing to faster deployment and reduced hardware costs. This shift laid the foundation for the emergence of cloud computing and Infrastructure as a Service (IaaS).</p>
+</li>
+<li>
+<p>Hosted Application Infrastructure: With the growing prevalence of the internet and virtualization technology, software applications moved from traditional data centers to hosted environments. Hosted application infrastructures, also known as cloud hosting or Software as a Service (SaaS), allowed businesses to outsource infrastructure management to third-party providers. This approach offered benefits such as scalability, reduced maintenance overhead, and global accessibility. Major providers like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) played a significant role, offering a wide array of services to support various software applications.</p>
+</li>
+</ul>
+<hr>
+<h2 id="3-3rd-stage-of-the-sdlc-evolution">3. 3rd Stage of the SDLC Evolution</h2>
+<p><img src="/post/sdlc/sdlc_era_03.png" alt="SDLC Stage 3"></p>
+<ul>
+<li>
+<p>DevOps Development Process: The 2010s saw the emergence of DevOps, a cultural and technical movement fostering collaboration between development and IT operations teams. DevOps promotes continuous integration, continuous delivery (CI/CD), and automation, breaking down traditional silos and accelerating software development while improving quality.</p>
+</li>
+<li>
+<p>Microservices Application Architecture: The adoption of microservices architecture marked a significant shift, breaking applications into small, independent services connected through APIs. This approach enhances scalability, fault isolation, and maintenance while allowing diverse technologies for each service, though it introduces challenges in orchestration and data consistency.</p>
+</li>
+<li>
+<p>Containerized Deployment: Containerization has become a dominant method for deploying software, using lightweight, portable containers to package applications and dependencies. Technologies like Docker streamline deployment, ensuring consistent performance across different environments, and facilitating the scaling of microservices.</p>
+</li>
+<li>
+<p>Cloud-Based Application Infrastructure: Cloud computing has become the backbone of modern software development. Providers like AWS, Azure, and GCP offer scalable, cost-effective solutions for hosting applications, storing data, and utilizing managed services. This shift eases adaptation to changing workloads, improves disaster recovery, and reduces capital expenditure on physical infrastructure.</p>
+</li>
+</ul>
+
 
                 
 
@@ -299,12 +241,12 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/arch-linux/02-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Post Installation">&larr; Previous Post</a>
+                        <a href="/post/arch-linux/03-arch-linux-base-install/" data-toggle="tooltip" data-placement="top" title="Arch Linux Extra Installation">&larr; Previous Post</a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/post/sdlc/cloudsdlc/" data-toggle="tooltip" data-placement="top" title="Evolution From SDLC to a CloudSDLC">Next Post &rarr;</a>
+                        <a href="/post/docker/docker-linux/" data-toggle="tooltip" data-placement="top" title="Docker on Linux vs Other Platforms">Next Post &rarr;</a>
                     </li>
                     
                 </ul>

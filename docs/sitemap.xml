@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ericngigi.com/tags/aws/</loc>
+    <lastmod>2023-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ericngigi.com/post/docker/docker-linux/</loc>
+    <lastmod>2023-11-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ericngigi.com/</loc>
-    <lastmod>2023-08-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ericngigi.com/post/sdlc/cloudsdlc/</loc>
+    <lastmod>2023-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ericngigi.com/post/</loc>
+    <lastmod>2023-11-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ericngigi.com/tags/</loc>
+    <lastmod>2023-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ericngigi.com/more/</loc>
     <lastmod>2023-08-10T00:00:00+00:00</lastmod>
@@ -18,12 +33,6 @@
     <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
     <loc>https://ericngigi.com/post/arch-linux/03-arch-linux-base-install/</loc>
-    <lastmod>2023-04-29T09:45:37+03:01</lastmod>
-  </url><url>
-    <loc>https://ericngigi.com/post/</loc>
-    <lastmod>2023-04-29T09:45:37+03:01</lastmod>
-  </url><url>
-    <loc>https://ericngigi.com/tags/</loc>
     <lastmod>2023-04-29T09:45:37+03:01</lastmod>
   </url><url>
     <loc>https://ericngigi.com/tags/tutorial/</loc>
